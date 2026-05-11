@@ -129,18 +129,22 @@ header.scrolled {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 10px;
 }
 .logo img {
-  width: 56px;
-  height: 56px;
+  width: 42px;
+  height: 42px;
   border-radius: 0;
   border: none;
   mix-blend-mode: lighten;
   display: block;
 }
 .logo-text {
-  display: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--cream);
 }
 .nav-links {
   display: flex;
@@ -616,16 +620,14 @@ section { padding: 100px 0; }
   border-color: var(--border);
   transform: translateY(-4px);
 }
-.why-icon {
-  width: 44px; height: 44px;
-  border-radius: 10px;
-  background: rgba(201,168,76,0.1);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+.why-numeral {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+  display: block;
 }
 .why-card h3 {
   font-family: 'Playfair Display', serif;
@@ -1225,7 +1227,7 @@ footer {
             <span class="proof-label">IB Score /45</span>
           </div>
           <div class="proof-item">
-            <span class="proof-num">500+</span>
+            <span class="proof-num">600+</span>
             <span class="proof-label">Hours Tutored</span>
           </div>
           <div class="proof-item">
@@ -1271,7 +1273,7 @@ footer {
         </h2>
       </div>
       <p class="section-desc reveal reveal-delay-2">
-        Specialised tutoring formats for every student — from one-on-one deep dives to flexible paired sessions and parent briefings.
+        Specialised tutoring in IB Mathematics and Physics, test preparation, summer revision courses, and flexible session formats for every student.
       </p>
     </div>
 
@@ -1280,31 +1282,31 @@ footer {
         <span class="service-num">01</span>
         <span class="service-tag">IB · SL &amp; HL</span>
         <h3>IB Mathematics</h3>
-        <p>Structured support for IB Maths AA and AI at both SL and HL. Syllabus mastery, past papers, exam-style questions — and real understanding built from the ground up.</p>
+        <p>Structured support for IB Maths AA and AI at both SL and HL. Syllabus mastery, past papers, exam-style questions — and real understanding built from the ground up, not just memorised steps.</p>
       </div>
       <div class="service-card reveal reveal-delay-1">
         <span class="service-num">02</span>
-        <span class="service-tag">SAT Math</span>
-        <h3>SAT Preparation</h3>
-        <p>Targeted sessions on high-yield topics, timing strategies and accuracy drills. Students leave with a clear plan and the confidence to execute it on test day.</p>
+        <span class="service-tag">IB · SL &amp; HL</span>
+        <h3>IB Physics</h3>
+        <p>Clear, structured support for IB Physics at SL and HL. We focus on conceptual understanding, problem-solving techniques and exam strategy — so students feel prepared and confident going in.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <span class="service-num">03</span>
-        <span class="service-tag">Admissions</span>
-        <h3>Bocconi Test Prep</h3>
-        <p>Focused preparation for Bocconi's admissions assessment — quantitative reasoning, problem-solving and exam-style practice tailored to the format.</p>
+        <span class="service-tag">SAT · Bocconi</span>
+        <h3>SAT &amp; Bocconi Test Prep</h3>
+        <p>Targeted preparation for the SAT Math section and Bocconi's admissions assessment. High-yield topics, timing strategies, accuracy drills, and exam-style practice tailored to each format.</p>
       </div>
       <div class="service-card reveal">
         <span class="service-num">04</span>
-        <span class="service-tag">1-on-1</span>
-        <h3>Individual Lessons</h3>
-        <p>Fully personalised sessions designed around the student's level, gaps and goals. The most effective format for sustained grade improvement.</p>
+        <span class="service-tag">Summer</span>
+        <h3>Summer Revision Courses</h3>
+        <p>Intensive IB Maths and Physics revision courses designed for the summer break. A focused, structured programme to consolidate Year 1, close gaps, and start Year 2 with confidence.</p>
       </div>
       <div class="service-card reveal reveal-delay-1">
         <span class="service-num">05</span>
-        <span class="service-tag">1-on-2</span>
-        <h3>Paired Sessions</h3>
-        <p>A collaborative option for two friends or classmates on the same topic. More affordable than individual lessons, equally structured and personalised.</p>
+        <span class="service-tag">1:1 · Group</span>
+        <h3>Individual or Group Sessions</h3>
+        <p>One-on-one lessons for fully personalised support, or small group sessions for friends and classmates covering the same topics — more affordable while remaining structured and focused.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <span class="service-num">06</span>
@@ -1381,7 +1383,7 @@ footer {
         </p>
         <ul class="about-list reveal reveal-delay-3">
           <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
-          <li>500+ hours tutoring IB, SAT, and university-level maths and physics across international schools in Europe.</li>
+          <li>600+ hours tutoring IB, SAT, and university-level maths and physics across international schools in Europe.</li>
           <li>Former youth national team beach volleyball athlete — bringing discipline and a growth mindset to every session.</li>
           <li>Teaching style: calm, structured, clarity-driven. Students understand concepts deeply, not just memorise methods.</li>
         </ul>
@@ -1395,41 +1397,41 @@ footer {
 <!-- WHY -->
 <section id="why">
   <div class="container">
-    <div class="section-label reveal">Why Students Choose Me</div>
+    <div class="section-label reveal">Why Alex</div>
     <h2 class="section-title reveal reveal-delay-1" style="max-width: 560px;">
-      What families tell me<br /><em>they value most.</em>
+      Six reasons students<br /><em>make real progress.</em>
     </h2>
 
     <div class="why-grid">
       <div class="why-card reveal">
-        <div class="why-icon">🎓</div>
-        <h3>IB Insight, Not Guesswork</h3>
-        <p>I completed the IB myself with 43/45, including 7 in Maths AA HL and an A in a Maths Extended Essay. I know how assessments, mock exams and finals actually feel from the inside.</p>
+        <span class="why-numeral">I</span>
+        <h3>Taught by Someone Who's Been There</h3>
+        <p>I graduated the IB with 43/45 — including a 7 in Maths AA HL, a 7 in Physics HL, and an A in my Maths Extended Essay. I know exactly what these exams demand and how to prepare for them strategically.</p>
       </div>
       <div class="why-card reveal reveal-delay-1">
-        <div class="why-icon">💡</div>
-        <h3>Concepts That Finally Make Sense</h3>
-        <p>We focus on the ideas behind formulas, not just the steps. Students learn to think through unfamiliar problems — which makes them confident in exams, not dependent on memorisation.</p>
+        <span class="why-numeral">II</span>
+        <h3>Understanding, Not Memorisation</h3>
+        <p>Every lesson is built around understanding the ideas behind the methods. Students who grasp the reasoning can tackle unfamiliar problems — which is exactly what IB and SAT exams are designed to test.</p>
       </div>
       <div class="why-card reveal reveal-delay-2">
-        <div class="why-icon">📋</div>
-        <h3>A Plan for the Full Journey</h3>
-        <p>From Year 1 foundations to Year 2 exam revision, lessons are structured with clear priorities, topic checklists and realistic study plans that match the student's timeline.</p>
+        <span class="why-numeral">III</span>
+        <h3>Structured from Day One</h3>
+        <p>From the first session, there is a clear plan — topic priorities, a realistic timeline, and defined goals. Students always know where they are, what comes next, and what to focus on.</p>
       </div>
       <div class="why-card reveal reveal-delay-1">
-        <div class="why-icon">🧘</div>
-        <h3>Calm Under Pressure</h3>
-        <p>Lessons are patient, honest and unhurried. We slow down when needed, move faster when possible, and always keep stress in check so students feel in control of their progress.</p>
+        <span class="why-numeral">IV</span>
+        <h3>Calm, Patient, Honest</h3>
+        <p>Lessons are unhurried and pressure-free. We slow down when something isn't clear, move faster when it is, and always work at a pace that builds genuine confidence rather than surface-level reassurance.</p>
       </div>
       <div class="why-card reveal reveal-delay-2">
-        <div class="why-icon">📣</div>
-        <h3>Transparent with Parents</h3>
-        <p>For families who want it, I offer regular briefings on progress, weak areas and next steps. Parents stay informed and reassured — without having to micromanage the process.</p>
+        <span class="why-numeral">V</span>
+        <h3>Parents Are Kept in the Loop</h3>
+        <p>For families who want it, I provide regular progress updates — what's been covered, where the student stands, and what the focus will be going forward. No ambiguity, no surprises.</p>
       </div>
       <div class="why-card reveal reveal-delay-3">
-        <div class="why-icon">🏆</div>
-        <h3>The Discipline of Sport</h3>
-        <p>As a former youth national team athlete, I bring consistency, reliability and a growth mindset. We set realistic goals, track improvement, and commit to showing up every week.</p>
+        <span class="why-numeral">VI</span>
+        <h3>Consistent and Reliable</h3>
+        <p>As a former youth national team athlete, I understand what it takes to improve under pressure. Every session is prepared, every commitment honoured — students and parents know exactly what to expect.</p>
       </div>
     </div>
   </div>
@@ -1684,8 +1686,11 @@ footer {
                 <option>IB Maths AA SL</option>
                 <option>IB Maths AI HL</option>
                 <option>IB Maths AI SL</option>
+                <option>IB Physics HL</option>
+                <option>IB Physics SL</option>
                 <option>SAT Math</option>
                 <option>Bocconi Test Prep</option>
+                <option>Summer Revision Course</option>
                 <option>University Mathematics</option>
                 <option>Other / Not sure yet</option>
               </select>
