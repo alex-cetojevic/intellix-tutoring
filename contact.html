@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a Call | Intellix Tutoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Book a free intro call with Alex Cetojević at Intellix Tutoring. Get in touch by email, WhatsApp, or the contact form." />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
+  <div class="container nav">
+    <a href="index.html" class="logo-wrap" aria-label="Intellix Tutoring — go to homepage">
+      <img src="logo-intellix.png" alt="" aria-hidden="true" width="40" height="40" />
+      <span>Intellix Tutoring</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button
+      class="hamburger"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span class="hamburger-bar" aria-hidden="true"></span>
+      <span class="hamburger-bar" aria-hidden="true"></span>
+      <span class="hamburger-bar" aria-hidden="true"></span>
+    </button>
+    <a href="contact.html" class="btn btn-ghost" aria-label="Book a free intro call">Book a Call</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-grid fade-up">
+      <div>
+        <h2 id="contact-heading" class="section-heading" style="text-align:left;">Book a Free Intro Call</h2>
+        <p class="section-sub" style="text-align:left; margin-bottom:18px;">
+          Share a bit about the student, their current situation and goals, and I'll respond with
+          suggested next steps and available times for an online call.
+        </p>
+        <p class="muted" style="margin-bottom:14px;">
+          You can also contact me directly:<br />
+          <strong>Email:</strong> <a href="mailto:alexcetojevic12@gmail.com" aria-label="Send email to alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a><br />
+          <strong>WhatsApp:</strong> <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp — opens in new tab">+385 95 352 1299</a>
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="mailto:alexcetojevic12@gmail.com" class="btn btn-primary" aria-label="Send me an email">Email Me</a>
+          <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Chat on WhatsApp — opens in new tab">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card fade-up">
+        <form aria-label="Contact form">
+          <div>
+            <label for="name">Student / Parent Name</label>
+            <input id="name" type="text" placeholder="Your name" aria-required="true" autocomplete="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" aria-required="true" autocomplete="email" />
+          </div>
+          <div>
+            <label for="details">How can I help?</label>
+            <textarea id="details" placeholder="IB Math HL, SAT math, Bocconi test, university maths course…" aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" aria-label="Send your message">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    © <span id="year"></span> Intellix Tutoring. All rights reserved.
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
