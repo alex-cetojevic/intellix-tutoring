@@ -25,8 +25,8 @@
 
 <header role="banner">
   <div class="container nav">
-    <a href="index.html" class="logo-wrap" aria-label="Intellix Tutoring — go to homepage">
-      <img src="logo-intellix.png" alt="" aria-hidden="true" width="40" height="40" />
+    <a href="index.html" class="logo-wrap" aria-label="Intellix Tutoring — homepage">
+      <img src="logo-intellix.png" alt="" aria-hidden="true" width="36" height="36" />
       <span>Intellix Tutoring</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
@@ -35,17 +35,12 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button
-      class="hamburger"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="mobile-nav"
-    >
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
       <span class="hamburger-bar" aria-hidden="true"></span>
       <span class="hamburger-bar" aria-hidden="true"></span>
       <span class="hamburger-bar" aria-hidden="true"></span>
     </button>
-    <a href="contact.html" class="btn btn-ghost" aria-label="Book a free intro call">Book a Call</a>
+    <a href="contact.html" class="btn btn-ghost">Book a Call</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
     <a href="index.html">Home</a>
@@ -56,99 +51,202 @@
 </header>
 
 <main id="main-content">
-  <section id="about" aria-labelledby="about-heading">
-    <div class="container about-grid fade-up">
 
-      <div class="about-photo-wrap">
-        <img src="alex.jpg" alt="Alex Cetojević, online IB Maths tutor" class="about-photo" width="320" height="427" loading="lazy" />
-        <div class="about-chip" aria-hidden="true">Your Tutor</div>
+  <!-- PAGE HERO -->
+  <div class="page-hero fade-up">
+    <div class="container">
+      <div class="eyebrow">Your Tutor</div>
+      <h1>Meet <span style="background:linear-gradient(120deg,#c9a96e,#e8c97e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Alex Cetojević</span></h1>
+      <p>
+        Maths graduate. IB alumnus. Former national team athlete.
+        And the person who will help your student finally understand maths — not just survive it.
+      </p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid fade-up">
+
+        <div class="about-photo-wrap">
+          <img src="alex.jpg" alt="Alex Cetojević, online IB Maths tutor" class="about-photo" width="320" height="427" loading="lazy" />
+          <div class="about-chip">Your Tutor</div>
+        </div>
+
+        <div>
+          <div class="eyebrow">Background</div>
+          <h2 id="about-heading" style="font-size:clamp(1.6rem,3vw,2rem);margin:10px 0 16px;letter-spacing:-0.01em;">
+            The IB from the Inside Out
+          </h2>
+          <div class="gold-line left"></div>
+
+          <p style="font-size:0.97rem;color:var(--text-muted);line-height:1.8;margin-bottom:16px;">
+            I'm Alex — a maths graduate and former IB student who understands both the structure of the
+            Diploma Programme and what students actually need to succeed in it. I graduated the IB with
+            <strong style="color:var(--white);">43/45</strong>, earning a
+            <strong style="color:var(--white);">7 in Mathematics AA HL</strong>,
+            <strong style="color:var(--white);">7 in Physics HL</strong>, and an
+            <strong style="color:var(--white);">A in my Mathematics Extended Essay</strong>.
+          </p>
+
+          <p style="font-size:0.97rem;color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
+            Over the past years I've supported students across international schools throughout Europe —
+            in IB Maths AA/AI, SAT Math, Bocconi test prep, and first-year university mathematics.
+            My approach is calm, structured and clarity-driven. I help students understand the ideas
+            behind the methods so they feel confident in class, during assessments, and in the exam room.
+          </p>
+
+          <ul class="credential-list">
+            <li>
+              <span class="cred-icon">🎓</span>
+              <span>BSc in Mathematics — GPA 29.3/30. Strong analytical foundation across pure and applied maths.</span>
+            </li>
+            <li>
+              <span class="cred-icon">📐</span>
+              <span>IB 43/45 — 7 in Maths AA HL, 7 in Physics HL, A in Mathematics Extended Essay.</span>
+            </li>
+            <li>
+              <span class="cred-icon">🕐</span>
+              <span>500+ hours of tutoring IB, SAT, and university-level maths and physics across Europe.</span>
+            </li>
+            <li>
+              <span class="cred-icon">🏐</span>
+              <span>Former youth national team beach volleyball athlete — discipline, consistency and a growth mindset built through sport.</span>
+            </li>
+            <li>
+              <span class="cred-icon">🌍</span>
+              <span>All lessons delivered online — accessible to students anywhere in the world.</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
-
-      <div>
-        <h2 id="about-heading" class="section-heading" style="text-align:left;">About Alex</h2>
-
-        <p class="section-sub" style="text-align:left; margin-bottom:12px;">
-          I'm Alex — a maths graduate and former International Baccalaureate student who understands
-          both the demands of the IB Diploma Programme and what students need to succeed in it.
-          I graduated the IB with a <strong>43/45</strong>, earning a <strong>7 in Mathematics AA HL</strong>,
-          <strong>7 in Physics HL</strong>, and an <strong>A in my Mathematics Extended Essay</strong>.
-          This experience allows me to guide students not only academically, but also strategically.
-        </p>
-
-        <p class="section-sub" style="text-align:left; margin-bottom:12px;">
-          Over the past years, I've supported IB students across international schools throughout Europe,
-          specialising in IB Maths AA/AI, SAT Math, Bocconi test prep, and university mathematics.
-          My teaching style is calm, structured, and clarity-driven — I help students truly understand concepts,
-          not just memorise methods, so they feel confident in class, during assessments, and in exams.
-        </p>
-
-        <ul class="about-list">
-          <li>BSc in Mathematics with a very high GPA (29.3/30).</li>
-          <li>500+ hours tutoring IB, SAT, and university-level maths and physics.</li>
-          <li>Strong track record of helping students move from low confidence and low grades to consistent, stable performance.</li>
-          <li>Former youth national team beach volleyball athlete — bringing discipline, focus, and consistency to tutoring.</li>
-          <li>A structured, patient teaching approach: clear explanations, a logical progression, and personalised guidance.</li>
-        </ul>
-      </div>
-
     </div>
   </section>
 
-  <section id="testimonials" aria-labelledby="testimonials-heading">
+  <!-- APPROACH -->
+  <section style="padding-top:0;" aria-labelledby="approach-heading">
     <div class="container fade-up">
-      <h2 id="testimonials-heading" class="section-heading">What Families Say</h2>
+      <div class="eyebrow" style="display:block;text-align:center;">Teaching Philosophy</div>
+      <h2 id="approach-heading" class="section-heading" style="margin-top:10px;">How I Teach</h2>
+      <div class="gold-line"></div>
       <p class="section-sub">
-        Feedback from IB students and parents I've supported.
+        Most students struggling with maths aren't struggling with maths —
+        they're struggling with gaps left by rushed explanations or memorised procedures that don't stick under pressure.
+        My job is to find those gaps and close them properly.
       </p>
 
-      <div
-        class="testimonial-scroll"
-        role="region"
-        aria-label="Customer testimonials"
-        aria-roledescription="carousel"
-      >
+      <div class="grid-3">
+        <div class="card fade-up">
+          <div class="tag">Diagnose</div>
+          <h3>Start with Understanding</h3>
+          <p class="muted">
+            Before diving into content, I spend time understanding exactly where the
+            student is — what they know, what's shaky, and what the real obstacle is.
+            No assumptions, no wasted sessions.
+          </p>
+        </div>
+        <div class="card fade-up" style="transition-delay:0.08s">
+          <div class="tag">Build</div>
+          <h3>Concepts Before Procedures</h3>
+          <p class="muted">
+            I explain the why behind every formula and method. Students who understand
+            the logic can reconstruct answers under pressure — students who only
+            memorise steps can't.
+          </p>
+        </div>
+        <div class="card fade-up" style="transition-delay:0.16s">
+          <div class="tag">Apply</div>
+          <h3>Practice That Actually Prepares</h3>
+          <p class="muted">
+            We work through exam-style questions systematically — building speed, accuracy
+            and the ability to handle unfamiliar problems. Progress is tracked clearly
+            so both student and parent can see it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section aria-labelledby="testimonials-heading">
+    <div class="container fade-up">
+      <div class="eyebrow" style="display:block;text-align:center;">Social Proof</div>
+      <h2 id="testimonials-heading" class="section-heading" style="margin-top:10px;">What Families Say</h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Feedback from IB students and parents across Europe.</p>
+
+      <div class="testimonial-scroll" role="region" aria-label="Student testimonials" aria-roledescription="carousel">
+
         <article class="card testimonial-card" aria-label="Testimonial 1 of 5">
           <p class="testimonial">
-            "Alex helped me go from a 3 in IB Maths AA HL to a confident 6 by finals."
+            "Alex helped me go from a 3 in IB Maths AA HL to a confident 6 by finals.
+            He made me actually understand what I was doing for the first time."
           </p>
           <p class="testimonial-name">IB AA HL Student</p>
         </article>
 
         <article class="card testimonial-card" aria-label="Testimonial 2 of 5">
           <p class="testimonial">
-            "My daughter finally understands her teacher. Her confidence and grades improved."
+            "My daughter finally understands her teacher. Her confidence improved
+            dramatically — and so did her grades."
           </p>
           <p class="testimonial-name">Parent, International School</p>
         </article>
 
         <article class="card testimonial-card" aria-label="Testimonial 3 of 5">
           <p class="testimonial">
-            "SAT math score +120 points. Lessons are structured and efficient."
+            "SAT math score up 120 points. The lessons were structured, efficient
+            and exactly what I needed."
           </p>
           <p class="testimonial-name">SAT Student</p>
         </article>
 
         <article class="card testimonial-card" aria-label="Testimonial 4 of 5">
           <p class="testimonial">
-            "Alex explains concepts clearly and patiently. My son no longer panics before tests."
+            "Alex explains things clearly and patiently. My son no longer panics
+            before maths tests — that alone is worth everything."
           </p>
           <p class="testimonial-name">Parent of Year 11 Student</p>
         </article>
 
         <article class="card testimonial-card" aria-label="Testimonial 5 of 5">
           <p class="testimonial">
-            "The best maths tutor I've had. I finally understand IB Maths AA rather than memorising."
+            "The best maths tutor I've had. I finally understand IB Maths AA
+            instead of just memorising. It's made a huge difference."
           </p>
           <p class="testimonial-name">IB AA SL Student</p>
         </article>
+
       </div>
     </div>
   </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band fade-up">
+    <div class="container">
+      <div class="eyebrow">Work Together</div>
+      <h2 style="margin-top:12px;">Sound like the right fit?</h2>
+      <p>
+        Book a free 20-minute intro call and let's talk about your student —
+        where they are, where they need to be, and how to get there.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Book a Free Intro Call</a>
+    </div>
+  </div>
+
 </main>
 
 <footer role="contentinfo">
-  <div class="container">
-    © <span id="year"></span> Intellix Tutoring. All rights reserved.
+  <div class="container footer-inner">
+    <span class="footer-logo">Intellix Tutoring</span>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span>© <span id="year"></span> Intellix Tutoring. All rights reserved.</span>
   </div>
 </footer>
 
