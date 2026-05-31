@@ -1,275 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Services | Intellix Tutoring</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Specialised online tutoring for IB Maths, SAT math, Bocconi test prep and university-level maths. Individual and small-group lessons with Alex Cetojević." />
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<title>Services &amp; Pricing | Intellix Tutoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Intellix Tutoring services: IB Maths AA/AI (SL &amp; HL), IB Physics, SAT Math, Bocconi test prep, summer revision courses, and group sessions. Transparent pricing with no surprises." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="services.html" onclick="closeMobileMenu()">Services</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  <a href="contact.html" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
+</div>
 
-<header role="banner">
-  <div class="container nav">
-    <a href="index.html" class="logo-wrap" aria-label="Intellix Tutoring — homepage">
-      <img src="logo-intellix.png" alt="" aria-hidden="true" width="36" height="36" />
-      <span>Intellix Tutoring</span>
-    </a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
-      <span class="hamburger-bar" aria-hidden="true"></span>
-      <span class="hamburger-bar" aria-hidden="true"></span>
-      <span class="hamburger-bar" aria-hidden="true"></span>
-    </button>
-    <a href="contact.html" class="btn btn-ghost">Book a Call</a>
+<div class="site-top">
+  <div class="availability-banner">
+    <span class="avail-dot"></span>
+    Currently accepting new students for the 2026–27 academic year &middot; Limited spots available
   </div>
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main id="main-content">
-
-  <!-- PAGE HERO -->
-  <div class="page-hero fade-up">
-    <div class="container">
-      <div class="eyebrow">What I Offer</div>
-      <h1>Tutoring Built for<br /><span style="background:linear-gradient(120deg,#c9a96e,#e8c97e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Serious Students</span></h1>
-      <p>
-        Every programme has its own exam logic, pressure points and mark-scheme quirks.
-        I work exclusively on subjects I know from the inside — so you get depth, not generalism.
-      </p>
-    </div>
-  </div>
-
-  <!-- SUBJECT SERVICES -->
-  <section aria-labelledby="subject-heading">
-    <div class="container fade-up">
-      <div class="eyebrow" style="display:block;text-align:center;">Subject Programmes</div>
-      <h2 id="subject-heading" class="section-heading" style="margin-top:10px;">What I Specialise In</h2>
-      <div class="gold-line"></div>
-      <p class="section-sub">
-        Focused, exam-aligned tutoring for students who need more than just someone to
-        explain the textbook. Each programme is structured around how it's actually assessed.
-      </p>
-
-      <div class="grid-3" role="list">
-        <div class="card fade-up" role="listitem">
-          <div class="tag">IB</div>
-          <h3>IB Maths AA &amp; AI (SL &amp; HL)</h3>
-          <p class="muted">
-            Syllabus-by-syllabus coverage, past-paper walkthroughs, internal assessment
-            guidance and exam technique. Built around the Diploma's specific demands —
-            from Year 1 foundations to final exam readiness.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.08s">
-          <div class="tag">IB</div>
-          <h3>IB Physics SL &amp; HL</h3>
-          <p class="muted">
-            Conceptual clarity and problem-solving for IB Physics. We work through
-            difficult topics systematically, with a focus on data analysis, experimental
-            work and exam-style questions.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.16s">
-          <div class="tag">SAT</div>
-          <h3>SAT Math Prep</h3>
-          <p class="muted">
-            Targeted preparation across all SAT math domains — algebra, advanced maths,
-            problem-solving and data analysis. Structured around your target score,
-            current level and exam date.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.0s">
-          <div class="tag">Bocconi</div>
-          <h3>Bocconi Admissions Test</h3>
-          <p class="muted">
-            Quantitative reasoning, logical thinking and mathematical problem-solving
-            tailored to Bocconi's admissions format. Realistic timed practice and
-            structured feedback on every session.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.08s">
-          <div class="tag">University</div>
-          <h3>First-Year University Maths</h3>
-          <p class="muted">
-            Analysis, linear algebra, calculus and more — explained with clarity and
-            rigour. Ideal for students transitioning from IB or A-Level into
-            university-level mathematics.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.16s">
-          <div class="tag">Support</div>
-          <h3>Resources &amp; Parent Briefings</h3>
-          <p class="muted">
-            Custom practice sets, revision summaries and exam-style questions.
-            Optional progress briefings for parents who want to stay informed
-            without micromanaging every detail.
-          </p>
-        </div>
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo-intellix.png" alt="Intellix Tutoring logo" />
+        <span class="logo-text">Intellix Tutoring</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold" style="display:none" id="navCta">Book a Call</a>
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </div>
     </div>
-  </section>
+  </header>
+</div>
 
-  <!-- LESSON FORMATS -->
-  <section style="padding-top:0;" aria-labelledby="formats-heading">
-    <div class="container fade-up">
-      <div class="eyebrow" style="display:block;text-align:center;">Lesson Formats</div>
-      <h2 id="formats-heading" class="section-heading" style="margin-top:10px;">How We Work Together</h2>
-      <div class="gold-line"></div>
-      <p class="section-sub">Flexible formats designed around the student's schedule, goals and learning style.</p>
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label reveal">Services &amp; Pricing</div>
+    <h1 class="reveal reveal-delay-1">Every service <em>built around you.</em></h1>
+    <p class="reveal reveal-delay-2">Specialised online tutoring for IB, SAT, Bocconi and university-level mathematics — structured around each student's goals and exam schedule.</p>
+  </div>
+</div>
 
-      <div class="grid-2">
-        <div class="card fade-up">
-          <div class="tag">1:1</div>
-          <h3>Individual Online Lessons</h3>
-          <p class="muted">
-            Fully personalised sessions built around the student's level, curriculum and goals.
-            The pace, depth and focus adjust lesson by lesson. Best for students who want
-            the most direct path to improvement.
-          </p>
-        </div>
+<hr class="divider" />
 
-        <div class="card fade-up" style="transition-delay:0.1s">
-          <div class="tag">1:2</div>
-          <h3>Paired Lessons for Two Students</h3>
-          <p class="muted">
-            A structured option for two friends or classmates covering the same topic.
-            More affordable than individual lessons — still focused, prepared and
-            highly effective for students at a similar level.
-          </p>
-        </div>
+<!-- SERVICES GRID -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label reveal">What I Offer</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Six subjects,<br /><em>one tutor.</em>
+        </h2>
       </div>
-    </div>
-  </section>
-
-  <!-- WHY ME -->
-  <section aria-labelledby="why-heading">
-    <div class="container fade-up">
-      <div class="eyebrow" style="display:block;text-align:center;">Why Students Choose Me</div>
-      <h2 id="why-heading" class="section-heading" style="margin-top:10px;">The Intellix Difference</h2>
-      <div class="gold-line"></div>
-      <p class="section-sub">
-        I've sat the IB myself. I know how internal assessments feel, what examiners look for,
-        and where students lose marks. Here's what families consistently say they value most.
+      <p class="section-desc reveal reveal-delay-2">
+        Each service is fully personalised — built around the student's current level, exam schedule,
+        and the kind of support they actually need.
       </p>
+    </div>
 
-      <div class="grid-3" role="list">
-        <div class="card fade-up" role="listitem">
-          <div class="tag">Experience</div>
-          <h3>IB Insight, Not Guesswork</h3>
-          <p class="muted">
-            43/45 IB graduate with 7 in Maths AA HL and an A in a Maths Extended Essay.
-            I know the syllabus, the mark scheme and the examiner's mindset from personal experience.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.08s">
-          <div class="tag">Clarity</div>
-          <h3>Concepts That Finally Click</h3>
-          <p class="muted">
-            We focus on the ideas behind the formulas. Students learn to think through
-            problems — not just execute steps — which builds lasting confidence
-            and better performance in unseen questions.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.16s">
-          <div class="tag">Structure</div>
-          <h3>A Plan for the Whole Journey</h3>
-          <p class="muted">
-            From Year 1 foundations to final exam week, every student gets a clear
-            roadmap: topic priorities, revision checklists and realistic targets
-            that make progress visible and measurable.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem">
-          <div class="tag">Calm</div>
-          <h3>Less Anxiety, More Control</h3>
-          <p class="muted">
-            Sessions are patient and honest. We slow down where understanding
-            breaks down, move faster when it's solid, and always ensure the student
-            leaves each lesson with more clarity than they arrived with.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.08s">
-          <div class="tag">Communication</div>
-          <h3>Transparent with Parents</h3>
-          <p class="muted">
-            Regular progress briefings on strengths, gaps and next steps — for families
-            who want to be informed. You'll always know where your student stands and what we're working on.
-          </p>
-        </div>
-
-        <div class="card fade-up" role="listitem" style="transition-delay:0.16s">
-          <div class="tag">Consistency</div>
-          <h3>Discipline from Sport</h3>
-          <p class="muted">
-            Former youth national team beach volleyball athlete. I bring the same consistency,
-            work ethic and growth mindset to tutoring — we set goals, track progress and keep showing up.
-          </p>
-        </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <span class="service-tag">IB &middot; SL &amp; HL</span>
+        <h3>IB Mathematics</h3>
+        <p>Structured support for IB Maths AA and AI at both SL and HL. Syllabus mastery, past papers, exam-style questions — and real understanding built from the ground up, not just memorised steps.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <div class="cta-band fade-up">
-    <div class="container">
-      <div class="eyebrow">Get Started</div>
-      <h2 style="margin-top:12px;">Let's find the right programme for your student.</h2>
-      <p>
-        A free 20-minute intro call to understand their current situation,
-        what's not working, and how we'll fix it. No obligation.
-      </p>
-      <a href="contact.html" class="btn btn-primary">Book a Free Intro Call</a>
+      <div class="service-card reveal reveal-delay-1">
+        <span class="service-num">02</span>
+        <span class="service-tag">IB &middot; SL &amp; HL</span>
+        <h3>IB Physics</h3>
+        <p>Clear, structured support for IB Physics at SL and HL. We focus on conceptual understanding, problem-solving techniques and exam strategy — so students feel prepared and confident going in.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <span class="service-num">03</span>
+        <span class="service-tag">SAT &middot; Bocconi</span>
+        <h3>SAT &amp; Bocconi Test Prep</h3>
+        <p>Targeted preparation for the SAT Math section and Bocconi's admissions assessment. High-yield topics, timing strategies, accuracy drills, and exam-style practice tailored to each format.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">04</span>
+        <span class="service-tag">Summer</span>
+        <h3>Summer Revision Courses</h3>
+        <p>Intensive IB Maths and Physics revision courses designed for the summer break. A focused, structured programme to consolidate Year 1, close gaps, and start Year 2 with confidence.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <span class="service-num">05</span>
+        <span class="service-tag">1:1 &middot; Group</span>
+        <h3>Individual or Group Sessions</h3>
+        <p>One-on-one lessons for fully personalised support, or small group sessions for friends and classmates covering the same topics — more affordable while remaining structured and focused.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <span class="service-num">06</span>
+        <span class="service-tag">Support</span>
+        <h3>Resources &amp; Briefings</h3>
+        <p>Custom practice sets, revision summaries and exam questions — plus optional parent briefings to keep families informed on progress, gaps and next steps without micromanaging.</p>
+      </div>
     </div>
   </div>
+</section>
 
-</main>
+<hr class="divider" />
 
-<footer role="contentinfo">
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div style="text-align: center; max-width: 560px; margin: 0 auto;">
+      <div class="section-label reveal" style="justify-content: center;">The Process</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Three steps to<br /><em>better grades.</em>
+      </h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin: 0 auto;">
+        Getting started is simple. From your first message to your first lesson, here's exactly what happens.
+      </p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal">
+        <div class="step-num"><span class="step-num-inner">01</span></div>
+        <h3>Book a Free Call</h3>
+        <p>Reach out via the form, email or WhatsApp. We'll have a 20-minute intro call to understand the student's situation, goals, and what kind of support they need.</p>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num"><span class="step-num-inner">02</span></div>
+        <h3>Get a Tailored Plan</h3>
+        <p>Based on the call, I put together a structured learning plan with clear priorities, timeline and format — designed specifically for that student's level and exam schedule.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num"><span class="step-num-inner">03</span></div>
+        <h3>Start Making Progress</h3>
+        <p>Lessons begin. Each session builds on the last. Progress is tracked, the plan adapts as needed, and parents are kept informed at every stage.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 48px;" class="reveal reveal-delay-3">
+      <a href="contact.html" class="btn btn-gold">Book Your Free Call</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PRICING -->
+<section id="pricing" class="pricing-section">
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; flex-wrap: wrap; margin-bottom: 0;">
+      <div>
+        <div class="section-label reveal">Pricing</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Transparent rates,<br /><em>no surprises.</em>
+        </h2>
+      </div>
+      <p class="section-desc reveal reveal-delay-2" style="max-width: 400px;">
+        All sessions are conducted online via Zoom or Google Meet. The first introductory call is always free.
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-top-line"></div>
+        <div class="pricing-plan">Single Session</div>
+        <h3>One-Off Lesson</h3>
+        <p class="pricing-desc">Perfect for targeted help before an exam, a difficult topic, or to try the service before committing to a package.</p>
+        <div class="pricing-price">
+          <span class="price-currency">&euro;</span>
+          <span class="price-amount">35</span>
+          <span class="price-period">/ 60 min</span>
+        </div>
+        <ul class="pricing-features">
+          <li>1-on-1 personalised session</li>
+          <li>Pre-session topic discussion</li>
+          <li>Custom practice materials</li>
+          <li>Post-session summary notes</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Book a Session</a>
+      </div>
+
+      <div class="pricing-card featured reveal reveal-delay-1">
+        <div class="pricing-top-line"></div>
+        <div class="pricing-plan">Monthly Package</div>
+        <h3>Regular Lessons</h3>
+        <p class="pricing-desc">The most effective format for consistent improvement. Weekly sessions with full tracking and parent updates.</p>
+        <div class="pricing-price">
+          <span class="price-currency">&euro;</span>
+          <span class="price-amount">120</span>
+          <span class="price-period">/ 4 sessions</span>
+        </div>
+        <ul class="pricing-features">
+          <li>4 &times; 60-min sessions per month</li>
+          <li>Personalised study plan</li>
+          <li>Custom materials &amp; past papers</li>
+          <li>Monthly parent progress briefing</li>
+          <li>WhatsApp support between lessons</li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold" style="width: 100%; justify-content: center;">Get Started</a>
+      </div>
+
+      <div class="pricing-card reveal reveal-delay-2">
+        <div class="pricing-top-line"></div>
+        <div class="pricing-plan">Paired Sessions</div>
+        <h3>Two Students</h3>
+        <p class="pricing-desc">For two friends or classmates working on the same topic. More affordable while remaining structured and focused.</p>
+        <div class="pricing-price">
+          <span class="price-currency">&euro;</span>
+          <span class="price-amount">50</span>
+          <span class="price-period">/ 60 min</span>
+        </div>
+        <ul class="pricing-features">
+          <li>2 students, 1 structured session</li>
+          <li>Shared topic focus</li>
+          <li>Individual question time</li>
+          <li>Shared practice materials</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Book a Session</a>
+      </div>
+    </div>
+    <p class="pricing-note reveal reveal-delay-3">All prices are indicative. Final rates depend on level, frequency and subject. Discuss your situation in the free intro call.</p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<section class="cta-band">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content: center;">Ready to start?</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
+      Book a <em>free intro call.</em>
+    </h2>
+    <p class="cta-band-desc reveal reveal-delay-2">
+      No commitment. Just a 20-minute conversation to understand your situation and see if we're a good fit.
+    </p>
+    <div class="cta-band-actions reveal reveal-delay-3">
+      <a href="contact.html" class="btn btn-gold">Book a Free Call</a>
+      <a href="faq.html" class="btn btn-outline">Read the FAQ</a>
+    </div>
+  </div>
+</section>
+
+<footer>
   <div class="container footer-inner">
-    <span class="footer-logo">Intellix Tutoring</span>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="services.html">Services</a>
+    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Cetojević</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span>© <span id="year"></span> Intellix Tutoring. All rights reserved.</span>
+      <a href="faq.html">FAQ</a>
+      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
+      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const header = document.getElementById('header');
+const navCta = document.getElementById('navCta');
+const bannerHeight = document.querySelector('.availability-banner').offsetHeight;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > bannerHeight + 10) {
+    header.classList.add('scrolled');
+    navCta.style.display = 'inline-flex';
+  } else {
+    header.classList.remove('scrolled');
+    navCta.style.display = 'none';
+  }
+});
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuClose = document.getElementById('menuClose');
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
