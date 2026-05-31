@@ -76,17 +76,14 @@ img { max-width: 100%; display: block; }
   50% { box-shadow: 0 0 0 5px rgba(74,222,128,0); }
 }
 header {
-  background: rgba(11, 22, 41, 0.0);
-  backdrop-filter: blur(0px);
-  padding: 18px 0;
-  transition: all 0.4s ease;
-  border-bottom: 1px solid transparent;
+  background: rgba(11, 22, 41, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
 }
 header.scrolled {
-  background: rgba(11, 22, 41, 0.97);
-  backdrop-filter: blur(20px);
   padding: 13px 0;
-  border-bottom: 1px solid var(--border);
 }
 .nav {
   display: flex;
