@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Blog &amp; Resources | Intellix Tutoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Exam guides, study strategies and subject insights for IB Maths, SAT Math and Bocconi — written by Alex Ćetojević at Intellix Tutoring." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .blog-empty {
+    text-align: center;
+    padding: 80px 24px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .blog-empty-icon {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    background: var(--navy-mid);
+  }
+  .blog-empty-icon svg { color: var(--gold); }
+  .blog-empty h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--cream);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .blog-empty p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+
+  .upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 64px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .upcoming-card {
+    background: var(--navy-mid);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 28px 24px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .upcoming-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .upcoming-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 10px;
+    line-height: 1.35;
+  }
+  .upcoming-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .upcoming-label {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .upcoming-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="services.html" onclick="closeMobileMenu()">Services</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="faq.html" onclick="closeMobileMenu()">FAQ</a>
+  <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  <a href="contact.html" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
+</div>
+
+<div class="site-top">
+  <div class="availability-banner">
+    <span class="avail-dot"></span>
+    Currently accepting new students for the 2026–27 academic year &middot; Limited spots available
+  </div>
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo-intellix.png" alt="Intellix Tutoring logo" />
+        <span class="logo-text">Intellix Tutoring</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold" style="display:none" id="navCta">Book a Call</a>
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label reveal">Blog &amp; Resources</div>
+    <h1 class="reveal reveal-delay-1">Exam guides. Study strategy.<br /><em>Written from experience.</em></h1>
+    <p class="reveal reveal-delay-2">Practical articles on IB Maths, SAT Math, Bocconi prep and how to study effectively — written by someone who has sat the exams, not just taught them.</p>
+  </div>
+</div>
+
+<hr class="divider" />
+
+<section>
+  <div class="container">
+
+    <div class="blog-empty reveal">
+      <div class="blog-empty-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <h2>First articles coming soon.</h2>
+      <p>
+        I'm working on a set of guides covering the topics that come up most in lessons —
+        common mistakes in IB Maths AA HL, how to approach SAT Math under time pressure,
+        what Bocconi actually tests, and more. Check back soon.
+      </p>
+      <a href="contact.html" class="btn btn-gold">Book a Free Intro Call Instead</a>
+    </div>
+
+    <div class="upcoming-grid reveal">
+      <div class="upcoming-card">
+        <span class="upcoming-tag">IB Maths AA HL</span>
+        <h3>The 5 Topics Where IB Students Lose the Most Marks</h3>
+        <p>A breakdown of the most common errors across calculus, vectors and statistics — and how to fix them before the exam.</p>
+      </div>
+      <div class="upcoming-card">
+        <span class="upcoming-tag">SAT Math</span>
+        <h3>How to Approach SAT Math When You're Running Out of Time</h3>
+        <p>Timing strategy, question triage and the high-yield topics that appear most often on the digital SAT.</p>
+      </div>
+      <div class="upcoming-card">
+        <span class="upcoming-tag">IB Strategy</span>
+        <h3>Year 1 vs Year 2: How to Use Your IB Time Wisely</h3>
+        <p>What to prioritise in each year of the Diploma, when to start past papers, and how to plan around the IA.</p>
+      </div>
+    </div>
+    <p class="upcoming-label reveal">Coming soon</p>
+
+  </div>
+</section>
+
+<hr class="divider" />
+
+<section class="cta-band">
+  <div class="container">
+    <div class="section-label reveal" style="justify-content: center;">In the meantime</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
+      Have a specific question?<br /><em>Just ask.</em>
+    </h2>
+    <p class="cta-band-desc reveal reveal-delay-2">
+      The free intro call is the fastest way to get a direct answer for your student's specific situation — no article can replace that.
+    </p>
+    <div class="cta-band-actions reveal reveal-delay-3">
+      <a href="contact.html" class="btn btn-gold">Book a Free Call</a>
+      <a href="faq.html" class="btn btn-outline">Read the FAQ</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević</p>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
+      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const header = document.getElementById('header');
+const navCta = document.getElementById('navCta');
+const bannerHeight = document.querySelector('.availability-banner').offsetHeight;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > bannerHeight + 10) {
+    header.classList.add('scrolled');
+    navCta.style.display = 'inline-flex';
+  } else {
+    header.classList.remove('scrolled');
+    navCta.style.display = 'none';
+  }
+});
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuClose = document.getElementById('menuClose');
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
