@@ -27,10 +27,6 @@
 </div>
 
 <div class="site-top">
-  <div class="availability-banner">
-    <span class="avail-dot"></span>
-    Currently accepting new students for the 2026–27 academic year &middot; Limited spots available
-  </div>
   <header id="header">
     <div class="container nav">
       <a href="/" class="logo">
@@ -45,7 +41,6 @@
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <a href="/contact/" class="btn btn-gold" style="display:none" id="navCta">Book a Call</a>
       <div class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </div>
@@ -197,16 +192,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const header = document.getElementById('header');
-const navCta = document.getElementById('navCta');
-const bannerHeight = document.querySelector('.availability-banner').offsetHeight;
-window.addEventListener('scroll', () => {
-  if (window.scrollY > bannerHeight + 10) {
-    header.classList.add('scrolled');
-    navCta.style.display = 'inline-flex';
-  } else {
-    header.classList.remove('scrolled');
-    navCta.style.display = 'none';
-  }
 });
 
 const hamburger = document.getElementById('hamburger');
