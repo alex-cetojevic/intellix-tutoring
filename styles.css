@@ -591,7 +591,7 @@ section { padding: 100px 0; }
 /* ── ABOUT ── */
 .about-grid {
   display: grid;
-  grid-template-columns: 440px 1fr;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
   gap: 80px;
   align-items: center;
 }
@@ -1212,33 +1212,68 @@ footer {
 }
 
 @media (max-width: 600px) {
-  /* Layout */
+  /* ── Global overflow lock ── */
+  body, html { overflow-x: hidden; }
+  * { max-width: 100%; box-sizing: border-box; }
+
+  /* ── Layout ── */
   .container { padding: 0 16px; }
   section { padding: 56px 0; }
-  .page-hero { padding: 108px 0 44px; }
-  .page-hero h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
-  .page-hero p { font-size: 0.95rem; }
 
-  /* Hero */
-  .hero { min-height: auto; padding: 96px 0 48px; }
-  .hero h1 { font-size: clamp(2.2rem, 9vw, 2.8rem); margin-bottom: 18px; }
-  .hero-sub { font-size: 0.95rem; margin-bottom: 28px; }
+  /* ── Page heroes (inner pages) ── */
+  .page-hero { padding: 108px 0 44px; }
+  .page-hero h1 { font-size: clamp(1.9rem, 8vw, 2.4rem); letter-spacing: -0.01em; }
+  .page-hero p { font-size: 0.92rem; }
+  .page-hero-label { font-size: 0.68rem; }
+
+  /* ── Hero section ── */
+  .hero { min-height: auto; padding: 96px 0 48px; overflow: hidden; }
+  .hero h1 { font-size: clamp(2rem, 8.5vw, 2.6rem); margin-bottom: 16px; }
+  .hero-sub { font-size: 0.93rem; margin-bottom: 24px; max-width: 100%; }
+  .hero-label { font-size: 0.68rem; letter-spacing: 0.1em; flex-wrap: wrap; gap: 4px; }
   .hero-actions { gap: 10px; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .hero-proof { gap: 16px; flex-wrap: wrap; }
   .proof-num { font-size: 1.5rem; }
+  .proof-label { font-size: 0.72rem; }
 
-  /* Hero card — show photo only, hide credential table to reduce height */
-  .hero-card { max-width: 100%; }
+  /* ── Hero card: portrait crop + compact body ── */
+  .hero-card { max-width: 320px; margin: 0 auto; }
+  .hero-card-photo {
+    aspect-ratio: 4/5;           /* portrait instead of 4/3 landscape */
+    object-position: center 10%; /* keep face in frame */
+  }
+  .hero-card-body { padding: 14px 16px 16px; }
+  .hero-card-name { font-size: 1.1rem; }
+  .hero-card-role { font-size: 0.7rem; white-space: normal; word-break: break-word; }
   .hero-cred-table { display: none; }
-  .hero-card-body { padding: 16px 18px 18px; }
 
-  /* Grids */
+  /* ── About: remove absolutely-positioned overflow elements ── */
+  .about-decoration { display: none; }
+  .about-score { display: none; }
+  .about-visual { max-width: 260px; margin: 0 auto; overflow: visible; }
+  .about-photo { width: 100%; }
+
+  /* ── About graduation feature strip ── */
+  .graduation-feature {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 56px 16px !important;
+  }
+  .graduation-feature picture img { max-width: 220px; margin: 0 auto; display: block; }
+
+  /* ── Section labels / eyebrows ── */
+  .section-label { font-size: 0.68rem; }
+  .section-title { font-size: clamp(1.6rem, 7vw, 2rem); }
+
+  /* ── Service / why cards ── */
   .services-grid { grid-template-columns: 1fr; }
   .services-teaser-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 24px 20px; }
+  .why-card { padding: 24px 20px; }
 
-  /* Testimonials — horizontal scroll, not tall stacked list */
+  /* ── Testimonials: horizontal swipe ── */
   .t-scroll {
     display: flex !important;
     grid-template-columns: unset;
@@ -1247,6 +1282,7 @@ footer {
     scroll-snap-type: x mandatory;
     gap: 14px;
     padding-bottom: 12px;
+    overscroll-behavior-x: contain;
   }
   .t-card {
     min-width: 80vw;
@@ -1255,28 +1291,25 @@ footer {
     scroll-snap-align: start;
   }
 
-  /* Outcomes stats — 2 columns on mobile */
+  /* ── Outcomes stats: 2-col ── */
   .outcomes-grid { grid-template-columns: 1fr 1fr !important; }
 
-  /* About feature strip — stack on mobile */
-  .graduation-feature { grid-template-columns: 1fr !important; gap: 24px !important; }
-  .graduation-feature img { max-width: 240px; margin: 0 auto; }
-
-  /* About visual */
-  .about-visual { max-width: 260px; margin: 0 auto; }
-
-  /* Form */
+  /* ── Form ── */
   .form-row-2 { grid-template-columns: 1fr; }
+  .contact-form { padding: 24px 20px; }
 
-  /* Footer */
-  .footer-inner { flex-direction: column; text-align: center; }
-  .footer-links { justify-content: center; flex-wrap: wrap; gap: 16px; }
+  /* ── Footer ── */
+  .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 12px; }
 
-  /* Availability banner — smaller text so it doesn't wrap awkwardly */
-  .availability-banner { font-size: 0.7rem; padding: 7px 12px; }
+  /* ── Availability banner ── */
+  .availability-banner { font-size: 0.68rem; padding: 7px 12px; letter-spacing: 0.03em; }
 
-  /* CTA band */
+  /* ── CTA band ── */
   .cta-band { padding: 56px 0; }
   .cta-band-actions { flex-direction: column; align-items: center; }
   .cta-band-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
+
+  /* ── Steps (services how-it-works) ── */
+  .step { padding: 0 8px; }
 }
