@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="canonical" href="https://intellixtutoring.com/contact/" />
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -136,6 +137,36 @@
             </div>
             <div class="form-row-2">
               <div class="form-row">
+                <label class="form-label" for="fservice">Subject Area</label>
+                <select class="form-select" id="fservice" name="service" required>
+                  <option value="" disabled selected>Select a subject&hellip;</option>
+                  <option>IB Maths AA HL</option>
+                  <option>IB Maths AA SL</option>
+                  <option>IB Maths AI HL</option>
+                  <option>IB Maths AI SL</option>
+                  <option>IB Physics HL</option>
+                  <option>IB Physics SL</option>
+                  <option>SAT Math</option>
+                  <option>Bocconi Test Prep</option>
+                  <option>Summer Revision Course</option>
+                  <option>University Mathematics</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="fsituation">Main concern</label>
+                <select class="form-select" id="fsituation" name="situation">
+                  <option value="" disabled selected>Select one&hellip;</option>
+                  <option>Struggling with specific topics</option>
+                  <option>Exam preparation</option>
+                  <option>Long-term regular support</option>
+                  <option>Starting fresh / building foundations</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-row">
                 <label class="form-label" for="fphone">WhatsApp / Phone <span style="font-weight:300;text-transform:none;letter-spacing:0;">(optional)</span></label>
                 <input class="form-input" type="tel" id="fphone" name="phone" placeholder="+385 91 234 5678" />
               </div>
@@ -149,25 +180,8 @@
               </div>
             </div>
             <div class="form-row">
-              <label class="form-label" for="fservice">Subject Area</label>
-              <select class="form-select" id="fservice" name="service" required>
-                <option value="" disabled selected>Select a service&hellip;</option>
-                <option>IB Maths AA HL</option>
-                <option>IB Maths AA SL</option>
-                <option>IB Maths AI HL</option>
-                <option>IB Maths AI SL</option>
-                <option>IB Physics HL</option>
-                <option>IB Physics SL</option>
-                <option>SAT Math</option>
-                <option>Bocconi Test Prep</option>
-                <option>Summer Revision Course</option>
-                <option>University Mathematics</option>
-                <option>Other / Not sure yet</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label class="form-label" for="fmessage">Tell me about the student</label>
-              <textarea class="form-textarea" id="fmessage" name="message" placeholder="Current grade, goals, any specific topics or exams coming up&hellip;" required></textarea>
+              <label class="form-label" for="fmessage">Anything else to add <span style="font-weight:300;text-transform:none;letter-spacing:0;">(optional)</span></label>
+              <textarea class="form-textarea" id="fmessage" name="message" placeholder="Current grade, upcoming exams, any context that would help&hellip;" style="min-height:80px;"></textarea>
             </div>
             <button type="submit" class="btn btn-gold form-submit">Send Message</button>
           </form>

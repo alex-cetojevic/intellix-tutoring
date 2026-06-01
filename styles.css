@@ -208,12 +208,12 @@ header.scrolled {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 170px 0 80px;
+  padding: 120px 0 56px;
   overflow: hidden;
 }
 .hero::before {
@@ -1199,6 +1199,8 @@ footer {
   .why-grid { grid-template-columns: 1fr 1fr; }
   .t-scroll { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-form { order: -1; }
+  .contact-info { order: 1; }
   .services-header { flex-direction: column; align-items: flex-start; }
   .nav-links { display: none; }
   .hamburger { display: flex; }

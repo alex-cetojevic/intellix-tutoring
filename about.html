@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="canonical" href="https://intellixtutoring.com/about/" />
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -68,7 +69,11 @@
     <div class="about-grid">
       <div class="about-visual reveal">
         <div class="about-decoration"></div>
-        <img src="/alex.jpg" alt="Alex Ćetojević — BSc Mathematics graduation, University of Trieste" class="about-photo" />
+        <picture>
+          <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w" sizes="(max-width: 600px) 100vw, 320px" />
+          <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w" sizes="(max-width: 600px) 100vw, 320px" />
+          <img src="/alex-800.jpg" alt="Alex Ćetojević — BSc Mathematics graduation, University of Trieste" class="about-photo" width="320" height="427" loading="lazy" decoding="async" />
+        </picture>
         <div class="about-score">
           <span class="score-num">43/45</span>
           <div class="score-label">IB Score</div>
@@ -155,7 +160,11 @@
 <section style="padding: 0;">
   <div style="max-width: 860px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: center;">
     <div class="reveal" style="position:relative;">
-      <img src="/alex.jpg" alt="Alex Ćetojević — BSc Mathematics, University of Trieste, October 2025" style="width:100%;border-radius:16px;border:1px solid rgba(201,168,76,0.25);display:block;object-fit:cover;" />
+      <picture>
+      <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w" sizes="(max-width: 600px) 100vw, 280px" />
+      <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w" sizes="(max-width: 600px) 100vw, 280px" />
+      <img src="/alex-800.jpg" alt="Alex Ćetojević — BSc Mathematics, University of Trieste, October 2025" style="width:100%;border-radius:16px;border:1px solid rgba(201,168,76,0.25);display:block;object-fit:cover;" width="280" loading="lazy" decoding="async" />
+    </picture>
     </div>
     <div class="reveal reveal-delay-1">
       <div class="section-label" style="margin-bottom:16px;">University of Trieste &middot; October 2025</div>
