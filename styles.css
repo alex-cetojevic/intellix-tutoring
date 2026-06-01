@@ -184,7 +184,7 @@ header.scrolled {
   position: fixed;
   inset: 0;
   background: var(--navy);
-  z-index: 99;
+  z-index: 200;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1312,4 +1312,10 @@ footer {
 
   /* ── Steps (services how-it-works) ── */
   .step { padding: 0 8px; }
+
+  /* ── Full-circle tutoring: stack the 3 steps ── */
+  .full-circle-grid {
+    grid-template-columns: 1fr !important;
+    border-radius: 12px !important;
+  }
 }
