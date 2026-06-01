@@ -191,13 +191,17 @@ header.scrolled {
   gap: 40px;
 }
 .mobile-menu.open { display: flex; }
-.mobile-menu a {
+.mobile-menu a:not(.btn) {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: var(--cream);
   transition: color 0.2s;
 }
-.mobile-menu a:hover { color: var(--gold-light); }
+.mobile-menu a:not(.btn):hover { color: var(--gold-light); }
+.mobile-menu .btn-gold {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+}
 .mobile-close {
   position: absolute;
   top: 24px; right: 24px;
