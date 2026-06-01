@@ -41,6 +41,11 @@
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
+      <div class="lang-switch">
+        <a href="/faq.html" class="active">EN</a>
+        <span>|</span>
+        <a href="/it/faq.html">IT</a>
+      </div>
       <div class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </div>
@@ -229,6 +234,16 @@
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Language auto-detect (runs only once per session)
+if (!localStorage.getItem('langChosen')) {
+  if (navigator.language && navigator.language.startsWith('it')) {
+    localStorage.setItem('langChosen', 'it');
+    const itPath = '/it' + window.location.pathname;
+    window.location.replace(itPath);
+  } else {
+    localStorage.setItem('langChosen', 'en');
+  }
+}
 
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');

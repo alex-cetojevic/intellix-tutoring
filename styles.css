@@ -163,6 +163,25 @@ header.scrolled {
   color: var(--gold-light);
 }
 
+/* language switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+.lang-switch a {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.lang-switch a:hover { color: var(--cream); }
+.lang-switch a.active { color: var(--gold-light); }
+.lang-switch span { color: var(--border-light); font-weight: 300; }
+
 /* hamburger */
 .hamburger {
   display: none;
