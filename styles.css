@@ -1212,13 +1212,71 @@ footer {
 }
 
 @media (max-width: 600px) {
+  /* Layout */
+  .container { padding: 0 16px; }
+  section { padding: 56px 0; }
+  .page-hero { padding: 108px 0 44px; }
+  .page-hero h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .page-hero p { font-size: 0.95rem; }
+
+  /* Hero */
+  .hero { min-height: auto; padding: 96px 0 48px; }
+  .hero h1 { font-size: clamp(2.2rem, 9vw, 2.8rem); margin-bottom: 18px; }
+  .hero-sub { font-size: 0.95rem; margin-bottom: 28px; }
+  .hero-actions { gap: 10px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-proof { gap: 16px; flex-wrap: wrap; }
+  .proof-num { font-size: 1.5rem; }
+
+  /* Hero card — show photo only, hide credential table to reduce height */
+  .hero-card { max-width: 100%; }
+  .hero-cred-table { display: none; }
+  .hero-card-body { padding: 16px 18px 18px; }
+
+  /* Grids */
   .services-grid { grid-template-columns: 1fr; }
   .services-teaser-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
-  .t-scroll { grid-template-columns: 1fr; }
-  .hero-proof { gap: 20px; }
-  .footer-inner { flex-direction: column; text-align: center; }
+
+  /* Testimonials — horizontal scroll, not tall stacked list */
+  .t-scroll {
+    display: flex !important;
+    grid-template-columns: unset;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 14px;
+    padding-bottom: 12px;
+  }
+  .t-card {
+    min-width: 80vw;
+    max-width: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  /* Outcomes stats — 2 columns on mobile */
+  .outcomes-grid { grid-template-columns: 1fr 1fr !important; }
+
+  /* About feature strip — stack on mobile */
+  .graduation-feature { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .graduation-feature img { max-width: 240px; margin: 0 auto; }
+
+  /* About visual */
+  .about-visual { max-width: 260px; margin: 0 auto; }
+
+  /* Form */
   .form-row-2 { grid-template-columns: 1fr; }
-  section { padding: 72px 0; }
-  .page-hero { padding: 130px 0 60px; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 16px; }
+
+  /* Availability banner — smaller text so it doesn't wrap awkwardly */
+  .availability-banner { font-size: 0.7rem; padding: 7px 12px; }
+
+  /* CTA band */
+  .cta-band { padding: 56px 0; }
+  .cta-band-actions { flex-direction: column; align-items: center; }
+  .cta-band-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
 }
