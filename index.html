@@ -38,6 +38,17 @@
 <body>
 
 <!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/services/" onclick="closeMobileMenu()">Services</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
+  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
+  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
+</div>
+
 <!-- SITE TOP -->
 <div class="site-top">
   <div class="availability-banner">
@@ -64,15 +75,6 @@
       </div>
     </div>
   </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="/" onclick="closeMobileMenu()">Home</a>
-    <a href="/services/" onclick="closeMobileMenu()">Services</a>
-    <a href="/about/" onclick="closeMobileMenu()">About</a>
-    <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-    <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-    <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-  </div>
 </div>
 
 <!-- HERO -->
@@ -262,7 +264,7 @@
     <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-top:10px;">
       What students <em>actually achieve.</em>
     </h2>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-light);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:40px;" class="outcomes-grid reveal reveal-delay-2">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-light);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:40px;" class="reveal reveal-delay-2">
       <div style="background:var(--navy);padding:28px 20px;text-align:center;">
         <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+2</div>
         <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Avg. IB grade lift</div>
