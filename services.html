@@ -17,17 +17,13 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <span class="mobile-close" id="menuClose">&#10005;</span>
-  <nav>
-    <a href="/" onclick="closeMobileMenu()">Home</a>
-    <a href="/services/" onclick="closeMobileMenu()">Services</a>
-    <a href="/about/" onclick="closeMobileMenu()">About</a>
-    <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-    <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  </nav>
-  <div class="mobile-menu-cta">
-    <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Free Intro Call</a>
-  </div>
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/services/" onclick="closeMobileMenu()">Services</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
+  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
+  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
 </div>
 
 <div class="site-top">
@@ -199,15 +195,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.add('open');
-  hamburger.classList.add('is-open');
-});
-menuClose.addEventListener('click', () => closeMobileMenu());
-function closeMobileMenu() {
-  mobileMenu.classList.remove('open');
-  hamburger.classList.remove('is-open');
-}
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
