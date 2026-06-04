@@ -102,8 +102,44 @@
     margin-top: 20px;
   }
 
+  .post-list { display: flex; flex-direction: column; gap: 20px; }
+  .post-card {
+    display: block;
+    background: var(--navy-mid);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 32px 28px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .post-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+  .post-card-tag {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold);
+    display: block; margin-bottom: 12px;
+  }
+  .post-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; font-weight: 600; color: var(--cream);
+    line-height: 1.3; margin-bottom: 12px;
+  }
+  .post-card-excerpt {
+    font-size: 0.95rem; color: var(--text-muted);
+    line-height: 1.75; font-weight: 300; margin-bottom: 18px;
+  }
+  .post-card-meta {
+    font-size: 0.8rem; color: var(--text-muted); font-weight: 400;
+  }
+  .post-card-readmore {
+    display: inline-block; margin-top: 16px;
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .post-card:hover .post-card-readmore { color: var(--gold-light); }
+
   @media (max-width: 768px) {
     .upcoming-grid { grid-template-columns: 1fr; }
+    .post-card { padding: 26px 22px 24px; }
+    .post-card-title { font-size: 1.25rem; }
   }
 </style>
 </head>
@@ -160,17 +196,19 @@
 <section>
   <div class="container">
 
-    <div class="blog-empty reveal">
-      <div class="blog-empty-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-      </div>
-      <h2>First articles coming soon.</h2>
-      <p>
-        I'm working on a set of guides covering the topics that come up most in lessons —
-        common mistakes in IB Maths AA HL, how to approach SAT Math under time pressure,
-        what Bocconi actually tests, and more. Check back soon.
-      </p>
-      <a href="/contact/" class="btn btn-gold">Book a Free Intro Call Instead</a>
+    <div class="post-list">
+      <a href="/blog/ib-math-aa-hl-study-tips/" class="post-card reveal">
+        <span class="post-card-tag">IB Maths AA HL</span>
+        <h2 class="post-card-title">IB Math AA HL Study Tips: How to Succeed in Mathematics Analysis and Approaches</h2>
+        <p class="post-card-excerpt">
+          A complete, practical guide to mastering IB Math AA HL — the hardest topics and how to attack each one,
+          the IA criteria that actually move your score, Paper 1, 2 &amp; 3 strategy, and a study plan that takes you
+          from Year 1 to exam day.
+        </p>
+        <span class="post-card-meta">4 June 2026 &middot; 12 min read</span>
+        <br />
+        <span class="post-card-readmore">Read the guide &rarr;</span>
+      </a>
     </div>
 
     <div class="upcoming-grid reveal">
