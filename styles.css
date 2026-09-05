@@ -1413,3 +1413,6 @@ footer {
   body { font-size: 1rem; }
   .parent-card { padding: 28px 22px; }
 }
+
+/* keyword lead line folded into the hero H1 (SEO) — visually identical to the old hero label */
+.hero-label-h1 { display: inline-flex; margin-bottom: 22px; }
