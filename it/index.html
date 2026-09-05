@@ -28,35 +28,104 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Intellix Tutoring",
-  "url": "https://intellixtutoring.com/it/",
-  "inLanguage": "it",
-  "description": "Lezioni private online di Matematica IB (SL e HL), Fisica IB, preparazione SAT, test Bocconi e matematica universitaria.",
-  "logo": "https://intellixtutoring.com/logo-intellix.png",
-  "image": "https://intellixtutoring.com/logo-intellix.png",
-  "founder": {
-    "@type": "Person",
-    "name": "Alex Ćetojević",
-    "jobTitle": "Tutor di Matematica",
-    "description": "Laureato in matematica e tutor online specializzato in Matematica e Fisica IB, preparazione SAT, test di ammissione Bocconi e matematica universitaria del primo anno.",
-    "image": "https://intellixtutoring.com/alex-800.jpg",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Trieste"
-    },
-    "knowsLanguage": [
-      "en",
-      "it",
-      "hr"
-    ],
-    "worksFor": {
+  "@graph": [
+    {
       "@type": "EducationalOrganization",
+      "@id": "https://intellixtutoring.com/#org",
       "name": "Intellix Tutoring",
-      "url": "https://intellixtutoring.com"
+      "url": "https://intellixtutoring.com/",
+      "description": "Lezioni private online di Matematica IB (AA e AI, SL e HL), Fisica IB, SAT Math, preparazione al test di ammissione Bocconi e matematica universitaria del primo anno.",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://intellixtutoring.com/#logo",
+        "url": "https://intellixtutoring.com/logo-intellix.png"
+      },
+      "image": {
+        "@id": "https://intellixtutoring.com/#logo"
+      },
+      "founder": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "employee": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "email": "alexcetojevic12@gmail.com",
+      "telephone": "+385953521299",
+      "areaServed": "Online",
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "alexcetojevic12@gmail.com",
+        "telephone": "+385953521299",
+        "availableLanguage": [
+          "English",
+          "Italian",
+          "Croatian"
+        ],
+        "areaServed": "Online"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellixtutoring.com/#alex",
+      "name": "Alex Ćetojević",
+      "jobTitle": "Tutor di Matematica",
+      "description": "Laureato in matematica e tutor online. Ha concluso il Diploma IB con 43/45, con un 7 in Mathematics AA HL e un 7 in Physics HL, e una laurea triennale in Matematica all'Università di Trieste.",
+      "image": "https://intellixtutoring.com/alex-800.jpg",
+      "url": "https://intellixtutoring.com/it/about/",
+      "worksFor": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Trieste"
+      },
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "knowsAbout": [
+        "IB Mathematics Analysis and Approaches",
+        "IB Mathematics Applications and Interpretation",
+        "IB Physics",
+        "SAT Mathematics",
+        "Bocconi admissions test",
+        "University mathematics"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://intellixtutoring.com/#website",
+      "url": "https://intellixtutoring.com/",
+      "name": "Intellix Tutoring",
+      "publisher": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://intellixtutoring.com/it/#webpage",
+      "url": "https://intellixtutoring.com/it/",
+      "name": "Intellix Tutoring | Tutor IB Maths, SAT Prep & Matematica Online",
+      "isPartOf": {
+        "@id": "https://intellixtutoring.com/#website"
+      },
+      "about": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "inLanguage": "it"
     }
-  },
-  "areaServed": "Online"
+  ]
 }
 </script>
 </head>

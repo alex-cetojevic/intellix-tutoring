@@ -30,30 +30,107 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "url": "https://intellixtutoring.com/about/",
-  "inLanguage": "en",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Alex Ćetojević",
-    "jobTitle": "Mathematics Tutor",
-    "description": "Maths graduate and online tutor specialising in IB Mathematics and Physics, SAT preparation, Bocconi admissions testing and first-year university mathematics.",
-    "image": "https://intellixtutoring.com/alex-800.jpg",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Trieste"
-    },
-    "knowsLanguage": [
-      "en",
-      "it",
-      "hr"
-    ],
-    "worksFor": {
+  "@graph": [
+    {
       "@type": "EducationalOrganization",
+      "@id": "https://intellixtutoring.com/#org",
       "name": "Intellix Tutoring",
-      "url": "https://intellixtutoring.com"
+      "url": "https://intellixtutoring.com/",
+      "description": "Online one-to-one tutoring in IB Mathematics (AA and AI, SL and HL), IB Physics, SAT Math, Bocconi admissions test preparation and first-year university mathematics.",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://intellixtutoring.com/#logo",
+        "url": "https://intellixtutoring.com/logo-intellix.png"
+      },
+      "image": {
+        "@id": "https://intellixtutoring.com/#logo"
+      },
+      "founder": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "employee": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "email": "alexcetojevic12@gmail.com",
+      "telephone": "+385953521299",
+      "areaServed": "Online",
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "alexcetojevic12@gmail.com",
+        "telephone": "+385953521299",
+        "availableLanguage": [
+          "English",
+          "Italian",
+          "Croatian"
+        ],
+        "areaServed": "Online"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellixtutoring.com/#alex",
+      "name": "Alex Ćetojević",
+      "jobTitle": "Mathematics Tutor",
+      "description": "Mathematics graduate and online tutor. Graduated the IB Diploma with 43/45, including a 7 in Mathematics AA HL and a 7 in Physics HL, and holds a BSc in Mathematics from the University of Trieste.",
+      "image": "https://intellixtutoring.com/alex-800.jpg",
+      "url": "https://intellixtutoring.com/about/",
+      "worksFor": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Trieste"
+      },
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "knowsAbout": [
+        "IB Mathematics Analysis and Approaches",
+        "IB Mathematics Applications and Interpretation",
+        "IB Physics",
+        "SAT Mathematics",
+        "Bocconi admissions test",
+        "University mathematics"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://intellixtutoring.com/#website",
+      "url": "https://intellixtutoring.com/",
+      "name": "Intellix Tutoring",
+      "publisher": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://intellixtutoring.com/about/#webpage",
+      "url": "https://intellixtutoring.com/about/",
+      "name": "About Alex | Intellix Tutoring",
+      "isPartOf": {
+        "@id": "https://intellixtutoring.com/#website"
+      },
+      "about": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://intellixtutoring.com/#alex"
+      }
     }
-  }
+  ]
 }
 </script>
 </head>
@@ -86,7 +163,7 @@
         <li><a href="/contact/">Contact</a></li>
       </ul>
       <div class="lang-switch">
-        <a href="/about.html" class="active">EN</a>
+        <a href="/about/" class="active">EN</a>
         <span>|</span>
         <a href="/it/about/">IT</a>
       </div>

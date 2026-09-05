@@ -1,0 +1,137 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RMPQWV1JF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RMPQWV1JF');
+</script>
+<meta charset="UTF-8" />
+<title>Page not found | Intellix Tutoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="That page does not exist. Find IB Maths and Physics, SAT and Bocconi tutoring at Intellix Tutoring." />
+<meta name="keywords" content="IB math tutor, IB Maths HL, IB Maths SL, IB tutoring online, SAT math tutor, SAT preparation, Bocconi test prep, university math tutoring, online maths tutor, Intellix Tutoring, math tutor Europe" />
+<meta property="og:title" content="Intellix Tutoring | IB Math, SAT Prep &amp; Online Maths Support" />
+<meta property="og:description" content="Support that builds clarity, confidence, and better grades. Online tutoring for IB Maths, SAT, Bocconi test prep, and university-level maths." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://intellixtutoring.com/" />
+<meta property="og:image" content="https://intellixtutoring.com/alex-800.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="/logo-intellix.png" />
+<link rel="apple-touch-icon" href="/logo-intellix.png" />
+<link rel="stylesheet" href="/styles.css" />
+<meta name="robots" content="noindex,follow" />
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/services/" onclick="closeMobileMenu()">Services</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
+  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
+  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
+</div>
+
+<!-- SITE TOP -->
+<div class="site-top">
+  <header id="header">
+    <div class="container nav">
+      <a href="/" class="logo">
+        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
+        <span class="logo-text">Intellix Tutoring</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="/" class="active">EN</a>
+        <span>|</span>
+        <a href="/it/">IT</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">Error 404</div>
+    <h1>This page doesn't exist.</h1>
+    <p>The link may be out of date, or the address slightly off. Everything you're likely looking for is below.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;">
+      <a href="/" class="btn btn-gold">Back to Home</a>
+      <a href="/services/" class="btn btn-outline">See Services</a>
+      <a href="/contact/" class="btn btn-outline">Book a Free Call</a>
+    </div>
+    <p style="margin-top:30px;font-size:0.92rem;">Or try the <a href="/faq/" style="color:var(--gold-light);text-decoration:underline;">FAQ</a>, the <a href="/blog/" style="color:var(--gold-light);text-decoration:underline;">blog</a>, or the <a href="/it/" style="color:var(--gold-light);text-decoration:underline;">Italian site</a>.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević</p>
+    <div class="footer-links">
+      <a href="/services/">Services</a>
+      <a href="/about/">About</a>
+      <a href="/faq/">FAQ</a>
+      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
+      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuClose = document.getElementById('menuClose');
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const form = document.getElementById('contactForm');
+const success = document.getElementById('formSuccess');
+const wrapper = document.getElementById('contactFormWrapper');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+    if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
+    else { btn.textContent = 'Error — try emailing directly'; btn.disabled = false; }
+  } catch { btn.textContent = 'Error — try emailing directly'; btn.disabled = false; }
+});
+</script>
+</body>
+</html>
