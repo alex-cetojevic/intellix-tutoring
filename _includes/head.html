@@ -1,0 +1,47 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RMPQWV1JF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RMPQWV1JF');
+</script>
+<meta charset="UTF-8" />
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ page.description }}" />
+{%- if page.robots %}
+<meta name="robots" content="{{ page.robots }}" />
+{%- endif %}
+{%- if page.canonical %}
+<link rel="canonical" href="{{ page.canonical }}" />
+{%- endif %}
+{%- unless page.no_twitter %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ page.twitter_title | default: page.title }}" />
+<meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:image" content="https://intellixtutoring.com/alex-800.jpg" />
+{%- endunless %}
+<meta property="og:title" content="{{ page.og_title | default: page.title }}" />
+<meta property="og:description" content="{{ page.og_description | default: page.description }}" />
+<meta property="og:type" content="{{ page.og_type }}" />
+<meta property="og:url" content="{{ page.og_url | default: page.canonical }}" />
+<meta property="og:site_name" content="Intellix Tutoring" />
+<meta property="og:image" content="https://intellixtutoring.com/alex-800.jpg" />
+<meta property="og:locale" content="{{ page.locale }}" />
+{%- if page.hreflang_en %}
+<link rel="alternate" hreflang="en" href="{{ page.hreflang_en }}" />
+<link rel="alternate" hreflang="it" href="{{ page.hreflang_it }}" />
+<link rel="alternate" hreflang="x-default" href="{{ page.hreflang_en }}" />
+{%- endif %}
+{%- if page.preload %}
+{{ page.preload }}
+{%- endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
