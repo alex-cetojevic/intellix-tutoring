@@ -1431,3 +1431,161 @@ footer {
 }
 .answer-first p { font-size: 1.02rem; line-height: 1.75; color: var(--cream); font-weight: 400; margin: 0; }
 @media (max-width: 600px) { .answer-first { padding: 16px 18px; } }
+
+/* ============================================================
+   BLOG
+   The blog markup shipped without any of these rules, so the
+   index and every article rendered unstyled. Built from the
+   existing tokens only — no new colours.
+   ============================================================ */
+
+/* --- blog index ------------------------------------------- */
+.post-list { display: grid; gap: 20px; margin-top: 40px; }
+.post-card {
+  display: block;                      /* it is an <a>; without this the card is inline */
+  background: var(--navy-mid);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 32px 34px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+.post-card:hover {
+  background: var(--navy-light);
+  border-color: var(--border);
+  transform: translateY(-2px);
+}
+.post-card-tag {
+  display: block;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+}
+.post-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem; font-weight: 600; color: var(--cream);
+  line-height: 1.3; margin: 0 0 12px;
+}
+.post-card:hover .post-card-title { color: var(--gold-light); }
+.post-card-excerpt {
+  font-size: 0.95rem; color: var(--text-muted);
+  line-height: 1.8; margin: 0 0 16px;
+}
+.post-card-meta { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 0.02em; }
+.post-card-readmore {
+  display: inline-block; margin-top: 10px;
+  font-size: 0.86rem; font-weight: 600; color: var(--gold-light);
+  border-bottom: 1px solid rgba(232,201,110,0.35); padding-bottom: 1px;
+}
+
+/* --- "coming soon" cards on the index ---------------------- */
+.upcoming-label {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 16px; display: block;
+}
+.upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+.upcoming-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px dashed var(--border-light);
+  border-radius: 12px; padding: 24px 26px;
+}
+.upcoming-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 600; color: var(--text-cream);
+  line-height: 1.35; margin: 0 0 10px;
+}
+.upcoming-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+.upcoming-tag {
+  display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+}
+
+/* --- article shell ----------------------------------------- */
+.article-section { padding: 0 0 100px; }
+.article-wrap { max-width: 760px; margin: 0 auto; }   /* readable measure */
+.article-back {
+  display: inline-block; margin-bottom: 24px;
+  font-size: 0.84rem; font-weight: 600; color: var(--gold-light); text-decoration: none;
+}
+.article-back:hover { border-bottom: 1px solid rgba(232,201,110,0.5); }
+.article-meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  margin-top: 20px; font-size: 0.84rem; color: var(--text-muted);
+}
+.article-meta a { color: var(--gold-light); }
+.dot {
+  width: 3px; height: 3px; border-radius: 50%;
+  background: var(--text-dim); display: inline-block; flex: none;
+}
+
+/* --- article prose ----------------------------------------- */
+.article-body { font-size: 1.02rem; line-height: 1.85; color: var(--text-cream); }
+.article-body h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem; font-weight: 600; color: var(--cream);
+  line-height: 1.25; margin: 52px 0 18px;
+}
+.article-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem; font-weight: 600; color: var(--cream);
+  line-height: 1.3; margin: 36px 0 14px;
+}
+.article-body p { margin: 0 0 18px; color: var(--text-cream); }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 22px; }
+.article-body li { margin-bottom: 10px; color: var(--text-cream); }
+.article-body strong { color: var(--cream); font-weight: 600; }
+.article-body a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+.article-body table { width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 0.94rem; }
+.article-body th, .article-body td {
+  text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border-light);
+}
+.article-body th { color: var(--gold); font-weight: 600; font-size: 0.86rem; letter-spacing: 0.03em; }
+
+/* pull-quote style aside, same idiom as .answer-first */
+.callout {
+  border-left: 2px solid var(--gold);
+  background: rgba(201,168,76,0.05);
+  border-radius: 0 10px 10px 0;
+  padding: 18px 24px; margin: 28px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem; color: var(--cream); line-height: 1.5;
+}
+
+/* in-article FAQ */
+.faq-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.12rem; font-weight: 600; color: var(--cream);
+  margin: 30px 0 10px; line-height: 1.35;
+}
+.faq-a { font-size: 0.98rem; color: var(--text-muted); line-height: 1.8; margin: 0 0 8px; }
+
+.label-sl, .label-hl { font-weight: 600; margin: 18px 0 6px; font-size: 0.94rem; }
+.label-sl { color: var(--gold-light); }
+.label-hl { color: var(--cream); }
+
+.article-cta {
+  border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px 30px; margin-top: 44px;
+  background: rgba(201,168,76,0.04);
+}
+
+@media (max-width: 900px) {
+  .upcoming-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .post-card { padding: 24px 22px; }
+  .post-card-title { font-size: 1.25rem; }
+  .upcoming-grid { grid-template-columns: 1fr; }
+  .article-body h2 { font-size: 1.45rem; margin: 40px 0 14px; }
+  .article-body h3 { font-size: 1.12rem; }
+  .callout { font-size: 1.05rem; padding: 16px 18px; }
+  .article-cta { padding: 22px 20px; }
+}
+
+/* links inside the practical-list rows (services detail, Bocconi, SAT)
+   were inheriting the muted body colour and reading as plain text */
+.practical-row dd a {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
