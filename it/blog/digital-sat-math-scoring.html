@@ -1,0 +1,417 @@
+---
+title: 'Come viene calcolato davvero il punteggio del SAT di matematica'
+description: 'La sezione Math del SAT digitale è adattiva, solo 40 domande su 44 contano e lasciare in bianco vale quanto sbagliare. Cosa significa per la strategia.'
+canonical: 'https://intellixtutoring.com/it/blog/digital-sat-math-scoring/'
+og_type: 'article'
+locale: 'it_IT'
+hreflang_en: 'https://intellixtutoring.com/blog/digital-sat-math-scoring/'
+hreflang_it: 'https://intellixtutoring.com/it/blog/digital-sat-math-scoring/'
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+{% include head.html %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/#article",
+  "headline": "Come viene calcolato davvero il punteggio del SAT di matematica",
+  "description": "La sezione Math del SAT digitale è adattiva, solo 40 domande su 44 contano e lasciare in bianco vale quanto sbagliare. Cosa significa per la strategia.",
+  "url": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "inLanguage": "it",
+  "wordCount": 1427,
+  "author": {
+    "@id": "https://intellixtutoring.com/#alex"
+  },
+  "publisher": {
+    "@id": "https://intellixtutoring.com/#org"
+  },
+  "image": "https://intellixtutoring.com/alex-800.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/"
+  },
+  "articleSection": "SAT digitale"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quante domande della sezione Math del SAT contano davvero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40 su 44. Ognuno dei due moduli ha 22 domande, di cui 20 operative che contribuiscono al punteggio e 2 quesiti di prova non valutati. Non esiste un modo per riconoscere quelli di prova, quindi conviene rispondere a tutte e 44 come se contassero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ci sono penalità per le risposte sbagliate al SAT digitale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Una risposta sbagliata vale quanto una lasciata in bianco, quindi non rispondere significa rinunciare a un tentativo gratuito. È l'opposto del test di ammissione Bocconi, che toglie 0,2 punti per ogni errore e dove a volte lasciare in bianco è la scelta migliore."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come funziona il secondo modulo adattivo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tutti sostengono lo stesso primo modulo. Il rendimento ottenuto determina se il secondo modulo sarà la versione a difficoltà più bassa o quella più alta. Solo il secondo modulo più difficile dà accesso alla parte alta della scala 200-800, quindi sono le prime 22 domande a fissare di fatto il tetto del punteggio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Si può usare la calcolatrice in tutta la sezione di matematica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. La calcolatrice è ammessa per l'intera sezione Math e una calcolatrice grafica Desmos è integrata nell'app Bluebook. È possibile portare anche la propria, se approvata, e sullo schermo resta disponibile un formulario di riferimento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali argomenti di matematica ci sono nel SAT digitale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quattro aree di contenuto. Algebra vale da 13 a 15 domande, Advanced Math altre 13-15, Problem-Solving and Data Analysis da 5 a 7 e Geometry and Trigonometry da 5 a 7. Algebra e Advanced Math insieme coprono circa tre quarti della sezione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto dura la sezione di matematica del SAT digitale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "70 minuti in totale, divisi in due moduli da 35 minuti con 22 domande ciascuno. Sono circa 95 secondi a domanda, anche se il tempo effettivo richiesto varia parecchio da un quesito all'altro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Meglio sostenere il SAT o il test Bocconi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bocconi accetta il punteggio SAT come alternativa al proprio test di ammissione e considera il risultato migliore, quindi sostenerli entrambi e presentare il più alto è una strategia legittima. Premiano cose diverse: il SAT lascia più tempo a domanda, non penalizza gli errori e consente sempre la calcolatrice, mentre il test Bocconi è più serrato e penalizza le risposte sbagliate."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://intellixtutoring.com/#org",
+      "name": "Intellix Tutoring",
+      "url": "https://intellixtutoring.com/",
+      "description": "Lezioni private online di Matematica IB (AA e AI, SL e HL), Fisica IB, SAT Math, preparazione al test di ammissione Bocconi e matematica universitaria del primo anno.",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://intellixtutoring.com/#logo",
+        "url": "https://intellixtutoring.com/logo-intellix.png"
+      },
+      "image": {
+        "@id": "https://intellixtutoring.com/#logo"
+      },
+      "founder": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "employee": {
+        "@id": "https://intellixtutoring.com/#alex"
+      },
+      "email": "alexcetojevic12@gmail.com",
+      "telephone": "+385953521299",
+      "areaServed": "Online",
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "alexcetojevic12@gmail.com",
+        "telephone": "+385953521299",
+        "availableLanguage": [
+          "English",
+          "Italian",
+          "Croatian"
+        ],
+        "areaServed": "Online"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellixtutoring.com/#alex",
+      "sameAs": [
+        "https://www.linkedin.com/in/alex-cetojevic"
+      ],
+      "name": "Alex Ćetojević",
+      "jobTitle": "Tutor di Matematica",
+      "description": "Laureato in matematica e tutor online. Ha concluso il Diploma IB con 43/45, con un 7 in Mathematics AA HL e un 7 in Physics HL, e una laurea triennale in Matematica all'Università di Trieste.",
+      "image": "https://intellixtutoring.com/alex-800.jpg",
+      "url": "https://intellixtutoring.com/it/about/",
+      "worksFor": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Trieste"
+      },
+      "knowsLanguage": [
+        "en",
+        "it",
+        "hr"
+      ],
+      "knowsAbout": [
+        "IB Mathematics Analysis and Approaches",
+        "IB Mathematics Applications and Interpretation",
+        "IB Physics",
+        "SAT Mathematics",
+        "Bocconi admissions test",
+        "University mathematics"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://intellixtutoring.com/#website",
+      "url": "https://intellixtutoring.com/",
+      "name": "Intellix Tutoring",
+      "publisher": {
+        "@id": "https://intellixtutoring.com/#org"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://intellixtutoring.com/it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://intellixtutoring.com/it/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Come viene calcolato davvero il punteggio del SAT di matematica",
+          "item": "https://intellixtutoring.com/it/blog/digital-sat-math-scoring/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <a href="/it/" onclick="closeMobileMenu()">Home</a>
+  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
+  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
+  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
+  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
+  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
+</div>
+
+<!-- SITE TOP -->
+<div class="site-top">
+  <header id="header">
+    <div class="container nav">
+      <a href="/it/" class="logo">
+        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
+        <span class="logo-text">Intellix Tutoring</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/services/">Servizi</a></li>
+        <li><a href="/it/about/">Chi sono</a></li>
+        <li><a href="/it/faq/">FAQ</a></li>
+        <li><a href="/it/blog/" class="active">Blog</a></li>
+        <li><a href="/it/contact/">Contatti</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="/blog/digital-sat-math-scoring/">EN</a>
+        <span>|</span>
+        <a href="/it/blog/digital-sat-math-scoring/" class="active">IT</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ARTICLE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="article-wrap">
+      <div class="page-hero-label reveal">SAT digitale &middot; Math</div>
+      <h1 class="reveal reveal-delay-1">Come viene calcolato davvero il punteggio del SAT di matematica</h1>
+      <div class="article-meta reveal reveal-delay-2">
+        <span>Di <a href="/it/author/alex-cetojevic/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Alex Ćetojević</a></span>
+        <span class="dot"></span>
+        <span>10 settembre 2026</span>
+        <span class="dot"></span>
+        <span>10 min di lettura</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider" />
+
+<section class="article-section">
+  <div class="container">
+    <article class="article-wrap article-body">
+      <a href="/it/blog/" class="article-back reveal">&larr; Torna al blog</a>
+      <div class="answer-first">
+        <div class="answer-first-label">In breve</div>
+        <p>La sezione Math è composta da 44 domande in 70 minuti, divise in due moduli da 22 domande e 35 minuti ciascuno. Di queste 44, solo 40 vengono conteggiate: due domande per modulo sono quesiti di prova non valutati, e non c&rsquo;è modo di riconoscerli. La sezione è adattiva tra i moduli: il rendimento nel primo determina se il secondo sarà la versione più facile o quella più difficile, e solo quella più difficile dà accesso alla parte alta della scala 200&ndash;800. Poiché una risposta sbagliata costa esattamente quanto una lasciata in bianco, non c&rsquo;è mai motivo di non rispondere.</p>
+      </div>
+      <h2>Com&rsquo;è fatta la sezione</h2>
+      <p>Due moduli, 22 domande e 35 minuti ciascuno. Sono circa 95 secondi a domanda, anche se i quesiti non richiedono tutti lo stesso impegno: gli item brevi di algebra vanno chiusi in fretta per lasciare spazio a quelli in più passaggi.</p>
+      <p>Circa tre quarti delle domande sono a risposta multipla con quattro opzioni. Le restanti richiedono di digitare direttamente la risposta. Questa distinzione conta più di quanto sembri: in quel formato non ci sono opzioni da cui ragionare a ritroso e non esiste punteggio parziale per essersi avvicinati, quindi il calcolo deve reggere fino alla tastiera.</p>
+      <p>La sezione Math vale da 200 a 800 punti, esattamente metà del totale di 1600.</p>
+      <h2>La parte adattiva, e perché il primo modulo pesa di più</h2>
+      <p>È l&rsquo;aspetto più frainteso. Tutti sostengono lo stesso primo modulo. Il rendimento ottenuto indirizza verso uno dei due secondi moduli: la versione a difficoltà più bassa o quella a difficoltà più alta.</p>
+      <p>La conseguenza è che il tetto del tuo punteggio viene fissato prima ancora di iniziare il secondo modulo. Il secondo modulo più facile non può produrre un punteggio nella fascia alta, per quante risposte esatte tu dia. Quindi le prime 22 domande pesano più di quanto suggerisca il loro numero, e la precisione lì vale più di qualsiasi recupero di velocità successivo.</p>
+      <p>In pratica, questo impone un primo modulo deliberato: leggere con attenzione, usare la calcolatrice per verificare invece che per correre, e non lasciare per strada punti facili inseguendo una domanda difficile. L&rsquo;istinto di &ldquo;risparmiare tempo per la fine&rdquo; è l&rsquo;istinto sbagliato in un test adattivo.</p>
+      <h2>Solo 40 domande su 44 contano</h2>
+      <p>Ogni modulo contiene 20 domande operative, che contribuiscono al punteggio, e 2 domande di prova che non contano. Il College Board usa questi quesiti per testare domande destinate alle prove future.</p>
+      <p>Non esiste un modo affidabile per individuarli: non sono segnalati, non sono raggruppati in fondo e non sono sistematicamente più difficili o più strani. L&rsquo;unica risposta sensata è trattare tutte e 44 le domande come se contassero, che è esattamente ciò che il formato presuppone. Chi si convince che una domanda difficile fosse &ldquo;probabilmente sperimentale&rdquo; di solito sbaglia, e quella convinzione costa due volte: sulla domanda e sulla lucidità.</p>
+      <h2>Perché non si lascia mai in bianco</h2>
+      <p>Al SAT non esiste penalità per le risposte sbagliate. Una risposta errata e una lasciata in bianco valgono lo stesso — zero — il che significa che una domanda senza risposta è un tentativo gratuito a cui hai rinunciato.</p>
+      <p>Vale la pena dirlo esplicitamente perché è l&rsquo;opposto della regola del <a href="/it/preparazione-test-bocconi/">test di ammissione Bocconi</a>, dove una risposta sbagliata costa 0,2 punti e a volte lasciare in bianco è la scelta giusta. Chi prepara entrambi nello stesso anno deve tenere due abitudini contraddittorie, e sotto pressione emerge quella sbagliata. Se sostieni entrambi, allena la differenza di proposito invece di dare per scontato che te la ricorderai il giorno stesso.</p>
+      <p>La regola pratica per il SAT: con due minuti alla fine, assicurati che ogni domanda abbia qualcosa dentro. Elimina ciò che puoi, poi scegli.</p>
+      <h2>Dove stanno davvero i punti</h2>
+      <p>Le 40 domande valutate provengono da quattro aree di contenuto, e la distribuzione è pubblica:</p>
+      <ul>
+      <li><strong>Algebra — da 13 a 15 domande.</strong> Equazioni e disequazioni lineari, sistemi, funzioni lineari e relativi grafici.</li>
+      <li><strong>Advanced Math — da 13 a 15 domande.</strong> Equazioni di secondo grado, polinomi, esponenziali, radicali, espressioni razionali e sistemi non lineari.</li>
+      <li><strong>Problem-Solving and Data Analysis — da 5 a 7 domande.</strong> Rapporti, tassi, percentuali, probabilità e lettura di dati da tabelle e grafici.</li>
+      <li><strong>Geometry and Trigonometry — da 5 a 7 domande.</strong> Area e volume, rette e angoli, triangoli, trigonometria del triangolo rettangolo e circonferenze.</li>
+      </ul>
+      <p>Algebra e Advanced Math insieme valgono circa tre quarti della sezione. Chi è incerto su equazioni di secondo grado e funzioni sta perdendo punti nel bacino più grande della prova, ed è da lì che la preparazione dovrebbe partire — non dalla geometria, che sembra meno familiare ma pesa molto meno.</p>
+      <h2>La calcolatrice è sempre ammessa, e questo cambia le cose</h2>
+      <p>La calcolatrice è consentita per l&rsquo;intera sezione Math, e una calcolatrice grafica Desmos è integrata nell&rsquo;app Bluebook. Puoi comunque portare la tua, se approvata. Sullo schermo resta disponibile un formulario di riferimento.</p>
+      <p>La padronanza del Desmos integrato vale punti reali, e la maggior parte degli studenti lo sfrutta poco. Rappresentare graficamente i due membri di un&rsquo;equazione per trovarne le intersezioni, risolvere sistemi visivamente e verificare una fattorizzazione sono spesso più rapidi dell&rsquo;algebra. Il momento per impararlo è la preparazione, non l&rsquo;esame: cercare una funzione sotto pressione costa più di quanto sarebbe costata l&rsquo;algebra.</p>
+      <h2>Come prepararsi, nell&rsquo;ordine giusto</h2>
+      <ul>
+      <li><strong>Prima la diagnosi per area di contenuto.</strong> Le aree sono quattro e due valgono tre quarti dei punti. Capire quale sta perdendo punti viene prima di tutto il resto.</li>
+      <li><strong>Prima la precisione, poi la velocità.</strong> In un test adattivo la precisione iniziale fissa il tetto. Correre nel primo modulo per guadagnare tempo è controproducente.</li>
+      <li><strong>Esercitarsi su Bluebook.</strong> Il College Board mette a disposizione simulazioni ufficiali complete e adattive gratuite, nella stessa app in cui sosterrai la prova. Il materiale di terze parti non riproduce l&rsquo;instradamento tra moduli.</li>
+      <li><strong>Costruire l&rsquo;abitudine di non lasciare mai in bianco.</strong> Va resa automatica in allenamento, così regge alla pressione del giorno dell&rsquo;esame.</li>
+      </ul>
+      <p>Date, costi e scadenze di iscrizione sono pubblicati dal <a href="https://satsuite.collegeboard.org/sat" target="_blank" rel="noopener noreferrer">College Board</a> e cambiano a ogni ciclo. Per un lavoro strutturato sulla matematica, il <a href="/it/tutor-sat-matematica/">tutoring individuale per il SAT</a> parte proprio dalla diagnosi descritta sopra.</p>
+      <h2>Domande frequenti</h2>
+      <h3 class="faq-q">Quante domande della sezione Math del SAT contano davvero?</h3>
+      <p class="faq-a">40 su 44. Ognuno dei due moduli ha 22 domande, di cui 20 operative che contribuiscono al punteggio e 2 quesiti di prova non valutati. Non esiste un modo per riconoscere quelli di prova, quindi conviene rispondere a tutte e 44 come se contassero.</p>
+      <h3 class="faq-q">Ci sono penalità per le risposte sbagliate al SAT digitale?</h3>
+      <p class="faq-a">No. Una risposta sbagliata vale quanto una lasciata in bianco, quindi non rispondere significa rinunciare a un tentativo gratuito. È l'opposto del test di ammissione Bocconi, che toglie 0,2 punti per ogni errore e dove a volte lasciare in bianco è la scelta migliore.</p>
+      <h3 class="faq-q">Come funziona il secondo modulo adattivo?</h3>
+      <p class="faq-a">Tutti sostengono lo stesso primo modulo. Il rendimento ottenuto determina se il secondo modulo sarà la versione a difficoltà più bassa o quella più alta. Solo il secondo modulo più difficile dà accesso alla parte alta della scala 200-800, quindi sono le prime 22 domande a fissare di fatto il tetto del punteggio.</p>
+      <h3 class="faq-q">Si può usare la calcolatrice in tutta la sezione di matematica?</h3>
+      <p class="faq-a">Sì. La calcolatrice è ammessa per l'intera sezione Math e una calcolatrice grafica Desmos è integrata nell'app Bluebook. È possibile portare anche la propria, se approvata, e sullo schermo resta disponibile un formulario di riferimento.</p>
+      <h3 class="faq-q">Quali argomenti di matematica ci sono nel SAT digitale?</h3>
+      <p class="faq-a">Quattro aree di contenuto. Algebra vale da 13 a 15 domande, Advanced Math altre 13-15, Problem-Solving and Data Analysis da 5 a 7 e Geometry and Trigonometry da 5 a 7. Algebra e Advanced Math insieme coprono circa tre quarti della sezione.</p>
+      <h3 class="faq-q">Quanto dura la sezione di matematica del SAT digitale?</h3>
+      <p class="faq-a">70 minuti in totale, divisi in due moduli da 35 minuti con 22 domande ciascuno. Sono circa 95 secondi a domanda, anche se il tempo effettivo richiesto varia parecchio da un quesito all'altro.</p>
+      <h3 class="faq-q">Meglio sostenere il SAT o il test Bocconi?</h3>
+      <p class="faq-a">Bocconi accetta il punteggio SAT come alternativa al proprio test di ammissione e considera il risultato migliore, quindi sostenerli entrambi e presentare il più alto è una strategia legittima. Premiano cose diverse: il SAT lascia più tempo a domanda, non penalizza gli errori e consente sempre la calcolatrice, mentre il test Bocconi è più serrato e penalizza le risposte sbagliate.</p>
+      <div class="article-cta">
+        <p style="margin:0 0 14px;">Se è la sezione di matematica a bloccare il tuo punteggio SAT, una chiamata gratuita di 20 minuti basta per capire quale delle quattro aree ti sta davvero costando punti.</p>
+        <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- RELATED -->
+<section>
+  <div class="container">
+    <div class="section-label reveal">Continua</div>
+    <h2 class="section-title reveal reveal-delay-1">Dove andare adesso</h2>
+    <div class="services-grid reveal reveal-delay-2" style="margin-top:28px;">
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <span class="service-tag">SAT digitale</span>
+        <h3>Preparazione SAT matematica</h3>
+        <p>44 domande in 70 minuti su due moduli adattivi, senza penalità per le risposte sbagliate.</p>
+        <a href="/it/tutor-sat-matematica/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Il SAT in dettaglio &rarr;</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <span class="service-num">02</span>
+        <span class="service-tag">Ammissioni</span>
+        <h3>Preparazione test Bocconi</h3>
+        <p>24 domande su 50 sono di matematica. Formato, programma, punteggio e quando conviene lasciare in bianco.</p>
+        <a href="/it/preparazione-test-bocconi/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Guida completa Bocconi &rarr;</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <span class="service-num">03</span>
+        <span class="service-tag">IB · AA e AI</span>
+        <h3>Tutoring di Matematica IB</h3>
+        <p>AA e AI a SL e HL, in parallelo a ciò che la scuola sta trattando questa settimana.</p>
+        <a href="/it/services/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Vedi tutti i servizi &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević</p>
+    <div class="footer-links">
+      <a href="/it/services/">Servizi</a>
+      <a href="/it/about/">Chi sono</a>
+      <a href="/it/faq/">FAQ</a>
+      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
+      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Mark language as chosen when on Italian page
+localStorage.setItem('langChosen', 'it');
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuClose = document.getElementById('menuClose');
+hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
