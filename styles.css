@@ -1589,3 +1589,32 @@ footer {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* --- Bocconi maths drill ----------------------------------- */
+.drill-list { list-style: decimal; padding-left: 26px; margin: 0 0 32px; }
+.drill-q, .drill-sol { margin-bottom: 26px; }
+.drill-stem { margin: 0 0 10px; color: var(--cream); }
+.drill-opts { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 4px; }
+.drill-opts li {
+  display: flex; gap: 10px; align-items: baseline;
+  font-size: 0.96rem; color: var(--text-muted); margin: 0;
+}
+.drill-let {
+  flex: none; width: 20px; font-weight: 700; color: var(--gold); font-size: 0.82rem;
+}
+.drill-sol p { margin: 0 0 6px; }
+.drill-sol p:first-child { color: var(--gold-light); }
+.drill-keygrid {
+  display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; margin: 24px 0 32px;
+}
+.drill-key {
+  background: var(--navy-mid); border: 1px solid var(--border-light); border-radius: 8px;
+  padding: 8px 4px; text-align: center; font-size: 0.9rem; color: var(--gold-light); font-weight: 600;
+}
+.drill-key b {
+  display: block; font-size: 0.68rem; color: var(--text-dim); font-weight: 600; margin-bottom: 2px;
+}
+@media (max-width: 600px) {
+  .drill-keygrid { grid-template-columns: repeat(5, 1fr); }
+  .drill-opts li { font-size: 0.92rem; }
+}
