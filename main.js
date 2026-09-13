@@ -1,67 +1,47 @@
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Scroll-triggered animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animate");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.2 });
-
-document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
-
-// Hamburger menu
-const hamburger = document.querySelector(".hamburger");
-const mobileNav = document.getElementById("mobile-nav");
-
-hamburger.addEventListener("click", () => {
-  const isOpen = mobileNav.classList.toggle("open");
-  hamburger.setAttribute("aria-expanded", isOpen);
-  hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-});
-
-mobileNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileNav.classList.remove("open");
-    hamburger.setAttribute("aria-expanded", "false");
-    hamburger.setAttribute("aria-label", "Open navigation menu");
-  });
-});
-
-// Active nav link highlight
+// Floating nav: full-width bar at the top of the page, compact centred pill once scrolled.
 (function () {
-  const path = window.location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav-links a, .mobile-nav a").forEach((a) => {
-    const href = a.getAttribute("href").split("/").pop();
-    if (href === path) a.classList.add("active");
-  });
+  const header = document.getElementById('header');
+  if (!header) return;
+  let ticking = false;
+  function update() {
+    header.classList.toggle('scrolled', window.scrollY > 24);
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  update();
 })();
 
-// Auto-scroll testimonials (only if carousel exists on page)
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollContainer = document.querySelector(".testimonial-scroll");
-  if (!scrollContainer) return;
-
-  let scrollAmount = 0;
-  let autoScrollInterval;
-
-  function startAutoScroll() {
-    autoScrollInterval = setInterval(() => {
-      const cardWidth = scrollContainer.querySelector(".testimonial-card").offsetWidth + 20;
-      scrollAmount += cardWidth;
-      if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-        scrollAmount = 0;
-      }
-      scrollContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
-    }, 3000);
+// GA4 conversion events. Everything is delegated, so no per-page markup is needed:
+//   contact_whatsapp / contact_email / contact_phone — click on a wa.me / mailto: / tel: link
+//   cta_click            — click on a gold button (Book a call etc.), with its text and target
+//   generate_lead        — the contact form's success panel appears (Formspree accepted the POST)
+(function () {
+  function track(name, params) {
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
   }
+  const page = () => location.pathname;
 
-  function stopAutoScroll() { clearInterval(autoScrollInterval); }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('https://wa.me/')) track('contact_whatsapp', { page_path: page() });
+    else if (href.startsWith('mailto:')) track('contact_email', { page_path: page() });
+    else if (href.startsWith('tel:')) track('contact_phone', { page_path: page() });
+    if (a.classList.contains('btn-gold')) {
+      track('cta_click', { cta_text: a.textContent.trim(), cta_target: href, page_path: page() });
+    }
+  }, { passive: true });
 
-  startAutoScroll();
-  scrollContainer.addEventListener("mouseenter", stopAutoScroll);
-  scrollContainer.addEventListener("mouseleave", startAutoScroll);
-});
+  const success = document.getElementById('formSuccess');
+  if (success) {
+    new MutationObserver((_, obs) => {
+      if (success.classList.contains('show')) {
+        track('generate_lead', { method: 'contact_form', page_path: page() });
+        obs.disconnect();
+      }
+    }).observe(success, { attributes: true, attributeFilter: ['class'] });
+  }
+})();
