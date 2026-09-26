@@ -135,7 +135,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -161,14 +161,17 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -268,23 +271,23 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
     </h2>
     <div class="outcomes-grid reveal reveal-delay-2">
       <div class="outcome-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+2</div>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+2</div>
         <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Avg. IB grade lift</div>
       </div>
       <div class="outcome-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+110</div>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+110</div>
         <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Avg. SAT score gain</div>
       </div>
       <div class="outcome-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">80%</div>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">80%</div>
         <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Hit target grade or above</div>
       </div>
       <div class="outcome-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">1000+</div>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">1000+</div>
         <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Hours taught</div>
       </div>
     </div>
-    <p style="text-align:center;font-size:0.75rem;color:var(--text-muted);margin-top:14px;font-style:italic;font-weight:400;" class="reveal reveal-delay-3">Based on students who completed a full lesson package. Individual results vary.</p>
+    <p style="text-align:center;font-size:0.75rem;color:var(--text-muted);margin-top:14px;font-style:italic;font-weight:400;" class="reveal reveal-delay-3">Based on 20+ students who completed a full lesson package. Individual results vary.</p>
   </div>
 </section>
 
@@ -301,19 +304,19 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
     </p>
     <div class="full-circle-grid reveal reveal-delay-2">
       <div class="full-circle-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step I</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Lesson</h3>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step I</div>
+        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Lesson</h3>
         <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">We work through the topic together — building understanding from first principles, not shortcuts. Every session ends with clarity on what to practise next.</p>
       </div>
       <div class="full-circle-cell" style="position:relative;">
         <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light),transparent);"></div>
-        <div style="font-family:'Playfair Display',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step II</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Worksheet</h3>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step II</div>
+        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Worksheet</h3>
         <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">I prepare a custom set of practice problems — targeted at exactly what was covered. The student works through them independently, applying what they've just learned.</p>
       </div>
       <div class="full-circle-cell">
-        <div style="font-family:'Playfair Display',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step III</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Feedback</h3>
+        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step III</div>
+        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Feedback</h3>
         <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">I review every answer. Misconceptions get corrected before the next session, gaps get flagged early, and nothing slips through unnoticed. Progress compounds.</p>
       </div>
     </div>
@@ -381,6 +384,8 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
         <span class="service-teaser-tag">IB &middot; SL &amp; HL</span>
         <h3>IB Mathematics &amp; Physics</h3>
         <p>Structured support for IB Maths AA and AI (SL &amp; HL) and IB Physics. Syllabus mastery, past papers, and real understanding built from the ground up.</p>
+        <a href="/ib-maths-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;margin-right:18px;">IB Maths in detail &rarr;</a>
+        <a href="/ib-physics-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Physics in detail &rarr;</a>
       </div>
       <div class="service-teaser-card reveal reveal-delay-1">
         <span class="service-teaser-tag">SAT &middot; Bocconi</span>
@@ -422,7 +427,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
         </p>
         <ul class="about-list reveal reveal-delay-3">
           <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
-          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across international schools in Europe.</li>
+          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
           <li>Former youth national team beach volleyball athlete — bringing discipline and a growth mindset to every session.</li>
           <li>Teaching style: calm, structured, clarity-driven. Students understand concepts deeply, not just memorise methods.</li>
         </ul>
@@ -519,7 +524,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
 
       <div class="contact-form reveal reveal-delay-2">
         <div id="contactFormWrapper">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Book a Free Intro Call</h3>
+          <h3 style="font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Book a Free Intro Call</h3>
           <form id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST">
             <div class="form-row-2">
               <div class="form-row">
@@ -534,7 +539,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
             <div class="form-row-2">
               <div class="form-row">
                 <label class="form-label" for="fphone">WhatsApp / Phone <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
-                <input class="form-input" type="tel" id="fphone" name="phone" placeholder="+385 91 234 5678" />
+                <input class="form-input" type="tel" id="fphone" name="phone" placeholder="With country code, e.g. +39 or +44" />
               </div>
               <div class="form-row">
                 <label class="form-label" for="fcontact">Preferred Contact</label>
@@ -580,6 +585,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
 </section>
 
 <!-- FOOTER -->
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
@@ -587,6 +593,7 @@ preload: '<link rel="preload" as="image" href="/alex-800.webp" imagesrcset="/ale
       <a href="/services/">Services</a>
       <a href="/about/">About</a>
       <a href="/faq/">FAQ</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -601,8 +608,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 if (!localStorage.getItem('langChosen')) {
   if (navigator.language && navigator.language.startsWith('it')) {
     localStorage.setItem('langChosen', 'it');
-    const itPath = '/it' + window.location.pathname;
-    window.location.replace(itPath);
+    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
+    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
   } else {
     localStorage.setItem('langChosen', 'en');
   }

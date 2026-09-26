@@ -1,10 +1,13 @@
 // Floating nav: full-width bar at the top of the page, compact centred pill once scrolled.
+// Mobile booking bar: hidden over the hero (which has its own CTA), shown once scrolled past it.
 (function () {
   const header = document.getElementById('header');
   if (!header) return;
+  const ctaBar = document.getElementById('ctaBar');
   let ticking = false;
   function update() {
     header.classList.toggle('scrolled', window.scrollY > 24);
+    if (ctaBar) ctaBar.classList.toggle('show', window.scrollY > 480);
     ticking = false;
   }
   window.addEventListener('scroll', () => {

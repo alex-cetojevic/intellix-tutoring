@@ -252,7 +252,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -278,14 +278,17 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
         <li><a href="/blog/" class="active">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/blog/ib-math-aa-ia-topic-ideas/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/blog/ib-math-aa-ia-topic-ideas/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/blog/ib-math-aa-ia-topic-ideas/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/blog/ib-math-aa-ia-topic-ideas/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -448,7 +451,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
       <p>Between two topic ideas, ask: which one gives you more to prove, derive, or explain? That's almost always the better choice.</p>
 
       <div class="article-cta">
-        <p>Not sure whether your topic is strong enough? <a href="/services/">Get a free topic check</a> - a 20-minute conversation can catch problems before you've spent weeks on the wrong direction.</p>
+        <p>Not sure whether your topic is strong enough? <a href="/contact/">Get a free topic check</a> - a 20-minute conversation can catch problems before you've spent weeks on the wrong direction.</p>
       </div>
 
       <h2>Overdone and Risky IB Math IA Topics to Avoid</h2>
@@ -480,7 +483,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
 
       <h2>What to Do After You've Picked a Topic</h2>
       <p>The topic decision is step one. After that, you need a solid exploration plan: what mathematics you'll use, how your structure maps to all five criteria, and what you'll do if your initial approach hits a wall.</p>
-      <p>If you want a human check on your specific idea before you start, <a href="/services/">book a free topic review</a>. Twenty minutes now prevents weeks of rework later.</p>
+      <p>If you want a human check on your specific idea before you start, <a href="/contact/">book a free topic review</a>. Twenty minutes now prevents weeks of rework later.</p>
 
       <h2>Frequently Asked Questions</h2>
 
@@ -515,7 +518,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
       <p>IB Math AA IA topic ideas are not the problem. The problem is choosing one that scores well. The topics that do share three characteristics: the mathematics is genuinely demanding for the level, there's room for you to ask your own questions and be surprised by the answers, and the scope fits inside 12 to 20 pages without needing to skip steps.</p>
       <p>Start with the AA mathematics you find most compelling. Form a specific question. Check it against Criterion E first - if your math ceiling is low, your score ceiling is too. Then check whether you've left room for Personal Engagement and Reflection. And avoid the topics that have been done so many times they've earned their own mention in examiner reports.</p>
       <p>Get the topic right and the exploration builds on solid ground. Get it wrong, and no amount of good writing fully compensates.</p>
-      <p>If you want someone to review your specific topic idea before you start, <a href="/services/">book a free check with an IB Math tutor</a>.</p>
+      <p>If you want someone to review your specific topic idea before you start, <a href="/contact/">book a free check with an IB Math tutor</a>.</p>
 
     </article>
   </div>
@@ -568,13 +571,14 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
       A 20-minute review can catch a low-ceiling topic before you spend weeks on it — and point you toward one that actually scores.
     </p>
     <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/services/" class="btn btn-gold">Explore IB Math Tutoring</a>
+      <a href="/ib-maths-tutor/" class="btn btn-gold">Explore IB Math Tutoring</a>
       <a href="/contact/" class="btn btn-outline">Book a Free Intro Call</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
@@ -582,6 +586,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-ia-topic-ideas/'
       <a href="/services/">Services</a>
       <a href="/about/">About</a>
       <a href="/faq/">FAQ</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>

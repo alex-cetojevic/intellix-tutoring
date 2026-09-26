@@ -192,7 +192,7 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/collegio-san-carlo/'
 <body>
 
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -217,14 +217,17 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/collegio-san-carlo/'
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/ib-tutor/collegio-san-carlo/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/ib-tutor/collegio-san-carlo/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/ib-tutor/collegio-san-carlo/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/ib-tutor/collegio-san-carlo/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -234,6 +237,7 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/collegio-san-carlo/'
     <div class="page-hero-label reveal">IB tutoring &middot; Milan</div>
     <h1 class="reveal reveal-delay-1">IB maths tutoring for <em>Collegio San Carlo students.</em></h1>
     <p class="reveal reveal-delay-2">Independent one-to-one tutoring in IB Mathematics and Physics for students at Collegio San Carlo, delivered online. Collegio San Carlo takes students into the Diploma Programme through an English-taught Diploma Programme inside an Italian school, and that route shapes which parts of IB maths feel hard — which is where this starts.</p>
+    <p class="proof-line reveal reveal-delay-3">I&rsquo;ve already tutored students from Collegio San Carlo.</p>
   </div>
 </div>
 <section>
@@ -318,12 +322,14 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/collegio-san-carlo/'
     </div>
   </div>
 </section>
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
     <div class="footer-links">
       <a href="/">Home</a>
       <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -338,8 +344,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 if (!localStorage.getItem('langChosen')) {
   if (navigator.language && navigator.language.startsWith('it')) {
     localStorage.setItem('langChosen', 'it');
-    const itPath = '/it' + window.location.pathname;
-    window.location.replace(itPath);
+    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
+    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
   } else {
     localStorage.setItem('langChosen', 'en');
   }

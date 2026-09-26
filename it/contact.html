@@ -151,7 +151,7 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
 <body>
 
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
   <a href="/it/" onclick="closeMobileMenu()">Home</a>
   <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
   <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
@@ -176,14 +176,17 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
         <li><a href="/it/blog/">Blog</a></li>
         <li><a href="/it/contact/" class="active">Contatti</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/contact/">EN</a>
-        <span>|</span>
-        <a href="/it/contact/" class="active">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/contact/">EN</a>
+          <span>|</span>
+          <a href="/it/contact/" class="active">IT</a>
+        </div>
+        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Apri menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -207,7 +210,7 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
           Contattami <em>direttamente.</em>
         </h2>
         <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 32px;">
-          Preferisci scrivere direttamente? Di solito rispondo entro poche ore nei giorni feriali.
+          Preferisci scrivere direttamente? Ti rispondo entro 24 ore.
           Usa il canale che preferisci.
         </p>
 
@@ -231,19 +234,19 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
         <div class="section-label reveal" style="margin-bottom: 16px;">Cosa aspettarsi</div>
         <ol style="list-style: none; display: flex; flex-direction: column; gap: 14px;" class="reveal reveal-delay-1">
           <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">01</span>
+            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">01</span>
             Scrivi un messaggio con una breve descrizione dello studente e della materia.
           </li>
           <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">02</span>
+            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">02</span>
             Ti rispondo entro 24 ore con gli orari disponibili per una chiamata conoscitiva gratuita di 20 minuti.
           </li>
           <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">03</span>
+            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">03</span>
             Parliamo della situazione dello studente, dei suoi obiettivi e di come sarebbero strutturate le lezioni.
           </li>
           <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">04</span>
+            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">04</span>
             Se è la scelta giusta, fissiamo la prima lezione e si parte.
           </li>
         </ol>
@@ -258,7 +261,7 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
 
       <div class="contact-form reveal reveal-delay-2">
         <div id="contactFormWrapper">
-          <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Prenota una chiamata conoscitiva gratuita</h3>
+          <h3 style="font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Prenota una chiamata conoscitiva gratuita</h3>
           <form id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST">
             <div class="form-row-2">
               <div class="form-row">
@@ -331,6 +334,7 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
   </div>
 </section>
 
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>

@@ -196,6 +196,14 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
             "@type": "Answer",
             "text": "Yes, and the maths section is the more teachable half of the test. Unlike Reading and Writing, the content is a finite and published list, and College Board provides free official practice through Bluebook and Khan Academy. What one-to-one work adds is diagnosis — finding which of the four content areas is actually costing you marks — and then drilling pace, calculator use and the habit of never leaving a blank until they are automatic."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you tutor SAT students in Milan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, online. Students in Milan usually sit the SAT for one of two reasons: applying to universities abroad, or applying to Bocconi, which accepts SAT scores as an alternative to its own test. The Bocconi test page compares the two."
+          }
         }
       ]
     },
@@ -224,7 +232,7 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
 <body>
 
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -249,14 +257,17 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/sat-math-tutor/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/tutor-sat-matematica/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/sat-math-tutor/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/tutor-sat-matematica/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -289,6 +300,10 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
     <div class="section-label reveal">03</div>
     <h2 class="section-title reveal reveal-delay-1">Scoring, and why you never leave a blank</h2>
     <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;"><div class="practical-row"><dt>The arithmetic</dt><dd>A correct answer adds to your raw score, a wrong answer costs nothing, and a blank costs exactly the same as a wrong answer. There is no deduction for guessing, so there is never a reason to leave a question unanswered.</dd></div><div class="practical-row"><dt>How that differs from Bocconi</dt><dd>This is the opposite of the <a href="/bocconi-test-prep/">Bocconi admissions test</a>, where a wrong answer costs 0.2 marks and a considered blank is sometimes the right play. Students preparing for both need to hold two different rules in their head.</dd></div><div class="practical-row"><dt>Where marks are really lost</dt><dd>Rarely on the hardest questions. Far more often on mid-difficulty algebra done at speed, on misreading what a question asks for, and on arithmetic slips that a calculator would have caught.</dd></div></dl>
+    <div class="inline-cta reveal">
+      <p>Stuck on the same Math score? A free 20-minute call looks at where the points are going.</p>
+      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
+    </div>
   </div>
 </section>
 <hr class="divider" />
@@ -347,6 +362,13 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
         </div>
         <div class="faq-answer">Yes, and the maths section is the more teachable half of the test. Unlike Reading and Writing, the content is a finite and published list, and College Board provides free official practice through Bluebook and Khan Academy. What one-to-one work adds is diagnosis — finding which of the four content areas is actually costing you marks — and then drilling pace, calculator use and the habit of never leaving a blank until they are automatic.</div>
       </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <span>Do you tutor SAT students in Milan?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">Yes, online. Students in Milan usually sit the SAT for one of two reasons: applying to universities abroad, or applying to Bocconi, which accepts SAT scores as an alternative to its own test. The <a href="/bocconi-test-prep/">Bocconi test page</a> compares the two.</div>
+      </div>
     </div>
     <p style="margin-top:26px;font-size:0.86rem;color:var(--text-muted);font-style:italic;">Test details verified on College Board's official Digital SAT pages on 10 September 2026. Formats, fees and dates change each cycle — always confirm on <a href="https://satsuite.collegeboard.org/sat" target="_blank" rel="noopener noreferrer">collegeboard.org</a> before registering.</p>
   </div>
@@ -363,12 +385,14 @@ hreflang_it: 'https://intellixtutoring.com/it/tutor-sat-matematica/'
     </div>
   </div>
 </section>
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
     <div class="footer-links">
       <a href="/">Home</a>
       <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -383,8 +407,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 if (!localStorage.getItem('langChosen')) {
   if (navigator.language && navigator.language.startsWith('it')) {
     localStorage.setItem('langChosen', 'it');
-    const itPath = '/it' + window.location.pathname;
-    window.location.replace(itPath);
+    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
+    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
   } else {
     localStorage.setItem('langChosen', 'en');
   }

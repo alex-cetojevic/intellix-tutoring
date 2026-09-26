@@ -154,7 +154,7 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
 <body>
 
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -179,14 +179,17 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/about/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/about/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/about/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/about/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -210,7 +213,7 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
         <picture>
           <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w" sizes="(max-width: 600px) 100vw, 320px" />
           <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w" sizes="(max-width: 600px) 100vw, 320px" />
-          <img src="/alex-800.jpg" alt="Alex Ćetojević — BSc Mathematics graduation, University of Trieste" class="about-photo" width="800" height="957" loading="lazy" decoding="async" />
+          <img src="/alex-800.jpg" alt="Alex Ćetojević — BSc Mathematics graduation, University of Trieste" class="about-photo" width="800" height="957" fetchpriority="high" decoding="async" />
         </picture>
         <div class="about-score">
           <span class="score-num">43/45</span>
@@ -237,7 +240,7 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
         </p>
         <ul class="about-list reveal reveal-delay-3">
           <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
-          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across international schools in Europe.</li>
+          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
           <li>Strong track record moving students from low confidence and poor grades to consistent, stable performance.</li>
           <li>Former youth national team beach volleyball athlete — bringing discipline, focus and a growth mindset to every session.</li>
           <li>All lessons delivered online via Zoom or Google Meet — accessible to students anywhere in the world.</li>
@@ -300,7 +303,7 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
   <div class="graduation-feature" style="max-width: 680px; margin: 0 auto; padding: 80px 24px;">
     <div class="reveal reveal-delay-1">
       <div class="section-label" style="margin-bottom:16px;">University of Trieste &middot; October 2025</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);color:var(--cream);font-weight:600;line-height:1.2;margin-bottom:16px;">
+      <h2 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:clamp(1.5rem,2.5vw,2rem);color:var(--cream);font-weight:600;line-height:1.2;margin-bottom:16px;">
         BSc Mathematics.<br /><em style="color:var(--gold-light);">GPA 29.3 out of 30.</em>
       </h2>
       <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;font-weight:400;">
@@ -369,12 +372,14 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
   </div>
 </section>
 
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
     <div class="footer-links">
       <a href="/services/">Services</a>
       <a href="/faq/">FAQ</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -389,8 +394,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 if (!localStorage.getItem('langChosen')) {
   if (navigator.language && navigator.language.startsWith('it')) {
     localStorage.setItem('langChosen', 'it');
-    const itPath = '/it' + window.location.pathname;
-    window.location.replace(itPath);
+    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
+    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
   } else {
     localStorage.setItem('langChosen', 'en');
   }

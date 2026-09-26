@@ -224,7 +224,7 @@ hreflang_it: 'https://intellixtutoring.com/it/preparazione-test-bocconi/'
 <body>
 
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -249,14 +249,17 @@ hreflang_it: 'https://intellixtutoring.com/it/preparazione-test-bocconi/'
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/bocconi-test-prep/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/preparazione-test-bocconi/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/bocconi-test-prep/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/preparazione-test-bocconi/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -289,6 +292,10 @@ hreflang_it: 'https://intellixtutoring.com/it/preparazione-test-bocconi/'
     <div class="section-label reveal">03</div>
     <h2 class="section-title reveal reveal-delay-1">Scoring, and why blank beats wrong</h2>
     <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>The arithmetic</dt><dd>Correct +1. Blank 0. Wrong −0.2, or −0.33 on three-option critical-thinking items. A guess with nothing eliminated is worth slightly less than leaving it blank; a guess with two options eliminated is clearly worth making.</dd></div>      <div class="practical-row"><dt>The floor</dt><dd>A total below 17 means the application is not considered. Applicants to the Bachelor in Mathematical and Computing Sciences for AI additionally need at least 11 out of 24 in the maths area.</dd></div>      <div class="practical-row"><dt>On &ldquo;competitive&rdquo; scores</dt><dd>Bocconi publishes no cut-off beyond the 17 floor. Applicant communities often discuss 35+ as competitive for BIEM and BIEF depending on GPA, but treat that as informal chatter, not an official threshold.</dd></div>    </dl>
+    <div class="inline-cta reveal">
+      <p>Already booked a test date? A free 20-minute call sets a prep plan that fits the weeks you have left.</p>
+      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
+    </div>
   </div>
 </section>
 <hr class="divider" />
@@ -365,12 +372,14 @@ hreflang_it: 'https://intellixtutoring.com/it/preparazione-test-bocconi/'
     </div>
   </div>
 </section>
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
     <div class="footer-links">
       <a href="/">Home</a>
       <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -385,8 +394,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 if (!localStorage.getItem('langChosen')) {
   if (navigator.language && navigator.language.startsWith('it')) {
     localStorage.setItem('langChosen', 'it');
-    const itPath = '/it' + window.location.pathname;
-    window.location.replace(itPath);
+    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
+    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
   } else {
     localStorage.setItem('langChosen', 'en');
   }

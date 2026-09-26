@@ -1,0 +1,14 @@
+{%- unless page.url == '/contact/' or page.url == '/it/contact/' -%}
+{%- if page.locale == 'it_IT' -%}
+  {%- assign cta_href = '/it/contact/' -%}
+  {%- assign cta_text = 'Prenota una chiamata' -%}
+{%- else -%}
+  {%- assign cta_href = '/contact/' -%}
+  {%- assign cta_text = 'Book a Free Call' -%}
+{%- endif %}
+<!-- Mobile-only booking bar; main.js slides it in once the visitor scrolls past the hero -->
+<div class="cta-bar" id="ctaBar">
+  <a href="{{ cta_href }}" class="btn btn-gold">{{ cta_text }}</a>
+  <a href="https://wa.me/385953521299" class="btn btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</div>
+{%- endunless %}

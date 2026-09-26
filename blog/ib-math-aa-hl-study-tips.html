@@ -243,7 +243,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
   <a href="/" onclick="closeMobileMenu()">Home</a>
   <a href="/services/" onclick="closeMobileMenu()">Services</a>
   <a href="/about/" onclick="closeMobileMenu()">About</a>
@@ -269,14 +269,17 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
         <li><a href="/blog/" class="active">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/blog/ib-math-aa-hl-study-tips/" class="active">EN</a>
-        <span>|</span>
-        <a href="/it/blog/ib-math-aa-hl-study-tips/">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/blog/ib-math-aa-hl-study-tips/" class="active">EN</a>
+          <span>|</span>
+          <a href="/it/blog/ib-math-aa-hl-study-tips/">IT</a>
+        </div>
+        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -365,7 +368,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
       <p>Students know the structure (base case, assume true for n=k, prove for n=k+1) but often write arguments that don't close the logic properly. The marking scheme is strict here. Write out your proof in full sentences, not just algebra. Examiners want to see that you understand what you're proving, not just that you can manipulate symbols.</p>
 
       <div class="article-cta">
-        <p>Struggling with one of these topics? A 1-on-1 session with an IB Math AA tutor can cut through in a few hours what weeks of self-study doesn't fix. <a href="/services/">Intellix Tutoring</a> works with IB Math AA HL students on exactly these problem areas. <a href="/services/">See how it works</a> and get targeted help on the topics where your marks are leaking.</p>
+        <p>Struggling with one of these topics? A 1-on-1 session with an IB Math AA tutor can cut through in a few hours what weeks of self-study doesn't fix. <a href="/ib-maths-tutor/">Intellix Tutoring</a> works with IB Math AA HL students on exactly these problem areas. <a href="/ib-maths-tutor/">See how it works</a> and get targeted help on the topics where your marks are leaking.</p>
       </div>
 
       <h2>How to Ace Your IB Math AA Internal Assessment</h2>
@@ -383,7 +386,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
       <p><strong>Timeline advice:</strong> Start earlier than you think you need to. The IA is not a last-month task. Students who begin exploring their topic 4-5 months before submission have time to change direction, deepen their analysis, and genuinely improve their Reflection criterion score.</p>
 
       <div class="article-cta">
-        <p>Your IA is worth 20% of your grade. If your topic is stalling or your Reflection section isn't landing, this is exactly where personalized tutoring makes a measurable difference. <a href="/services/">Intellix Tutoring</a> offers targeted IA support for IB Math AA students at both SL and HL.</p>
+        <p>Your IA is worth 20% of your grade. If your topic is stalling or your Reflection section isn't landing, this is exactly where personalized tutoring makes a measurable difference. <a href="/ib-maths-tutor/">Intellix Tutoring</a> offers targeted IA support for IB Math AA students at both SL and HL.</p>
       </div>
 
       <h2>Paper 1, Paper 2, and Paper 3 Exam Strategy</h2>
@@ -441,7 +444,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
 
       <h2>Conclusion: Your Next Step in IB Math AA HL</h2>
       <p>IB Math AA HL is demanding in ways that are specific and, crucially, addressable. You now have a clear picture of where the difficulty concentrates, what the IA criteria actually require, how to approach Paper 3, and what a study plan from Year 1 to exam day looks like. The students who get 7s are not always the most naturally gifted. They're the ones who start past papers early, treat their IA seriously, and get targeted help when a topic isn't clicking.</p>
-      <p>If you're ready to put a plan in motion, 1-on-1 tutoring with someone who knows this syllabus cold is the most efficient path. <a href="/services/">Intellix Tutoring</a> offers personalized IB Math AA HL tutoring. Get support on the specific topics and papers where you need it most.</p>
+      <p>If you're ready to put a plan in motion, 1-on-1 tutoring with someone who knows this syllabus cold is the most efficient path. <a href="/ib-maths-tutor/">Intellix Tutoring</a> offers personalized IB Math AA HL tutoring. Get support on the specific topics and papers where you need it most.</p>
 
     </article>
   </div>
@@ -494,13 +497,14 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
       Book a free 20-minute intro call and we'll map out exactly where your marks are leaking and how to fix them — for your specific situation.
     </p>
     <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/services/" class="btn btn-gold">Explore IB Math Tutoring</a>
+      <a href="/ib-maths-tutor/" class="btn btn-gold">Explore IB Math Tutoring</a>
       <a href="/contact/" class="btn btn-outline">Book a Free Intro Call</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
@@ -508,6 +512,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-hl-study-tips/'
       <a href="/services/">Services</a>
       <a href="/about/">About</a>
       <a href="/faq/">FAQ</a>
+      <a href="/contact/">Contact</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>

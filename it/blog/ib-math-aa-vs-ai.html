@@ -252,7 +252,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <span class="mobile-close" id="menuClose">&#10005;</span>
+  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
   <a href="/it/" onclick="closeMobileMenu()">Home</a>
   <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
   <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
@@ -278,14 +278,17 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
         <li><a href="/it/blog/" class="active">Blog</a></li>
         <li><a href="/it/contact/">Contatti</a></li>
       </ul>
-      <div class="lang-switch">
-        <a href="/blog/ib-math-aa-vs-ai/">EN</a>
-        <span>|</span>
-        <a href="/it/blog/ib-math-aa-vs-ai/" class="active">IT</a>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <a href="/blog/ib-math-aa-vs-ai/">EN</a>
+          <span>|</span>
+          <a href="/it/blog/ib-math-aa-vs-ai/" class="active">IT</a>
+        </div>
+        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="Apri menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 </div>
@@ -474,7 +477,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
       <p>Le quattro opzioni (AA SL, AA HL, AI SL, AI HL) esistono perché studenti diversi hanno bisogno di matematica diversa. Il tuo compito è individuare quale combinazione serve al tuo obiettivo di laurea e al tuo modo di lavorare, non scegliere quella che suona più d'effetto.</p>
       <p>Se punti a ingegneria o a corsi tecnici competitivi: AA HL, verificato sulle tue università specifiche. Se ti orienti verso ambiti ricchi di dati o di scienze sociali: AI, al livello richiesto dai tuoi corsi. Se sei nel mezzo: la checklist qui sopra ti dà il prossimo passo.</p>
       <p>Una volta scelto, inizia il lavoro. Gli studenti che vanno bene in entrambi i corsi sono quelli che impostano bene il proprio sistema di studio fin dalla prima settimana, non quelli che hanno scelto il corso "giusto".</p>
-      <p><a href="/it/services/">Parla con un tutor di matematica IB</a> se i tuoi corsi di destinazione non sono trattati qui sopra, o se sei davvero indeciso tra i livelli. È esattamente il tipo di decisione che affrontiamo in una prima sessione.</p>
+      <p><a href="/it/ripetizioni-matematica-ib/">Parla con un tutor di matematica IB</a> se i tuoi corsi di destinazione non sono trattati qui sopra, o se sei davvero indeciso tra i livelli. È esattamente il tipo di decisione che affrontiamo in una prima sessione.</p>
       <p>Hai già deciso per AA HL? La <a href="/it/blog/ib-math-aa-hl-study-tips/">guida allo studio di IB Math AA HL</a> spiega come impostare il tuo approccio fin dall'inizio.</p>
       <p>Scegli AA SL? Parti dagli <a href="/it/blog/ib-math-aa-sl-common-mistakes/">errori più comuni che fanno gli studenti di IB Math AA SL</a> - conoscerli presto fa risparmiare punti.</p>
 
@@ -529,13 +532,14 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
       Se i tuoi corsi di destinazione non sono trattati qui, o sei indeciso tra AA e AI, una chiamata di 20 minuti può chiarirlo — in base ai tuoi obiettivi di laurea e a come ti piace davvero lavorare.
     </p>
     <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/services/" class="btn btn-gold">Scopri il tutoraggio di Matematica IB</a>
+      <a href="/it/ripetizioni-matematica-ib/" class="btn btn-gold">Scopri il tutoraggio di Matematica IB</a>
       <a href="/it/contact/" class="btn btn-outline">Prenota una chiamata gratuita</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
+{% include cta-bar.html %}
 <footer>
   <div class="container footer-inner">
     <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
@@ -543,6 +547,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
       <a href="/it/services/">Servizi</a>
       <a href="/it/about/">Chi sono</a>
       <a href="/it/faq/">FAQ</a>
+      <a href="/it/contact/">Contatti</a>
       <a href="mailto:alexcetojevic12@gmail.com">Email</a>
       <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
