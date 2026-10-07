@@ -1761,10 +1761,11 @@ footer {
   .article-cta { padding: 22px 20px; }
 }
 
-/* links inside practical-list rows, about-list bullets and page-hero intros
-   were inheriting the muted body colour and reading as plain text */
+/* links inside practical-list rows, about-list bullets, FAQ answers and page-hero
+   intros were inheriting the muted body colour and reading as plain text */
 .practical-row dd a,
 .about-list li a,
+.faq-answer a,
 .page-hero p a {
   color: var(--gold-light);
   text-decoration: underline;
