@@ -1,6 +1,6 @@
 ---
 title: 'Bocconi Maths Drill: 50 Questions in 75 Minutes, With Worked Solutions'
-description: 'A free 50-question, 75-minute Bocconi maths drill covering the whole published syllabus, with a full worked solution for every question.'
+description: 'A free Bocconi maths drill: 50 questions in 75 minutes, with a timer, automatic scoring and a full worked solution for every question.'
 canonical: 'https://intellixtutoring.com/blog/bocconi-maths-drill/'
 og_type: 'article'
 locale: 'en_GB'
@@ -11,16 +11,17 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/bocconi-maths-drill/'
 <html lang="en">
 <head>
 {% include head.html %}
+<script src="/drill.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "@id": "https://intellixtutoring.com/blog/bocconi-maths-drill/#article",
   "headline": "Bocconi Maths Drill: 50 Questions in 75 Minutes, With Worked Solutions",
-  "description": "A free 50-question, 75-minute Bocconi maths drill covering the whole published syllabus, with a full worked solution for every question.",
+  "description": "A free Bocconi maths drill: 50 questions in 75 minutes, with a timer, automatic scoring and a full worked solution for every question.",
   "url": "https://intellixtutoring.com/blog/bocconi-maths-drill/",
   "datePublished": "2026-09-10",
-  "dateModified": "2026-09-10",
+  "dateModified": "2026-10-07",
   "inLanguage": "en",
   "wordCount": 3552,
   "author": {
@@ -316,18 +317,20 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/bocconi-maths-drill/'
       <a href="/blog/" class="article-back reveal">&larr; Back to Blog</a>
       <div class="answer-first">
         <div class="answer-first-label">In short</div>
-        <p>Fifty original maths questions covering the syllabus Bocconi publishes for its admissions test, timed at 75 minutes to match the real thing. Every question has a full worked solution below, not just a letter. Score it the way Bocconi does: +1 for a correct answer, 0 for a blank, &minus;0.2 for a wrong one, so that the guess-versus-blank decision gets practised alongside the mathematics. These are practice questions written for this page, not past Bocconi papers.</p>
+        <p>Fifty original maths questions covering the syllabus Bocconi publishes for its admissions test, timed at 75 minutes to match the real thing. You can take it right on this page: the timer starts with one click and your score is worked out the way Bocconi does it, +1 for a correct answer, 0 for a blank, &minus;0.2 for a wrong one. That way you practise the guess-versus-blank decision along with the maths. Every question has a full worked solution, not just a letter. These are practice questions written for this page, not past Bocconi papers.</p>
       </div>
       <h2>How to use this</h2>
       <p>The real test is 50 questions in 75 minutes, of which 24 are mathematics. This drill is 50 maths questions in the same 75 minutes, so it is deliberately harder per minute than the exam. The point is to build fluency in the maths section specifically, not to simulate the whole paper. For the full picture of format, scoring and timing, see the <a href="https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/online-bocconi-test" target="_blank" rel="noopener noreferrer">official Bocconi test pages</a> and our <a href="/bocconi-test-prep/">guide to the Bocconi maths section</a>.</p>
       <ul>
-      <li><strong>Set a timer for 75 minutes</strong> and do not stop it. Running out of time is information.</li>
-      <li><strong>Score it properly.</strong> +1 correct, 0 blank, &minus;0.2 wrong. Guessing blind across five options has a slightly negative expected value; guessing with two options eliminated is clearly worth it.</li>
-      <li><strong>Mark every question you guessed</strong>, even the ones you got right. A lucky guess is a gap.</li>
+      <li><strong>Press &ldquo;Start the drill&rdquo;</strong> below. A 75-minute timer starts and the solutions are hidden. Running out of time is information.</li>
+      <li><strong>Your score is worked out for you</strong>, the way Bocconi does it: +1 correct, 0 blank, &minus;0.2 wrong. Guessing blind across five options has a slightly negative expected value; guessing with two options eliminated is clearly worth it.</li>
+      <li><strong>You can change an answer</strong> until you submit. A second click on the same answer clears it and leaves the question blank.</li>
+      <li><strong>Note every question you guessed</strong>, even the ones you got right. A lucky guess is a gap.</li>
       <li><strong>Read the solution for everything you did not solve cleanly</strong>, not only for what you got wrong.</li>
+      <li><strong>Prefer pen and paper?</strong> That works too: set a timer for 75 minutes and use the answers further down the page.</li>
       </ul>
       <h2>The 50 questions</h2>
-      <p>Answers and full solutions follow. Try to resist scrolling.</p>
+      <p>Answers and full solutions follow. During the timed drill they stay hidden until you submit.</p>
             <h3>Algebra</h3>
       <ol class="drill-list" start="1">
         <li class="drill-q"><p class="drill-stem">Solve for <em>x</em>:  3(x &minus; 2) &minus; 4(2x &minus; 5) = 7</p><ul class="drill-opts"><li><span class="drill-let">A</span>x = 7/5</li><li><span class="drill-let">B</span>x = 11/5</li><li><span class="drill-let">C</span>x = &minus;1</li><li><span class="drill-let">D</span>x = 3</li><li><span class="drill-let">E</span>x = 1</li></ul></li>
@@ -466,7 +469,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/bocconi-maths-drill/'
       </ol>
       <h2>What your score means</h2>
       <p>This drill is harder per minute than the real maths section, so treat these as rough working bands rather than predictions of a Bocconi score:</p>
-      <ul>
+      <ul id="drillBands">
       <li><strong>Below 20.</strong> The gap is content, not speed. Work through the syllabus areas where you could not start a question at all, then re-drill.</li>
       <li><strong>20 to 32.</strong> The mathematics is mostly there and the losses are pace and accuracy. Timed sets of ten questions are the most useful next step.</li>
       <li><strong>Above 32.</strong> You are in good shape on content. The remaining marks are in the guess-versus-blank decision and in not losing easy questions to carelessness early in the paper.</li>
