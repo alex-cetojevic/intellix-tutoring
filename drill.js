@@ -33,6 +33,15 @@
     ctaBtn: 'Prenota una chiamata gratuita',
     contact: '/it/contact/',
     retry: 'Rifai la simulazione',
+    mailLabel: 'Vuoi che guardi i tuoi risultati? Lasciami la tua email e ti rispondo io.',
+    mailHint: 'tu@esempio.it',
+    mailBtn: 'Invia i risultati',
+    mailNote: 'Uso la tua email solo per risponderti. Niente newsletter.',
+    mailBusy: 'Invio in corso…',
+    mailDone: 'Grazie. Ho ricevuto i tuoi risultati e ti rispondo entro 24 ore.',
+    mailError: 'Errore. Prova a scrivermi direttamente',
+    mailSubject: 'Simulazione Bocconi: risultati',
+    score: 'Punteggio',
   } : {
     startTitle: 'Take the drill on this page',
     startText: 'A 75-minute timer, clickable answers and a score worked out the way Bocconi does it. Answers and solutions stay hidden until you submit.',
@@ -55,11 +64,21 @@
     ctaBtn: 'Book a free call',
     contact: '/contact/',
     retry: 'Take it again',
+    mailLabel: 'Want me to look at your results? Leave your email and I will reply.',
+    mailHint: 'you@example.com',
+    mailBtn: 'Send my results',
+    mailNote: 'I use your email only to reply to you. No newsletter.',
+    mailBusy: 'Sending…',
+    mailDone: 'Thank you. I have your results and will reply within 24 hours.',
+    mailError: 'Error. Try emailing directly',
+    mailSubject: 'Bocconi drill: results',
+    score: 'Score',
   };
 
   const MINUTES = 75;
   const PENALTY = 0.2;
   const STORE = 'drill:' + location.pathname;
+  const INBOX = 'https://formspree.io/f/mredwgkk';   // same Formspree form as the contact page
   const fmt = (n) => n.toLocaleString(it ? 'it-IT' : 'en-GB', { maximumFractionDigits: 1 });
   const clock = (s) => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
   const el = (tag, cls, html) => {
@@ -134,6 +153,7 @@
   // --- state ----------------------------------------------------------------
   let state = { status: 'idle', answers: {}, end: 0, used: 0, timedOut: false };
   let tick = null;
+  let summary = '';   // plain-text result, sent along if the visitor leaves an email
   const save = () => { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* private mode */ } };
   const load = () => { try { return JSON.parse(localStorage.getItem(STORE)); } catch (e) { return null; } };
   const secondsLeft = () => Math.max(0, Math.round((state.end - Date.now()) / 1000));
@@ -242,6 +262,15 @@
     const stat = (n, words) => '<span><b>' + n + '</b> ' + words[n === 1 ? 0 : 1] + '</span>';
     const band = bands && bands.children[score < 20 ? 0 : score <= 32 ? 1 : 2];
 
+    summary = [
+      T.score + ': ' + fmt(score) + ' ' + T.outOf + ' ' + items.length,
+      correct + ' ' + T.correct[1] + ', ' + wrong + ' ' + T.wrong[1] + ', ' + blank + ' ' + T.blank[1],
+      T.timeUsed + ': ' + clock(state.used) + (state.timedOut ? ' (' + T.timeUp + ')' : ''),
+      T.byTopic + ': ' + topics.map((t) => t.name + ' ' + t.right + '/' + t.total).join('; '),
+      T.review + ' ' + (review.join(', ') || '-'),
+      location.href,
+    ].join('\n');
+
     result.innerHTML =
       '<p class="drill-label">' + T.result + '</p>' +
       '<p class="drill-score">' + fmt(score) + ' <small>' + T.outOf + ' ' + items.length + '</small></p>' +
@@ -256,7 +285,13 @@
         review.map((n) => '<a href="#sol-' + n + '">' + n + '</a>').join(' ') + '</p>' : '') +
       '<p>' + T.cta + '</p>' +
       '<div class="drill-actions"><a href="' + T.contact + '" class="btn btn-gold">' + T.ctaBtn + '</a>' +
-      '<button type="button" class="btn btn-outline">' + T.retry + '</button></div>';
+      '<button type="button" class="btn btn-outline drill-retry">' + T.retry + '</button></div>' +
+      (state.mailed
+        ? '<p class="drill-mail drill-mail-done">' + T.mailDone + '</p>'
+        : '<form class="drill-mail"><label for="drillEmail">' + T.mailLabel + '</label>' +
+          '<div class="drill-mail-row"><input class="form-input" type="email" id="drillEmail" name="email" placeholder="' + T.mailHint +
+          '" autocomplete="email" required /><button type="submit" class="btn btn-outline">' + T.mailBtn + '</button></div>' +
+          '<p class="drill-mail-note">' + T.mailNote + '</p></form>');
     return score;
   }
 
@@ -267,6 +302,28 @@
     start.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  // optional: the visitor leaves an email and the result goes to the tutor's inbox
+  async function mail(form) {
+    const btn = form.querySelector('button');
+    const data = new FormData(form);
+    data.append('_subject', T.mailSubject);
+    data.append('service', 'Bocconi Test Prep');
+    data.append('message', summary);
+    btn.textContent = T.mailBusy;
+    btn.disabled = true;
+    try {
+      const res = await fetch(INBOX, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      if (!res.ok) throw new Error(res.status);
+      state.mailed = true;
+      save();
+      form.outerHTML = '<p class="drill-mail drill-mail-done">' + T.mailDone + '</p>';
+      track('generate_lead', { method: 'drill_results' });
+    } catch (e) {
+      btn.textContent = T.mailError;
+      btn.disabled = false;
+    }
+  }
+
   function submit() {
     if (window.confirm(T.confirm(Object.keys(state.answers).length, items.length))) finish(false, false);
   }
@@ -275,7 +332,8 @@
   start.querySelector('button').addEventListener('click', begin);
   bar.querySelector('button').addEventListener('click', submit);
   endWrap.querySelector('button').addEventListener('click', submit);
-  result.addEventListener('click', (e) => { if (e.target.closest('button')) reset(); });
+  result.addEventListener('click', (e) => { if (e.target.closest('.drill-retry')) reset(); });
+  result.addEventListener('submit', (e) => { e.preventDefault(); mail(e.target); });
   article.addEventListener('click', (e) => {
     const option = e.target.closest('.drill-opts li');
     if (option) pick(option);

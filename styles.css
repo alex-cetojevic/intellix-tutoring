@@ -1861,6 +1861,12 @@ body.drill-running footer { padding-bottom: 88px; }
 .drill-meter i { display: block; height: 100%; background: var(--gold); }
 .drill-review a { margin-right: 6px; }
 .drill-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.article-body .drill-mail { margin: 24px 0 0; padding-top: 22px; border-top: 1px solid var(--border-light); }
+.drill-mail label { display: block; margin-bottom: 12px; color: var(--cream); }
+.drill-mail-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.drill-mail-row .form-input { flex: 1 1 220px; width: auto; }
+.article-body .drill-mail-note { margin: 10px 0 0; font-size: 0.82rem; color: var(--text-muted); }
+.article-body .drill-mail-done { color: #7ecf9a; }
 @media (max-width: 600px) {
   .drill-start, .drill-result { padding: 20px 18px; }
   .drill-bar { gap: 10px 16px; font-size: 0.84rem; }
