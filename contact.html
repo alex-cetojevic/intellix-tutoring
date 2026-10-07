@@ -341,7 +341,7 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
         <div class="form-success" id="formSuccess">
           <div class="success-icon">&#10003;</div>
           <div class="success-title">Message sent!</div>
-          <p class="success-text">Thank you — I'll be in touch within 24 hours with suggested times for a free intro call.</p>
+          <p class="success-text">Thank you. I'll be in touch within 24 hours with suggested times for a free intro call.</p>
         </div>
       </div>
     </div>
@@ -402,8 +402,8 @@ form.addEventListener('submit', async (e) => {
   try {
     const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
     if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
-    else { btn.textContent = 'Error — try emailing directly'; btn.disabled = false; }
-  } catch { btn.textContent = 'Error — try emailing directly'; btn.disabled = false; }
+    else { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
+  } catch { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
 });
 </script>
 </body>

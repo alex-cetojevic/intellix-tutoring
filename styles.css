@@ -1587,7 +1587,7 @@ footer {
   .parent-card { padding: 28px 22px; }
 }
 
-/* keyword lead line folded into the hero H1 (SEO) — visually identical to the old hero label */
+/* keyword lead line folded into the hero H1 (SEO), visually identical to the old hero label */
 .hero-label-h1 { display: inline-flex; margin-bottom: 22px; }
 
 /* answer-first summary block at the top of an article (AEO: direct answer before the framing) */
@@ -1609,7 +1609,7 @@ footer {
    BLOG
    The blog markup shipped without any of these rules, so the
    index and every article rendered unstyled. Built from the
-   existing tokens only — no new colours.
+   existing tokens only, no new colours.
    ============================================================ */
 
 /* --- blog index ------------------------------------------- */

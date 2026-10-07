@@ -17,9 +17,9 @@
 })();
 
 // GA4 conversion events. Everything is delegated, so no per-page markup is needed:
-//   contact_whatsapp / contact_email / contact_phone — click on a wa.me / mailto: / tel: link
-//   cta_click            — click on a gold button (Book a call etc.), with its text and target
-//   generate_lead        — the contact form's success panel appears (Formspree accepted the POST)
+//   contact_whatsapp / contact_email / contact_phone: click on a wa.me / mailto: / tel: link
+//   cta_click: click on a gold button (Book a call etc.), with its text and target
+//   generate_lead: the contact form's success panel appears (Formspree accepted the POST)
 (function () {
   function track(name, params) {
     if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
