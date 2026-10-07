@@ -1,0 +1,57 @@
+# Intellix Tutoring
+
+> Intellix Tutoring is the one-to-one online tutoring practice of Alex Ćetojević. He teaches IB Mathematics (AA and AI, SL and HL), IB Physics (SL and HL), SAT Math, the maths section of the Bocconi admissions test, and first-year university mathematics.
+
+Key facts:
+
+- Alex finished the IB Diploma with 43/45, with a 7 in Mathematics AA HL and a 7 in Physics HL. He holds a BSc in Mathematics from the University of Trieste.
+- All lessons are online, on Zoom or Google Meet with a shared whiteboard. There are no in-person lessons.
+- Lessons run in English, Italian or Croatian.
+- Every new student starts with a free 20-minute intro call.
+- The site is in English and Italian. Italian pages live under /it/.
+
+## Tutoring services
+
+- [IB tutoring overview](https://intellixtutoring.com/ib-tutor/): IB Maths and Physics, where students come from, and how online lessons work.
+- [IB Maths tutoring](https://intellixtutoring.com/ib-maths-tutor/): AA and AI at SL and HL, how the papers are marked, and Maths IA support.
+- [IB Physics tutoring](https://intellixtutoring.com/ib-physics-tutor/): SL and HL, the five themes, Papers 1 and 2, and Physics IA support.
+- [SAT Math tutoring](https://intellixtutoring.com/sat-math-tutor/): the Digital SAT Math section, its format, content and scoring.
+- [Bocconi test prep](https://intellixtutoring.com/bocconi-test-prep/): the Bocconi online test, its maths syllabus, scoring and attempts.
+- [IB tutoring for Milan international schools](https://intellixtutoring.com/ib-tutor/milan/): how each Milan school reaches the IB Diploma, with a guide per school.
+- [All services](https://intellixtutoring.com/services/): the full list, including group sessions and summer revision courses.
+
+## IB Maths guides
+
+- [IB Math AA vs AI: Which Should You Choose?](https://intellixtutoring.com/blog/ib-math-aa-vs-ai/): how to choose by university course, difficulty and career path.
+- [IB Maths AA HL Study Tips](https://intellixtutoring.com/blog/ib-math-aa-hl-study-tips/): the hardest topics and how to approach Papers 1, 2 and 3.
+- [IB Math AA SL Common Mistakes](https://intellixtutoring.com/blog/ib-math-aa-sl-common-mistakes/): the five topics where SL students lose the most marks.
+- [Should I Drop from IB Maths AA HL to SL?](https://intellixtutoring.com/blog/drop-ib-maths-hl-to-sl/): when dropping is the right call and a four week test to run first.
+- [IB Math IA Criteria: How the 20 Marks Are Split](https://intellixtutoring.com/blog/ib-math-ia-criteria/): what each of the five criteria rewards.
+- [IB Math AA IA Topic Ideas](https://intellixtutoring.com/blog/ib-math-aa-ia-topic-ideas/): how to pick a topic that can score well.
+- [IB Math IA first draft](https://intellixtutoring.com/blog/ib-math-ia-first-draft/): what to fix before you hand the draft in.
+
+## IB Physics guides
+
+- [Is IB Physics HL Hard?](https://intellixtutoring.com/blog/is-ib-physics-hl-hard/): where the difficulty sits and how the papers are structured.
+- [IB Physics Paper 1 and Paper 2 strategy](https://intellixtutoring.com/blog/ib-physics-paper-1-2-strategy/): pacing, data questions and extended responses.
+- [IB Physics IA Topics](https://intellixtutoring.com/blog/ib-physics-ia-topics/): how to choose a research question that can reach the marks.
+
+## Bocconi and SAT guides
+
+- [Bocconi Test 2027: Dates, Format and How It Is Scored](https://intellixtutoring.com/blog/bocconi-test-2027/): application rounds, test dates, the 50 questions and the scoring rule.
+- [Bocconi Maths Drill](https://intellixtutoring.com/blog/bocconi-maths-drill/): 50 free practice questions in 75 minutes, with a worked solution for each.
+- [How the Digital SAT Math Section Is Scored](https://intellixtutoring.com/blog/digital-sat-math-scoring/): the adaptive modules and what they mean for strategy.
+
+## About and contact
+
+- [About Alex](https://intellixtutoring.com/about/): background, results and teaching approach.
+- [FAQ](https://intellixtutoring.com/faq/): how lessons work, scheduling, languages and results.
+- [Contact](https://intellixtutoring.com/contact/): book the free 20-minute intro call.
+
+## Italian
+
+- [Home page in Italian](https://intellixtutoring.com/it/)
+- [Ripetizioni di Matematica IB](https://intellixtutoring.com/it/ripetizioni-matematica-ib/)
+- [Preparazione al test Bocconi](https://intellixtutoring.com/it/preparazione-test-bocconi/)
+- [Simulazione di matematica Bocconi](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande in 75 minuti, con soluzioni svolte.
+- [Blog in Italian](https://intellixtutoring.com/it/blog/)
