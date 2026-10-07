@@ -1276,7 +1276,8 @@ section { padding: 100px 0; }
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(.16,1,.3,1), padding 0.3s;
 }
-.faq-item.open .faq-answer { max-height: 300px; padding-top: 14px; }
+/* tall enough for the longest answer on a narrow phone; 300px cut off the last lines */
+.faq-item.open .faq-answer { max-height: 640px; padding-top: 14px; }
 
 /* ── CTA BAND (inner pages) ── */
 .cta-band {
