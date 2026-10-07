@@ -896,6 +896,7 @@ body.drill-running .site-footer { padding-bottom: 104px; }
 /* Scoring table: the SAT column leads, the Bocconi column is the comparison */
 .sat-scoring thead .sat-lead { color: var(--ink); }
 .sat-scoring .sat-other { font-weight: 400; color: var(--muted); }
+.sat-scoring .sat-words { font-family: var(--font-sans); font-size: 15px; font-weight: 600; white-space: normal; }
 .sat-scoring sup { margin-left: 2px; font-family: var(--font-sans); font-size: 11px; font-weight: 700; line-height: 0; color: var(--accent); }
 
 @media (max-width: 760px) {
@@ -960,6 +961,7 @@ body.drill-running .site-footer { padding-bottom: 104px; }
 .bocconi-sessions tbody tr + tr { border-top: 1px solid var(--hair); }
 .bocconi-sessions tr > :last-child { padding-right: 0; }
 .bocconi-sessions-word { display: none; }
+.bocconi-sessions-closed { margin-left: 6px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; }
 .bocconi-sessions + p { margin-top: 14px; }
 
 @media (max-width: 760px) {
