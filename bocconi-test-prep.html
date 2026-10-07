@@ -236,204 +236,227 @@ hreflang_it: 'https://intellixtutoring.com/it/preparazione-test-bocconi/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/bocconi-test-prep/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/preparazione-test-bocconi/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">Bocconi Admissions Test</div>
-    <h1 class="reveal reveal-delay-1">Bocconi test prep, <em>where it is actually won.</em></h1>
-    <p class="reveal reveal-delay-2">The Bocconi online test is 50 multiple-choice questions in 75 minutes, and 24 of them are mathematics. That is nearly half your score sitting in one subject. Wrong answers cost 0.2 marks each, so knowing when <em>not</em> to answer matters almost as much as knowing the maths.</p>
-  </div>
-</div>
-<section>
-  <div class="container">
-    <div class="section-label reveal">01</div>
-    <h2 class="section-title reveal reveal-delay-1">What the test is</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Format</dt><dd>50 multiple-choice questions in 75 minutes, roughly 90 seconds each. Questions are mixed by topic and difficulty rather than grouped, so pacing and skipping are skills in themselves.</dd></div>      <div class="practical-row"><dt>Where</dt><dd>Online from home, proctored: audio and video recorded, a room scan before you start, and a lockdown browser.</dd></div>      <div class="practical-row"><dt>Sections</dt><dd>Mathematics 24 · Reading comprehension 11 · Critical thinking 9 · Numerical reasoning 6. Law and Global Law sit a different test, with only 5 maths questions.</dd></div>      <div class="practical-row"><dt>Weighting</dt><dd>Bocconi weighs the test at 55% and your GPA from the last two completed years at 45%.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">02</div>
-    <h2 class="section-title reveal reveal-delay-1">The maths section, in detail</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Syllabus</dt><dd>Algebra: equations, inequalities, systems, absolute values. Functions and graphs. Plane and analytical geometry: lines, parabolas, circles. Trigonometry. Set theory. Logarithms and exponentials. Discrete maths and combinatorics. Numbers and percentages. Probability, including conditional probability and Bayes&rsquo; theorem. Problem solving. Statistics: frequencies, central tendency, dispersion.</dd></div>      <div class="practical-row"><dt>Why an IB maths tutor fits</dt><dd>That list overlaps heavily with IB Mathematics Analysis &amp; Approaches. A student already sitting AA has met most of it. The gap is usually speed, question format, and the handful of topics the DP treats lightly.</dd></div>      <div class="practical-row"><dt>The market gap</dt><dd>Established Bocconi prep providers sell group courses and video libraries. Very few offer one-to-one mathematics teaching, which is exactly what a weak 24-question maths section needs.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">03</div>
-    <h2 class="section-title reveal reveal-delay-1">Scoring, and why blank beats wrong</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>The arithmetic</dt><dd>Correct +1. Blank 0. Wrong −0.2, or −0.33 on three-option critical-thinking items. A guess with nothing eliminated is worth slightly less than leaving it blank; a guess with two options eliminated is clearly worth making.</dd></div>      <div class="practical-row"><dt>The floor</dt><dd>A total below 17 means the application is not considered. Applicants to the Bachelor in Mathematical and Computing Sciences for AI additionally need at least 11 out of 24 in the maths area.</dd></div>      <div class="practical-row"><dt>On &ldquo;competitive&rdquo; scores</dt><dd>Bocconi publishes no cut-off beyond the 17 floor. Applicant communities often discuss 35+ as competitive for BIEM and BIEF depending on GPA, but treat that as informal chatter, not an official threshold.</dd></div>    </dl>
-    <div class="inline-cta reveal">
-      <p>Already booked a test date? A free 20-minute call sets a prep plan that fits the weeks you have left.</p>
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-    </div>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">04</div>
-    <h2 class="section-title reveal reveal-delay-1">Attempts, cost and timing</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Attempts</dt><dd>Up to four per test type per year, €60 each. No same-day or consecutive-day retakes. Your score appears immediately; the official report follows within about 48 hours.</dd></div>      <div class="practical-row"><dt>Rounds for international applicants</dt><dd>Early Session: 2–29 September 2026, results mid-November. Winter Session: 25 November 2026 – 26 January 2027, results mid-March. Last test dates are 24 September 2026 and 21 January 2027. Book at least 48 hours ahead. Full timeline and a preparation plan in <a href="/blog/bocconi-test-2027/">Bocconi Test 2027: dates, format and scoring</a>.</dd></div>      <div class="practical-row"><dt>Preparation material</dt><dd>Bocconi states plainly that there are no official preparation textbooks. It provides a free <a href="https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/online-bocconi-test" target="_blank" rel="noopener noreferrer">50-question, 75-minute simulation</a> and a topic app. Everything else on the market is third-party.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section id="faq-start">
-  <div class="container">
-    <div class="section-label reveal">FAQ</div>
-    <h2 class="section-title reveal reveal-delay-1">Common questions</h2>
-    <div style="margin-top:32px;">      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>How much of the Bocconi test is mathematics?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">24 of the 50 questions on the standard test are mathematics, just under half the paper, and the largest single section by a wide margin. Reading comprehension is 11, critical thinking 9 and numerical reasoning 6. The Law and Global Law test is different: only 5 maths questions, with logic and verbal reasoning dominating.</div>
-      </div>      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Should I leave answers blank on the Bocconi test?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Sometimes, yes. A correct answer is +1, a blank is 0 and a wrong answer is −0.2, or −0.33 on three-option critical-thinking items. With five options and no idea, guessing has a slightly negative expected value. Once you can eliminate one or two options, guessing becomes clearly worthwhile. The practical rule is to eliminate first, and leave truly blank only what you cannot narrow at all.</div>
-      </div>      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>How many times can I take the Bocconi test?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Up to four attempts per test type per academic year, at €60 each. You cannot sit it on the same day or on consecutive days. Your best score is the one that counts, so retaking carries no penalty beyond the fee and the preparation time.</div>
-      </div>      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>What score do I need for Bocconi?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">The only official threshold is the floor: below 17 and the application is not considered. Applicants to Mathematical and Computing Sciences for AI also need at least 11 of 24 in the maths area. Beyond that Bocconi publishes no cut-off, because the test is 55% of a decision that also weighs your GPA at 45%. Applicants often mention 35 or more as competitive for BIEM and BIEF, depending on GPA, but that is informal, not an official threshold.</div>
-      </div>      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Is the SAT easier than the Bocconi test?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Bocconi accepts SAT and ACT scores as an equivalent alternative and the best score counts, so you can sit both and submit whichever is stronger. The Bocconi test is more time-pressured (about 90 seconds a question against a mixed-difficulty paper) and carries a wrong-answer penalty the SAT does not.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>How long should you prepare for the Bocconi test?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Most students need somewhere between six weeks and three months of consistent work rather than a fortnight of cramming. The maths section rewards fluency and speed (roughly 90 seconds a question), and that is built through repetition over time, not in a final push. If you are sitting the Early Session in September, start over the summer; for the Winter Session, autumn is comfortable.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Can a tutor help with the Bocconi test?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">For the maths section, yes. That is 24 of the 50 questions and it is straightforwardly teachable. What no tutor can give you is official practice material, because Bocconi states there are no official preparation textbooks. What one-to-one work does is identify which of the listed maths topics are actually costing you marks, fix those, and drill the timing and the guess-versus-blank decision until both are automatic.</div>
-      </div>
-    </div>
-    <p style="margin-top:26px;font-size:0.86rem;color:var(--text-muted);font-style:italic;">Test details verified on Bocconi&rsquo;s official admissions pages on 5 September 2026. Dates and fees change each cycle. Always confirm on <a href="https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/online-bocconi-test" target="_blank" rel="noopener noreferrer">unibocconi.it</a> before booking.</p>
-  </div>
-</section>
-<hr class="divider" />
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Preparing for Bocconi?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Let&rsquo;s look at <em>the maths section.</em></h2>
-    <p class="cta-band-desc reveal reveal-delay-2">A free 20-minute call to see where the 24 maths questions would currently cost you marks, and what a preparation plan would look like. No commitment.</p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-      <a href="/services/" class="btn btn-outline">See All Services</a>
-    </div>
-  </div>
-</section>
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/">Home</a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/services/">Services</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Bocconi test</span>
+    </nav>
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">Bocconi admissions test</p>
+        <h1 id="page-title">Bocconi test prep, where it is actually won.</h1>
+        <p class="lead dropcap">The Bocconi online test is 50 multiple-choice questions in 75 minutes, and 24 of them are mathematics. That is nearly half your score sitting in one subject. Wrong answers cost 0.2 marks each, so knowing when <em>not</em> to answer matters almost as much as knowing the maths.</p>
+        <div class="actions">
+          <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+          <a href="/services/" class="link-quiet">See services</a>
+        </div>
+        <p class="microcopy">No commitment on the call.</p>
+      </div>
+      <div class="page-hero-aside numeral-module">
+        <div class="numeral-head bocconi-numeral-head">
+          <span class="numeral bocconi-numeral pen pen--circle-tall">24{% include pen.html v="circle-tall" %}</span>
+          <div>
+            <p class="numeral-label">of 50 questions are maths</p>
+            <p class="numeral-caption">75 minutes, mixed order</p>
+          </div>
+        </div>
+        <dl class="leaders">
+          <div><dt>Wrong answer</dt><dd>−0.2</dd></div>
+          <div><dt>Minimum total</dt><dd>17</dd></div>
+          <div><dt>Weight in the decision</dt><dd>55%</dd></div>
+          <div><dt>Attempts a year</dt><dd>4 &middot; €60 each</dd></div>
+        </dl>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+<nav class="onpage" aria-label="On this page">
+  <div class="container">
+    <p class="onpage-label">On this page</p>
+    <ul>
+      <li><a href="#s1"><span>1</span>What the test is</a></li>
+      <li><a href="#s2"><span>2</span>The maths section</a></li>
+      <li><a href="#s3"><span>3</span>Scoring</a></li>
+      <li><a href="#s4"><span>4</span>Attempts, cost and timing</a></li>
+      <li><a href="#faq" class="no-num">Questions</a></li>
+    </ul>
+  </div>
+</nav>
 
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
+<section id="s1" class="section" aria-labelledby="s1-title">
+  <div class="container">
+    <div class="sec-head">
+      <p class="sec-num">1</p>
+      <h2 id="s1-title">What the test is</h2>
+    </div>
+    <div class="with-figure">
+      <dl class="rows rows--narrow">
+        <div class="row"><dt>Format</dt><dd>50 multiple-choice questions in 75 minutes, roughly 90 seconds each. Questions are mixed by topic and difficulty rather than grouped, so pacing and skipping are skills in themselves.</dd></div>
+        <div class="row"><dt>Where</dt><dd>Online from home, proctored: audio and video recorded, a room scan before you start, and a lockdown browser.</dd></div>
+        <div class="row"><dt>Sections</dt><dd>Mathematics 24 · Reading comprehension 11 · Critical thinking 9 · Numerical reasoning 6. Law and Global Law sit a different test, with only 5 maths questions.</dd></div>
+        <div class="row"><dt>Weighting</dt><dd>Bocconi weighs the test at 55% and your GPA from the last two completed years at 45%.</dd></div>
+      </dl>
+      <figure class="figure bocconi-mix">
+        <div class="figure-frame">
+          <p class="figure-title">The standard test, by section</p>
+          <div class="bocconi-bar" aria-hidden="true"><span class="bocconi-s1"></span><span class="bocconi-s2"></span><span class="bocconi-s3"></span><span class="bocconi-s4"></span></div>
+          <dl class="leaders bocconi-sections">
+            <div><dt><span class="bocconi-key bocconi-s1" aria-hidden="true"></span>Mathematics</dt><dd>24</dd></div>
+            <div><dt><span class="bocconi-key bocconi-s2" aria-hidden="true"></span>Reading comprehension</dt><dd>11</dd></div>
+            <div><dt><span class="bocconi-key bocconi-s3" aria-hidden="true"></span>Critical thinking</dt><dd>9</dd></div>
+            <div><dt><span class="bocconi-key bocconi-s4" aria-hidden="true"></span>Numerical reasoning</dt><dd>6</dd></div>
+            <div class="bocconi-total"><dt>Total</dt><dd>50</dd></div>
+          </dl>
+        </div>
+        <figcaption>Mathematics is just under half the paper, and the largest single section by a wide margin.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+<section id="s2" class="section section--tint" aria-labelledby="s2-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">2</p>
+      <h2 id="s2-title">The maths section, in detail</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Syllabus</dt><dd>Algebra: equations, inequalities, systems, absolute values. Functions and graphs. Plane and analytical geometry: lines, parabolas, circles. Trigonometry. Set theory. Logarithms and exponentials. Discrete maths and combinatorics. Numbers and percentages. Probability, including conditional probability and Bayes&rsquo; theorem. Problem solving. Statistics: frequencies, central tendency, dispersion.</dd></div>
+      <div class="row"><dt>Why an IB maths tutor fits</dt><dd>That list overlaps heavily with IB Mathematics Analysis &amp; Approaches. A student already sitting AA has met most of it. The gap is usually speed, question format, and the handful of topics the DP treats lightly.</dd></div>
+      <div class="row"><dt>The market gap</dt><dd>Established Bocconi prep providers sell group courses and video libraries. Very few offer one-to-one mathematics teaching, which is exactly what a weak 24-question maths section needs.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+<section id="s3" class="section" aria-labelledby="s3-title">
+  <div class="container">
+    <div class="sec-head">
+      <p class="sec-num">3</p>
+      <h2 id="s3-title">Scoring, and why blank beats wrong</h2>
+    </div>
+    <div class="with-figure">
+      <dl class="rows rows--narrow">
+        <div class="row"><dt>The arithmetic</dt><dd>Correct +1. Blank 0. Wrong −0.2, or −0.33 on three-option critical-thinking items. A guess with nothing eliminated is worth slightly less than leaving it blank; a guess with two options eliminated is clearly worth making.</dd></div>
+        <div class="row"><dt>The floor</dt><dd>A total below 17 means the application is not considered. Applicants to the Bachelor in Mathematical and Computing Sciences for AI additionally need at least 11 out of 24 in the maths area.</dd></div>
+        <div class="row"><dt>On &ldquo;competitive&rdquo; scores</dt><dd>Bocconi publishes no cut-off beyond the 17 floor. Applicant communities often discuss 35+ as competitive for BIEM and BIEF depending on GPA, but treat that as informal chatter, not an official threshold.</dd></div>
+      </dl>
+      <figure class="figure">
+        <table class="table bocconi-marks">
+          <caption>Marks per question</caption>
+          <tbody>
+            <tr><th scope="row">Correct</th><td class="num">+1</td></tr>
+            <tr><th scope="row">Blank</th><td class="num">0</td></tr>
+            <tr><th scope="row">Wrong</th><td class="num"><span class="pen pen--circle-wide">−0.2{% include pen.html v="circle-wide" %}</span></td></tr>
+            <tr><th scope="row">Wrong, three-option critical thinking</th><td class="num">−0.33</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row">Minimum total to be considered</th><td class="num">17</td></tr>
+          </tfoot>
+        </table>
+        <figcaption>A wrong answer costs more than a blank, so a considered skip is a real tactic here, unlike on the SAT.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+<section id="s4" class="section section--rule" aria-labelledby="s4-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">4</p>
+      <h2 id="s4-title">Attempts, cost and timing</h2>
+    </div>
+    <div class="split-body">
+      <dl class="rows">
+        <div class="row"><dt>Attempts</dt><dd>Up to four per test type per year, €60 each. No same-day or consecutive-day retakes. Your score appears immediately; the official report follows within about 48 hours.</dd></div>
+        <div class="row bocconi-row-sessions"><dt>Rounds for international applicants</dt><dd>
+          <table class="bocconi-sessions">
+            <caption class="sr-only">Rounds for international applicants</caption>
+            <thead>
+              <tr><th scope="col">Session</th><th scope="col">Test window</th><th scope="col">Last test date</th><th scope="col">Results</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Early<span class="bocconi-sessions-word"> Session</span></th><td data-label="Test window"><span class="nowrap">2–29 September 2026</span></td><td class="nowrap" data-label="Last test date">24 September 2026</td><td class="nowrap" data-label="Results">mid-November</td></tr>
+              <tr><th scope="row">Winter<span class="bocconi-sessions-word"> Session</span></th><td data-label="Test window"><span class="nowrap">25 November 2026 –</span> <span class="nowrap">26 January 2027</span></td><td class="nowrap" data-label="Last test date">21 January 2027</td><td class="nowrap" data-label="Results">mid-March</td></tr>
+            </tbody>
+          </table>
+          <p>Book at least 48 hours ahead. Full timeline and a preparation plan in <a href="/blog/bocconi-test-2027/">Bocconi Test 2027: dates, format and scoring</a>.</p>
+        </dd></div>
+        <div class="row"><dt>Preparation material</dt><dd>Bocconi states plainly that there are no official preparation textbooks. It provides a free <a href="https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/online-bocconi-test" target="_blank" rel="noopener noreferrer">50-question, 75-minute simulation</a> and a topic app. Everything else on the market is third-party.</dd></div>
+      </dl>
+      <div class="fees-note">
+        <p class="fees-note-title">Fees depend on the subject and the session length.</p>
+        <p class="fees-note-text">We'll go through it plainly on the intro call, with no obligation either way.</p>
+        <div class="fees-note-cta">
+          <p>Already booked a test date? A free 20-minute call sets a prep plan that fits the weeks you have left.</p>
+          <a href="/contact/" class="btn btn-secondary">Book a free 20-minute call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section section--tint" aria-labelledby="faq-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="faq-title">Bocconi test questions</h2>
+    </div>
+    <div class="split-body">
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>How much of the Bocconi test is mathematics?</summary>
+          <div class="faq-answer">24 of the 50 questions on the standard test are mathematics, just under half the paper, and the largest single section by a wide margin. Reading comprehension is 11, critical thinking 9 and numerical reasoning 6. The Law and Global Law test is different: only 5 maths questions, with logic and verbal reasoning dominating.</div>
+        </details>
+        <details class="faq-item" open>
+          <summary>Should I leave answers blank on the Bocconi test?</summary>
+          <div class="faq-answer">Sometimes, yes. A correct answer is +1, a blank is 0 and a wrong answer is −0.2, or −0.33 on three-option critical-thinking items. With five options and no idea, guessing has a slightly negative expected value. Once you can eliminate one or two options, guessing becomes clearly worthwhile. The practical rule is to eliminate first, and leave truly blank only what you cannot narrow at all.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How many times can I take the Bocconi test?</summary>
+          <div class="faq-answer">Up to four attempts per test type per academic year, at €60 each. You cannot sit it on the same day or on consecutive days. Your best score is the one that counts, so retaking carries no penalty beyond the fee and the preparation time.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What score do I need for Bocconi?</summary>
+          <div class="faq-answer">The only official threshold is the floor: below 17 and the application is not considered. Applicants to Mathematical and Computing Sciences for AI also need at least 11 of 24 in the maths area. Beyond that Bocconi publishes no cut-off, because the test is 55% of a decision that also weighs your GPA at 45%. Applicants often mention 35 or more as competitive for BIEM and BIEF, depending on GPA, but that is informal, not an official threshold.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Is the SAT easier than the Bocconi test?</summary>
+          <div class="faq-answer">Bocconi accepts SAT and ACT scores as an equivalent alternative and the best score counts, so you can sit both and submit whichever is stronger. The Bocconi test is more time-pressured (about 90 seconds a question against a mixed-difficulty paper) and carries a wrong-answer penalty the SAT does not.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How long should you prepare for the Bocconi test?</summary>
+          <div class="faq-answer">Most students need somewhere between six weeks and three months of consistent work rather than a fortnight of cramming. The maths section rewards fluency and speed (roughly 90 seconds a question), and that is built through repetition over time, not in a final push. If you are sitting the Early Session in September, start over the summer; for the Winter Session, autumn is comfortable.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can a tutor help with the Bocconi test?</summary>
+          <div class="faq-answer">For the maths section, yes. That is 24 of the 50 questions and it is straightforwardly teachable. What no tutor can give you is official practice material, because Bocconi states there are no official preparation textbooks. What one-to-one work does is identify which of the listed maths topics are actually costing you marks, fix those, and drill the timing and the guess-versus-blank decision until both are automatic.</div>
+        </details>
+      </div>
+      <p class="legal-note">Test details verified on Bocconi&rsquo;s official admissions pages on 5 September 2026. Dates and fees change each cycle. Always confirm on <a href="https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/application-and-admissions/online-bocconi-test" target="_blank" rel="noopener noreferrer">unibocconi.it</a> before booking.</p>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Let&rsquo;s look at the maths section.</h2>
+      <p>A free 20-minute call to see where the 24 maths questions would currently cost you marks, and what a preparation plan would look like. No commitment.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+        <a href="/services/" class="link-quiet">See services</a>
+      </div>
+      <p class="end-cta-direct">Or write directly: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
 </body>
 </html>

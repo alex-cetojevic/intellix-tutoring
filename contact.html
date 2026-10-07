@@ -163,248 +163,122 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/" class="active">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/contact/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/contact/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">Get in Touch</div>
-    <h1 class="reveal reveal-delay-1">Book a <em>free intro call.</em></h1>
-    <p class="reveal reveal-delay-2">A free 20-minute call to understand where your student is, what's not working, and whether I'm the right fit. No commitment, no pressure.</p>
+    <p class="eyebrow">Get in touch</p>
+    <h1 id="page-title">Book a free intro call.</h1>
+    <p class="lead dropcap">A free 20-minute call to understand where your student is, what's not working, and whether I'm the right fit. No commitment, no pressure.</p>
   </div>
-</div>
+</section>
 
-<hr class="divider" />
+<section id="contact" class="section section--tint" aria-labelledby="contact-title">
+  <div class="container contact">
+    <div class="contact-info">
+      <h2 id="contact-title">Reach out directly.</h2>
+      <p class="sec-lead">Prefer a direct message? I reply within 24 hours. Use whichever channel is most convenient.</p>
+      <dl class="direct">
+        <div><dt>Email</dt><dd><a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a></dd></div>
+      </dl>
+    </div>
 
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="section-label reveal">Direct Contact</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Reach out <em>directly.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 32px;">
-          Prefer a direct message? I reply within 24 hours.
-          Use whichever channel is most convenient.
-        </p>
-
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">Email</div>
-            <a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a>
+    <div class="form-card">
+      <div id="contactFormWrapper">
+        <form class="form" id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST" aria-label="Contact form" data-sending="Sending&hellip;" data-error="Error. Try emailing directly">
+          <div class="field">
+            <label for="fname">Your name</label>
+            <input class="input" type="text" id="fname" name="name" autocomplete="name" required />
           </div>
-        </div>
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">WhatsApp</div>
-            <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a>
+          <div class="field">
+            <label for="femail">Email</label>
+            <input class="input" type="email" id="femail" name="email" autocomplete="email" required />
           </div>
-        </div>
-
-        <div class="contact-divider"></div>
-
-        <div class="section-label reveal" style="margin-bottom: 16px;">What to Expect</div>
-        <ol style="list-style: none; display: flex; flex-direction: column; gap: 14px;" class="reveal reveal-delay-1">
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">01</span>
-            Send a message with a brief description of the student and their subject.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">02</span>
-            I'll reply within 24 hours with available times for a free 20-minute intro call.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">03</span>
-            We discuss the student's situation, goals, and how lessons would be structured.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">04</span>
-            If it's a good fit, we schedule the first lesson and get started.
-          </li>
-        </ol>
-
-        <div class="contact-divider"></div>
-
-        <div class="reveal reveal-delay-2" style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="mailto:alexcetojevic12@gmail.com" class="btn btn-gold">Email Me</a>
-          <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp</a>
-        </div>
+          <div class="field">
+            <label for="fservice">Subject area</label>
+            <select class="input" id="fservice" name="service" required>
+              <option value="" disabled selected>Choose a subject</option>
+              <option>IB Maths AA HL</option>
+              <option>IB Maths AA SL</option>
+              <option>IB Maths AI HL</option>
+              <option>IB Maths AI SL</option>
+              <option>IB Physics HL</option>
+              <option>IB Physics SL</option>
+              <option>SAT Math</option>
+              <option>Bocconi Test Prep</option>
+              <option>Summer Revision Course</option>
+              <option>University Mathematics</option>
+              <option>Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fsituation">Main concern</label>
+            <select class="input" id="fsituation" name="situation">
+              <option value="" disabled selected>Choose one</option>
+              <option>Struggling with specific topics</option>
+              <option>Exam preparation</option>
+              <option>Long-term regular support</option>
+              <option>Starting fresh / building foundations</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fphone">WhatsApp / Phone <span class="optional">(optional)</span></label>
+            <input class="input" type="tel" id="fphone" name="phone" autocomplete="tel" placeholder="With country code, e.g. +39 or +44" />
+          </div>
+          <fieldset class="field">
+            <legend>Preferred contact</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="preferred_contact" value="Email" />Email</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="WhatsApp" />WhatsApp</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="Either" checked />Either is fine</label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="fmessage">Anything else <span class="optional">(optional)</span></label>
+            <textarea class="input" id="fmessage" name="message" rows="4" placeholder="Current grade, upcoming exams, any context that would help&hellip;"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-note">I reply within 24 hours with suggested times for the call.</p>
+          </div>
+        </form>
       </div>
-
-      <div class="contact-form reveal reveal-delay-2">
-        <div id="contactFormWrapper">
-          <h3 style="font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Book a Free Intro Call</h3>
-          <form id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST">
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fname">Your Name</label>
-                <input class="form-input" type="text" id="fname" name="name" placeholder="Alex Smith" required />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="femail">Email</label>
-                <input class="form-input" type="email" id="femail" name="email" placeholder="you@example.com" required />
-              </div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fservice">Subject Area</label>
-                <select class="form-select" id="fservice" name="service" required>
-                  <option value="" disabled selected>Select a subject&hellip;</option>
-                  <option>IB Maths AA HL</option>
-                  <option>IB Maths AA SL</option>
-                  <option>IB Maths AI HL</option>
-                  <option>IB Maths AI SL</option>
-                  <option>IB Physics HL</option>
-                  <option>IB Physics SL</option>
-                  <option>SAT Math</option>
-                  <option>Bocconi Test Prep</option>
-                  <option>Summer Revision Course</option>
-                  <option>University Mathematics</option>
-                  <option>Not sure yet</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="fsituation">Main concern</label>
-                <select class="form-select" id="fsituation" name="situation">
-                  <option value="" disabled selected>Select one&hellip;</option>
-                  <option>Struggling with specific topics</option>
-                  <option>Exam preparation</option>
-                  <option>Long-term regular support</option>
-                  <option>Starting fresh / building foundations</option>
-                  <option>Not sure yet</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fphone">WhatsApp / Phone <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
-                <input class="form-input" type="tel" id="fphone" name="phone" placeholder="With country code, e.g. +39 or +44" />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="fcontact">Preferred Contact</label>
-                <select class="form-select" id="fcontact" name="preferred_contact">
-                  <option value="Email">Email</option>
-                  <option value="WhatsApp">WhatsApp</option>
-                  <option value="Either">Either is fine</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <label class="form-label" for="fmessage">Anything else to add <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
-              <textarea class="form-textarea" id="fmessage" name="message" placeholder="Current grade, upcoming exams, any context that would help&hellip;" style="min-height:80px;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold form-submit">Send Message</button>
-          </form>
-        </div>
-        <div class="form-success" id="formSuccess">
-          <div class="success-icon">&#10003;</div>
-          <div class="success-title">Message sent!</div>
-          <p class="success-text">Thank you. I'll be in touch within 24 hours with suggested times for a free intro call.</p>
-        </div>
+      <div class="form-success" id="formSuccess" role="status" tabindex="-1">
+        <p class="form-success-title">Message sent!</p>
+        <p>Thank you. I'll be in touch within 24 hours with suggested times for a free intro call.</p>
       </div>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/services/">Services</a>
-      <a href="/faq/">FAQ</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<section class="section" aria-labelledby="expect-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="expect-title">What to expect</h2>
     </div>
+    <ol class="steps steps--plain split-body">
+      <li>
+        <span class="step-n" aria-hidden="true">1</span>
+        <p>Send a message with a brief description of the student and their subject.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">2</span>
+        <p>I'll reply within 24 hours with available times for a free 20-minute intro call.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">3</span>
+        <p>We discuss the student's situation, goals, and how lessons would be structured.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">4</span>
+        <p>If it's a good fit, we schedule the first lesson and get started.</p>
+      </li>
+    </ol>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-const wrapper = document.getElementById('contactFormWrapper');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
-  try {
-    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-    if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
-    else { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-  } catch { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-});
-</script>
+{% include footer.html %}
 </body>
 </html>

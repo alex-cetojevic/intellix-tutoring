@@ -30,7 +30,7 @@
     markBlank: 'In bianco. Risposta giusta:',
     seeSolution: 'Vedi la soluzione',
     cta: 'Se è sempre lo stesso argomento a costarti punti, in venti minuti di chiamata gratuita capiamo perché.',
-    ctaBtn: 'Prenota una chiamata gratuita',
+    ctaBtn: 'Prenota una call',
     contact: '/it/contact/',
     retry: 'Rifai la simulazione',
     mailLabel: 'Vuoi che guardi i tuoi risultati? Lasciami la tua email e ti rispondo io.',
@@ -61,7 +61,7 @@
     markBlank: 'Blank. Right answer:',
     seeSolution: 'See the solution',
     cta: 'If the same topic keeps costing you marks, a free 20-minute call will show why.',
-    ctaBtn: 'Book a free call',
+    ctaBtn: 'Book a free 20-minute call',
     contact: '/contact/',
     retry: 'Take it again',
     mailLabel: 'Want me to look at your results? Leave your email and I will reply.',
@@ -81,6 +81,7 @@
   const INBOX = 'https://formspree.io/f/mredwgkk';   // same Formspree form as the contact page
   const fmt = (n) => n.toLocaleString(it ? 'it-IT' : 'en-GB', { maximumFractionDigits: 1 });
   const clock = (s) => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+  const glide = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   const el = (tag, cls, html) => {
     const node = document.createElement(tag);
     if (cls) node.className = cls;
@@ -132,10 +133,10 @@
 
   const start = el('div', 'drill-start',
     '<p class="drill-label">' + T.startTitle + '</p><p>' + T.startText + '</p>' +
-    '<button type="button" class="btn btn-gold">' + T.startBtn + '</button>');
+    '<button type="button" class="btn btn-primary">' + T.startBtn + '</button>');
   listHeading.before(start);
 
-  const endWrap = el('p', 'drill-end', '<button type="button" class="btn btn-gold">' + T.submit + '</button>');
+  const endWrap = el('p', 'drill-end', '<button type="button" class="btn btn-primary">' + T.submit + '</button>');
   questions[questions.length - 1].parentElement.after(endWrap);
 
   const result = el('div', 'drill-result');
@@ -145,7 +146,7 @@
   const bar = el('div', 'drill-bar',
     '<span><b class="drill-time"></b></span>' +
     '<span>' + T.answered + ' <b class="drill-count">0</b>/' + items.length + '</span>' +
-    '<button type="button" class="btn btn-gold">' + T.submit + '</button>');
+    '<button type="button" class="btn btn-primary">' + T.submit + '</button>');
   document.body.append(bar);
   const timeEl = bar.querySelector('.drill-time');
   const countEl = bar.querySelector('.drill-count');
@@ -209,7 +210,7 @@
     save();
     run();
     track('drill_start');
-    listHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    listHeading.scrollIntoView({ behavior: glide, block: 'start' });
   }
 
   function pick(option) {
@@ -233,7 +234,7 @@
     const score = showResult();
     track('drill_complete', { score: score, timed_out: timedOut });
     if (!quiet) {
-      result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      result.scrollIntoView({ behavior: glide, block: 'start' });
       result.focus({ preventScroll: true });
     }
   }
@@ -284,13 +285,13 @@
       (review.length ? '<p class="drill-review">' + T.review + ' ' +
         review.map((n) => '<a href="#sol-' + n + '">' + n + '</a>').join(' ') + '</p>' : '') +
       '<p>' + T.cta + '</p>' +
-      '<div class="drill-actions"><a href="' + T.contact + '" class="btn btn-gold">' + T.ctaBtn + '</a>' +
-      '<button type="button" class="btn btn-outline drill-retry">' + T.retry + '</button></div>' +
+      '<div class="drill-actions"><a href="' + T.contact + '" class="btn btn-primary">' + T.ctaBtn + '</a>' +
+      '<button type="button" class="btn btn-secondary drill-retry">' + T.retry + '</button></div>' +
       (state.mailed
         ? '<p class="drill-mail drill-mail-done">' + T.mailDone + '</p>'
         : '<form class="drill-mail"><label for="drillEmail">' + T.mailLabel + '</label>' +
-          '<div class="drill-mail-row"><input class="form-input" type="email" id="drillEmail" name="email" placeholder="' + T.mailHint +
-          '" autocomplete="email" required /><button type="submit" class="btn btn-outline">' + T.mailBtn + '</button></div>' +
+          '<div class="drill-mail-row"><input class="input" type="email" id="drillEmail" name="email" placeholder="' + T.mailHint +
+          '" autocomplete="email" required /><button type="submit" class="btn btn-secondary">' + T.mailBtn + '</button></div>' +
           '<p class="drill-mail-note">' + T.mailNote + '</p></form>');
     return score;
   }
@@ -299,7 +300,7 @@
     try { localStorage.removeItem(STORE); } catch (e) { /* private mode */ }
     state = { status: 'idle', answers: {}, end: 0, used: 0, timedOut: false };
     render();
-    start.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    start.scrollIntoView({ behavior: glide, block: 'center' });
   }
 
   // optional: the visitor leaves an email and the result goes to the tutor's inbox

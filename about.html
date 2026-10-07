@@ -166,268 +166,143 @@ hreflang_it: 'https://intellixtutoring.com/it/about/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/" class="active">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/about/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/about/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+<section class="hero" aria-labelledby="page-title">
+  <div class="container about-hero">
+    <div class="about-hero-head">
+      <p class="eyebrow">Your tutor</p>
+      <h1 id="page-title">Meet Alex Ćetojević.</h1>
+      <p class="lead dropcap">Maths graduate. IB alumnus. Former national team athlete. The person who will help your student finally understand maths, not just survive it.</p>
     </div>
-  </header>
-</div>
-
-<div class="page-hero">
-  <div class="container">
-    <div class="page-hero-label reveal">Your Tutor</div>
-    <h1 class="reveal reveal-delay-1">Meet <em>Alex Ćetojević.</em></h1>
-    <p class="reveal reveal-delay-2">Maths graduate. IB alumnus. Former national team athlete. The person who will help your student finally understand maths, not just survive it.</p>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="about-decoration"></div>
-        <picture>
-          <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w" sizes="(max-width: 600px) 100vw, 320px" />
-          <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w" sizes="(max-width: 600px) 100vw, 320px" />
-          <img src="/alex-800.jpg" alt="Alex Ćetojević: BSc Mathematics graduation, University of Trieste" class="about-photo" width="800" height="957" fetchpriority="high" decoding="async" />
-        </picture>
-        <div class="about-score">
-          <span class="score-num">43/45</span>
-          <div class="score-label">IB Score</div>
-        </div>
-      </div>
-
-      <div>
-        <div class="section-label reveal">Background</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          The IB from<br /><em>the inside out.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 8px;">
-          I'm a maths graduate and former IB student who graduated with a 43/45, including a
-          <strong style="color:var(--cream);font-weight:600;">7 in Mathematics AA HL</strong>,
-          a <strong style="color:var(--cream);font-weight:600;">7 in Physics HL</strong>, and an
-          <strong style="color:var(--cream);font-weight:600;">A in my Mathematics Extended Essay</strong>.
-        </p>
-        <p class="section-desc reveal reveal-delay-2">
-          Over the past years I've supported students across international schools throughout Europe,
-          in IB Maths AA/AI, SAT Math, Bocconi test prep, and first-year university mathematics.
-          My approach is calm, structured and clarity-driven. I help students understand the ideas
-          behind the methods so they feel confident in class, during assessments, and in the exam room.
-        </p>
-        <ul class="about-list reveal reveal-delay-3">
-          <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
-          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
-          <li>Strong track record moving students from low confidence and poor grades to consistent, stable performance.</li>
-          <li>Former youth national team beach volleyball athlete, bringing discipline, focus and a growth mindset to every session.</li>
-          <li>All lessons delivered online via Zoom or Google Meet, accessible to students anywhere in the world.</li>
-        </ul>
-        <a href="/author/alex-cetojevic/" style="display:inline-block;margin-top:18px;color:var(--gold-light);font-size:0.9rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Full profile and credentials &rarr;</a>
-      </div>
+    <figure class="about-photo">
+      <picture>
+        <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w, /alex-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 460px" />
+        <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w, /alex-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 460px" />
+        <img src="/alex-800.jpg" alt="Alex Ćetojević: BSc Mathematics graduation, University of Trieste" width="800" height="957" fetchpriority="high" decoding="async" />
+      </picture>
+    </figure>
+    <div class="about-hero-body">
+      <ul class="ticks">
+        <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
+        <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
+        <li>Strong track record moving students from low confidence and poor grades to consistent, stable performance.</li>
+        <li>Former youth national team beach volleyball athlete, bringing discipline, focus and a growth mindset to every session.</li>
+        <li>All lessons delivered online via Zoom or Google Meet, accessible to students anywhere in the world.</li>
+      </ul>
+      <p class="more-link"><a href="/author/alex-cetojevic/" class="link-arrow link-arrow--lg">Full profile and credentials&nbsp;&rarr;</a></p>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<section id="about" class="section section--rule" aria-labelledby="background-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="eyebrow">Background</p>
+      <h2 id="background-title">The IB from the inside out.</h2>
+    </div>
+    <div class="split-body flush-lead">
+      <p class="sec-lead">I'm a maths graduate and former IB student who graduated with a 43/45, including a <strong>7 in Mathematics AA HL</strong>, a <strong>7 in Physics HL</strong>, and an <strong>A in my Mathematics Extended Essay</strong>.</p>
+      <p class="sec-lead">Over the past years I've supported students across international schools throughout Europe, in IB Maths AA/AI, SAT Math, Bocconi test prep, and first-year university mathematics. My approach is calm, structured and clarity-driven. I help students understand the ideas behind the methods so they feel confident in class, during assessments, and in the exam room.</p>
+    </div>
+  </div>
+</section>
 
-<!-- WHY -->
-<section id="why" class="why-section">
+<section id="why" class="section section--tint" aria-labelledby="why-title">
   <div class="container">
-    <div class="section-label reveal">Why Alex</div>
-    <h2 class="section-title reveal reveal-delay-1" style="max-width: 560px;">
-      Six reasons students<br /><em>make real progress.</em>
-    </h2>
-
-    <div class="why-grid">
-      <div class="why-card reveal">
-        <span class="why-numeral">I</span>
-        <h3>Taught by Someone Who's Been There</h3>
+    <div class="sec-head">
+      <p class="eyebrow">Why Alex</p>
+      <h2 id="why-title">Six reasons students make real progress.</h2>
+    </div>
+    <div class="notes-grid about-reasons">
+      <div class="note">
+        <h3>Taught by someone who's been there</h3>
         <p>I graduated the IB with 43/45, including a 7 in Maths AA HL, a 7 in Physics HL, and an A in my Maths Extended Essay. I know exactly what these exams demand and how to prepare for them strategically.</p>
       </div>
-      <div class="why-card reveal reveal-delay-1">
-        <span class="why-numeral">II</span>
-        <h3>Understanding, Not Memorisation</h3>
+      <div class="note">
+        <h3>Understanding, not memorisation</h3>
         <p>Every lesson is built around understanding the ideas behind the methods. Students who grasp the reasoning can tackle unfamiliar problems, which is exactly what IB and SAT exams are designed to test.</p>
       </div>
-      <div class="why-card reveal reveal-delay-2">
-        <span class="why-numeral">III</span>
-        <h3>Structured from Day One</h3>
+      <div class="note">
+        <h3>Structured from day one</h3>
         <p>From the first session, there is a clear plan: topic priorities, a realistic timeline, and defined goals. Students always know where they are, what comes next, and what to focus on.</p>
       </div>
-      <div class="why-card reveal reveal-delay-1">
-        <span class="why-numeral">IV</span>
-        <h3>Calm, Patient, Honest</h3>
+      <div class="note">
+        <h3>Calm, patient, honest</h3>
         <p>Lessons are unhurried and pressure-free. We slow down when something isn't clear, move faster when it is, and always work at a pace that builds genuine confidence rather than surface-level reassurance.</p>
       </div>
-      <div class="why-card reveal reveal-delay-2">
-        <span class="why-numeral">V</span>
-        <h3>Parents Are Kept in the Loop</h3>
+      <div class="note">
+        <h3>Parents are kept in the loop</h3>
         <p>For families who want it, I provide regular progress updates: what's been covered, where the student stands, and what the focus will be going forward. No ambiguity, no surprises.</p>
       </div>
-      <div class="why-card reveal reveal-delay-3">
-        <span class="why-numeral">VI</span>
-        <h3>Consistent and Reliable</h3>
+      <div class="note">
+        <h3>Consistent and reliable</h3>
         <p>As a former youth national team athlete, I understand what it takes to improve under pressure. Every session is prepared, every commitment honoured. Students and parents know exactly what to expect.</p>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- GRADUATION PHOTO FEATURE -->
-<section style="padding: 0;">
-  <div class="graduation-feature" style="max-width: 680px; margin: 0 auto; padding: 80px 24px;">
-    <div class="reveal reveal-delay-1">
-      <div class="section-label" style="margin-bottom:16px;">University of Trieste &middot; October 2025</div>
-      <h2 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:clamp(1.5rem,2.5vw,2rem);color:var(--cream);font-weight:600;line-height:1.2;margin-bottom:16px;">
-        BSc Mathematics.<br /><em style="color:var(--gold-light);">GPA 29.3 out of 30.</em>
-      </h2>
-      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;font-weight:400;">
-        Graduated with honours in Mathematics from the University of Trieste, the same university where I developed the analytical rigour and problem-solving depth that now shapes every lesson I give.
-      </p>
+<section class="section" aria-labelledby="degree-title">
+  <div class="container about-degree">
+    <div class="about-degree-text">
+      <p class="eyebrow">University of Trieste &middot; October 2025</p>
+      <h2 id="degree-title">BSc Mathematics. GPA 29.3 out of 30.</h2>
+      <p class="sec-lead">Graduated with honours in Mathematics from the University of Trieste, the same university where I developed the analytical rigour and problem-solving depth that now shapes every lesson I give.</p>
+    </div>
+    <div class="numeral-module numeral-module--score about-numeral">
+      <div class="numeral-score">
+        <p class="numeral-score-figure"><span class="big">29.3</span><span class="of">/30</span></p>
+        <p class="numeral-caption">BSc Mathematics, University of Trieste</p>
+      </div>
+      <dl class="leaders">
+        <div><dt>IB Diploma</dt><dd>43/45</dd></div>
+        <div><dt>Mathematics AA HL</dt><dd>7</dd></div>
+        <div><dt>Physics HL</dt><dd>7</dd></div>
+        <div><dt>Extended Essay, Mathematics</dt><dd>A</dd></div>
+      </dl>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
+<section id="testimonials" class="section section--gold about-proof" aria-labelledby="proof-title">
   <div class="container">
-    <div class="testimonials-header">
-      <div>
-        <div class="section-label reveal">Testimonials</div>
-        <h2 class="section-title reveal reveal-delay-1">What families say.</h2>
-      </div>
-    </div>
-    <div class="t-scroll">
-      <div class="t-card reveal">
-        <p class="t-text">"Alex helped me go from a 3 in IB Maths AA HL to a confident 6 by finals. The way he explains things just clicks."</p>
-        <div class="t-author">IB AA HL Student</div>
-      </div>
-      <div class="t-card reveal reveal-delay-1">
-        <p class="t-text">"My daughter finally understands her teacher. Her confidence and grades have both improved enormously."</p>
-        <div class="t-author">Parent, International School</div>
-      </div>
-      <div class="t-card reveal reveal-delay-2">
-        <p class="t-text">"SAT math score went up by 120 points. Every lesson is focused, efficient and structured. No wasted time."</p>
-        <div class="t-author">SAT Student</div>
-      </div>
-      <div class="t-card reveal">
-        <p class="t-text">"Alex explains with patience I haven't found anywhere else. My son no longer panics before maths tests."</p>
-        <div class="t-author">Parent of Year 11 Student</div>
-      </div>
-      <div class="t-card reveal reveal-delay-1">
-        <p class="t-text">"The best maths tutor I've had. I finally understand IB Maths AA rather than just memorising formulas."</p>
-        <div class="t-author">IB AA SL Student</div>
-      </div>
-      <div class="t-card reveal reveal-delay-2">
-        <p class="t-text">"We saw improvement within the first month. Alex is reliable, clear, and genuinely invested in results."</p>
-        <div class="t-author">Parent, Year 12 Student</div>
+    <h2 id="proof-title" class="proof-title">What families say.</h2>
+    <div class="proof-grid">
+      <figure class="quote quote--lg">
+        <blockquote>&ldquo;Alex helped me go from a 3 in IB Maths AA HL to <span class="pen pen--underline">a confident 6{% include pen.html v="underline" %}</span> by finals. The way he explains things just clicks.&rdquo;</blockquote>
+        <figcaption>Carlo &middot; IB AA HL student</figcaption>
+      </figure>
+      <div class="quote-stack">
+        <figure class="quote">
+          <blockquote>&ldquo;Alex explains with patience I haven't found anywhere else. My son no longer panics before maths tests.&rdquo;</blockquote>
+          <figcaption>Cristiana &middot; Parent of a DP2 student</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>&ldquo;SAT math score went up by 120 points. Every lesson is focused, efficient and structured. No wasted time.&rdquo;</blockquote>
+          <figcaption>Jacopo &middot; SAT student</figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<section class="cta-band">
+<section class="end-cta end-cta--joined" aria-labelledby="cta-title">
   <div class="container">
-    <div class="section-label reveal" style="justify-content: center;">Work Together</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
-      Sound like the <em>right fit?</em>
-    </h2>
-    <p class="cta-band-desc reveal reveal-delay-2">
-      Book a free 20-minute intro call and let's talk about your student:
-      where they are, where they need to be, and how to get there.
-    </p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book a Free Intro Call</a>
-      <a href="/services/" class="btn btn-outline">View Services</a>
+    <div class="end-cta-text">
+      <h2 id="cta-title">Sound like the right fit?</h2>
+      <p>Book a free 20-minute intro call and let's talk about your student: where they are, where they need to be, and how to get there.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+        <a href="/services/" class="link-quiet">See services</a>
+      </div>
+      <p class="end-cta-direct">Or write directly: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/services/">Services</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

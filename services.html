@@ -263,243 +263,163 @@ hreflang_it: 'https://intellixtutoring.com/it/services/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/" class="active">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/services/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/services/">IT</a>
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">Services</p>
+        <h1 id="page-title">Every service built around you.</h1>
+        <p class="lead dropcap">Specialised <a href="/ib-tutor/">online tutoring for IB</a>, SAT, Bocconi and university-level mathematics, structured around each student's goals and exam schedule.</p>
+        <div class="actions">
+          <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+          <a href="/faq/" class="link-quiet">Read the FAQ</a>
         </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
-  <div class="container">
-    <div class="page-hero-label reveal">Services</div>
-    <h1 class="reveal reveal-delay-1">Every service <em>built around you.</em></h1>
-    <p class="reveal reveal-delay-2">Specialised <a href="/ib-tutor/">online tutoring for IB</a>, SAT, Bocconi and university-level mathematics, structured around each student's goals and exam schedule.</p>
-    <div class="reveal reveal-delay-3" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px;">
-      <a href="/contact/" class="btn btn-gold">Book a Free Intro Call</a>
-      <a href="/faq/" class="btn btn-outline">Read the FAQ</a>
-    </div>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- SERVICES GRID -->
-<section id="services" class="services-section">
-  <div class="container">
-    <div class="services-header">
-      <div>
-        <div class="section-label reveal">What I Offer</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Six subjects,<br /><em>one tutor.</em>
-        </h2>
-      </div>
-      <p class="section-desc reveal reveal-delay-2">
-        Each service is fully personalised, built around the student's current level, exam schedule,
-        and the kind of support they actually need.
-      </p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <span class="service-tag">IB &middot; SL &amp; HL</span>
-        <h3>IB Mathematics</h3>
-        <p>Structured support for IB Maths AA and AI at both SL and HL. Syllabus mastery, past papers, exam-style questions, and real understanding built from the ground up, not just memorised steps.</p>
-        <a href="/ib-maths-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Maths tutoring in detail &rarr;</a>
-        <a href="/ib-tutor/milan/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Tutoring for Milan international schools &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-1">
-        <span class="service-num">02</span>
-        <span class="service-tag">IB &middot; SL &amp; HL</span>
-        <h3>IB Physics</h3>
-        <p>Clear, structured support for IB Physics at SL and HL. We focus on conceptual understanding, problem-solving techniques and exam strategy, so students feel prepared and confident going in.</p>
-        <a href="/ib-physics-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Physics tutoring in detail &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-2">
-        <span class="service-num">03</span>
-        <span class="service-tag">SAT &middot; Bocconi</span>
-        <h3>SAT &amp; Bocconi Test Prep</h3>
-        <p>Targeted preparation for the SAT Math section and Bocconi's admissions assessment. High-yield topics, timing strategies, accuracy drills, and exam-style practice tailored to each format.</p>
-        <a href="/bocconi-test-prep/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Full Bocconi test guide &rarr;</a>
-        <a href="/sat-math-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">SAT maths section in detail &rarr;</a>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-num">04</span>
-        <span class="service-tag">Summer</span>
-        <h3>Summer Revision Courses</h3>
-        <p>Intensive IB Maths and Physics revision courses designed for the summer break. A focused, structured programme to consolidate Year 1, close gaps, and start Year 2 with confidence.</p>
-      </div>
-      <div class="service-card reveal reveal-delay-1">
-        <span class="service-num">05</span>
-        <span class="service-tag">1:1 &middot; Group</span>
-        <h3>Individual or Group Sessions</h3>
-        <p>One-on-one lessons for fully personalised support, or small group sessions for friends and classmates covering the same topics, more affordable while remaining structured and focused.</p>
-      </div>
-      <div class="service-card reveal reveal-delay-2">
-        <span class="service-num">06</span>
-        <span class="service-tag">Support</span>
-        <h3>Resources &amp; Briefings</h3>
-        <p>Custom practice sets, revision summaries and exam questions, plus optional parent briefings to keep families informed on progress, gaps and next steps without micromanaging.</p>
+        <p class="microcopy">No commitment on the call.</p>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- SERVICE DETAIL -->
-<section id="detail">
+<section id="services" class="section section--tint" aria-labelledby="services-title">
   <div class="container">
-    <div class="section-label reveal">In detail</div>
-    <h2 class="section-title reveal reveal-delay-1">
-      What each service<br /><em>actually involves.</em>
-    </h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:32px;">
-      <div class="practical-row"><dt>IB Mathematics</dt><dd>Lessons cover Analysis &amp; Approaches and Applications &amp; Interpretation at both SL and HL, and follow whatever your school is teaching that week rather than running a parallel syllabus of my own. The first job is always diagnosis: whether marks are being lost to missing content, to method, or to exam technique, because the three need different fixes. From there we build the fluency each paper actually rewards: non-calculator work for AA Paper 1, GDC technique for Paper 2, and the extended multi-step problems of HL Paper 3. Past papers are used as teaching material from early on, not saved up as a final test. IA support runs criterion by criterion. If you are still choosing between courses, the <a href="/blog/ib-math-aa-vs-ai/">AA versus AI comparison</a> sets out the decision. More on <a href="/ib-maths-tutor/">IB Maths tutoring</a>.</dd></div>
-      <div class="practical-row"><dt>IB Physics</dt><dd>IB Physics at SL and HL, structured around the five themes and taught concept first. The most common pattern I see is a student who can recite definitions but stalls the moment a question is unfamiliar, so the work focuses on turning a described situation into the right equation, then sanity-checking units and orders of magnitude before trusting an answer. Graph interpretation and data analysis get specific attention, since they carry marks across both papers. We drill Paper 1 timing under multiple-choice pressure, the structure that earns full credit on Paper 2 extended response, and fluent use of the data booklet. The Physics IA is supported throughout: research question, controlled variables, uncertainty propagation and the evaluation that separates a good IA from an average one. <a href="/ib-physics-tutor/">More on IB Physics tutoring</a>.</dd></div>
-      <div class="practical-row"><dt>SAT &amp; Bocconi Test Prep</dt><dd>These are two very different tests, and preparing for both means holding two opposite rules in your head. The <a href="/sat-math-tutor/">Digital SAT Math section</a> is 44 questions in 70 minutes across two adaptive modules, with no penalty for a wrong answer, so a blank is always a wasted mark, and fluency with the built-in Desmos calculator is worth real points. The <a href="/bocconi-test-prep/">Bocconi admissions test</a> puts 24 maths questions inside 50, gives you about 90 seconds each, and deducts 0.2 for a wrong answer, which makes a considered blank sometimes the correct play. Preparation starts by finding which content areas are actually costing marks, then drills those alongside pacing until the timing decisions stop requiring thought.</dd></div>
-      <div class="practical-row"><dt>Summer Revision Courses</dt><dd>Intensive IB Maths and Physics courses built for the gap between the first and second year of the Diploma. The second year assumes fluency in the first year&rsquo;s material, so gaps that were survivable in DP1 tend to compound quickly once new content lands on top of them. A summer course closes those gaps while there is time and no exam pressure, consolidates what was covered too quickly during term, and gets a head start on the topics that open Year 2. The programme is agreed in advance rather than improvised week to week, so you know what will be covered. It also suits students moving between AA and AI or SL and HL, and those arriving into an international school from a different curriculum.</dd></div>
-      <div class="practical-row"><dt>Individual or Group Sessions</dt><dd>One-to-one lessons are the default: the pace, the examples and the balance between content and exam technique are all set by the individual student, and the plan changes as their needs do. Small group sessions work well for friends or classmates who are genuinely matched (same course, same level, and roughly the same starting point) and cost less per student as a result. Where a group does not work is when the levels or goals diverge, because the session ends up serving neither student properly; I will say so rather than take the booking. Scheduling is arranged around school timetables, exam periods and time zones, and lessons can be taught in English, Italian or Croatian.</dd></div>
-      <div class="practical-row"><dt>Resources &amp; Briefings</dt><dd>Every student gets material built for the specific gap rather than a generic worksheet pack: targeted practice sets, condensed revision summaries for the topics that keep costing marks, and exam-style questions matched to the papers they will actually sit. Between sessions that gives structured work to do rather than a vague instruction to revise. For families, optional parent briefings cover what is improving, what still is not, and what the next few weeks are aimed at, enough for parents to stay genuinely informed without having to sit in on lessons or manage the process themselves. What all of this costs depends on subject, session length and whether you are booking individually or as a group, and is discussed on the free intro call.</dd></div>
+    <div class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow">What I offer</p>
+        <h2 id="services-title">Six subjects, one tutor.</h2>
+      </div>
+      <p class="sec-lead">Each service is fully personalised, built around the student's current level, exam schedule, and the kind of support they actually need.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <p class="card-label">IB &middot; SL &amp; HL</p>
+        <h3>IB Mathematics</h3>
+        <p>Structured support for IB Maths AA and AI at both SL and HL. Syllabus mastery, past papers, exam-style questions, and real understanding built from the ground up, not just memorised steps.</p>
+        <div class="card-links">
+          <a href="/ib-maths-tutor/" class="link-arrow">IB Maths tutoring in detail&nbsp;&rarr;</a>
+          <a href="/ib-tutor/milan/" class="link-arrow">Tutoring for Milan international schools&nbsp;&rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-label">IB &middot; SL &amp; HL</p>
+        <h3>IB Physics</h3>
+        <p>Clear, structured support for IB Physics at SL and HL. We focus on conceptual understanding, problem-solving techniques and exam strategy, so students feel prepared and confident going in.</p>
+        <div class="card-links">
+          <a href="/ib-physics-tutor/" class="link-arrow">IB Physics tutoring in detail&nbsp;&rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-label">SAT &middot; Bocconi</p>
+        <h3>SAT &amp; Bocconi test prep</h3>
+        <p>Targeted preparation for the SAT Math section and Bocconi's admissions assessment. High-yield topics, timing strategies, accuracy drills, and exam-style practice tailored to each format.</p>
+        <div class="card-links">
+          <a href="/bocconi-test-prep/" class="link-arrow">Full Bocconi test guide&nbsp;&rarr;</a>
+          <a href="/sat-math-tutor/" class="link-arrow">SAT maths section in detail&nbsp;&rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-label">Summer</p>
+        <h3>Summer revision courses</h3>
+        <p>Intensive IB Maths and Physics revision courses designed for the summer break. A focused, structured programme to consolidate Year 1, close gaps, and start Year 2 with confidence.</p>
+      </article>
+      <article class="card">
+        <p class="card-label">1:1 &middot; Group</p>
+        <h3>Individual or group sessions</h3>
+        <p>One-on-one lessons for fully personalised support, or small group sessions for friends and classmates covering the same topics, more affordable while remaining structured and focused.</p>
+      </article>
+      <article class="card">
+        <p class="card-label">Support</p>
+        <h3>Resources &amp; briefings</h3>
+        <p>Custom practice sets, revision summaries and exam questions, plus optional parent briefings to keep families informed on progress, gaps and next steps without micromanaging.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="detail" class="section" aria-labelledby="detail-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="eyebrow">In detail</p>
+      <h2 id="detail-title">What each service actually involves.</h2>
+    </div>
+    <dl class="rows rows--names split-body">
+      <div class="row"><dt>IB Mathematics</dt><dd>Lessons cover Analysis &amp; Approaches and Applications &amp; Interpretation at both SL and HL, and follow whatever your school is teaching that week rather than running a parallel syllabus of my own. The first job is always diagnosis: whether marks are being lost to missing content, to method, or to exam technique, because the three need different fixes. From there we build the fluency each paper actually rewards: non-calculator work for AA Paper 1, GDC technique for Paper 2, and the extended multi-step problems of HL Paper 3. Past papers are used as teaching material from early on, not saved up as a final test. IA support runs criterion by criterion. If you are still choosing between courses, the <a href="/blog/ib-math-aa-vs-ai/">AA versus AI comparison</a> sets out the decision. More on <a href="/ib-maths-tutor/">IB Maths tutoring</a>.</dd></div>
+      <div class="row"><dt>IB Physics</dt><dd>IB Physics at SL and HL, structured around the five themes and taught concept first. The most common pattern I see is a student who can recite definitions but stalls the moment a question is unfamiliar, so the work focuses on turning a described situation into the right equation, then sanity-checking units and orders of magnitude before trusting an answer. Graph interpretation and data analysis get specific attention, since they carry marks across both papers. We drill Paper 1 timing under multiple-choice pressure, the structure that earns full credit on Paper 2 extended response, and fluent use of the data booklet. The Physics IA is supported throughout: research question, controlled variables, uncertainty propagation and the evaluation that separates a good IA from an average one. <a href="/ib-physics-tutor/">More on IB Physics tutoring</a>.</dd></div>
+      <div class="row"><dt>SAT &amp; Bocconi test prep</dt><dd>These are two very different tests, and preparing for both means holding two opposite rules in your head. The <a href="/sat-math-tutor/">Digital SAT Math section</a> is 44 questions in 70 minutes across two adaptive modules, with no penalty for a wrong answer, so a blank is always a wasted mark, and fluency with the built-in Desmos calculator is worth real points. The <a href="/bocconi-test-prep/">Bocconi admissions test</a> puts 24 maths questions inside 50, gives you about 90 seconds each, and deducts 0.2 for a wrong answer, which makes a considered blank sometimes the correct play. Preparation starts by finding which content areas are actually costing marks, then drills those alongside pacing until the timing decisions stop requiring thought.</dd></div>
+      <div class="row"><dt>Summer revision courses</dt><dd>Intensive IB Maths and Physics courses built for the gap between the first and second year of the Diploma. The second year assumes fluency in the first year&rsquo;s material, so gaps that were survivable in DP1 tend to compound quickly once new content lands on top of them. A summer course closes those gaps while there is time and no exam pressure, consolidates what was covered too quickly during term, and gets a head start on the topics that open Year 2. The programme is agreed in advance rather than improvised week to week, so you know what will be covered. It also suits students moving between AA and AI or SL and HL, and those arriving into an international school from a different curriculum.</dd></div>
+      <div class="row"><dt>Individual or group sessions</dt><dd>One-to-one lessons are the default: the pace, the examples and the balance between content and exam technique are all set by the individual student, and the plan changes as their needs do. Small group sessions work well for friends or classmates who are genuinely matched (same course, same level, and roughly the same starting point) and cost less per student as a result. Where a group does not work is when the levels or goals diverge, because the session ends up serving neither student properly; I will say so rather than take the booking. Scheduling is arranged around school timetables, exam periods and time zones, and lessons can be taught in English, Italian or Croatian.</dd></div>
+      <div class="row"><dt>Resources &amp; briefings</dt><dd>Every student gets material built for the specific gap rather than a generic worksheet pack: targeted practice sets, condensed revision summaries for the topics that keep costing marks, and exam-style questions matched to the papers they will actually sit. Between sessions that gives structured work to do rather than a vague instruction to revise. For families, optional parent briefings cover what is improving, what still is not, and what the next few weeks are aimed at, enough for parents to stay genuinely informed without having to sit in on lessons or manage the process themselves. What all of this costs depends on subject, session length and whether you are booking individually or as a group, and is discussed on the free intro call.</dd></div>
     </dl>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- HOW IT WORKS -->
-<section id="how">
-  <div class="container">
-    <div style="text-align: center; max-width: 560px; margin: 0 auto;">
-      <div class="section-label reveal" style="justify-content: center;">The Process</div>
-      <h2 class="section-title reveal reveal-delay-1">
-        Three steps to<br /><em>better grades.</em>
-      </h2>
-      <p class="section-desc reveal reveal-delay-2" style="margin: 0 auto;">
-        Getting started is simple. From your first message to your first lesson, here's exactly what happens.
-      </p>
+<section id="how" class="section section--tint" aria-labelledby="how-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="eyebrow">The process</p>
+      <h2 id="how-title">Three steps to better grades.</h2>
+      <p class="sec-lead">Getting started is simple. From your first message to your first lesson, here's exactly what happens.</p>
     </div>
-    <div class="steps-grid">
-      <div class="step reveal">
-        <div class="step-num"><span class="step-num-inner">01</span></div>
-        <h3>Book a Free Call</h3>
-        <p>Reach out via the form, email or WhatsApp. We'll have a 20-minute intro call to understand the student's situation, goals, and what kind of support they need.</p>
+    <div class="split-body">
+      <ol class="steps steps--flush">
+        <li>
+          <span class="step-n" aria-hidden="true">1</span>
+          <div>
+            <h3>Book a free call</h3>
+            <p>Reach out via the form, email or WhatsApp. We'll have a 20-minute intro call to understand the student's situation, goals, and what kind of support they need.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-n" aria-hidden="true">2</span>
+          <div>
+            <h3>Get a tailored plan</h3>
+            <p>Based on the call, I put together a structured learning plan with clear priorities, timeline and format, designed specifically for that student's level and exam schedule.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-n" aria-hidden="true">3</span>
+          <div>
+            <h3>Start making progress</h3>
+            <p>Lessons begin. Each session builds on the last. Progress is tracked, the plan adapts as needed, and parents are kept informed at every stage.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="fees-note">
+        <p class="fees-note-title">Fees depend on the subject and the session length.</p>
+        <p class="fees-note-text">We'll go through it plainly on the intro call, with no obligation either way.</p>
       </div>
-      <div class="step reveal reveal-delay-1">
-        <div class="step-num"><span class="step-num-inner">02</span></div>
-        <h3>Get a Tailored Plan</h3>
-        <p>Based on the call, I put together a structured learning plan with clear priorities, timeline and format, designed specifically for that student's level and exam schedule.</p>
-      </div>
-      <div class="step reveal reveal-delay-2">
-        <div class="step-num"><span class="step-num-inner">03</span></div>
-        <h3>Start Making Progress</h3>
-        <p>Lessons begin. Each session builds on the last. Progress is tracked, the plan adapts as needed, and parents are kept informed at every stage.</p>
-      </div>
-    </div>
-    <div style="text-align: center; margin-top: 48px;" class="reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book Your Free Call</a>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content: center;">Ready to start?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
-      Book a <em>free intro call.</em>
-    </h2>
-    <p class="cta-band-desc reveal reveal-delay-2">
-      No commitment. Just a 20-minute conversation to understand your situation and see if we're a good fit.
-    </p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-      <a href="/faq/" class="btn btn-outline">Read the FAQ</a>
+<section class="section" aria-labelledby="faq-teaser-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="faq-teaser-title">Questions families always ask.</h2>
+    </div>
+    <div class="split-body flush-lead">
+      <p class="sec-lead">Everything you need to know before booking, from how sessions work to what results to expect.</p>
+      <p class="more-link"><a href="/faq/" class="link-arrow link-arrow--lg">Read the FAQ&nbsp;&rarr;</a></p>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Book a free intro call.</h2>
+      <p>No commitment. Just a 20-minute conversation to understand your situation and see if we're a good fit.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+      </div>
+      <p class="end-cta-direct">Or write directly: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

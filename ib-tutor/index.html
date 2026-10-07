@@ -220,204 +220,149 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/ib-tutor/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/ib-tutor/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">Online IB tutoring &middot; Maths &amp; Physics</div>
-    <h1 class="reveal reveal-delay-1">Online IB tutor, <em>Maths and Physics.</em></h1>
-    <p class="reveal reveal-delay-2">I&rsquo;m Alex. I finished the IB Diploma with 43/45, including 7s in Maths AA HL and Physics HL, then did a maths degree at the University of Trieste. Now I teach IB Maths and Physics online, one to one, in English, Italian or Croatian.</p>
-    <p class="proof-line reveal reveal-delay-3">Students I&rsquo;ve tutored come from 9 schools in Italy and the Netherlands, and from Bocconi University.</p>
-  </div>
-</div>
-<section>
-  <div class="container">
-    <div class="section-label reveal">01</div>
-    <h2 class="section-title reveal reveal-delay-1">What I teach</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>IB Maths</dt><dd>AA and AI, SL and HL, taught the way the papers are marked. <a href="/ib-maths-tutor/">IB Maths tutoring in detail</a>.</dd></div>
-      <div class="practical-row"><dt>IB Physics</dt><dd>SL and HL, concept first, with the maths underneath done properly. <a href="/ib-physics-tutor/">IB Physics tutoring in detail</a>.</dd></div>
-      <div class="practical-row"><dt>The IA</dt><dd>Maths explorations and Physics investigations, from choosing a topic to reading drafts against the criteria. The work stays yours: I give feedback and never write or edit it.</dd></div>
-      <div class="practical-row"><dt>Beyond the IB</dt><dd><a href="/sat-math-tutor/">SAT Math</a> for US applications, the <a href="/bocconi-test-prep/">Bocconi admissions test</a> for students applying in Italy, and first-year university maths.</dd></div>
-    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">02</div>
-    <h2 class="section-title reveal reveal-delay-1">Where my students come from</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>Milan</dt><dd>The American School of Milan, the British School of Milan, the Canadian School of Milan, Collegio San Carlo, ICS Milan and St Louis School. There&rsquo;s a <a href="/ib-tutor/milan/">guide for each Milan school</a>.</dd></div>
-      <div class="practical-row"><dt>Elsewhere in Italy</dt><dd>The International School of Como and the International School of Bergamo.</dd></div>
-      <div class="practical-row"><dt>Outside Italy</dt><dd>UWC Maastricht, in the Netherlands.</dd></div>
-      <div class="practical-row"><dt>University</dt><dd>Bocconi University. I also teach first-year university maths.</dd></div>
-    </dl>
-    <div class="inline-cta reveal">
-      <p>Your school isn&rsquo;t on the list? Lessons are online, so it doesn&rsquo;t need to be. Start with a free 20-minute call.</p>
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-    </div>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">03</div>
-    <h2 class="section-title reveal reveal-delay-1">How online lessons work</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>The lesson</dt><dd>We work through the topic together on a shared whiteboard, so you see every step as it&rsquo;s written. Every session ends with a clear list of what to practise next.</dd></div>
-      <div class="practical-row"><dt>The worksheet</dt><dd>You get a custom problem set aimed at what we just covered, to work through on your own while it&rsquo;s fresh.</dd></div>
-      <div class="practical-row"><dt>The feedback</dt><dd>I review every answer. Misconceptions get corrected before the next session and gaps get flagged early, so nothing quietly piles up.</dd></div>
-      <div class="practical-row"><dt>Practical detail</dt><dd>60-minute sessions as standard, 90 minutes in revision periods. Zoom or Google Meet, scheduled around your school timetable and time zone. Session notes are shared after every lesson.</dd></div>
-    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section id="faq-start">
-  <div class="container">
-    <div class="section-label reveal">FAQ</div>
-    <h2 class="section-title reveal reveal-delay-1">Common questions</h2>
-    <div style="margin-top:32px;">
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Does online IB tutoring work as well as in person?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">For maths and physics it does, in my experience. We work on a shared whiteboard, so you see every line as it&rsquo;s written, and you keep the session notes to go back through before a test.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Which IB subjects do you teach?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">IB Maths (AA and AI, SL and HL) and IB Physics (SL and HL), with IA support in both. Outside the IB I teach SAT Math, Bocconi test prep and first-year university maths.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Do you only work with students in Milan?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Lessons are online, so students join from anywhere. Mine come from schools in Milan, Como, Bergamo and Maastricht, and we schedule around your time zone.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>What language are lessons in?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">English, Italian or Croatian. Your exam will most likely be in English, so we keep the maths and physics vocabulary in English and switch language for explanations when that helps.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>How do I start?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Book a free 20-minute call. We talk about where you are, what you&rsquo;re aiming for and whether I&rsquo;m the right fit. I reply within 24 hours.</div>
-      </div>
-    </div>
-    <p style="margin-top:26px;font-size:0.86rem;color:var(--text-muted);font-style:italic;">Bring your class materials and your latest test to the intro call. That&rsquo;s the fastest way to see where the marks are going.</p>
-  </div>
-</section>
-
-<hr class="divider" />
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Maths or Physics?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Start with <em>a free call.</em></h2>
-    <p class="cta-band-desc reveal reveal-delay-2">20 minutes to work out where the marks are going and what to do about it. No commitment.</p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-      <a href="/services/" class="btn btn-outline">See All Services</a>
-    </div>
-  </div>
-</section>
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/">Home</a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/services/">Services</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">IB tutor</span>
+    </nav>
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">Online IB tutoring &middot; Maths &amp; Physics</p>
+        <h1 id="page-title">Online IB tutor, Maths and Physics.</h1>
+        <p class="lead dropcap">I<span>&rsquo;m</span> Alex. I finished the IB Diploma with 43/45, including 7s in Maths AA HL and Physics HL, then did a maths degree at the University of Trieste. Now I teach IB Maths and Physics online, one to one, in English, Italian or Croatian.</p>
+        <p class="side-note">Students I&rsquo;ve tutored come from 9 schools in Italy and the Netherlands, and from Bocconi University.</p>
+        <div class="actions">
+          <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+          <a href="/services/" class="link-quiet">See services</a>
+        </div>
+        <p class="microcopy">No commitment on the call.</p>
+      </div>
+      <div class="page-hero-aside numeral-module numeral-module--score">
+        <div class="numeral-score">
+          <p class="numeral-score-figure"><span class="big">43</span><span class="of">/45</span></p>
+          <p class="numeral-caption">IB Diploma points &middot; Alex Ćetojević</p>
+        </div>
+        <dl class="leaders">
+          <div><dt>Mathematics AA HL</dt><dd>7</dd></div>
+          <div><dt>Physics HL</dt><dd>7</dd></div>
+          <div><dt>Extended Essay, Mathematics</dt><dd>A</dd></div>
+          <div><dt>BSc Mathematics, Trieste &middot; GPA</dt><dd>29.3/30</dd></div>
+        </dl>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+<nav class="onpage" aria-label="On this page">
+  <div class="container">
+    <p class="onpage-label">On this page</p>
+    <ul>
+      <li><a href="#s1"><span>1</span>What I teach</a></li>
+      <li><a href="#s2"><span>2</span>Where my students come from</a></li>
+      <li><a href="#s3"><span>3</span>How online lessons work</a></li>
+      <li><a href="#faq" class="no-num">Questions</a></li>
+    </ul>
+  </div>
+</nav>
 
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
+<section id="s1" class="section" aria-labelledby="s1-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">1</p>
+      <h2 id="s1-title">What I teach</h2>
+    </div>
+    <dl class="rows rows--names split-body">
+      <div class="row"><dt>IB Maths</dt><dd>AA and AI, SL and HL, taught the way the papers are marked. <a href="/ib-maths-tutor/">IB Maths tutoring in detail</a>.</dd></div>
+      <div class="row"><dt>IB Physics</dt><dd>SL and HL, concept first, with the maths underneath done properly. <a href="/ib-physics-tutor/">IB Physics tutoring in detail</a>.</dd></div>
+      <div class="row"><dt>The IA</dt><dd>Maths explorations and Physics investigations, from choosing a topic to reading drafts against the criteria. The work stays yours: I give feedback and never write or edit it.</dd></div>
+      <div class="row"><dt>Beyond the IB</dt><dd><a href="/sat-math-tutor/">SAT Math</a> for US applications, the <a href="/bocconi-test-prep/">Bocconi admissions test</a> for students applying in Italy, and first-year university maths.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+<section id="s2" class="section section--tint" aria-labelledby="s2-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">2</p>
+      <h2 id="s2-title">Where my students come from</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Milan</dt><dd>The American School of Milan, the British School of Milan, the Canadian School of Milan, Collegio San Carlo, ICS Milan and St Louis School. There&rsquo;s a <a href="/ib-tutor/milan/">guide for each Milan school</a>.</dd></div>
+      <div class="row"><dt>Elsewhere in Italy</dt><dd>The International School of Como and the International School of Bergamo.</dd></div>
+      <div class="row"><dt>Outside Italy</dt><dd>UWC Maastricht, in the Netherlands.</dd></div>
+      <div class="row"><dt>University</dt><dd>Bocconi University. I also teach first-year university maths.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+<section id="s3" class="section" aria-labelledby="s3-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">3</p>
+      <h2 id="s3-title">How online lessons work</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>The lesson</dt><dd>We work through the topic together on a shared whiteboard, so you see every step as it&rsquo;s written. Every session ends with a clear list of what to practise next.</dd></div>
+      <div class="row"><dt>The worksheet</dt><dd>You get a custom problem set aimed at what we just covered, to work through on your own while it&rsquo;s fresh.</dd></div>
+      <div class="row"><dt>The feedback</dt><dd>I review every answer. Misconceptions get corrected before the next session and gaps get flagged early, so nothing quietly piles up.</dd></div>
+      <div class="row"><dt>Practical detail</dt><dd>60-minute sessions as standard, 90 minutes in revision periods. Zoom or Google Meet, scheduled around your school timetable and time zone. Session notes are shared after every lesson.</dd></div>
+    </dl>
+  </div>
+</section>
 
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+<section id="faq" class="section section--tint" aria-labelledby="faq-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="faq-title">Common questions</h2>
+    </div>
+    <div class="split-body">
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>Does online IB tutoring work as well as in person?</summary>
+          <div class="faq-answer">For maths and physics it does, in my experience. We work on a shared whiteboard, so you see every line as it&rsquo;s written, and you keep the session notes to go back through before a test.</div>
+        </details>
+        <details class="faq-item" open>
+          <summary>Which IB subjects do you teach?</summary>
+          <div class="faq-answer">IB Maths (AA and AI, SL and HL) and IB Physics (SL and HL), with IA support in both. Outside the IB I teach SAT Math, Bocconi test prep and first-year university maths.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you only work with students in Milan?</summary>
+          <div class="faq-answer">Lessons are online, so students join from anywhere. Mine come from schools in Milan, Como, Bergamo and Maastricht, and we schedule around your time zone.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What language are lessons in?</summary>
+          <div class="faq-answer">English, Italian or Croatian. Your exam will most likely be in English, so we keep the maths and physics vocabulary in English and switch language for explanations when that helps.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I start?</summary>
+          <div class="faq-answer">Book a free 20-minute call. We talk about where you are, what you&rsquo;re aiming for and whether I&rsquo;m the right fit. I reply within 24 hours.</div>
+        </details>
+      </div>
+      <p class="legal-note">Bring your class materials and your latest test to the intro call. That&rsquo;s the fastest way to see where the marks are going.</p>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Start with a free call.</h2>
+      <p>20 minutes to work out where the marks are going and what to do about it. No commitment.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+        <a href="/services/" class="link-quiet">See services</a>
+      </div>
+      <p class="end-cta-direct">Or write directly: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
 </body>
 </html>

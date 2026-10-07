@@ -166,146 +166,125 @@ hreflang_it: 'https://intellixtutoring.com/it/author/alex-cetojevic/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/">FAQ</a></li>
-        <li><a href="/it/blog/">Blog</a></li>
-        <li><a href="/it/contact/">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/author/alex-cetojevic/">EN</a>
-          <span>|</span>
-          <a href="/it/author/alex-cetojevic/" class="active">IT</a>
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">Il tuo tutor</p>
+        <h1 id="page-title">Alex Ćetojević</h1>
+        <p class="lead dropcap profile-lead"><strong>Intellix Tutoring è l’attività di tutoring individuale di Alex Ćetojević</strong>. Laureato in matematica, ha concluso il Diploma IB con 43/45 e oggi insegna Matematica IB, Fisica IB, SAT Math e preparazione al test di ammissione Bocconi a studenti di scuole internazionali in tutta Europa. Le lezioni sono tutte online, in italiano, inglese o croato.</p>
+        <div class="actions">
+          <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+          <a href="/it/services/" class="link-quiet">Vedi i servizi</a>
         </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
+        <p class="microcopy">20 minuti, gratuiti. Senza impegno.</p>
       </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
-  <div class="container">
-    <div class="page-hero-label reveal">Il tuo tutor</div>
-    <h1 class="reveal reveal-delay-1">Alex Ćetojević</h1>
-    <p class="reveal reveal-delay-2"><strong>Intellix Tutoring è l’attività di tutoring individuale di Alex Ćetojević</strong>. Laureato in matematica, ha concluso il Diploma IB con 43/45 e oggi insegna Matematica IB, Fisica IB, SAT Math e preparazione al test di ammissione Bocconi a studenti di scuole internazionali in tutta Europa. Le lezioni sono tutte online, in italiano, inglese o croato.</p>
-  </div>
-</div>
-<section>
-  <div class="container">
-    <div class="section-label reveal">01</div>
-    <h2 class="section-title reveal reveal-delay-1">Credenziali</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Diploma IB</dt><dd>43 su 45, con un 7 in Mathematics Analysis &amp; Approaches HL, un 7 in Physics HL e una A nell’Extended Essay di Matematica.</dd></div>      <div class="practical-row"><dt>Laurea</dt><dd>Laurea triennale in Matematica all’Università di Trieste, con una media di 29,3 su 30.</dd></div>      <div class="practical-row"><dt>Insegnamento</dt><dd>Oltre 1.000 ore di tutoring in matematica e fisica IB, SAT e universitaria per studenti di scuole internazionali in tutta Europa.</dd></div>      <div class="practical-row"><dt>Fuori dalla materia</dt><dd>Ex atleta della nazionale giovanile di beach volley: da lì viene l’abitudine a migliorare con costanza sotto pressione.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">02</div>
-    <h2 class="section-title reveal reveal-delay-1">Cosa insegno</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Matematica IB</dt><dd>Analysis &amp; Approaches e Applications &amp; Interpretation, sia SL sia HL, Internal Assessment compresa.</dd></div>      <div class="practical-row"><dt>Fisica IB</dt><dd>SL e HL, indagine scientifica compresa.</dd></div>      <div class="practical-row"><dt>Test di ammissione</dt><dd>SAT Mathematics e il test di ammissione Bocconi, dove 24 domande su 50 sono di matematica.</dd></div>      <div class="practical-row"><dt>Matematica universitaria</dt><dd>Corsi del primo anno: analisi, algebra lineare e calcolo.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">03</div>
-    <h2 class="section-title reveal reveal-delay-1">Come insegno</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Prima capire, poi il metodo</dt><dd>Chi capisce perché un metodo funziona sa affrontare un problema mai visto. Chi ha imparato i passaggi a memoria no, e questi esami sono fatti proprio di problemi mai visti.</dd></div>      <div class="practical-row"><dt>Un piano dal primo giorno</dt><dd>Priorità sugli argomenti, tempi realistici e obiettivi definiti già dalla prima lezione, così lo studente sa sempre a che punto è e cosa viene dopo.</dd></div>      <div class="practical-row"><dt>Il ciclo tra una lezione e l’altra</dt><dd>Dopo ogni lezione arriva una scheda di esercizi su misura, che correggo prima della successiva. Gli errori concettuali si sistemano finché sono ancora piccoli.</dd></div>      <div class="practical-row"><dt>Con calma e onestà</dt><dd>Le lezioni non sono di corsa. Rallentiamo dove qualcosa non è chiaro, e dico chiaramente quando un approccio non funziona invece di insistere.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">04</div>
-    <h2 class="section-title reveal reveal-delay-1">Aspetti pratici</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>Lingue</dt><dd>Italiano, inglese e croato, tutte a livello fluente. Una lezione può svolgersi interamente in una delle tre.</dd></div>      <div class="practical-row"><dt>Formato</dt><dd>Online su Zoom o Google Meet con lavagna condivisa. 60 minuti come standard, 90 nei periodi di ripasso.</dd></div>      <div class="practical-row"><dt>Dove sono gli studenti</dt><dd>Scuole internazionali in tutta Europa. Essendo le lezioni online, la posizione non è un vincolo.</dd></div>      <div class="practical-row"><dt>Come si inizia</dt><dd>Una chiamata conoscitiva gratuita di 20 minuti, senza impegno.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">05</div>
-    <h2 class="section-title reveal reveal-delay-1">Articoli</h2>
-    <ul class="about-list reveal reveal-delay-2" style="margin-top:24px;">      <li><a href="/it/blog/ib-math-aa-vs-ai/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">IB Math AA o AI: quale scegliere?</a></li>      <li><a href="/it/blog/ib-math-aa-hl-study-tips/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Consigli di studio IB Math AA HL: Analysis &amp; Approaches</a></li>      <li><a href="/it/blog/ib-math-aa-sl-common-mistakes/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Errori comuni in IB Math AA SL: i 5 che costano più punti</a></li>      <li><a href="/it/blog/ib-math-aa-ia-topic-ideas/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Idee per l’IA di IB Math AA: come sceglierne una buona</a></li>    </ul>
-  </div>
-</section>
-<hr class="divider" />
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Lavoriamo insieme</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Si parte da <em>una chiacchierata.</em></h2>
-    <p class="cta-band-desc reveal reveal-delay-2">Una chiamata gratuita di 20 minuti per capire a che punto è lo studente, quali sono gli obiettivi e se sono la persona giusta. Senza impegno.</p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
-      <a href="/it/services/" class="btn btn-outline">Vedi tutti i servizi</a>
+      <div class="page-hero-aside numeral-module numeral-module--score">
+        <div class="numeral-score">
+          <p class="numeral-score-figure"><span class="big">43</span><span class="of">/45</span></p>
+          <p class="numeral-caption">Punti del Diploma IB</p>
+        </div>
+        <dl class="leaders">
+          <div><dt>Mathematics AA HL</dt><dd>7</dd></div>
+          <div><dt>Physics HL</dt><dd>7</dd></div>
+          <div><dt>Extended Essay, Matematica</dt><dd>A</dd></div>
+          <div><dt>BSc Matematica, Trieste &middot; media</dt><dd>29.3/30</dd></div>
+        </dl>
+      </div>
     </div>
   </div>
 </section>
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/">Home</a>
-      <a href="/it/services/">Servizi</a>
-      <a href="/it/contact/">Contatti</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+<section class="section section--rule" aria-labelledby="credentials-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="credentials-title">Credenziali</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Diploma IB</dt><dd>43 su 45, con un 7 in Mathematics Analysis &amp; Approaches HL, un 7 in Physics HL e una A nell’Extended Essay di Matematica.</dd></div>
+      <div class="row"><dt>Laurea</dt><dd>Laurea triennale in Matematica all’Università di Trieste, con una media di 29,3 su 30.</dd></div>
+      <div class="row"><dt>Insegnamento</dt><dd>Oltre 1.000 ore di tutoring in matematica e fisica IB, SAT e universitaria per studenti di scuole internazionali in tutta Europa.</dd></div>
+      <div class="row"><dt>Fuori dalla materia</dt><dd>Ex atleta della nazionale giovanile di beach volley: da lì viene l’abitudine a migliorare con costanza sotto pressione.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="teach-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="teach-title">Cosa insegno</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Matematica IB</dt><dd>Analysis &amp; Approaches e Applications &amp; Interpretation, sia SL sia HL, Internal Assessment compresa.</dd></div>
+      <div class="row"><dt>Fisica IB</dt><dd>SL e HL, indagine scientifica compresa.</dd></div>
+      <div class="row"><dt>Test di ammissione</dt><dd>SAT Mathematics e il test di ammissione Bocconi, dove 24 domande su 50 sono di matematica.</dd></div>
+      <div class="row"><dt>Matematica universitaria</dt><dd>Corsi del primo anno: analisi, algebra lineare e calcolo.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="method-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="method-title">Come insegno</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Prima capire, poi il metodo</dt><dd>Chi capisce perché un metodo funziona sa affrontare un problema mai visto. Chi ha imparato i passaggi a memoria no, e questi esami sono fatti proprio di problemi mai visti.</dd></div>
+      <div class="row"><dt>Un piano dal primo giorno</dt><dd>Priorità sugli argomenti, tempi realistici e obiettivi definiti già dalla prima lezione, così lo studente sa sempre a che punto è e cosa viene dopo.</dd></div>
+      <div class="row"><dt>Il ciclo tra una lezione e l’altra</dt><dd>Dopo ogni lezione arriva una scheda di esercizi su misura, che correggo prima della successiva. Gli errori concettuali si sistemano finché sono ancora piccoli.</dd></div>
+      <div class="row"><dt>Con calma e onestà</dt><dd>Le lezioni non sono di corsa. Rallentiamo dove qualcosa non è chiaro, e dico chiaramente quando un approccio non funziona invece di insistere.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--rule" aria-labelledby="practical-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="practical-title">Aspetti pratici</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Lingue</dt><dd>Italiano, inglese e croato, tutte a livello fluente. Una lezione può svolgersi interamente in una delle tre.</dd></div>
+      <div class="row"><dt>Formato</dt><dd>Online su Zoom o Google Meet con lavagna condivisa. 60 minuti come standard, 90 nei periodi di ripasso.</dd></div>
+      <div class="row"><dt>Dove sono gli studenti</dt><dd>Scuole internazionali in tutta Europa. Essendo le lezioni online, la posizione non è un vincolo.</dd></div>
+      <div class="row"><dt>Come si inizia</dt><dd>Una chiamata conoscitiva gratuita di 20 minuti, senza impegno.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="writing-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="writing-title">Articoli</h2>
+    </div>
+    <div class="split-body">
+      <ul class="ticks ticks--flush profile-writing">
+        <li><a href="/it/blog/ib-math-aa-vs-ai/">IB Math AA o AI: quale scegliere?</a></li>
+        <li><a href="/it/blog/ib-math-aa-hl-study-tips/">Consigli di studio IB Math AA HL: Analysis &amp; Approaches</a></li>
+        <li><a href="/it/blog/ib-math-aa-sl-common-mistakes/">Errori comuni in IB Math AA SL: i 5 che costano più punti</a></li>
+        <li><a href="/it/blog/ib-math-aa-ia-topic-ideas/">Idee per l’IA di IB Math AA: come sceglierne una buona</a></li>
+      </ul>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Si parte da una chiacchierata.</h2>
+      <p>Una chiamata gratuita di 20 minuti per capire a che punto è lo studente, quali sono gli obiettivi e se sono la persona giusta. Senza impegno.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+        <a href="/it/services/" class="link-quiet">Vedi i servizi</a>
+      </div>
+      <p class="end-cta-direct">Oppure scrivimi direttamente: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
 
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+{% include footer.html %}
 </body>
 </html>

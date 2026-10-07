@@ -15,113 +15,21 @@ no_twitter: true
 {% include head.html %}
 </head>
 <body>
+{% include header.html %}
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<!-- SITE TOP -->
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<section class="page-hero">
+<section class="page-hero notfound" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label">Error 404</div>
-    <h1>This page doesn't exist.</h1>
-    <p>The link may be out of date, or the address slightly off. Everything you're likely looking for is below.</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;">
-      <a href="/" class="btn btn-gold">Back to Home</a>
-      <a href="/services/" class="btn btn-outline">See Services</a>
-      <a href="/contact/" class="btn btn-outline">Book a Free Call</a>
+    <p class="eyebrow">Error 404</p>
+    <h1 id="page-title">This page doesn't exist.</h1>
+    <p class="lead">The link may be out of date, or the address slightly off. Everything you're likely looking for is below.</p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Back to Home</a>
+      <a href="/services/" class="link-quiet">See services</a>
     </div>
-    <p style="margin-top:30px;font-size:0.92rem;">Or try the <a href="/faq/" style="color:var(--gold-light);text-decoration:underline;">FAQ</a>, the <a href="/blog/" style="color:var(--gold-light);text-decoration:underline;">blog</a>, or the <a href="/it/" style="color:var(--gold-light);text-decoration:underline;">Italian site</a>.</p>
+    <p class="notfound-more">Or try the <a href="/faq/">FAQ</a>, the <a href="/blog/">blog</a>, or the <a href="/it/">Italian site</a>.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/services/">Services</a>
-      <a href="/about/">About</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-const wrapper = document.getElementById('contactFormWrapper');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
-  try {
-    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-    if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
-    else { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-  } catch { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-});
-</script>
+{% include footer.html %}
 </body>
 </html>

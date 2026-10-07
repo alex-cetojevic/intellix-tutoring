@@ -212,193 +212,136 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/ics-milan/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/ib-tutor/ics-milan/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/ib-tutor/ics-milan/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">IB tutoring &middot; Milan</div>
-    <h1 class="reveal reveal-delay-1">IB maths tutoring for <em>ICS Milan students.</em></h1>
-    <p class="reveal reveal-delay-2">Independent one-to-one tutoring in IB Mathematics and Physics for students at ICS Milan, delivered online. ICS Milan takes students into the Diploma Programme through a bilingual English–Italian programme with the MYP and the Diploma Programme, and that route shapes which parts of IB maths feel hard, which is where this starts.</p>
-    <p class="proof-line reveal reveal-delay-3">I&rsquo;ve already tutored students from ICS Milan.</p>
-  </div>
-</div>
-<section>
-  <div class="container">
-    <div class="section-label reveal">01</div>
-    <h2 class="section-title reveal reveal-delay-1">How the ICS route shapes IB maths</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>The route into the DP</dt><dd>ICS runs a bilingual English–Italian programme through the MYP and into the Diploma. Students are typically comfortable in both languages, which sounds like a neutral fact and is not.</dd></div>      <div class="practical-row"><dt>Why bilingual maths is its own problem</dt><dd>Mathematical vocabulary is learned in one language and examined in another. A student can understand a concept perfectly in Italian and lose marks because the English command term in the question meant something more specific than they assumed. "Hence", "show that" and "justify" all have precise mark-scheme meanings that no general English fluency teaches you.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">02</div>
-    <h2 class="section-title reveal reveal-delay-1">Course choice and what to watch</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>How I handle it</dt><dd>I teach in Italian, English or a mix, which is the practical advantage here. In practice the useful pattern is to work the concept through in whichever language it lands best, then deliberately rebuild the answer in the language of the exam paper, including the command terms.</dd></div>      <div class="practical-row"><dt>The Italian-family dimension</dt><dd>Bilingual schools tend to have more Italian families, and with them more interest in Italian universities and the Bocconi admissions test. That test is 24 maths questions out of 50, on a syllabus that overlaps substantially with AA.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">03</div>
-    <h2 class="section-title reveal reveal-delay-1">Where we usually start</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">      <div class="practical-row"><dt>A command-term audit in the first sessions</dt><dd>Early on we go through past-paper questions purely for language: what "show that" obliges you to write, how "hence" ties one part to the next, when "justify" needs a sentence rather than a calculation. Students are usually surprised how many marks were sitting in the wording.</dd></div>      <div class="practical-row"><dt>Building a working bilingual vocabulary</dt><dd>We keep a running list of the terms that differ between the Italian and English mathematical vocabulary, and the ones that look similar but are not. Once that list stops growing, the bilingual disadvantage largely disappears and the student is simply doing maths.</dd></div>    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section id="faq-start">
-  <div class="container">
-    <div class="section-label reveal">FAQ</div>
-    <h2 class="section-title reveal reveal-delay-1">Common questions</h2>
-    <div style="margin-top:32px;">      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Do you tutor students from ICS Milan?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Yes. Lessons are online, so I work with students at ICS Milan and other international schools across Europe. I am not affiliated with the school. This is independent one-to-one tutoring arranged directly with families.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Which maths courses do you cover?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">IB Mathematics Analysis &amp; Approaches and Applications &amp; Interpretation, at Standard and Higher Level, plus IB Physics, the Internal Assessment in both subjects, SAT Math and Bocconi admissions preparation.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Do you follow the same syllabus as ICS Milan?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Yes. The IB sets the syllabus, so it is the same at ICS Milan as at every IB school. What changes is the order your teachers cover it in. Lessons follow what your class is doing that week, and your school's tests and deadlines shape the plan.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Can lessons be in Italian?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Yes. I am fluent in English, Italian and Croatian, and a lesson can run in any of the three or move between them. For students examined in English but more comfortable reasoning in Italian, that flexibility is usually the fastest route to understanding.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Lessons are in English but my child thinks in Italian. Is that a problem?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">It is a manageable one, and it is the specific reason I teach in both. The mathematics is rarely the issue; the loss is in command terms and in phrasing extended answers. We work the concept in whichever language is faster, then rebuild the answer in the language of the exam paper. Most of the recovered marks come from that second step.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<hr class="divider" />
-<section style="padding:0 0 8px;">
-  <div class="container">
-    <a href="/ib-tutor/milan/" style="color:var(--gold-light);font-size:0.9rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">&larr; All Milan international schools</a>
-  </div>
-</section>
-<section style="padding:40px 0;">
-  <div class="container">
-    <p style="font-size:0.84rem;color:var(--text-muted);font-style:italic;max-width:70ch;">Intellix Tutoring is an independent tutoring practice and is not affiliated with, endorsed by, or connected to ICS Milan. The school name is used only to describe the students I work with.</p>
-  </div>
-</section>
-<hr class="divider" />
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Get started</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Start with <em>a free call.</em></h2>
-    <p class="cta-band-desc reveal reveal-delay-2">Twenty minutes to understand where your child is, what they are aiming for, and whether I am the right fit. No commitment.</p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
-      <a href="/services/" class="btn btn-outline">See All Services</a>
-    </div>
-  </div>
-</section>
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/">Home</a>
+    <nav class="breadcrumb breadcrumb--deep" aria-label="Breadcrumb">
       <a href="/services/">Services</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <span aria-hidden="true">/</span>
+      <a href="/ib-tutor/">IB tutor</a>
+      <span aria-hidden="true">/</span>
+      <a href="/ib-tutor/milan/">Milan</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">ICS Milan</span>
+    </nav>
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">IB tutoring &middot; Milan</p>
+        <h1 id="page-title">IB maths tutoring for ICS Milan students.</h1>
+        <p class="lead dropcap">Independent one-to-one tutoring in IB Mathematics and Physics for students at ICS Milan, delivered online. ICS Milan takes students into the Diploma Programme through a bilingual English–Italian programme with the MYP and the Diploma Programme, and that route shapes which parts of IB maths feel hard, which is where this starts.</p>
+        <p class="side-note">I&rsquo;ve already tutored students from ICS Milan.</p>
+        <div class="actions">
+          <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+          <a href="/services/" class="link-quiet">See services</a>
+        </div>
+        <p class="microcopy">No commitment on the call.</p>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+<nav class="onpage" aria-label="On this page">
+  <div class="container">
+    <p class="onpage-label">On this page</p>
+    <ul>
+      <li><a href="#s1"><span>1</span>How the route shapes IB maths</a></li>
+      <li><a href="#s2"><span>2</span>Course choice and what to watch</a></li>
+      <li><a href="#s3"><span>3</span>Where we usually start</a></li>
+      <li><a href="#faq" class="no-num">Questions</a></li>
+    </ul>
+  </div>
+</nav>
 
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
+<section id="s1" class="section" aria-labelledby="s1-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">1</p>
+      <h2 id="s1-title">How the ICS route shapes IB maths</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>The route into the DP</dt><dd>ICS runs a bilingual English–Italian programme through the MYP and into the Diploma. Students are typically comfortable in both languages, which sounds like a neutral fact and is not.</dd></div>
+      <div class="row"><dt>Why bilingual maths is its own problem</dt><dd>Mathematical vocabulary is learned in one language and examined in another. A student can understand a concept perfectly in Italian and lose marks because the English command term in the question meant something more specific than they assumed. "Hence", "show that" and "justify" all have precise mark-scheme meanings that no general English fluency teaches you.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+<section id="s2" class="section section--tint" aria-labelledby="s2-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">2</p>
+      <h2 id="s2-title">Course choice and what to watch</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>How I handle it</dt><dd>I teach in Italian, English or a mix, which is the practical advantage here. In practice the useful pattern is to work the concept through in whichever language it lands best, then deliberately rebuild the answer in the language of the exam paper, including the command terms.</dd></div>
+      <div class="row"><dt>The Italian-family dimension</dt><dd>Bilingual schools tend to have more Italian families, and with them more interest in Italian universities and the Bocconi admissions test. That test is 24 maths questions out of 50, on a syllabus that overlaps substantially with AA.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+<section id="s3" class="section" aria-labelledby="s3-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">3</p>
+      <h2 id="s3-title">Where we usually start</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>A command-term audit in the first sessions</dt><dd>Early on we go through past-paper questions purely for language: what "show that" obliges you to write, how "hence" ties one part to the next, when "justify" needs a sentence rather than a calculation. Students are usually surprised how many marks were sitting in the wording.</dd></div>
+      <div class="row"><dt>Building a working bilingual vocabulary</dt><dd>We keep a running list of the terms that differ between the Italian and English mathematical vocabulary, and the ones that look similar but are not. Once that list stops growing, the bilingual disadvantage largely disappears and the student is simply doing maths.</dd></div>
+    </dl>
+  </div>
+</section>
 
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+<section id="faq" class="section section--tint" aria-labelledby="faq-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="faq-title">Common questions</h2>
+      <p class="side-note"><a href="/ib-tutor/milan/" class="link-arrow link-arrow--lg">&larr; All Milan international schools</a></p>
+    </div>
+    <div class="split-body">
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>Do you tutor students from ICS Milan?</summary>
+          <div class="faq-answer">Yes. Lessons are online, so I work with students at ICS Milan and other international schools across Europe. I am not affiliated with the school. This is independent one-to-one tutoring arranged directly with families.</div>
+        </details>
+        <details class="faq-item" open>
+          <summary>Which maths courses do you cover?</summary>
+          <div class="faq-answer">IB Mathematics Analysis &amp; Approaches and Applications &amp; Interpretation, at Standard and Higher Level, plus IB Physics, the Internal Assessment in both subjects, SAT Math and Bocconi admissions preparation.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you follow the same syllabus as ICS Milan?</summary>
+          <div class="faq-answer">Yes. The IB sets the syllabus, so it is the same at ICS Milan as at every IB school. What changes is the order your teachers cover it in. Lessons follow what your class is doing that week, and your school's tests and deadlines shape the plan.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can lessons be in Italian?</summary>
+          <div class="faq-answer">Yes. I am fluent in English, Italian and Croatian, and a lesson can run in any of the three or move between them. For students examined in English but more comfortable reasoning in Italian, that flexibility is usually the fastest route to understanding.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Lessons are in English but my child thinks in Italian. Is that a problem?</summary>
+          <div class="faq-answer">It is a manageable one, and it is the specific reason I teach in both. The mathematics is rarely the issue; the loss is in command terms and in phrasing extended answers. We work the concept in whichever language is faster, then rebuild the answer in the language of the exam paper. Most of the recovered marks come from that second step.</div>
+        </details>
+      </div>
+      <p class="legal-note">Intellix Tutoring is an independent tutoring practice and is not affiliated with, endorsed by, or connected to ICS Milan. The school name is used only to describe the students I work with.</p>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Start with a free call.</h2>
+      <p>Twenty minutes to understand where your child is, what they are aiming for, and whether I am the right fit. No commitment.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+        <a href="/services/" class="link-quiet">See services</a>
+      </div>
+      <p class="end-cta-direct">Or write directly: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
 </body>
 </html>

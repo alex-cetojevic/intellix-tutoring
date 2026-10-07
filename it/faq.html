@@ -335,303 +335,149 @@ hreflang_it: 'https://intellixtutoring.com/it/faq/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/" class="active">FAQ</a></li>
-        <li><a href="/it/blog/">Blog</a></li>
-        <li><a href="/it/contact/">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/faq/">EN</a>
-          <span>|</span>
-          <a href="/it/faq/" class="active">IT</a>
-        </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">FAQ</div>
-    <h1 class="reveal reveal-delay-1">Le domande che <em>si fanno sempre le famiglie.</em></h1>
-    <p class="reveal reveal-delay-2">Tutto quello che ti serve sapere prima di prenotare, da come funzionano le sessioni a cosa aspettarsi in termini di risultati.</p>
+    <p class="eyebrow">FAQ</p>
+    <h1 id="page-title">Le domande che si fanno sempre le famiglie.</h1>
+    <p class="lead dropcap">Tutto quello che ti serve sapere prima di prenotare, da come funzionano le sessioni a cosa aspettarsi in termini di risultati.</p>
   </div>
-</div>
+</section>
 
-<hr class="divider" />
-
-<!-- Getting Started -->
-<section id="faq-start">
+<section id="faq-start" class="section section--rule" aria-labelledby="faq-start-title">
   <div class="container">
-    <div class="section-label reveal">Per iniziare</div>
-    <h2 class="section-title reveal reveal-delay-1" style="max-width: 500px;">
-      Prima della <em>prima sessione.</em>
-    </h2>
-    <div class="faq-grid" style="margin-top: 40px;">
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>C'è una sessione di prova o introduttiva gratuita?</span>
-          <div class="faq-icon">+</div>
-        </div>
+    <div class="sec-head">
+      <p class="eyebrow">Per iniziare</p>
+      <h2 id="faq-start-title">Prima della prima sessione.</h2>
+    </div>
+    <div class="faq faq--cols">
+      <details class="faq-item" open>
+        <summary>C'è una sessione di prova o introduttiva gratuita?</summary>
         <div class="faq-answer">Sì. Ogni nuovo studente ha diritto a una chiamata conoscitiva gratuita di 20 minuti. È una chiacchierata senza pressione per capire la situazione dello studente, vedere se c'è la giusta affinità e abbozzare come potrebbe essere un piano. Nessun impegno richiesto.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Quale piattaforma usi per le lezioni online?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item" open>
+        <summary>Quale piattaforma usi per le lezioni online?</summary>
         <div class="faq-answer">Le lezioni si tengono su Zoom o Google Meet, a scelta dello studente. Uso una lavagna digitale condivisa per lavorare sui problemi in tempo reale, e gli appunti della sessione vengono condivisi a fine lezione.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Quali materie puoi insegnare?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Quali materie puoi insegnare?</summary>
         <div class="faq-answer">Insegno IB Mathematics AA e AI (SL e HL), IB Physics (SL e HL), SAT Math, preparazione al test di ammissione Bocconi e matematica universitaria del primo anno. Se non sei sicuro/a che la tua materia rientri, chiedi pure. Ne parliamo volentieri durante la chiamata conoscitiva.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Come si inizia?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Come si inizia?</summary>
         <div class="faq-answer">Compila il modulo nella pagina Contatti, manda una email a alexcetojevic12@gmail.com oppure scrivi su WhatsApp. Ti rispondo entro 24 ore per fissare una chiamata conoscitiva gratuita di 20 minuti in cui parliamo delle esigenze dello studente e dei prossimi passi.</div>
-      </div>
+      </details>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- Sessions & Scheduling -->
-<section id="faq-sessions">
+<section id="faq-sessions" class="section section--tint" aria-labelledby="faq-sessions-title">
   <div class="container">
-    <div class="section-label reveal">Sessioni &amp; Orari</div>
-    <h2 class="section-title reveal reveal-delay-1" style="max-width: 500px;">
-      Come funzionano <em>le lezioni.</em>
-    </h2>
-    <div class="faq-grid" style="margin-top: 40px;">
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Con quale frequenza dovremmo incontrarci per i migliori risultati?</span>
-          <div class="faq-icon">+</div>
-        </div>
+    <div class="sec-head">
+      <p class="eyebrow">Sessioni &amp; orari</p>
+      <h2 id="faq-sessions-title">Come funzionano le lezioni.</h2>
+    </div>
+    <div class="faq faq--cols">
+      <details class="faq-item">
+        <summary>Con quale frequenza dovremmo incontrarci per i migliori risultati?</summary>
         <div class="faq-answer">Due volte a settimana è il ritmo ideale: mantiene lo slancio, lascia tempo per esercitarsi tra una sessione e l'altra e permette di consolidare gli argomenti prima che svaniscano. Definiamo il programma durante la chiamata conoscitiva e lo adattiamo se necessario.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Cosa succede se dobbiamo riprogrammare una sessione?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Cosa succede se dobbiamo riprogrammare una sessione?</summary>
         <div class="faq-answer">Succede. Chiedo almeno 24 ore di preavviso per spostare la sessione senza costi. Le sessioni cancellate con meno di 24 ore di anticipo potrebbero essere addebitate. Faccio sempre del mio meglio per trovare uno slot alternativo nella stessa settimana.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Quanto durano le sessioni?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto durano le sessioni?</summary>
         <div class="faq-answer">Le sessioni standard sono di 60 minuti. Per gli studenti che hanno bisogno di un supporto più intensivo, soprattutto nei periodi di ripasso pre-esame, si possono organizzare sessioni da 90 minuti. La durata si concorda sempre prima e si riflette nel prezzo.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Offri supporto tra una sessione e l'altra?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Offri supporto tra una sessione e l'altra?</summary>
         <div class="faq-answer">Gli studenti con il pacchetto mensile hanno accesso al supporto via WhatsApp tra le sessioni per domande brevi e mirate: un chiarimento su un concetto o un rapido check su come impostare un problema. Non è un aiuto illimitato per i compiti, ma serve a evitare che lo studente rimanga bloccato tra una lezione e l'altra.</div>
-      </div>
+      </details>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- Curriculum & Progress -->
-<section id="faq-progress">
+<section id="faq-progress" class="section" aria-labelledby="faq-progress-title">
   <div class="container">
-    <div class="section-label reveal">Programma &amp; Progressi</div>
-    <h2 class="section-title reveal reveal-delay-1" style="max-width: 500px;">
-      Cosa <em>aspettarsi.</em>
-    </h2>
-    <div class="faq-grid" style="margin-top: 40px;">
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Segui il programma IB aggiornato?</span>
-          <div class="faq-icon">+</div>
-        </div>
+    <div class="sec-head">
+      <p class="eyebrow">Programma &amp; progressi</p>
+      <h2 id="faq-progress-title">Cosa aspettarsi.</h2>
+    </div>
+    <div class="faq faq--cols">
+      <details class="faq-item">
+        <summary>Segui il programma IB aggiornato?</summary>
         <div class="faq-answer">Sì. Seguo il programma IB Mathematics aggiornato per entrambi i percorsi Analysis &amp; Approaches (AA) e Applications &amp; Interpretation (AI), a livello SL e HL. Le lezioni sono sempre in linea con quello che lo studente sta affrontando a scuola.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Puoi aiutare con l'Internal Assessment IB?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Puoi aiutare con l'Internal Assessment IB?</summary>
         <div class="faq-answer">Sì. Posso supportare gli studenti con la loro IA di Matematica o Fisica, dalla scelta dell'argomento e la formulazione di una buona domanda di ricerca, fino alla verifica del contenuto matematico e al controllo che l'esplorazione rispetti i criteri IB. Il supporto all'IA si svolge di solito nell'ambito delle sessioni regolari o come sessioni dedicate a sé stanti.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Le lezioni online funzionano per Fisica IB HL?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Le lezioni online funzionano per Fisica IB HL?</summary>
         <div class="faq-answer">Sì, per la mia esperienza. Gran parte di Fisica HL è fatta di schemi, passaggi matematici e dati, e tutti e tre funzionano bene su una lavagna condivisa. Lo studente vede ogni passaggio mentre viene scritto e tiene gli appunti. Il laboratorio resta a scuola. Per l'IA do un riscontro sulla domanda di ricerca, sul metodo e sull'analisi.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Con quanto anticipo conviene iniziare la preparazione al test Bocconi?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Con quanto anticipo conviene iniziare la preparazione al test Bocconi?</summary>
         <div class="faq-answer">Conviene iniziare da sei settimane a tre mesi prima della data del test. La matematica vale 24 domande su 50, circa 90 secondi l'una, e quella velocità si costruisce con settimane di esercizi a tempo. Per la Early Session di settembre si parte in estate. Per la Winter Session, in autunno. Di più nella <a href="/it/preparazione-test-bocconi/">guida al test Bocconi</a>.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Come monitori i progressi degli studenti?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Come monitori i progressi degli studenti?</summary>
         <div class="faq-answer">Durante ogni sessione verifico costantemente la comprensione dello studente, quindi ho sempre un quadro chiaro di dove si trova e dove serve più attenzione. Sono disponibile per aggiornamenti in qualsiasi momento. I genitori possono contattarmi quando vogliono per sapere direttamente come sta andando.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-1" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Le lezioni possono essere condotte in croato o italiano?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Le lezioni possono essere condotte in croato o italiano?</summary>
         <div class="faq-answer">Assolutamente. Parlo fluentemente inglese, croato e italiano. Per gli studenti che si trovano più a loro agio nella loro lingua madre, possiamo tenere l'intera lezione in croato o italiano. L'importante è che il modo in cui si impara funzioni davvero.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Cosa succede se mio figlio non migliora?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Cosa succede se mio figlio non migliora?</summary>
         <div class="faq-answer">Se uno studente non progredisce come previsto, lo prendo sul serio e cambio approccio, rallentando su un argomento, spiegando in modo diverso, o ridefinendo completamente il piano. Preferisco una conversazione onesta su quello che funziona piuttosto che andare avanti con qualcosa che non funziona. I genitori vengono sempre tenuti al corrente.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Che tipo di risultati vedono tipicamente gli studenti?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Che tipo di risultati vedono tipicamente gli studenti?</summary>
         <div class="faq-answer">In media gli studenti migliorano di 2 punti nel voto IB e chi prepara il SAT guadagna 110 punti nella sezione di matematica. L'80% raggiunge o supera il voto target. Basato su oltre 20 studenti che hanno completato un pacchetto di lezioni completo. I risultati individuali variano. Dipendono dal punto di partenza, dal lavoro tra una sessione e l'altra e dal tempo a disposizione prima degli esami. Ecco perché sono onesto sulle aspettative già dalla prima chiamata.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Quanto costano le lezioni?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto costano le lezioni?</summary>
         <div class="faq-answer">Le tariffe dipendono dalla materia, dalla durata della lezione e dal fatto che si tratti di lezioni individuali o in piccolo gruppo con amici. Le sessioni di gruppo risultano più convenienti per studente. Piuttosto che indicare un unico numero che non si adatterebbe a ogni situazione, ne parlo chiaramente durante la chiamata introduttiva gratuita, una volta capito di cosa ha davvero bisogno tuo figlio o tua figlia. Nessun impegno, e la chiamata non ha alcun costo.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Segui studenti a Milano o altrove in Italia?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Segui studenti a Milano o altrove in Italia?</summary>
         <div class="faq-answer">Sì. Le lezioni sono tutte online, quindi la posizione non è un vincolo: seguo studenti di scuole internazionali in tutta Europa, Italia compresa. Le sessioni si svolgono su Zoom o Google Meet con lavagna condivisa e possono essere interamente in italiano, se è la lingua in cui tuo figlio o tua figlia ragiona. Non sono previste lezioni in presenza.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Segui studenti anche fuori dall'Italia?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Segui studenti anche fuori dall'Italia?</summary>
         <div class="faq-answer">Sì. Le lezioni sono online, quindi ci si collega da qualsiasi posto. I miei studenti vengono da scuole in Italia e nei Paesi Bassi. Lavoro sull'orario dell'Europa centrale. Scegliamo uno slot fisso settimanale adatto all'orario scolastico e al tuo fuso orario, e lo fissiamo nella chiamata conoscitiva gratuita.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>In quali lingue insegni?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>In quali lingue insegni?</summary>
         <div class="faq-answer">Inglese, italiano e croato, tutte a livello fluente. Una lezione può svolgersi interamente in una delle tre e nella pratica gli studenti spesso mescolano: seguono la spiegazione in italiano tenendo la terminologia matematica in inglese, perché è la lingua in cui è scritto il loro esame. Vale quello che fa capire meglio il concetto.</div>
-      </div>
-      <div class="faq-item reveal reveal-delay-2" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>In cosa è diverso da Preply o Superprof?</span>
-          <div class="faq-icon">+</div>
-        </div>
+      </details>
+      <details class="faq-item">
+        <summary>In cosa è diverso da Preply o Superprof?</summary>
         <div class="faq-answer">Quelli sono marketplace: prenoti un&rsquo;ora da chi è disponibile e la continuità resta un problema tuo. Qui c&rsquo;è un solo tutor, non un elenco. Ogni studente riceve una scheda di esercizi dopo ogni lezione, che correggo prima della successiva, così i progressi si accumulano invece di ripartire da zero ogni volta. Inoltre rifiuto gli studenti per cui non sono la persona giusta, cosa che un marketplace non ha motivo di fare.</div>
-      </div>
+      </details>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-
-<section class="cta-band">
+<section class="end-cta" aria-labelledby="cta-title">
   <div class="container">
-    <div class="section-label reveal" style="justify-content: center;">Hai ancora domande?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
-      Parliamo della <em>tua situazione.</em>
-    </h2>
-    <p class="cta-band-desc reveal reveal-delay-2">
-      La chiamata conoscitiva gratuita è il modo migliore per avere risposte dirette. Nessun impegno, solo una chiacchierata onesta per capire se siamo la scelta giusta l'uno per l'altro.
-    </p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
-      <a href="/it/services/" class="btn btn-outline">Vedi i servizi</a>
+    <div class="end-cta-text">
+      <h2 id="cta-title">Parliamo della tua situazione.</h2>
+      <p>La chiamata conoscitiva gratuita è il modo migliore per avere risposte dirette. Nessun impegno, solo una chiacchierata onesta per capire se siamo la scelta giusta l'uno per l'altro.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+        <a href="/it/services/" class="link-quiet">Vedi i servizi</a>
+      </div>
+      <p class="end-cta-direct">Oppure scrivimi direttamente: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/">Home</a>
-      <a href="/it/services/">Servizi</a>
-      <a href="/it/contact/">Contatti</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+{% include footer.html %}
 </body>
 </html>

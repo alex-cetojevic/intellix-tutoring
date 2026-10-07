@@ -247,79 +247,30 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/digital-sat-math-scoring/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<!-- SITE TOP -->
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/" class="active">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/blog/digital-sat-math-scoring/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/blog/digital-sat-math-scoring/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<!-- ARTICLE HERO -->
-<div class="page-hero">
+<div class="article-hero">
   <div class="container">
     <div class="article-wrap">
-      <div class="page-hero-label reveal">Digital SAT &middot; Math</div>
-      <h1 class="reveal reveal-delay-1">How the Digital SAT Math Section Is Actually Scored</h1>
-      <div class="article-meta reveal reveal-delay-2">
-        <span>By <a href="/author/alex-cetojevic/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Alex Ćetojević</a></span>
-        <span class="dot"></span>
-        <span>10 September 2026</span>
-        <span class="dot"></span>
-        <span>10 min read</span>
-      </div>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/blog/">Blog</a></nav>
+      <p class="eyebrow">Digital SAT &middot; Math</p>
+      <h1>How the Digital SAT Math Section Is Actually Scored</h1>
+      <p class="byline">Written by <a href="/author/alex-cetojevic/">Alex Ćetojević</a></p>
+      <p class="article-meta">10 September 2026 &middot; 10 min read</p>
     </div>
   </div>
 </div>
 
-<hr class="divider" />
-
 <section class="article-section">
   <div class="container">
     <article class="article-wrap article-body">
-      <a href="/blog/" class="article-back reveal">&larr; Back to Blog</a>
+      <a href="/blog/" class="article-back">&larr; Back to Blog</a>
       <div class="answer-first">
         <div class="answer-first-label">In short</div>
         <p>The Math section is 44 questions in 70 minutes, split into two modules of 22 questions and 35 minutes each. Only 40 of those 44 are scored: two questions in each module are unscored pretest items, and there is no way to tell which. The section is adaptive between modules: how you do on the first decides whether the second is the easier or the harder version, and only the harder version gives access to the top of the 200&ndash;800 range. Because a wrong answer costs exactly what a blank costs, there is never a reason to leave a question unanswered.</p>
       </div>
       <h2>The shape of the section</h2>
-      <p>Two modules, 22 questions and 35 minutes each. That works out at roughly 95 seconds a question, though the questions are not equally demanding: short algebra items need to be banked quickly so the multi-step ones have room.</p>
+      <p class="dropcap">Two modules, 22 questions and 35 minutes each. That works out at roughly 95 seconds a question, though the questions are not equally demanding: short algebra items need to be banked quickly so the multi-step ones have room.</p>
       <p>About three quarters of the questions are multiple choice with four options. The rest are student-produced responses, where you type the answer yourself. That distinction matters more than it looks. On a student-produced response there are no options to work backwards from and no partial credit for being close, so the arithmetic has to survive contact with the keyboard.</p>
       <p>Math is scored 200 to 800 and is exactly half of the 1600 total.</p>
       <h2>The adaptive part, and why the first module matters more</h2>
@@ -369,88 +320,38 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/digital-sat-math-scoring/'
       <h3 class="faq-q">Should I take the SAT or the Bocconi test?</h3>
       <p class="faq-a">Bocconi accepts SAT scores as an alternative to its own admissions test and counts your best result, so sitting both and submitting the stronger one is a legitimate strategy. They reward different things: the SAT gives more time per question, no wrong-answer penalty and a calculator throughout, while the Bocconi test is more time-pressured and penalises errors.</p>
       <div class="article-cta">
-        <p style="margin:0 0 14px;">If the maths section is where your SAT score is stuck, a free 20-minute call is enough to find which of the four content areas is actually costing you marks.</p>
-        <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
+        <p>If the maths section is where your SAT score is stuck, a free 20-minute call is enough to find which of the four content areas is actually costing you marks.</p>
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
       </div>
     </article>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- RELATED -->
-<section>
+<section class="section section--tint" aria-labelledby="next-title">
   <div class="container">
-    <div class="section-label reveal">Keep reading</div>
-    <h2 class="section-title reveal reveal-delay-1">Where to go next</h2>
-    <div class="services-grid reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <span class="service-tag">Digital SAT</span>
-        <h3>SAT maths prep</h3>
-        <p>44 questions in 70 minutes across two adaptive modules, and no penalty for a wrong answer.</p>
-        <a href="/sat-math-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">SAT maths in detail &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-1">
-        <span class="service-num">02</span>
-        <span class="service-tag">Admissions</span>
-        <h3>Bocconi test prep</h3>
-        <p>24 of the 50 questions are maths. Format, syllabus, scoring, and when a blank beats a guess.</p>
-        <a href="/bocconi-test-prep/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Full Bocconi guide &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-2">
-        <span class="service-num">03</span>
-        <span class="service-tag">IB · AA &amp; AI</span>
-        <h3>IB Maths tutoring</h3>
-        <p>AA and AI at SL and HL, taught alongside whatever your school is covering this week.</p>
-        <a href="/ib-maths-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Maths in detail &rarr;</a>
-      </div>
+    <div class="article-wrap">
+      <h2 id="next-title">Where to go next</h2>
+      <ul class="next-list">
+        <li>
+          <h3>SAT maths prep</h3>
+          <p>44 questions in 70 minutes across two adaptive modules, and no penalty for a wrong answer.</p>
+          <a href="/sat-math-tutor/" class="link-arrow">SAT maths in detail &rarr;</a>
+        </li>
+        <li>
+          <h3>Bocconi test prep</h3>
+          <p>24 of the 50 questions are maths. Format, syllabus, scoring, and when a blank beats a guess.</p>
+          <a href="/bocconi-test-prep/" class="link-arrow">Full Bocconi guide &rarr;</a>
+        </li>
+        <li>
+          <h3>IB Maths tutoring</h3>
+          <p>AA and AI at SL and HL, taught alongside whatever your school is covering this week.</p>
+          <a href="/ib-maths-tutor/" class="link-arrow">IB Maths in detail &rarr;</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/services/">Services</a>
-      <a href="/about/">About</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    window.location.replace('/it/blog/digital-sat-math-scoring/');
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

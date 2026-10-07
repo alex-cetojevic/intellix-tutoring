@@ -1,0 +1,102 @@
+{%- comment -%}
+  Site header and full-screen mobile menu, shared by every page. Opens <main>; footer.html closes it.
+  Language comes from page.locale. The EN | IT switch reuses the page's hreflang pair.
+{%- endcomment -%}
+{%- if page.locale == 'it_IT' -%}
+  {%- assign root = '/it/' -%}
+  {%- assign t_services = 'Servizi' -%}
+  {%- assign t_about = 'Chi sono' -%}
+  {%- assign t_contact = 'Contatti' -%}
+  {%- assign t_cta = 'Prenota una call' -%}
+  {%- assign t_main = 'Principale' -%}
+  {%- assign t_open = 'Apri menu' -%}
+  {%- assign t_close = 'Chiudi menu' -%}
+  {%- assign t_lang = 'Lingua' -%}
+  {%- assign t_skip = 'Vai al contenuto' -%}
+{%- else -%}
+  {%- assign root = '/' -%}
+  {%- assign t_services = 'Services' -%}
+  {%- assign t_about = 'About' -%}
+  {%- assign t_contact = 'Contact' -%}
+  {%- assign t_cta = 'Book a free 20-minute call' -%}
+  {%- assign t_main = 'Main' -%}
+  {%- assign t_open = 'Open menu' -%}
+  {%- assign t_close = 'Close menu' -%}
+  {%- assign t_lang = 'Language' -%}
+  {%- assign t_skip = 'Skip to content' -%}
+{%- endif -%}
+{%- assign url_en = page.hreflang_en | default: 'https://intellixtutoring.com/' | remove: 'https://intellixtutoring.com' -%}
+{%- assign url_it = page.hreflang_it | default: 'https://intellixtutoring.com/it/' | remove: 'https://intellixtutoring.com' -%}
+{%- assign nav = 'services' -%}
+{%- if page.url == '/' or page.url == '/it/' or page.url contains '404' -%}{%- assign nav = '' -%}
+{%- elsif page.url contains '/blog' -%}{%- assign nav = 'blog' -%}
+{%- elsif page.url contains '/faq/' -%}{%- assign nav = 'faq' -%}
+{%- elsif page.url contains '/contact/' -%}{%- assign nav = 'contact' -%}
+{%- elsif page.url contains '/about/' or page.url contains '/author/' -%}{%- assign nav = 'about' -%}
+{%- endif -%}
+{%- capture links -%}
+<li><a href="{{ root }}services/"{% if nav == 'services' %} aria-current="{% if page.url contains '/services/' %}page{% else %}true{% endif %}"{% endif %}>{{ t_services }}</a></li>
+<li><a href="{{ root }}about/"{% if nav == 'about' %} aria-current="{% if page.url contains '/about/' %}page{% else %}true{% endif %}"{% endif %}>{{ t_about }}</a></li>
+<li><a href="{{ root }}faq/"{% if nav == 'faq' %} aria-current="page"{% endif %}>FAQ</a></li>
+<li><a href="{{ root }}blog/"{% if nav == 'blog' %} aria-current="{% if page.url == '/blog/' or page.url == '/it/blog/' %}page{% else %}true{% endif %}"{% endif %}>Blog</a></li>
+<li><a href="{{ root }}contact/"{% if nav == 'contact' %} aria-current="page"{% endif %}>{{ t_contact }}</a></li>
+{%- endcapture -%}
+<a class="skip-link" href="#main">{{ t_skip }}</a>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <div class="mobile-menu-head">
+    <a href="{{ root }}" class="lockup" aria-label="Intellix Tutoring, home">
+      <span class="lockup-name">Intellix</span>
+      <span class="lockup-rule" aria-hidden="true"></span>
+      <span class="lockup-sub">Tutoring</span>
+    </a>
+    <button type="button" class="menu-close" id="menuClose" aria-label="{{ t_close }}">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5L5 15"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-menu-nav" aria-label="{{ t_main }}">
+    <ul class="mobile-menu-links">
+      {{ links }}
+    </ul>
+    <div class="mobile-menu-lang">
+      <span>{{ t_lang }}</span>
+      <div class="segmented">
+        <a href="{{ url_en }}" lang="en"{% unless page.locale == 'it_IT' %} aria-current="true"{% endunless %}>EN</a>
+        <a href="{{ url_it }}" lang="it"{% if page.locale == 'it_IT' %} aria-current="true"{% endif %}>IT</a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="{{ root }}contact/" class="btn btn-primary">{{ t_cta }}</a>
+    <div class="mobile-menu-direct">
+      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="header">
+  <div class="container site-header-inner">
+    <a href="{{ root }}" class="lockup" aria-label="Intellix Tutoring, home">
+      <span class="lockup-name">Intellix</span>
+      <span class="lockup-rule" aria-hidden="true"></span>
+      <span class="lockup-sub">Tutoring</span>
+    </a>
+    <nav class="site-nav" aria-label="{{ t_main }}">
+      <ul class="nav-links">
+        {{ links }}
+      </ul>
+      <div class="lang-switch">
+        <a href="{{ url_en }}" lang="en"{% unless page.locale == 'it_IT' %} aria-current="true"{% endunless %}>EN</a>
+        <span class="lang-switch-rule" aria-hidden="true"></span>
+        <a href="{{ url_it }}" lang="it"{% if page.locale == 'it_IT' %} aria-current="true"{% endif %}>IT</a>
+      </div>
+      <a href="{{ root }}contact/" class="btn btn-primary btn-sm">{{ t_cta }}</a>
+    </nav>
+    <button type="button" class="menu-toggle" id="hamburger" aria-label="{{ t_open }}" aria-controls="mobileMenu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">

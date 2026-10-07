@@ -220,196 +220,149 @@ hreflang_it: 'https://intellixtutoring.com/it/ib-tutor/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/">FAQ</a></li>
-        <li><a href="/it/blog/">Blog</a></li>
-        <li><a href="/it/contact/">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/ib-tutor/">EN</a>
-          <span>|</span>
-          <a href="/it/ib-tutor/" class="active">IT</a>
-        </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">Ripetizioni IB online &middot; Matematica e Fisica</div>
-    <h1 class="reveal reveal-delay-1">Tutor IB online, <em>Matematica e Fisica.</em></h1>
-    <p class="reveal reveal-delay-2">Sono Alex. Ho finito il Diploma IB con 43/45, con 7 in Maths AA HL e Physics HL, poi mi sono laureato in matematica all&rsquo;Università di Trieste. Oggi faccio ripetizioni di Matematica e Fisica IB online, uno a uno, in italiano, inglese o croato.</p>
-    <p class="proof-line reveal reveal-delay-3">Ho seguito studenti di 9 scuole in Italia e nei Paesi Bassi, e dell&rsquo;Università Bocconi.</p>
-  </div>
-</div>
-<section>
-  <div class="container">
-    <div class="section-label reveal">01</div>
-    <h2 class="section-title reveal reveal-delay-1">Cosa insegno</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>Matematica IB</dt><dd>AA e AI, SL e HL, insegnata come vengono corretti i paper. <a href="/it/ripetizioni-matematica-ib/">La Matematica IB in dettaglio</a>.</dd></div>
-      <div class="practical-row"><dt>Fisica IB</dt><dd>SL e HL, partendo dai concetti, con la matematica che c&rsquo;è sotto fatta bene. <a href="/it/ib-physics-tutor/">La Fisica IB in dettaglio</a>.</dd></div>
-      <div class="practical-row"><dt>L&rsquo;IA</dt><dd>Exploration di Matematica e indagini di Fisica, dalla scelta dell&rsquo;argomento alla rilettura delle bozze sui criteri. Il lavoro resta tuo: io do un riscontro e non lo scrivo né lo modifico.</dd></div>
-      <div class="practical-row"><dt>Oltre l&rsquo;IB</dt><dd><a href="/it/tutor-sat-matematica/">SAT Math</a> per le università americane, il <a href="/it/preparazione-test-bocconi/">test di ammissione Bocconi</a> per chi si iscrive in Italia, e la matematica del primo anno di università.</dd></div>
-    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">02</div>
-    <h2 class="section-title reveal reveal-delay-1">Da dove vengono i miei studenti</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>Milano</dt><dd>American School of Milan, The British School of Milan, Canadian School of Milan, Collegio San Carlo, ICS Milan e St Louis School. C&rsquo;è una <a href="/it/ib-tutor/milano/">guida per ogni scuola di Milano</a>.</dd></div>
-      <div class="practical-row"><dt>Resto d&rsquo;Italia</dt><dd>International School of Como e International School of Bergamo.</dd></div>
-      <div class="practical-row"><dt>Fuori dall&rsquo;Italia</dt><dd>UWC Maastricht, nei Paesi Bassi.</dd></div>
-      <div class="practical-row"><dt>Università</dt><dd>Università Bocconi. Insegno anche la matematica del primo anno di università.</dd></div>
-    </dl>
-    <div class="inline-cta reveal">
-      <p>La tua scuola non è nell&rsquo;elenco? Le lezioni sono online, quindi non serve che ci sia. Si parte da una chiamata gratuita di 20 minuti.</p>
-      <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
-    </div>
-  </div>
-</section>
-<hr class="divider" />
-<section>
-  <div class="container">
-    <div class="section-label reveal">03</div>
-    <h2 class="section-title reveal reveal-delay-1">Come funzionano le lezioni online</h2>
-    <dl class="practical-list reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="practical-row"><dt>La lezione</dt><dd>Affrontiamo l&rsquo;argomento insieme su una lavagna condivisa, così vedi ogni passaggio mentre lo scrivo. Ogni sessione finisce con una lista chiara di cosa esercitare dopo.</dd></div>
-      <div class="practical-row"><dt>La scheda di esercizi</dt><dd>Ricevi una serie di problemi mirati su quello che abbiamo appena fatto, da svolgere da solo finché è fresco.</dd></div>
-      <div class="practical-row"><dt>Il riscontro</dt><dd>Correggo ogni risposta. Gli errori di concetto si sistemano prima della lezione successiva e le lacune emergono presto, così niente si accumula in silenzio.</dd></div>
-      <div class="practical-row"><dt>Dettagli pratici</dt><dd>Lezioni da 60 minuti, 90 nei periodi di ripasso. Zoom o Google Meet, con orari organizzati intorno alla scuola e al tuo fuso orario. Gli appunti della lezione arrivano dopo ogni sessione.</dd></div>
-    </dl>
-  </div>
-</section>
-<hr class="divider" />
-<section id="faq-start">
-  <div class="container">
-    <div class="section-label reveal">FAQ</div>
-    <h2 class="section-title reveal reveal-delay-1">Domande frequenti</h2>
-    <div style="margin-top:32px;">
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Le ripetizioni IB online funzionano come quelle in presenza?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Per matematica e fisica sì, per la mia esperienza. Lavoriamo su una lavagna condivisa, così vedi ogni riga mentre la scrivo, e tieni gli appunti della lezione da riguardare prima di una verifica.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Quali materie IB insegni?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Matematica IB (AA e AI, SL e HL) e Fisica IB (SL e HL), con supporto per l&rsquo;IA in entrambe. Fuori dall&rsquo;IB insegno SAT Math, preparazione al test Bocconi e matematica del primo anno di università.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Lavori solo con studenti di Milano?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Le lezioni sono online, quindi ci si collega da ovunque. I miei studenti vengono da scuole di Milano, Como, Bergamo e Maastricht, e organizziamo gli orari sul tuo fuso.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>In che lingua sono le lezioni?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Italiano, inglese o croato. L&rsquo;esame sarà molto probabilmente in inglese, quindi teniamo il lessico di matematica e fisica in inglese e passiamo all&rsquo;italiano per le spiegazioni quando aiuta.</div>
-      </div>
-      <div class="faq-item reveal" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          <span>Come si comincia?</span>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer">Prenota una chiamata gratuita di 20 minuti. Parliamo di dove sei, di cosa vuoi ottenere e se sono la persona giusta. Ti rispondo entro 24 ore.</div>
-      </div>
-    </div>
-    <p style="margin-top:26px;font-size:0.86rem;color:var(--text-muted);font-style:italic;">Porta alla chiamata conoscitiva i materiali di classe e l&rsquo;ultima verifica. È il modo più rapido per capire dove si perdono i punti.</p>
-  </div>
-</section>
-
-<hr class="divider" />
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Matematica o Fisica?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Si parte da <em>una chiamata gratuita.</em></h2>
-    <p class="cta-band-desc reveal reveal-delay-2">20 minuti per capire dove si perdono i punti e cosa fare. Senza impegno.</p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
-      <a href="/it/services/" class="btn btn-outline">Vedi tutti i servizi</a>
-    </div>
-  </div>
-</section>
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/">Home</a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/it/services/">Servizi</a>
-      <a href="/it/contact/">Contatti</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Tutor IB</span>
+    </nav>
+    <div class="page-hero-grid">
+      <div class="page-hero-main">
+        <p class="eyebrow">Ripetizioni IB online &middot; Matematica e Fisica</p>
+        <h1 id="page-title">Tutor IB online, Matematica e Fisica.</h1>
+        <p class="lead dropcap">Sono Alex. Ho finito il Diploma IB con 43/45, con 7 in Maths AA HL e Physics HL, poi mi sono laureato in matematica all&rsquo;Università di Trieste. Oggi faccio ripetizioni di Matematica e Fisica IB online, uno a uno, in italiano, inglese o croato.</p>
+        <p class="side-note">Ho seguito studenti di 9 scuole in Italia e nei Paesi Bassi, e dell&rsquo;Università Bocconi.</p>
+        <div class="actions">
+          <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+          <a href="/it/services/" class="link-quiet">Vedi i servizi</a>
+        </div>
+        <p class="microcopy">20 minuti, gratuiti. Senza impegno.</p>
+      </div>
+      <div class="page-hero-aside numeral-module numeral-module--score">
+        <div class="numeral-score">
+          <p class="numeral-score-figure"><span class="big">43</span><span class="of">/45</span></p>
+          <p class="numeral-caption">Punti del Diploma IB &middot; Alex Ćetojević</p>
+        </div>
+        <dl class="leaders">
+          <div><dt>Mathematics AA HL</dt><dd>7</dd></div>
+          <div><dt>Physics HL</dt><dd>7</dd></div>
+          <div><dt>Extended Essay, Matematica</dt><dd>A</dd></div>
+          <div><dt>BSc Matematica, Trieste &middot; media</dt><dd>29.3/30</dd></div>
+        </dl>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+<nav class="onpage" aria-label="In questa pagina">
+  <div class="container">
+    <p class="onpage-label">In questa pagina</p>
+    <ul>
+      <li><a href="#s1"><span>1</span>Cosa insegno</a></li>
+      <li><a href="#s2"><span>2</span>Da dove vengono i miei studenti</a></li>
+      <li><a href="#s3"><span>3</span>Come funzionano le lezioni online</a></li>
+      <li><a href="#faq" class="no-num">Domande</a></li>
+    </ul>
+  </div>
+</nav>
 
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
+<section id="s1" class="section" aria-labelledby="s1-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">1</p>
+      <h2 id="s1-title">Cosa insegno</h2>
+    </div>
+    <dl class="rows rows--names split-body">
+      <div class="row"><dt>Matematica IB</dt><dd>AA e AI, SL e HL, insegnata come vengono corretti i paper. <a href="/it/ripetizioni-matematica-ib/">La Matematica IB in dettaglio</a>.</dd></div>
+      <div class="row"><dt>Fisica IB</dt><dd>SL e HL, partendo dai concetti, con la matematica che c&rsquo;è sotto fatta bene. <a href="/it/ib-physics-tutor/">La Fisica IB in dettaglio</a>.</dd></div>
+      <div class="row"><dt>L&rsquo;IA</dt><dd>Exploration di Matematica e indagini di Fisica, dalla scelta dell&rsquo;argomento alla rilettura delle bozze sui criteri. Il lavoro resta tuo: io do un riscontro e non lo scrivo né lo modifico.</dd></div>
+      <div class="row"><dt>Oltre l&rsquo;IB</dt><dd><a href="/it/tutor-sat-matematica/">SAT Math</a> per le università americane, il <a href="/it/preparazione-test-bocconi/">test di ammissione Bocconi</a> per chi si iscrive in Italia, e la matematica del primo anno di università.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+<section id="s2" class="section section--tint" aria-labelledby="s2-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">2</p>
+      <h2 id="s2-title">Da dove vengono i miei studenti</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Milano</dt><dd>American School of Milan, The British School of Milan, Canadian School of Milan, Collegio San Carlo, ICS Milan e St Louis School. C&rsquo;è una <a href="/it/ib-tutor/milano/">guida per ogni scuola di Milano</a>.</dd></div>
+      <div class="row"><dt>Resto d&rsquo;Italia</dt><dd>International School of Como e International School of Bergamo.</dd></div>
+      <div class="row"><dt>Fuori dall&rsquo;Italia</dt><dd>UWC Maastricht, nei Paesi Bassi.</dd></div>
+      <div class="row"><dt>Università</dt><dd>Università Bocconi. Insegno anche la matematica del primo anno di università.</dd></div>
+    </dl>
+  </div>
+</section>
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+<section id="s3" class="section" aria-labelledby="s3-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="sec-num">3</p>
+      <h2 id="s3-title">Come funzionano le lezioni online</h2>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>La lezione</dt><dd>Affrontiamo l&rsquo;argomento insieme su una lavagna condivisa, così vedi ogni passaggio mentre lo scrivo. Ogni sessione finisce con una lista chiara di cosa esercitare dopo.</dd></div>
+      <div class="row"><dt>La scheda di esercizi</dt><dd>Ricevi una serie di problemi mirati su quello che abbiamo appena fatto, da svolgere da solo finché è fresco.</dd></div>
+      <div class="row"><dt>Il riscontro</dt><dd>Correggo ogni risposta. Gli errori di concetto si sistemano prima della lezione successiva e le lacune emergono presto, così niente si accumula in silenzio.</dd></div>
+      <div class="row"><dt>Dettagli pratici</dt><dd>Lezioni da 60 minuti, 90 nei periodi di ripasso. Zoom o Google Meet, con orari organizzati intorno alla scuola e al tuo fuso orario. Gli appunti della lezione arrivano dopo ogni sessione.</dd></div>
+    </dl>
+  </div>
+</section>
 
-function toggleFaq(item) {
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
+<section id="faq" class="section section--tint" aria-labelledby="faq-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="faq-title">Domande frequenti</h2>
+    </div>
+    <div class="split-body">
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>Le ripetizioni IB online funzionano come quelle in presenza?</summary>
+          <div class="faq-answer">Per matematica e fisica sì, per la mia esperienza. Lavoriamo su una lavagna condivisa, così vedi ogni riga mentre la scrivo, e tieni gli appunti della lezione da riguardare prima di una verifica.</div>
+        </details>
+        <details class="faq-item" open>
+          <summary>Quali materie IB insegni?</summary>
+          <div class="faq-answer">Matematica IB (AA e AI, SL e HL) e Fisica IB (SL e HL), con supporto per l&rsquo;IA in entrambe. Fuori dall&rsquo;IB insegno SAT Math, preparazione al test Bocconi e matematica del primo anno di università.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Lavori solo con studenti di Milano?</summary>
+          <div class="faq-answer">Le lezioni sono online, quindi ci si collega da ovunque. I miei studenti vengono da scuole di Milano, Como, Bergamo e Maastricht, e organizziamo gli orari sul tuo fuso.</div>
+        </details>
+        <details class="faq-item">
+          <summary>In che lingua sono le lezioni?</summary>
+          <div class="faq-answer">Italiano, inglese o croato. L&rsquo;esame sarà molto probabilmente in inglese, quindi teniamo il lessico di matematica e fisica in inglese e passiamo all&rsquo;italiano per le spiegazioni quando aiuta.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Come si comincia?</summary>
+          <div class="faq-answer">Prenota una chiamata gratuita di 20 minuti. Parliamo di dove sei, di cosa vuoi ottenere e se sono la persona giusta. Ti rispondo entro 24 ore.</div>
+        </details>
+      </div>
+      <p class="legal-note">Porta alla chiamata conoscitiva i materiali di classe e l&rsquo;ultima verifica. È il modo più rapido per capire dove si perdono i punti.</p>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Si parte da una chiamata gratuita.</h2>
+      <p>20 minuti per capire dove si perdono i punti e cosa fare. Senza impegno.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+        <a href="/it/services/" class="link-quiet">Vedi i servizi</a>
+      </div>
+      <p class="end-cta-direct">Oppure scrivimi direttamente: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
 </body>
 </html>

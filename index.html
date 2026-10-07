@@ -150,128 +150,72 @@ if (/\/index(\.html)?$/.test(location.pathname)) location.replace(location.pathn
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<!-- SITE TOP -->
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-main">
+      <p class="eyebrow">IB Maths &amp; Physics &middot; SAT &middot; Bocconi &middot; Online</p>
+      <h1 id="hero-title">IB Maths &amp; Physics online, taught by someone who scored <span class="pen pen--underline">43/45.{% include pen.html v="underline" %}</span></h1>
+      <p class="lead dropcap">One-to-one tutoring in IB Maths and Physics, SAT Math and Bocconi test preparation. Your child works with a maths graduate who sat the same exams, and you get an honest view of their progress the whole way through. Lessons in English, Italian or Croatian.</p>
+      <div class="actions">
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
+        <a href="/services/" class="link-quiet">See services</a>
       </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+      <p class="microcopy">No commitment. If I'm not the right fit, I'll tell you.</p>
+
+      <div class="claim">
+        <p class="claim-text">+2 average IB grade lift, and 80% of students hit their target grade or above.<sup><a href="#fn1" aria-label="Footnote 1">1</a></sup></p>
+        <div class="footnote" id="fn1">
+          <p><span class="footnote-n">1</span><span>Based on 20+ students who completed a full lesson package. Individual results vary.</span></p>
+        </div>
+      </div>
     </div>
-  </header>
-</div>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <h1 class="reveal reveal-delay-1">
-          <span class="hero-label hero-label-h1">IB Maths &amp; Physics Tutoring &middot; SAT &middot; Bocconi &middot; Online</span>
-          Maths that finally<br /><em>makes sense.</em>
-        </h1>
-        <p class="hero-sub reveal reveal-delay-2">
-          One-to-one tutoring in IB Maths and Physics, SAT and Bocconi preparation. Your child
-          works with a maths graduate who sat the same exams and scored 43/45, and you get an
-          honest view of their progress the whole way through. Lessons in English, Italian or Croatian.
-        </p>
-        <div class="hero-actions reveal reveal-delay-3">
-          <a href="/contact/" class="btn btn-gold">Book a Free Intro Call</a>
-          <a href="/services/" class="btn btn-outline">See Services</a>
-        </div>
-        <p class="hero-sub reveal reveal-delay-4" style="font-size:0.85rem;margin-bottom:0;color:var(--text-muted);">
-          The intro call is free and takes 20 minutes. No commitment required.
-        </p>
-      </div>
-
-      <aside class="hero-card reveal reveal-delay-2">
+    <div class="hero-aside">
+      <figure class="hero-photo">
         <picture>
           <source type="image/webp" srcset="/alex-400.webp 400w, /alex-800.webp 800w, /alex-1200.webp 1200w" sizes="(max-width: 600px) 100vw, 420px" />
           <source type="image/jpeg" srcset="/alex-400.jpg 400w, /alex-800.jpg 800w, /alex-1200.jpg 1200w" sizes="(max-width: 600px) 100vw, 420px" />
-          <img src="/alex-800.jpg" alt="Alex Ćetojević, IB Math Tutor" class="hero-card-photo" width="420" height="315" loading="eager" fetchpriority="high" decoding="async" />
+          <img src="/alex-800.jpg" alt="Alex Ćetojević, IB Math Tutor" width="460" height="400" loading="eager" fetchpriority="high" decoding="async" />
         </picture>
-        <div class="hero-card-body">
-          <div class="hero-card-name">Alex Ćetojević</div>
-          <div class="hero-card-role">BSc Mathematics &middot; University of Trieste &middot; GPA 29.3/30</div>
-          <div class="hero-badges hero-cred-table" style="flex-direction:column;gap:6px;margin-top:14px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:0.85rem;">
-              <span style="color:var(--text-muted);font-weight:400;">Mathematics AA HL</span>
-              <span style="color:var(--gold-light);font-weight:600;">7 / 7</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:0.85rem;">
-              <span style="color:var(--text-muted);font-weight:400;">Physics HL</span>
-              <span style="color:var(--gold-light);font-weight:600;">7 / 7</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:0.85rem;">
-              <span style="color:var(--text-muted);font-weight:400;">Mathematics Extended Essay</span>
-              <span style="color:var(--gold-light);font-weight:600;">A</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:0.8rem;">
-              <span style="color:var(--text-muted);font-weight:400;">Total IB Score</span>
-              <span style="color:var(--gold-light);font-weight:700;font-size:0.9rem;">43 / 45</span>
-            </div>
-          </div>
+      </figure>
+      <div class="numeral-module numeral-module--home">
+        <div class="numeral-score">
+          <p class="numeral-score-figure"><span class="big">43</span><span class="of">/45</span></p>
+          <p class="numeral-caption">IB Diploma points &middot; Alex Ćetojević</p>
         </div>
-      </aside>
+        <dl class="leaders">
+          <div><dt>Mathematics AA HL</dt><dd>7</dd></div>
+          <div><dt>Physics HL</dt><dd>7</dd></div>
+          <div><dt>Extended Essay, Mathematics</dt><dd>A</dd></div>
+          <div><dt>BSc Mathematics, Trieste &middot; GPA</dt><dd>29.3/30</dd></div>
+        </dl>
+      </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-<!-- PARENT ESSENTIALS -->
-<section class="parent-essentials">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">For Parents</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-top:10px;max-width:620px;margin-left:auto;margin-right:auto;">
-      What to expect,<br /><em>before you commit to anything.</em>
-    </h2>
-    <div class="parent-grid reveal reveal-delay-2">
-      <div class="parent-card">
+<section class="section section--rule" aria-labelledby="expect-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="eyebrow">For parents</p>
+      <h2 id="expect-title">What to expect, before you commit to anything.</h2>
+    </div>
+    <div class="split-body notes-grid">
+      <div class="note">
         <h3>A free 20-minute call first</h3>
         <p>We talk through where your child is now, what they're aiming for, and whether I'm the right fit. No commitment and no pressure. And if I'm not what they need, I'll tell you.</p>
       </div>
-      <div class="parent-card">
+      <div class="note">
         <h3>Updates whenever you want them</h3>
         <p>You're welcome to reach out at any time for a direct update on how your child is progressing: what's improving, what still needs work, and what we're doing about it.</p>
       </div>
-      <div class="parent-card">
+      <div class="note">
         <h3>English, Italian or Croatian</h3>
         <p>I'm fluent in all three. If your child grasps a concept more easily in their first language, we can run the whole lesson that way, whichever helps them learn best.</p>
       </div>
-      <div class="parent-card">
+      <div class="note">
         <h3>Online, with notes after every session</h3>
         <p>Lessons run on Zoom or Google Meet with a shared whiteboard, so problems are worked through live. Session notes are shared afterwards, so nothing gets lost.</p>
       </div>
@@ -279,389 +223,229 @@ if (/\/index(\.html)?$/.test(location.pathname)) location.replace(location.pathn
   </div>
 </section>
 
-<hr class="divider" />
-<!-- OUTCOMES -->
-<section style="padding: 64px 0;">
-  <div class="container fade-up">
-    <div class="section-label reveal" style="justify-content:center;">Results That Speak</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-top:10px;">
-      What students <em>actually achieve.</em>
-    </h2>
-    <div class="outcomes-grid reveal reveal-delay-2">
-      <div class="outcome-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+2</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Avg. IB grade lift</div>
-      </div>
-      <div class="outcome-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">+110</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Avg. SAT score gain</div>
-      </div>
-      <div class="outcome-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">80%</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Hit target grade or above</div>
-      </div>
-      <div class="outcome-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:8px;">1000+</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;">Hours taught</div>
-      </div>
-    </div>
-    <p style="text-align:center;font-size:0.75rem;color:var(--text-muted);margin-top:14px;font-style:italic;font-weight:400;" class="reveal reveal-delay-3">Based on 20+ students who completed a full lesson package. Individual results vary.</p>
-  </div>
-</section>
-
-<hr class="divider" />
-<!-- BEYOND THE LESSON STRIP -->
-<section style="padding: 64px 0;">
+<section id="testimonials" class="section section--gold" aria-labelledby="proof-title">
   <div class="container">
-    <div class="section-label reveal" style="justify-content:center;">Full-Circle Tutoring</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-top:10px;max-width:560px;margin-left:auto;margin-right:auto;">
-      The lesson is just<br /><em>the beginning.</em>
-    </h2>
-    <p class="section-desc reveal reveal-delay-2">
-      Most tutors show up, explain something, and leave. At Intellix, each session is one part of a continuous cycle, so students keep improving between lessons, not just during them.
-    </p>
-    <div class="full-circle-grid reveal reveal-delay-2">
-      <div class="full-circle-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step I</div>
-        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Lesson</h3>
-        <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">We work through the topic together, building understanding from first principles, not shortcuts. Every session ends with clarity on what to practise next.</p>
-      </div>
-      <div class="full-circle-cell" style="position:relative;">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light),transparent);"></div>
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step II</div>
-        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Worksheet</h3>
-        <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">I prepare a custom set of practice problems, targeted at exactly what was covered. The student works through them independently, applying what they've just learned.</p>
-      </div>
-      <div class="full-circle-cell">
-        <div style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:0.8rem;font-style:italic;color:var(--gold);letter-spacing:0.06em;margin-bottom:14px;">Step III</div>
-        <h3 style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.15rem;color:var(--cream);margin-bottom:10px;">The Feedback</h3>
-        <p style="font-size:0.98rem;color:var(--text-muted);line-height:1.75;font-weight:400;">I review every answer. Misconceptions get corrected before the next session, gaps get flagged early, and nothing slips through unnoticed. Progress compounds.</p>
+    <h2 id="proof-title" class="proof-title">From students and parents</h2>
+    <div class="proof-grid">
+      <figure class="quote quote--lg">
+        <blockquote>&ldquo;Alex helped me go from a 3 in IB Maths AA HL to <span class="pen pen--underline">a confident 6{% include pen.html v="underline" %}</span> by finals. The way he explains things finally clicked.&rdquo;</blockquote>
+        <figcaption>Carlo &middot; IB Maths AA HL student</figcaption>
+      </figure>
+      <div class="quote-stack">
+        <figure class="quote">
+          <blockquote>&ldquo;Alex explains with patience I haven't found anywhere else. My son no longer panics before maths tests.&rdquo;</blockquote>
+          <figcaption>Cristiana &middot; Parent of a DP2 student</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>&ldquo;SAT math score went up by 120 points. Every lesson is focused, efficient and structured. No wasted time.&rdquo;</blockquote>
+          <figcaption>Jacopo &middot; SAT Math student</figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-<!-- TESTIMONIALS -->
-<section id="testimonials">
+<section class="section section--roomy" aria-labelledby="cycle-title">
+  <div class="container cycle">
+    <div class="cycle-main">
+      <h2 id="cycle-title">The lesson is just the beginning.</h2>
+      <p class="sec-lead">Most tutors show up, explain something, and leave. At Intellix, each session is one part of a continuous cycle, so students keep improving between lessons, not just during them.</p>
+      <ol class="steps">
+        <li>
+          <span class="step-n" aria-hidden="true">1</span>
+          <div>
+            <h3>The lesson</h3>
+            <p>We work through the topic together, building understanding from first principles, not shortcuts. Every session ends with clarity on what to practise next.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-n" aria-hidden="true">2</span>
+          <div>
+            <h3>The worksheet</h3>
+            <p>I prepare a custom set of practice problems, targeted at exactly what was covered. The student works through them independently, applying what they've just learned.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-n" aria-hidden="true">3</span>
+          <div>
+            <h3>The feedback</h3>
+            <p>I review every answer. Misconceptions get corrected before the next session, gaps get flagged early, and nothing slips through unnoticed. Progress compounds.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <figure class="figure worksheet">
+      <div class="figure-frame">
+        <div class="figure-head"><span>Worksheet &middot; Differentiation</span><span>Question 3</span></div>
+        <p class="worksheet-question">Differentiate <span class="math"><i>f</i>(<i>x</i>) = sin(2<i>x</i>)</span>.</p>
+        <div class="worksheet-answer">
+          <p class="worksheet-math"><i>f</i>&thinsp;&prime;(<i>x</i>) = <span class="pen pen--circle-wide">cos(2<i>x</i>){% include pen.html v="circle-wide" %}</span></p>
+          <span class="marking-note">chain rule missing</span>
+        </div>
+        <div class="worksheet-fix">
+          <p>Differentiate the inside too: the 2 in sin(2<i>x</i>) comes out in front.</p>
+          <p class="worksheet-math"><i>f</i>&thinsp;&prime;(<i>x</i>) = <strong>2</strong> cos(2<i>x</i>)</p>
+        </div>
+        <p class="worksheet-trap"><strong>Added to your personal traps</strong><span>derivative of sin(2<i>x</i>) is 2cos(2<i>x</i>)</span></p>
+      </div>
+      <figcaption>Step 3 in practice: slips are corrected before the next lesson, and recurring ones go on the student's list of personal traps.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="services-teaser" class="section section--tint" aria-labelledby="services-title">
   <div class="container">
-    <div class="testimonials-header">
+    <div class="cards-head">
       <div>
-        <div class="section-label reveal">Testimonials</div>
-        <h2 class="section-title reveal reveal-delay-1">What families say.</h2>
+        <h2 id="services-title">Every service built around you.</h2>
+        <p class="sec-lead">Specialised tutoring for IB, SAT, Bocconi and university-level mathematics, structured around each student's goals and exam schedule.</p>
       </div>
+      <a href="/services/" class="btn btn-secondary">See services</a>
     </div>
-    <div class="t-scroll">
-      <div class="t-card reveal">
-        <p class="t-text">"My daughter finally understands her teacher. Her confidence and grades have both improved enormously."</p>
-        <div class="t-author">Parent, IB Year 2</div>
-      </div>
-      <div class="t-card reveal reveal-delay-1">
-        <p class="t-text">"Alex explains with patience I haven't found anywhere else. My son no longer panics before maths tests."</p>
-        <div class="t-author">Parent, IB Year 1</div>
-      </div>
-      <div class="t-card reveal reveal-delay-2">
-        <p class="t-text">"We saw improvement within the first month. Alex is reliable, clear, and genuinely invested in results."</p>
-        <div class="t-author">Parent, IB Year 2</div>
-      </div>
-      <div class="t-card reveal">
-        <p class="t-text">"Alex helped me go from a 3 in IB Maths AA HL to a confident 6 by finals. The way he explains things finally clicked."</p>
-        <div class="t-author">IB AA HL Student</div>
-      </div>
-      <div class="t-card reveal reveal-delay-1">
-        <p class="t-text">"SAT math score went up by 120 points. Every lesson is focused, efficient and structured. No wasted time."</p>
-        <div class="t-author">SAT Prep Student</div>
-      </div>
-      <div class="t-card reveal reveal-delay-2">
-        <p class="t-text">"The best maths tutor I've had. I finally understand IB Maths AA rather than just memorising formulas."</p>
-        <div class="t-author">IB AA SL Student</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider" />
-<!-- SERVICES TEASER -->
-<section id="services-teaser">
-  <div class="container">
-    <div class="services-header">
-      <div>
-        <div class="section-label reveal">What I Offer</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Every service<br /><em>built around you.</em>
-        </h2>
-      </div>
-      <p class="section-desc reveal reveal-delay-2">
-        Specialised tutoring for IB, SAT, Bocconi and university-level mathematics,
-        structured around each student's goals and exam schedule.
-      </p>
-    </div>
-
-    <div class="services-teaser-grid">
-      <div class="service-teaser-card reveal">
-        <span class="service-teaser-tag">IB &middot; SL &amp; HL</span>
+    <div class="cards">
+      <article class="card">
+        <p class="card-label">IB &middot; SL &amp; HL</p>
         <h3>IB Mathematics &amp; Physics</h3>
         <p>Structured support for IB Maths AA and AI (SL &amp; HL) and IB Physics. Syllabus mastery, past papers, and real understanding built from the ground up.</p>
-        <a href="/ib-maths-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;margin-right:18px;">IB Maths in detail &rarr;</a>
-        <a href="/ib-physics-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Physics in detail &rarr;</a>
-      </div>
-      <div class="service-teaser-card reveal reveal-delay-1">
-        <span class="service-teaser-tag">SAT &middot; Bocconi</span>
-        <h3>SAT &amp; Bocconi Test Prep</h3>
+        <div class="card-links">
+          <a href="/ib-maths-tutor/" class="link-arrow">IB Maths in detail &rarr;</a>
+          <a href="/ib-physics-tutor/" class="link-arrow">IB Physics in detail &rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-label">SAT &middot; Bocconi</p>
+        <h3>SAT &amp; Bocconi test prep</h3>
         <p>Targeted preparation for the SAT Math section and Bocconi's admissions assessment. High-yield topics, timing strategies, and exam-style practice.</p>
-        <a href="/sat-math-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;margin-right:18px;">SAT maths in detail &rarr;</a>
-        <a href="/bocconi-test-prep/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Full Bocconi test guide &rarr;</a>
-      </div>
-      <div class="service-teaser-card reveal reveal-delay-2">
-        <span class="service-teaser-tag">Summer &middot; Group</span>
-        <h3>Revision Courses &amp; Group Sessions</h3>
+        <div class="card-links">
+          <a href="/sat-math-tutor/" class="link-arrow">SAT Math in detail &rarr;</a>
+          <a href="/bocconi-test-prep/" class="link-arrow">Full Bocconi test guide &rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-label">Summer &middot; Group</p>
+        <h3>Revision courses &amp; group sessions</h3>
         <p>Intensive summer revision programmes and small group sessions for friends covering the same topics, more affordable while staying focused and structured.</p>
-      </div>
-    </div>
-
-    <div class="services-teaser-cta reveal reveal-delay-3">
-      <a href="/services/" class="btn btn-gold">View All Services</a>
-      <a href="/contact/" class="btn btn-outline">Book a Free Call</a>
+      </article>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
-<!-- ABOUT PREVIEW -->
-<section id="about-preview">
-  <div class="container">
-    <div>
-      <div>
-        <div class="section-label reveal">About Alex</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Tutored by someone<br /><em>who's been there.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 8px;">
-          I'm a maths graduate and former IB student who graduated with a 43/45, including a 7 in Mathematics AA HL,
-          a 7 in Physics HL, and an A in my Mathematics Extended Essay.
-        </p>
-        <p class="section-desc reveal reveal-delay-2">
-          That experience isn't just a credential. It means I understand exactly what IB students face,
-          and I know how to help them navigate it strategically and confidently.
-        </p>
-        <ul class="about-list reveal reveal-delay-3">
-          <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
-          <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
-          <li>Former youth national team beach volleyball athlete, bringing discipline and a growth mindset to every session.</li>
-          <li>Teaching style: calm, structured, clarity-driven. Students understand concepts deeply, not just memorise methods.</li>
-        </ul>
-        <div style="margin-top: 32px;" class="reveal reveal-delay-4">
-          <a href="/about/" class="btn btn-outline">Read More About Alex</a>
-        </div>
-      </div>
+<section id="about-preview" class="section section--roomy" aria-labelledby="about-title">
+  <div class="container split">
+    <div class="split-head">
+      <p class="eyebrow">About Alex</p>
+      <h2 id="about-title">Tutored by someone who's been there.</h2>
+    </div>
+    <div class="split-body">
+      <p class="sec-lead">I'm a maths graduate and former IB student who graduated with a 43/45, including a 7 in Mathematics AA HL, a 7 in Physics HL, and an A in my Mathematics Extended Essay. That experience isn't just a credential. It means I understand exactly what IB students face, and I know how to help them navigate it strategically and confidently.</p>
+      <ul class="ticks">
+        <li>BSc in Mathematics with a very high GPA (29.3/30) from the University of Trieste.</li>
+        <li>1000+ hours tutoring IB, SAT, and university-level maths and physics across <a href="/ib-tutor/">international schools in Europe</a>.</li>
+        <li>Former youth national team beach volleyball athlete, bringing discipline and a growth mindset to every session.</li>
+        <li>Teaching style: calm, structured, clarity-driven. Students understand concepts deeply, not just memorise methods.</li>
+      </ul>
+      <p class="more-link"><a href="/about/" class="link-arrow link-arrow--lg">Read more about Alex &rarr;</a></p>
     </div>
   </div>
 </section>
 
+<section class="section section--rule" aria-labelledby="how-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="how-title">How it works, in plain terms.</h2>
+      <p class="sec-lead">The things parents usually have to ask about, answered here, so you don't have to.</p>
+    </div>
+    <dl class="rows split-body">
+      <div class="row"><dt>Session length</dt><dd>60 minutes as standard. 90-minute sessions can be arranged for intensive revision periods.</dd></div>
+      <div class="row"><dt>Recommended rhythm</dt><dd>Twice a week works best: enough to keep momentum, with time to practise in between.</dd></div>
+      <div class="row"><dt>Rescheduling</dt><dd>Free with at least 24 hours' notice, and I'll always try to find another slot the same week.</dd></div>
+      <div class="row"><dt>Between lessons</dt><dd>Students on the monthly package can send short questions over WhatsApp, so they don't stay stuck.</dd></div>
+      <div class="row"><dt>If progress stalls</dt><dd>I change the approach, and I tell you. I'd rather have an honest conversation than keep doing something that isn't working.</dd></div>
+      <div class="row"><dt>Fees</dt><dd>These depend on the subject, the session length, and whether it's one-to-one or a small group. We'll go through it plainly on the intro call, with no obligation either way.</dd></div>
+    </dl>
+  </div>
+</section>
 
-<hr class="divider" />
-<!-- PRACTICAL DETAILS -->
-<section class="practical">
-  <div class="container">
-    <div class="practical-grid">
-      <div class="practical-intro">
-        <div class="section-label reveal">The Practical Side</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          How it works,<br /><em>in plain terms.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2">
-          The things parents usually have to ask about, answered here, so you don't have to.
-        </p>
-      </div>
-      <dl class="practical-list reveal reveal-delay-2">
-        <div class="practical-row">
-          <dt>Session length</dt>
-          <dd>60 minutes as standard. 90-minute sessions can be arranged for intensive revision periods.</dd>
-        </div>
-        <div class="practical-row">
-          <dt>Recommended rhythm</dt>
-          <dd>Twice a week works best: enough to keep momentum, with time to practise in between.</dd>
-        </div>
-        <div class="practical-row">
-          <dt>Rescheduling</dt>
-          <dd>Free with at least 24 hours' notice, and I'll always try to find another slot the same week.</dd>
-        </div>
-        <div class="practical-row">
-          <dt>Between lessons</dt>
-          <dd>Students on the monthly package can send short questions over WhatsApp, so they don't stay stuck.</dd>
-        </div>
-        <div class="practical-row">
-          <dt>If progress stalls</dt>
-          <dd>I change the approach, and I tell you. I'd rather have an honest conversation than keep doing something that isn't working.</dd>
-        </div>
-        <div class="practical-row">
-          <dt>Fees</dt>
-          <dd>These depend on the subject, the session length, and whether it's one-to-one or a small group. We'll go through it plainly on the intro call, with no obligation either way.</dd>
-        </div>
+<section id="contact" class="section section--tint section--roomy" aria-labelledby="contact-title">
+  <div class="container contact">
+    <div class="contact-info">
+      <h2 id="contact-title">Let's talk about your student.</h2>
+      <p class="sec-lead">Share a bit about the student's situation and goals, and I'll respond with suggested next steps and available times for a free 20-minute call.</p>
+      <dl class="direct">
+        <div><dt>Email</dt><dd><a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a></dd></div>
       </dl>
     </div>
-  </div>
-</section>
 
-<hr class="divider" />
-<!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="section-label reveal">Get in Touch</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Let's talk about<br /><em>your student.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 32px;">
-          Share a bit about the student's situation and goals, and I'll respond with suggested next steps
-          and available times for a free introductory call.
-        </p>
-
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">Email</div>
-            <a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a>
+    <div class="form-card">
+      <div id="contactFormWrapper">
+        <form class="form" id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST" aria-label="Contact form" data-sending="Sending&hellip;" data-error="Error. Try emailing directly">
+          <div class="field">
+            <label for="fname">Your name</label>
+            <input class="input" type="text" id="fname" name="name" autocomplete="name" required />
           </div>
-        </div>
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">WhatsApp</div>
-            <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a>
+          <div class="field">
+            <label for="femail">Email</label>
+            <input class="input" type="email" id="femail" name="email" autocomplete="email" required />
           </div>
-        </div>
-
-        <div class="contact-divider"></div>
-
-        <div class="reveal reveal-delay-4" style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="mailto:alexcetojevic12@gmail.com" class="btn btn-gold">Email Me</a>
-          <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp</a>
-        </div>
+          <div class="field">
+            <label for="fservice">Subject area</label>
+            <select class="input" id="fservice" name="service" required>
+              <option value="" disabled selected>Choose a subject</option>
+              <option>IB Maths AA HL</option>
+              <option>IB Maths AA SL</option>
+              <option>IB Maths AI HL</option>
+              <option>IB Maths AI SL</option>
+              <option>IB Physics HL</option>
+              <option>IB Physics SL</option>
+              <option>SAT Math</option>
+              <option>Bocconi Test Prep</option>
+              <option>Summer Revision Course</option>
+              <option>University Mathematics</option>
+              <option>Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fsituation">Main concern</label>
+            <select class="input" id="fsituation" name="situation">
+              <option value="" disabled selected>Choose one</option>
+              <option>Struggling with specific topics</option>
+              <option>Exam preparation</option>
+              <option>Long-term regular support</option>
+              <option>Starting fresh / building foundations</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fphone">WhatsApp / Phone <span class="optional">(optional)</span></label>
+            <input class="input" type="tel" id="fphone" name="phone" autocomplete="tel" placeholder="With country code, e.g. +39 or +44" />
+          </div>
+          <fieldset class="field">
+            <legend>Preferred contact</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="preferred_contact" value="Email" />Email</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="WhatsApp" />WhatsApp</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="Either" checked />Either is fine</label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="fmessage">Anything else <span class="optional">(optional)</span></label>
+            <textarea class="input" id="fmessage" name="message" rows="4" placeholder="Current grade, upcoming exams, any context that would help&hellip;"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-note">I reply within 24 hours with suggested times for the call.</p>
+          </div>
+        </form>
       </div>
-
-      <div class="contact-form reveal reveal-delay-2">
-        <div id="contactFormWrapper">
-          <h3 style="font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Book a Free Intro Call</h3>
-          <form id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST">
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fname">Your Name</label>
-                <input class="form-input" type="text" id="fname" name="name" placeholder="Alex Smith" required />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="femail">Email</label>
-                <input class="form-input" type="email" id="femail" name="email" placeholder="you@example.com" required />
-              </div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fphone">WhatsApp / Phone <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
-                <input class="form-input" type="tel" id="fphone" name="phone" placeholder="With country code, e.g. +39 or +44" />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="fcontact">Preferred Contact</label>
-                <select class="form-select" id="fcontact" name="preferred_contact">
-                  <option value="Email">Email</option>
-                  <option value="WhatsApp">WhatsApp</option>
-                  <option value="Either">Either is fine</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <label class="form-label" for="fservice">Subject Area</label>
-              <select class="form-select" id="fservice" name="service" required>
-                <option value="" disabled selected>Select a service&hellip;</option>
-                <option>IB Maths AA HL</option>
-                <option>IB Maths AA SL</option>
-                <option>IB Maths AI HL</option>
-                <option>IB Maths AI SL</option>
-                <option>IB Physics HL</option>
-                <option>IB Physics SL</option>
-                <option>SAT Math</option>
-                <option>Bocconi Test Prep</option>
-                <option>Summer Revision Course</option>
-                <option>University Mathematics</option>
-                <option>Other / Not sure yet</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label class="form-label" for="fmessage">Anything else <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
-              <textarea class="form-textarea" id="fmessage" name="message" placeholder="Current grade, upcoming exams, any context that would help&hellip;" style="min-height:80px;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold form-submit">Send Message</button>
-          </form>
-        </div>
-        <div class="form-success" id="formSuccess">
-          <div class="success-icon">&#10003;</div>
-          <div class="success-title">Message sent!</div>
-          <p class="success-text">Thank you. I'll be in touch within 24 hours with suggested times for a free intro call.</p>
-        </div>
+      <div class="form-success" id="formSuccess" role="status" tabindex="-1">
+        <p class="form-success-title">Message sent!</p>
+        <p>Thank you. I'll be in touch within 24 hours with suggested times for a free intro call.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/services/">Services</a>
-      <a href="/about/">About</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (itLink) window.location.replace(itLink.href + window.location.search + window.location.hash);
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-const wrapper = document.getElementById('contactFormWrapper');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
-  try {
-    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-    if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
-    else { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-  } catch { btn.textContent = 'Error. Try emailing directly'; btn.disabled = false; }
-});
-</script>
+{% include footer.html %}
 </body>
 </html>

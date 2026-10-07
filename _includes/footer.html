@@ -1,0 +1,66 @@
+{%- comment -%}
+  Closes <main>, then the footer band and the mobile booking bar. Shared by every page.
+  The bar is left off the contact pages, where the form is already on screen.
+{%- endcomment -%}
+{%- if page.locale == 'it_IT' -%}
+  {%- assign root = '/it/' -%}
+  {%- assign t_services = 'Servizi' -%}
+  {%- assign t_contact = 'Contatti' -%}
+  {%- assign t_cta = 'Prenota una call' -%}
+  {%- assign t_touch = 'Contatti diretti' -%}
+  {%- assign t_legal = 'Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586' -%}
+{%- else -%}
+  {%- assign root = '/' -%}
+  {%- assign t_services = 'Services' -%}
+  {%- assign t_contact = 'Contact' -%}
+  {%- assign t_cta = 'Book a free 20-minute call' -%}
+  {%- assign t_touch = 'Get in touch' -%}
+  {%- assign t_legal = 'Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586' -%}
+{%- endif -%}
+{%- assign url_en = page.hreflang_en | default: 'https://intellixtutoring.com/' | remove: 'https://intellixtutoring.com' -%}
+{%- assign url_it = page.hreflang_it | default: 'https://intellixtutoring.com/it/' | remove: 'https://intellixtutoring.com' -%}
+{%- assign show_bar = true -%}
+{%- if page.url == '/contact/' or page.url == '/it/contact/' -%}{%- assign show_bar = false -%}{%- endif -%}
+</main>
+
+<footer class="site-footer{% if show_bar %} site-footer--bar{% endif %}">
+  <div class="container">
+    <div class="footer-top">
+      <a href="{{ root }}" class="footer-lockup" aria-label="Intellix Tutoring, home">
+        <span class="footer-lockup-name">Intellix</span>
+        <span class="footer-lockup-rule" aria-hidden="true"></span>
+        <span class="footer-lockup-sub">Tutoring</span>
+      </a>
+      <div class="footer-lang">
+        <a href="{{ url_en }}" lang="en"{% unless page.locale == 'it_IT' %} aria-current="true"{% endunless %}>EN</a>
+        <span class="footer-lang-rule" aria-hidden="true"></span>
+        <a href="{{ url_it }}" lang="it"{% if page.locale == 'it_IT' %} aria-current="true"{% endif %}>IT</a>
+      </div>
+      <div class="footer-lists">
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="{{ root }}">Home</a></li>
+            <li><a href="{{ root }}services/">{{ t_services }}</a></li>
+            <li><a href="{{ root }}faq/">FAQ</a></li>
+            <li><a href="{{ root }}contact/">{{ t_contact }}</a></li>
+          </ul>
+        </nav>
+        <ul aria-label="{{ t_touch }}">
+          <li><a href="mailto:alexcetojevic12@gmail.com">Email</a></li>
+          <li><a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>{{ t_legal }}</p>
+      <p>&copy; Intellix Tutoring &middot; Alex Ćetojević</p>
+    </div>
+  </div>
+</footer>
+{% if show_bar %}
+<div class="sticky-bar" id="ctaBar">
+  <a href="{{ root }}contact/" class="btn btn-primary">{{ t_cta }}</a>
+  <a href="https://wa.me/385953521299" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</div>
+{% endif %}

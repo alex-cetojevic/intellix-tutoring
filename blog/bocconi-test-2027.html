@@ -247,79 +247,30 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/bocconi-test-2027/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Close menu">&#10005;</button>
-  <a href="/" onclick="closeMobileMenu()">Home</a>
-  <a href="/services/" onclick="closeMobileMenu()">Services</a>
-  <a href="/about/" onclick="closeMobileMenu()">About</a>
-  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/contact/" onclick="closeMobileMenu()">Contact</a>
-  <a href="/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Book a Call</a>
-</div>
-
-<!-- SITE TOP -->
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/blog/" class="active">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/blog/bocconi-test-2027/" class="active">EN</a>
-          <span>|</span>
-          <a href="/it/blog/bocconi-test-2027/">IT</a>
-        </div>
-        <a href="/contact/" class="btn btn-gold nav-cta">Book a Free Call</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<!-- ARTICLE HERO -->
-<div class="page-hero">
+<div class="article-hero">
   <div class="container">
     <div class="article-wrap">
-      <div class="page-hero-label reveal">Bocconi &middot; Admissions</div>
-      <h1 class="reveal reveal-delay-1">Bocconi Test 2027: Dates, Format and How It Is Scored</h1>
-      <div class="article-meta reveal reveal-delay-2">
-        <span>By <a href="/author/alex-cetojevic/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Alex Ćetojević</a></span>
-        <span class="dot"></span>
-        <span>13 September 2026</span>
-        <span class="dot"></span>
-        <span>8 min read</span>
-      </div>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/blog/">Blog</a></nav>
+      <p class="eyebrow">Bocconi &middot; Admissions</p>
+      <h1>Bocconi Test 2027: Dates, Format and How It Is Scored</h1>
+      <p class="byline">Written by <a href="/author/alex-cetojevic/">Alex Ćetojević</a></p>
+      <p class="article-meta">13 September 2026 &middot; 8 min read</p>
     </div>
   </div>
 </div>
 
-<hr class="divider" />
-
 <section class="article-section">
   <div class="container">
     <article class="article-wrap article-body">
-      <a href="/blog/" class="article-back reveal">&larr; Back to Blog</a>
+      <a href="/blog/" class="article-back">&larr; Back to Blog</a>
       <div class="answer-first">
         <div class="answer-first-label">In short</div>
         <p>For entry in September 2027 there are two rounds. The Early Session takes applications from 2 to 29 September 2026, with the last test date on 24 September and results in mid November. The Winter Session takes applications from 25 November 2026 to 26 January 2027, with the last test date on 21 January and results in mid March. The test is 50 multiple choice questions in 75 minutes. 24 of them are maths. A correct answer is +1, a blank is 0, a wrong answer is &minus;0.2. You need at least 17 points to be considered.</p>
       </div>
       <h2>The two rounds for 2027 entry</h2>
-      <p>Bocconi runs the selection in sessions. You apply in one session, and you need a test score before you apply. For the 2027-28 academic year the official dates are:</p>
+      <p class="dropcap">Bocconi runs the selection in sessions. You apply in one session, and you need a test score before you apply. For the 2027-28 academic year the official dates are:</p>
       <ul>
       <li><strong>Early Session.</strong> Applications open on 2 September 2026 and close on 29 September 2026 at 3:00pm Italian time. The last day to sit the Bocconi online test for this round is 24 September 2026. Results come out in mid November 2026.</li>
       <li><strong>Winter Session.</strong> Applications open on 25 November 2026 and close on 26 January 2027 at 3:00pm Italian time. The last day to sit the test is 21 January 2027. Results come out in mid March 2027.</li>
@@ -392,88 +343,38 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/bocconi-test-2027/'
       <h3 class="faq-q">What maths is on the Bocconi test?</h3>
       <p class="faq-a">Algebra, functions, logarithms and exponentials, trigonometry, plane and analytical geometry, sets and logic, numbers and percentages, probability and basic statistics, and problem solving. It matches Italian high school maths up to the fourth year, or IB Maths SL.</p>
       <div class="article-cta">
-        <p style="margin:0 0 14px;">Not sure which session to aim for, or whether the maths section is ready? A free 20 minute call is enough to work it out.</p>
-        <a href="/contact/" class="btn btn-gold">Book a Free Call</a>
+        <p>Not sure which session to aim for, or whether the maths section is ready? A free 20 minute call is enough to work it out.</p>
+        <a href="/contact/" class="btn btn-primary">Book a free 20-minute call</a>
       </div>
     </article>
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- RELATED -->
-<section>
+<section class="section section--tint" aria-labelledby="next-title">
   <div class="container">
-    <div class="section-label reveal">Keep reading</div>
-    <h2 class="section-title reveal reveal-delay-1">Where to go next</h2>
-    <div class="services-grid reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <span class="service-tag">Bocconi &middot; Practice</span>
-        <h3>50 Bocconi maths questions</h3>
-        <p>Timed drill with worked solutions. Sit it before you book a test date.</p>
-        <a href="/blog/bocconi-maths-drill/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Start the drill &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-1">
-        <span class="service-num">02</span>
-        <span class="service-tag">Admissions</span>
-        <h3>Bocconi test prep</h3>
-        <p>24 of the 50 questions are maths. Format, syllabus, scoring, and when a blank beats a guess.</p>
-        <a href="/bocconi-test-prep/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Full Bocconi guide &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-2">
-        <span class="service-num">03</span>
-        <span class="service-tag">IB · AA &amp; AI</span>
-        <h3>IB Maths tutoring</h3>
-        <p>AA and AI at SL and HL, taught alongside whatever your school is covering this week.</p>
-        <a href="/ib-maths-tutor/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">IB Maths in detail &rarr;</a>
-      </div>
+    <div class="article-wrap">
+      <h2 id="next-title">Where to go next</h2>
+      <ul class="next-list">
+        <li>
+          <h3>50 Bocconi maths questions</h3>
+          <p>Timed drill with worked solutions. Sit it before you book a test date.</p>
+          <a href="/blog/bocconi-maths-drill/" class="link-arrow">Start the drill &rarr;</a>
+        </li>
+        <li>
+          <h3>Bocconi test prep</h3>
+          <p>24 of the 50 questions are maths. Format, syllabus, scoring, and when a blank beats a guess.</p>
+          <a href="/bocconi-test-prep/" class="link-arrow">Full Bocconi guide &rarr;</a>
+        </li>
+        <li>
+          <h3>IB Maths tutoring</h3>
+          <p>AA and AI at SL and HL, taught alongside whatever your school is covering this week.</p>
+          <a href="/ib-maths-tutor/" class="link-arrow">IB Maths in detail &rarr;</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/services/">Services</a>
-      <a href="/about/">About</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/contact/">Contact</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Language auto-detect (runs only once per session)
-if (!localStorage.getItem('langChosen')) {
-  if (navigator.language && navigator.language.startsWith('it')) {
-    localStorage.setItem('langChosen', 'it');
-    window.location.replace('/it/blog/bocconi-test-2027/');
-  } else {
-    localStorage.setItem('langChosen', 'en');
-  }
-}
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

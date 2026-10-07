@@ -222,275 +222,130 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
+<section class="page-hero page-hero--blog" aria-labelledby="page-title">
+  <div class="container">
+    <p class="eyebrow">Blog &amp; risorse</p>
+    <h1 id="page-title">Guide agli esami. Strategia di studio. <br />Scritto da chi c'è passato.</h1>
+    <p class="lead dropcap">Articoli pratici su IB Maths, SAT Math, preparazione Bocconi e come studiare davvero, scritti da qualcuno che ha sostenuto quegli esami, non solo insegnato come prepararli.</p>
+  </div>
+</section>
 
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/">FAQ</a></li>
-        <li><a href="/it/blog/" class="active">Blog</a></li>
-        <li><a href="/it/contact/">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/blog/">EN</a>
-          <span>|</span>
-          <a href="/it/blog/" class="active">IT</a>
+<section class="section posts-section" aria-label="Articoli">
+  <div class="container">
+    <div class="posts">
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-ia-first-draft/">IA di Matematica IB: cosa sistemare nella prima bozza</a></h2>
+          <p class="post-summary">L'insegnante può commentare una sola bozza. Cosa deve avere una bozza completa, gli 8 punti che sistemi in una sera, come controllare il livello della matematica e una checklist di 10 minuti.</p>
         </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
-  <div class="container">
-    <div class="page-hero-label reveal">Blog &amp; Risorse</div>
-    <h1 class="reveal reveal-delay-1">Guide agli esami. Strategia di studio.<br /><em>Scritto da chi c'è passato.</em></h1>
-    <p class="reveal reveal-delay-2">Articoli pratici su IB Maths, SAT Math, preparazione Bocconi e come studiare davvero, scritti da qualcuno che ha sostenuto quegli esami, non solo insegnato come prepararli.</p>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<section>
-  <div class="container">
-
-    <div class="post-list">
-      <a href="/it/blog/ib-math-ia-first-draft/" class="post-card reveal">
-        <span class="post-card-tag">Matematica IB &middot; IA</span>
-        <h2 class="post-card-title">IA di Matematica IB: cosa sistemare nella prima bozza</h2>
-        <p class="post-card-excerpt">
-          L'insegnante può commentare una sola bozza. Cosa deve avere una bozza completa, gli 8 punti che sistemi in una sera, come controllare il livello della matematica e una checklist di 10 minuti.
-        </p>
-        <span class="post-card-meta">28 settembre 2026 &middot; 9 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/drop-ib-maths-hl-to-sl/" class="post-card reveal">
-        <span class="post-card-tag">Matematica IB &middot; HL o SL</span>
-        <h2 class="post-card-title">Passare da Matematica AA HL a SL nell'IB: conviene?</h2>
-        <p class="post-card-excerpt">
-          Quando passare a SL è la scelta giusta, quando no, quali università richiedono AA HL, la questione della scadenza e un test di quattro settimane da fare prima di decidere.
-        </p>
-        <span class="post-card-meta">13 settembre 2026 &middot; 9 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/bocconi-test-2027/" class="post-card reveal">
-        <span class="post-card-tag">Bocconi &middot; Ammissioni</span>
-        <h2 class="post-card-title">Test Bocconi 2027: date, struttura e punteggio</h2>
-        <p class="post-card-excerpt">
-          Le due sessioni per l'ingresso 2027, le ultime date utili per il test, cosa c'è nelle 50 domande, il punteggio con la penalità di 0,2 e un piano semplice per prepararsi.
-        </p>
-        <span class="post-card-meta">13 settembre 2026 &middot; 8 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/bocconi-maths-drill/" class="post-card reveal">
-        <span class="post-card-tag">Bocconi &middot; Esercitazione gratuita</span>
-        <h2 class="post-card-title">Simulazione di matematica Bocconi: 50 domande in 75 minuti</h2>
-        <p class="post-card-excerpt">
-          Cinquanta domande originali su tutto il programma di matematica pubblicato da Bocconi, cronometrate e valutate come la prova vera, con una soluzione svolta per ognuna, che la simulazione ufficiale non fornisce.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 75 min di esercitazione</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-physics-paper-1-2-strategy/" class="post-card reveal">
-        <span class="post-card-tag">Fisica IB &middot; Strategia d&rsquo;esame</span>
-        <h2 class="post-card-title">Paper 1 e Paper 2 di Fisica IB: una strategia che funziona</h2>
-        <p class="post-card-excerpt">
-          Il Paper 1 a HL lascia meno di due minuti a domanda; il Paper 2 vale il 44%. Triage nella risposta multipla, le competenze sui dati, i command term e come strutturare una risposta estesa.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 10 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-physics-ia-topics/" class="post-card reveal">
-        <span class="post-card-tag">Fisica IB &middot; Scientific Investigation</span>
-        <h2 class="post-card-title">Argomenti per l&rsquo;IA di Fisica IB: come sceglierne uno che paga</h2>
-        <p class="post-card-excerpt">
-          Metà dei punti sta in conclusione e valutazione, ed è questo a dover guidare la scelta. Cosa rende valida una domanda di ricerca, idee per tema e le scelte che limitano il punteggio.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 10 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-math-ia-criteria/" class="post-card reveal">
-        <span class="post-card-tag">Matematica IB &middot; IA</span>
-        <h2 class="post-card-title">Criteri dell&rsquo;IA di Matematica IB: come si dividono i 20 punti</h2>
-        <p class="post-card-excerpt">
-          Presentation 4, Communication 4, Personal Engagement 3, Reflection 3, Use of Mathematics 6. Cosa premia davvero ogni criterio, e perché A e B insieme pesano più di E.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 9 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/digital-sat-math-scoring/" class="post-card reveal">
-        <span class="post-card-tag">SAT digitale &middot; Math</span>
-        <h2 class="post-card-title">Come viene calcolato davvero il punteggio del SAT di matematica</h2>
-        <p class="post-card-excerpt">
-          Solo 40 domande su 44 contano, il secondo modulo si adatta al rendimento del primo e lasciare in bianco vale esattamente quanto sbagliare. Cosa significa per la strategia.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 10 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/is-ib-physics-hl-hard/" class="post-card reveal">
-        <span class="post-card-tag">Fisica IB &middot; HL</span>
-        <h2 class="post-card-title">La Fisica IB HL è difficile? Una risposta onesta</h2>
-        <p class="post-card-excerpt">
-          Sì, ma in modo prevedibile. Dove sta davvero la difficoltà, i cinque temi e dove HL approfondisce,
-          com&rsquo;è strutturato l&rsquo;esame dal 2025 e le quattro abitudini che portano a un 7.
-        </p>
-        <span class="post-card-meta">10 settembre 2026 &middot; 11 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-math-aa-vs-ai/" class="post-card reveal">
-        <span class="post-card-tag">IB Maths &middot; Scegliere il corso</span>
-        <h2 class="post-card-title">IB Math AA o AI: quale scegliere?</h2>
-        <p class="post-card-excerpt">
-          Un metodo concreto per scegliere tra IB Math AA e AI, per percorso universitario, difficoltà e
-          requisiti delle università, più come (e quando) puoi cambiare corso e una checklist rapida
-          da usare prima di decidere.
-        </p>
-        <span class="post-card-meta">7 giugno 2026 &middot; 12 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-math-aa-ia-topic-ideas/" class="post-card reveal">
-        <span class="post-card-tag">IB Maths AA &middot; IA</span>
-        <h2 class="post-card-title">Idee per l'IA di IB Math AA (e come sceglierne una buona)</h2>
-        <p class="post-card-excerpt">
-          Scegliere l'argomento dell'IA di IB Math AA è il momento in cui si decide silenziosamente il voto.
-          Ecco idee per area matematica (SL e HL), i criteri che contano davvero, gli argomenti abusati da
-          evitare e una checklist di 5 domande da usare prima di decidere.
-        </p>
-        <span class="post-card-meta">6 giugno 2026 &middot; 13 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-math-aa-sl-common-mistakes/" class="post-card reveal">
-        <span class="post-card-tag">IB Maths AA SL</span>
-        <h2 class="post-card-title">I 5 errori più comuni in IB Math AA SL che fanno perdere punti</h2>
-        <p class="post-card-excerpt">
-          Gli errori più comuni in IB Math AA SL che fanno perdere punti non riguardano sempre la conoscenza dei
-          contenuti: riguardano il modo in cui scrivi le risposte. Ecco dove spariscono i punti nei cinque argomenti
-          chiave del programma, e cosa fare per ciascuno.
-        </p>
-        <span class="post-card-meta">6 giugno 2026 &middot; 11 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-      <a href="/it/blog/ib-math-aa-hl-study-tips/" class="post-card reveal">
-        <span class="post-card-tag">IB Maths AA HL</span>
-        <h2 class="post-card-title">Consigli di studio per IB Math AA HL: come eccellere in Mathematics Analysis and Approaches</h2>
-        <p class="post-card-excerpt">
-          Una guida completa e pratica per padroneggiare IB Math AA HL: gli argomenti più difficili e come affrontarli,
-          i criteri dell'IA che spostano davvero il voto, la strategia per Paper 1, 2 e 3, e un piano di studio
-          che ti accompagna dal primo anno all'esame.
-        </p>
-        <span class="post-card-meta">4 giugno 2026 &middot; 12 min di lettura</span>
-        <br />
-        <span class="post-card-readmore">Leggi la guida &rarr;</span>
-      </a>
-    </div>
-
-    <div class="upcoming-grid reveal">
-      <div class="upcoming-card">
-        <span class="upcoming-tag">SAT Math</span>
-        <h3>Come Gestire SAT Math Quando il Tempo Stringe</h3>
-        <p>Gestione del tempo, ordine di priorità delle domande e gli argomenti che contano di più nel SAT digitale.</p>
-        <a href="/it/blog/digital-sat-math-scoring/" class="post-card-readmore">Nel frattempo: come si calcola il punteggio del SAT di matematica &rarr;</a>
-      </div>
-      <div class="upcoming-card">
-        <span class="upcoming-tag">Strategia IB</span>
-        <h3>Anno 1 vs Anno 2: Come Sfruttare al Meglio il Tempo nell'IB</h3>
-        <p>Cosa mettere al primo posto in ciascun anno del Diploma, quando iniziare le prove degli anni passati e come pianificare tenendo conto dell'IA.</p>
-        <a href="/it/blog/ib-math-aa-hl-study-tips/" class="post-card-readmore">Nel frattempo: consigli di studio per IB Math AA HL &rarr;</a>
-      </div>
-    </div>
-    <p class="upcoming-label reveal">Prossimamente</p>
-
-  </div>
-</section>
-
-<hr class="divider" />
-
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content: center;">Nel frattempo</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
-      Hai una domanda specifica?<br /><em style="font-style:normal;">Chiedi direttamente.</em>
-    </h2>
-    <p class="cta-band-desc reveal reveal-delay-2">
-      La chiamata conoscitiva gratuita è il modo più rapido per avere una risposta diretta sulla situazione specifica del tuo studente. Nessun articolo può sostituirla.
-    </p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/contact/" class="btn btn-gold">Prenota una chiamata gratuita</a>
-      <a href="/it/faq/" class="btn btn-outline">Leggi le FAQ</a>
+        <p class="post-meta"><span><time datetime="2026-09-28">28 settembre 2026</time> &middot; 9 min di lettura</span><span class="post-tag">Matematica IB &middot; IA</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/drop-ib-maths-hl-to-sl/">Passare da Matematica AA HL a SL nell'IB: conviene?</a></h2>
+          <p class="post-summary">Quando passare a SL è la scelta giusta, quando no, quali università richiedono AA HL, la questione della scadenza e un test di quattro settimane da fare prima di decidere.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-13">13 settembre 2026</time> &middot; 9 min di lettura</span><span class="post-tag">Matematica IB &middot; HL o SL</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/bocconi-test-2027/">Test Bocconi 2027: date, struttura e punteggio</a></h2>
+          <p class="post-summary">Le due sessioni per l'ingresso 2027, le ultime date utili per il test, cosa c'è nelle 50 domande, il punteggio con la penalità di 0,2 e un piano semplice per prepararsi.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-13">13 settembre 2026</time> &middot; 8 min di lettura</span><span class="post-tag">Bocconi &middot; Ammissioni</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/bocconi-maths-drill/">Simulazione di matematica Bocconi: 50 domande in 75 minuti</a></h2>
+          <p class="post-summary">Cinquanta domande originali su tutto il programma di matematica pubblicato da Bocconi, cronometrate e valutate come la prova vera, con una soluzione svolta per ognuna, che la simulazione ufficiale non fornisce.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 75 min di esercitazione</span><span class="post-tag">Bocconi &middot; Esercitazione gratuita</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-physics-paper-1-2-strategy/">Paper 1 e Paper 2 di Fisica IB: una strategia che funziona</a></h2>
+          <p class="post-summary">Il Paper 1 a HL lascia meno di due minuti a domanda; il Paper 2 vale il 44%. Triage nella risposta multipla, le competenze sui dati, i command term e come strutturare una risposta estesa.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 10 min di lettura</span><span class="post-tag">Fisica IB &middot; Strategia d&rsquo;esame</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-physics-ia-topics/">Argomenti per l&rsquo;IA di Fisica IB: come sceglierne uno che paga</a></h2>
+          <p class="post-summary">Metà dei punti sta in conclusione e valutazione, ed è questo a dover guidare la scelta. Cosa rende valida una domanda di ricerca, idee per tema e le scelte che limitano il punteggio.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 10 min di lettura</span><span class="post-tag">Fisica IB &middot; Scientific Investigation</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-ia-criteria/">Criteri dell&rsquo;IA di Matematica IB: come si dividono i 20 punti</a></h2>
+          <p class="post-summary">Presentation 4, Communication 4, Personal Engagement 3, Reflection 3, Use of Mathematics 6. Cosa premia davvero ogni criterio, e perché A e B insieme pesano più di E.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 9 min di lettura</span><span class="post-tag">Matematica IB &middot; IA</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/digital-sat-math-scoring/">Come viene calcolato davvero il punteggio del SAT di matematica</a></h2>
+          <p class="post-summary">Solo 40 domande su 44 contano, il secondo modulo si adatta al rendimento del primo e lasciare in bianco vale esattamente quanto sbagliare. Cosa significa per la strategia.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 10 min di lettura</span><span class="post-tag">SAT digitale &middot; Math</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/is-ib-physics-hl-hard/">La Fisica IB HL è difficile? Una risposta onesta</a></h2>
+          <p class="post-summary">Sì, ma in modo prevedibile. Dove sta davvero la difficoltà, i cinque temi e dove HL approfondisce, com&rsquo;è strutturato l&rsquo;esame dal 2025 e le quattro abitudini che portano a un 7.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-09-10">10 settembre 2026</time> &middot; 11 min di lettura</span><span class="post-tag">Fisica IB &middot; HL</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-aa-vs-ai/">IB Math AA o AI: quale scegliere?</a></h2>
+          <p class="post-summary">Un metodo concreto per scegliere tra IB Math AA e AI, per percorso universitario, difficoltà e requisiti delle università, più come (e quando) puoi cambiare corso e una checklist rapida da usare prima di decidere.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-06-07">7 giugno 2026</time> &middot; 12 min di lettura</span><span class="post-tag">IB Maths &middot; Scegliere il corso</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-aa-ia-topic-ideas/">Idee per l'IA di IB Math AA (e come sceglierne una buona)</a></h2>
+          <p class="post-summary">Scegliere l'argomento dell'IA di IB Math AA è il momento in cui si decide silenziosamente il voto. Ecco idee per area matematica (SL e HL), i criteri che contano davvero, gli argomenti abusati da evitare e una checklist di 5 domande da usare prima di decidere.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-06-06">6 giugno 2026</time> &middot; 13 min di lettura</span><span class="post-tag">IB Maths AA &middot; IA</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-aa-sl-common-mistakes/">I 5 errori più comuni in IB Math AA SL che fanno perdere punti</a></h2>
+          <p class="post-summary">Gli errori più comuni in IB Math AA SL che fanno perdere punti non riguardano sempre la conoscenza dei contenuti: riguardano il modo in cui scrivi le risposte. Ecco dove spariscono i punti nei cinque argomenti chiave del programma, e cosa fare per ciascuno.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-06-06">6 giugno 2026</time> &middot; 11 min di lettura</span><span class="post-tag">IB Maths AA SL</span></p>
+      </article>
+      <article class="post">
+        <div class="post-main">
+          <h2 class="post-title"><a href="/it/blog/ib-math-aa-hl-study-tips/">Consigli di studio per IB Math AA HL: come eccellere in Mathematics Analysis and Approaches</a></h2>
+          <p class="post-summary">Una guida completa e pratica per padroneggiare IB Math AA HL: gli argomenti più difficili e come affrontarli, i criteri dell'IA che spostano davvero il voto, la strategia per Paper 1, 2 e 3, e un piano di studio che ti accompagna dal primo anno all'esame.</p>
+        </div>
+        <p class="post-meta"><span><time datetime="2026-06-04">4 giugno 2026</time> &middot; 12 min di lettura</span><span class="post-tag">IB Maths AA HL</span></p>
+      </article>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/services/">Servizi</a>
-      <a href="/it/about/">Chi sono</a>
-      <a href="/it/faq/">FAQ</a>
-      <a href="/it/contact/">Contatti</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<section class="end-cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="end-cta-text">
+      <h2 id="cta-title">Hai una domanda specifica? Chiedi direttamente.</h2>
+      <p>La chiamata conoscitiva gratuita è il modo più rapido per avere una risposta diretta sulla situazione specifica del tuo studente. Nessun articolo può sostituirla.</p>
+    </div>
+    <div class="end-cta-actions">
+      <div class="end-cta-buttons">
+        <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+        <a href="/it/faq/" class="link-quiet">Leggi le FAQ</a>
+      </div>
+      <p class="end-cta-direct">Oppure scrivimi direttamente: <a href="mailto:alexcetojevic12@gmail.com">email</a> &middot; <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

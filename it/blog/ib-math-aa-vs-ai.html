@@ -263,73 +263,20 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
-
-<!-- SITE TOP -->
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/">FAQ</a></li>
-        <li><a href="/it/blog/" class="active">Blog</a></li>
-        <li><a href="/it/contact/">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/blog/ib-math-aa-vs-ai/">EN</a>
-          <span>|</span>
-          <a href="/it/blog/ib-math-aa-vs-ai/" class="active">IT</a>
-        </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<!-- ARTICLE HERO -->
-<div class="page-hero">
+<div class="article-hero">
   <div class="container">
     <div class="article-wrap">
-      <a href="/it/blog/" class="article-back reveal">&larr; Torna al Blog</a>
-      <div class="page-hero-label reveal">IB Maths &middot; Scegliere il corso</div>
-      <h1 class="reveal reveal-delay-1">IB Math AA o AI: quale scegliere?</h1>
-      <div class="article-meta reveal reveal-delay-2">
-        <span>Di <a href="/it/author/alex-cetojevic/" style="color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;">Alex Ćetojević</a></span>
-        <span class="dot"></span>
-        <span>7 giugno 2026</span>
-        <span class="dot"></span>
-        <span>12 min di lettura</span>
-        <span class="dot"></span>
-        <span>Aggiornato il 10 settembre 2026</span>
-      </div>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/it/blog/">Blog</a></nav>
+      <p class="eyebrow">IB Maths &middot; Scegliere il corso</p>
+      <h1>IB Math AA o AI: quale scegliere?</h1>
+      <p class="byline">Scritto da <a href="/it/author/alex-cetojevic/">Alex Ćetojević</a> &middot; Aggiornato il 10 settembre 2026</p>
+      <p class="article-meta">7 giugno 2026 &middot; 12 min di lettura</p>
     </div>
   </div>
 </div>
 
-<hr class="divider" />
-
-<!-- ARTICLE BODY -->
 <section class="article-section">
   <div class="container">
     <article class="article-wrap article-body">
@@ -339,7 +286,7 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
       </div>
 
 
-      <p>La maggior parte degli studenti sceglie tra IB Math AA e AI in base a cosa hanno scelto gli amici, o a una vaga idea che "AA è per i matematici seri". Entrambe le scorciatoie tendono a ritorcersi contro.</p>
+      <p class="dropcap">La maggior parte degli studenti sceglie tra IB Math AA e AI in base a cosa hanno scelto gli amici, o a una vaga idea che "AA è per i matematici seri". Entrambe le scorciatoie tendono a ritorcersi contro.</p>
 
       <p>Questo articolo ti dà qualcosa di diverso: un metodo decisionale concreto, non un elenco di caratteristiche che finisce con "dipende da te". Alla fine saprai quale corso si adatta alla tua situazione, quali implicazioni universitarie contano davvero e cosa fare se sei ancora indeciso.</p>
 
@@ -374,17 +321,17 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
       <p>Ecco cosa viene frainteso: AI non è la strada facile.</p>
       <p>AI SL e AI HL verificano competenze diverse. Se ragioni sotto incertezza statistica, costruisci e interpreti modelli o lavori con dati reali disordinati, stai facendo qualcosa di davvero difficile. Uno studente che fatica con l'algebra pura di AA non passa automaticamente indenne attraverso la statistica di AI.</p>
       <p>La domanda migliore non è "qual è più difficile?" È "quale tipo di difficoltà mi si addice di più?"</p>
-      <table>
+      <div class="table-wrap"><table class="table">
         <thead>
-          <tr><th></th><th>AA</th><th>AI</th></tr>
+          <tr><td></td><th scope="col">AA</th><th scope="col">AI</th></tr>
         </thead>
         <tbody>
-          <tr><td>Contenuti di base</td><td>Algebra, calcolo, dimostrazione</td><td>Statistica, modellizzazione, dati reali</td></tr>
-          <tr><td>Calcolatrice in tutte le prove?</td><td>No - il Paper 1 è senza calcolatrice</td><td>Sì</td></tr>
-          <tr><td>Dimostrazione astratta richiesta?</td><td>Sì, sia a SL sia a HL</td><td>Minima</td></tr>
-          <tr><td>Equivalente nel vecchio programma</td><td>AA HL &approx; vecchio Math HL; AA SL nel mezzo</td><td>AI SL &approx; vecchio Mathematical Studies SL</td></tr>
+          <tr><th scope="row">Contenuti di base</th><td>Algebra, calcolo, dimostrazione</td><td>Statistica, modellizzazione, dati reali</td></tr>
+          <tr><th scope="row">Calcolatrice in tutte le prove?</th><td>No - il Paper 1 è senza calcolatrice</td><td>Sì</td></tr>
+          <tr><th scope="row">Dimostrazione astratta richiesta?</th><td>Sì, sia a SL sia a HL</td><td>Minima</td></tr>
+          <tr><th scope="row">Equivalente nel vecchio programma</th><td>AA HL &approx; vecchio Math HL; AA SL nel mezzo</td><td>AI SL &approx; vecchio Mathematical Studies SL</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <h2>La scelta in base al percorso</h2>
 
@@ -499,95 +446,45 @@ hreflang_it: 'https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/'
   </div>
 </section>
 
-<hr class="divider" />
-
-<!-- CTA BAND -->
-<hr class="divider" />
-
-<!-- RELATED -->
-<section>
+<section class="section section--tint" aria-labelledby="next-title">
   <div class="container">
-    <div class="section-label reveal">Continua</div>
-    <h2 class="section-title reveal reveal-delay-1">Dove andare adesso</h2>
-    <div class="services-grid reveal reveal-delay-2" style="margin-top:28px;">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <span class="service-tag">Ammissioni</span>
-        <h3>Preparazione test Bocconi</h3>
-        <p>24 domande su 50 sono di matematica. Formato, programma, punteggio e quando conviene lasciare in bianco.</p>
-        <a href="/it/preparazione-test-bocconi/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Guida completa Bocconi &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-1">
-        <span class="service-num">02</span>
-        <span class="service-tag">SAT digitale</span>
-        <h3>Preparazione SAT matematica</h3>
-        <p>44 domande in 70 minuti su due moduli adattivi, senza penalità per le risposte sbagliate.</p>
-        <a href="/it/tutor-sat-matematica/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Il SAT in dettaglio &rarr;</a>
-      </div>
-      <div class="service-card reveal reveal-delay-2">
-        <span class="service-num">03</span>
-        <span class="service-tag">IB · Milano</span>
-        <h3>Scuole internazionali di Milano</h3>
-        <p>Guide scuola per scuola alla matematica IB: BSM, ISM, ASM, CSM, ICS, San Carlo e St Louis.</p>
-        <a href="/it/ib-tutor/milano/" style="display:inline-block;margin-top:12px;color:var(--gold-light);font-size:0.86rem;font-weight:600;border-bottom:1px solid rgba(232,201,110,0.35);padding-bottom:1px;">Vedi le guide di Milano &rarr;</a>
-      </div>
-    </div>
-    <p style="margin-top:26px;font-size:0.88rem;color:var(--text-muted);line-height:1.9;">Tutoring di matematica IB nelle scuole internazionali di Milano: <a href="/it/ib-tutor/british-school-of-milan/" style="color:var(--gold-light);">British School of Milan</a> &middot; <a href="/it/ib-tutor/international-school-of-milan/" style="color:var(--gold-light);">International School of Milan</a> &middot; <a href="/it/ib-tutor/american-school-of-milan/" style="color:var(--gold-light);">American School of Milan</a> &middot; <a href="/it/ib-tutor/canadian-school-of-milan/" style="color:var(--gold-light);">Canadian School of Milan</a> &middot; <a href="/it/ib-tutor/ics-milan/" style="color:var(--gold-light);">ICS Milano</a> &middot; <a href="/it/ib-tutor/collegio-san-carlo/" style="color:var(--gold-light);">Collegio San Carlo</a> &middot; <a href="/it/ib-tutor/st-louis-school-milan/" style="color:var(--gold-light);">St Louis School</a></p>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container">
-    <div class="section-label reveal" style="justify-content: center;">Ancora indeciso?</div>
-    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">
-      Scegli il corso<br /><em style="font-style:normal;">giusto per il tuo percorso.</em>
-    </h2>
-    <p class="cta-band-desc reveal reveal-delay-2">
-      Se i tuoi corsi di destinazione non sono trattati qui, o sei indeciso tra AA e AI, una chiamata di 20 minuti può chiarirlo, in base ai tuoi obiettivi di laurea e a come ti piace davvero lavorare.
-    </p>
-    <div class="cta-band-actions reveal reveal-delay-3">
-      <a href="/it/ripetizioni-matematica-ib/" class="btn btn-gold">Scopri il tutoraggio di Matematica IB</a>
-      <a href="/it/contact/" class="btn btn-outline">Prenota una chiamata gratuita</a>
+    <div class="article-wrap">
+      <h2 id="next-title">Dove andare adesso</h2>
+      <ul class="next-list">
+        <li>
+          <h3>Preparazione test Bocconi</h3>
+          <p>24 domande su 50 sono di matematica. Formato, programma, punteggio e quando conviene lasciare in bianco.</p>
+          <a href="/it/preparazione-test-bocconi/" class="link-arrow">Guida completa Bocconi &rarr;</a>
+        </li>
+        <li>
+          <h3>Preparazione SAT matematica</h3>
+          <p>44 domande in 70 minuti su due moduli adattivi, senza penalità per le risposte sbagliate.</p>
+          <a href="/it/tutor-sat-matematica/" class="link-arrow">Il SAT in dettaglio &rarr;</a>
+        </li>
+        <li>
+          <h3>Scuole internazionali di Milano</h3>
+          <p>Guide scuola per scuola alla matematica IB: BSM, ISM, ASM, CSM, ICS, San Carlo e St Louis.</p>
+          <a href="/it/ib-tutor/milano/" class="link-arrow">Vedi le guide di Milano &rarr;</a>
+        </li>
+      </ul>
+      <p class="legal-note">Tutoring di matematica IB nelle scuole internazionali di Milano: <a href="/it/ib-tutor/british-school-of-milan/">British School of Milan</a> &middot; <a href="/it/ib-tutor/international-school-of-milan/">International School of Milan</a> &middot; <a href="/it/ib-tutor/american-school-of-milan/">American School of Milan</a> &middot; <a href="/it/ib-tutor/canadian-school-of-milan/">Canadian School of Milan</a> &middot; <a href="/it/ib-tutor/ics-milan/">ICS Milano</a> &middot; <a href="/it/ib-tutor/collegio-san-carlo/">Collegio San Carlo</a> &middot; <a href="/it/ib-tutor/st-louis-school-milan/">St Louis School</a></p>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/services/">Servizi</a>
-      <a href="/it/about/">Chi sono</a>
-      <a href="/it/faq/">FAQ</a>
-      <a href="/it/contact/">Contatti</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<section class="section article-end" aria-labelledby="end-title">
+  <div class="container">
+    <div class="article-wrap">
+      <h2 id="end-title">Scegli il corso giusto per il tuo percorso.</h2>
+      <p class="sec-lead">Se i tuoi corsi di destinazione non sono trattati qui, o sei indeciso tra AA e AI, una chiamata di 20 minuti può chiarirlo, in base ai tuoi obiettivi di laurea e a come ti piace davvero lavorare.</p>
+      <div class="actions">
+        <a href="/it/contact/" class="btn btn-primary">Prenota una call</a>
+        <a href="/it/ripetizioni-matematica-ib/" class="link-quiet">Scopri il tutoraggio di Matematica IB</a>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+{% include footer.html %}
 </body>
 </html>

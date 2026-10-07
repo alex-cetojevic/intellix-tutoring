@@ -163,240 +163,122 @@ hreflang_it: 'https://intellixtutoring.com/it/contact/'
 </script>
 </head>
 <body>
+{% include header.html %}
 
-<div class="mobile-menu" id="mobileMenu">
-  <button type="button" class="mobile-close" id="menuClose" aria-label="Chiudi menu">&#10005;</button>
-  <a href="/it/" onclick="closeMobileMenu()">Home</a>
-  <a href="/it/services/" onclick="closeMobileMenu()">Servizi</a>
-  <a href="/it/about/" onclick="closeMobileMenu()">Chi sono</a>
-  <a href="/it/faq/" onclick="closeMobileMenu()">FAQ</a>
-  <a href="/it/blog/" onclick="closeMobileMenu()">Blog</a>
-  <a href="/it/contact/" onclick="closeMobileMenu()">Contatti</a>
-  <a href="/it/contact/" class="btn btn-gold" onclick="closeMobileMenu()">Prenota una chiamata</a>
-</div>
-
-<div class="site-top">
-  <header id="header">
-    <div class="container nav">
-      <a href="/it/" class="logo">
-        <img src="/logo-intellix.png" alt="Intellix Tutoring logo" />
-        <span class="logo-text">Intellix Tutoring</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/it/">Home</a></li>
-        <li><a href="/it/services/">Servizi</a></li>
-        <li><a href="/it/about/">Chi sono</a></li>
-        <li><a href="/it/faq/">FAQ</a></li>
-        <li><a href="/it/blog/">Blog</a></li>
-        <li><a href="/it/contact/" class="active">Contatti</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <a href="/contact/">EN</a>
-          <span>|</span>
-          <a href="/it/contact/" class="active">IT</a>
-        </div>
-        <a href="/it/contact/" class="btn btn-gold nav-cta">Prenota una chiamata</a>
-      </div>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Apri menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-</div>
-
-<div class="page-hero">
+<section class="page-hero" aria-labelledby="page-title">
   <div class="container">
-    <div class="page-hero-label reveal">Contattami</div>
-    <h1 class="reveal reveal-delay-1">Prenota una <em>chiamata gratuita.</em></h1>
-    <p class="reveal reveal-delay-2">Una chiamata conoscitiva gratuita di 20 minuti per capire dove si trova il tuo studente, cosa non funziona e se sono la persona giusta. Nessun impegno, nessuna pressione.</p>
+    <p class="eyebrow">Contattami</p>
+    <h1 id="page-title">Prenota una chiamata gratuita.</h1>
+    <p class="lead dropcap">Una chiamata conoscitiva gratuita di 20 minuti per capire dove si trova il tuo studente, cosa non funziona e se sono la persona giusta. Nessun impegno, nessuna pressione.</p>
   </div>
-</div>
+</section>
 
-<hr class="divider" />
+<section id="contact" class="section section--tint" aria-labelledby="contact-title">
+  <div class="container contact">
+    <div class="contact-info">
+      <h2 id="contact-title">Contattami direttamente.</h2>
+      <p class="sec-lead">Preferisci scrivere direttamente? Ti rispondo entro 24 ore. Usa il canale che preferisci.</p>
+      <dl class="direct">
+        <div><dt>Email</dt><dd><a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a></dd></div>
+      </dl>
+    </div>
 
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="section-label reveal">Contatto diretto</div>
-        <h2 class="section-title reveal reveal-delay-1">
-          Contattami <em>direttamente.</em>
-        </h2>
-        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 32px;">
-          Preferisci scrivere direttamente? Ti rispondo entro 24 ore.
-          Usa il canale che preferisci.
-        </p>
-
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">Email</div>
-            <a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a>
+    <div class="form-card">
+      <div id="contactFormWrapper">
+        <form class="form" id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST" aria-label="Modulo di contatto" data-sending="Invio in corso&hellip;" data-error="Errore. Prova a scrivermi direttamente">
+          <div class="field">
+            <label for="fname">Il tuo nome</label>
+            <input class="input" type="text" id="fname" name="name" autocomplete="name" required />
           </div>
-        </div>
-        <div class="contact-detail reveal reveal-delay-3">
-          <div class="contact-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          <div>
-            <div style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; font-weight: 600;">WhatsApp</div>
-            <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">+385 95 352 1299</a>
+          <div class="field">
+            <label for="femail">Email</label>
+            <input class="input" type="email" id="femail" name="email" autocomplete="email" required />
           </div>
-        </div>
-
-        <div class="contact-divider"></div>
-
-        <div class="section-label reveal" style="margin-bottom: 16px;">Cosa aspettarsi</div>
-        <ol style="list-style: none; display: flex; flex-direction: column; gap: 14px;" class="reveal reveal-delay-1">
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">01</span>
-            Scrivi un messaggio con una breve descrizione dello studente e della materia.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">02</span>
-            Ti rispondo entro 24 ore con gli orari disponibili per una chiamata conoscitiva gratuita di 20 minuti.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">03</span>
-            Parliamo della situazione dello studente, dei suoi obiettivi e di come sarebbero strutturate le lezioni.
-          </li>
-          <li style="display:flex;gap:16px;align-items:flex-start;font-size:0.92rem;color:var(--text-muted);font-weight:400;line-height:1.65;">
-            <span style="font-family:'Playfair Display','Playfair Display Fallback',serif;font-size:1.1rem;color:var(--gold);font-weight:700;flex-shrink:0;line-height:1.4;">04</span>
-            Se è la scelta giusta, fissiamo la prima lezione e si parte.
-          </li>
-        </ol>
-
-        <div class="contact-divider"></div>
-
-        <div class="reveal reveal-delay-2" style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="mailto:alexcetojevic12@gmail.com" class="btn btn-gold">Scrivimi</a>
-          <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp</a>
-        </div>
+          <div class="field">
+            <label for="fservice">Materia</label>
+            <select class="input" id="fservice" name="service" required>
+              <option value="" disabled selected>Scegli una materia</option>
+              <option>IB Maths AA HL</option>
+              <option>IB Maths AA SL</option>
+              <option>IB Maths AI HL</option>
+              <option>IB Maths AI SL</option>
+              <option>IB Physics HL</option>
+              <option>IB Physics SL</option>
+              <option>SAT Math</option>
+              <option>Bocconi Test Prep</option>
+              <option>Corso di Revisione Estivo</option>
+              <option>Matematica Universitaria</option>
+              <option>Altro / Non sono sicuro/a</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fsituation">Principale esigenza</label>
+            <select class="input" id="fsituation" name="situation">
+              <option value="" disabled selected>Scegli un'opzione</option>
+              <option>Difficoltà con argomenti specifici</option>
+              <option>Preparazione agli esami</option>
+              <option>Supporto regolare a lungo termine</option>
+              <option>Iniziare da zero / costruire le basi</option>
+              <option>Non sono sicuro/a</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fphone">WhatsApp / Telefono <span class="optional">(facoltativo)</span></label>
+            <input class="input" type="tel" id="fphone" name="phone" autocomplete="tel" placeholder="+39 345 678 9012" />
+          </div>
+          <fieldset class="field">
+            <legend>Contatto preferito</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="preferred_contact" value="Email" />Email</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="WhatsApp" />WhatsApp</label>
+              <label class="pill"><input type="radio" name="preferred_contact" value="Either" checked />Indifferente</label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="fmessage">Altro <span class="optional">(facoltativo)</span></label>
+            <textarea class="input" id="fmessage" name="message" rows="4" placeholder="Voto attuale, esami imminenti, qualsiasi contesto utile&hellip;"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Invia messaggio</button>
+            <p class="form-note">Rispondo entro 24 ore con gli orari disponibili per la call.</p>
+          </div>
+        </form>
       </div>
-
-      <div class="contact-form reveal reveal-delay-2">
-        <div id="contactFormWrapper">
-          <h3 style="font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 1.3rem; color: var(--cream); margin-bottom: 24px; font-weight: 600;">Prenota una chiamata conoscitiva gratuita</h3>
-          <form id="contactForm" action="https://formspree.io/f/mredwgkk" method="POST">
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fname">Il tuo nome</label>
-                <input class="form-input" type="text" id="fname" name="name" placeholder="Mario Rossi" required />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="femail">Email</label>
-                <input class="form-input" type="email" id="femail" name="email" placeholder="tu@esempio.it" required />
-              </div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fservice">Materia</label>
-                <select class="form-select" id="fservice" name="service" required>
-                  <option value="" disabled selected>Seleziona una materia&hellip;</option>
-                  <option>IB Maths AA HL</option>
-                  <option>IB Maths AA SL</option>
-                  <option>IB Maths AI HL</option>
-                  <option>IB Maths AI SL</option>
-                  <option>IB Physics HL</option>
-                  <option>IB Physics SL</option>
-                  <option>SAT Math</option>
-                  <option>Bocconi Test Prep</option>
-                  <option>Corso di Revisione Estivo</option>
-                  <option>Matematica Universitaria</option>
-                  <option>Non sono sicuro/a</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="fsituation">Principale esigenza</label>
-                <select class="form-select" id="fsituation" name="situation">
-                  <option value="" disabled selected>Seleziona una opzione&hellip;</option>
-                  <option>Difficoltà con argomenti specifici</option>
-                  <option>Preparazione agli esami</option>
-                  <option>Supporto regolare a lungo termine</option>
-                  <option>Iniziare da zero / costruire le basi</option>
-                  <option>Non sono sicuro/a</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-row">
-                <label class="form-label" for="fphone">WhatsApp / Telefono <span style="font-weight:400;text-transform:none;letter-spacing:0;">(facoltativo)</span></label>
-                <input class="form-input" type="tel" id="fphone" name="phone" placeholder="+39 345 678 9012" />
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="fcontact">Contatto preferito</label>
-                <select class="form-select" id="fcontact" name="preferred_contact">
-                  <option value="Email">Email</option>
-                  <option value="WhatsApp">WhatsApp</option>
-                  <option value="Either">Indifferente</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <label class="form-label" for="fmessage">Altro da aggiungere <span style="font-weight:400;text-transform:none;letter-spacing:0;">(facoltativo)</span></label>
-              <textarea class="form-textarea" id="fmessage" name="message" placeholder="Voto attuale, esami imminenti, qualsiasi contesto utile&hellip;" style="min-height:80px;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold form-submit">Invia messaggio</button>
-          </form>
-        </div>
-        <div class="form-success" id="formSuccess">
-          <div class="success-icon">&#10003;</div>
-          <div class="success-title">Messaggio inviato!</div>
-          <p class="success-text">Grazie. Ti rispondo entro 24 ore con gli orari disponibili per una chiamata conoscitiva gratuita.</p>
-        </div>
+      <div class="form-success" id="formSuccess" role="status" tabindex="-1">
+        <p class="form-success-title">Messaggio inviato!</p>
+        <p>Grazie. Ti rispondo entro 24 ore con gli orari disponibili per una chiamata conoscitiva gratuita.</p>
       </div>
     </div>
   </div>
 </section>
 
-{% include cta-bar.html %}
-<footer>
-  <div class="container footer-inner">
-    <p class="footer-copy">&copy; <span id="year"></span> Intellix Tutoring &middot; Alex Ćetojević<span class="footer-legal">Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586</span></p>
-    <div class="footer-links">
-      <a href="/it/">Home</a>
-      <a href="/it/services/">Servizi</a>
-      <a href="/it/faq/">FAQ</a>
-      <a href="mailto:alexcetojevic12@gmail.com">Email</a>
-      <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://www.instagram.com/intellixtutoring/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<section class="section" aria-labelledby="expect-title">
+  <div class="container split">
+    <div class="split-head">
+      <h2 id="expect-title">Cosa aspettarsi</h2>
     </div>
+    <ol class="steps steps--plain split-body">
+      <li>
+        <span class="step-n" aria-hidden="true">1</span>
+        <p>Scrivi un messaggio con una breve descrizione dello studente e della materia.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">2</span>
+        <p>Ti rispondo entro 24 ore con gli orari disponibili per una chiamata conoscitiva gratuita di 20 minuti.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">3</span>
+        <p>Parliamo della situazione dello studente, dei suoi obiettivi e di come sarebbero strutturate le lezioni.</p>
+      </li>
+      <li>
+        <span class="step-n" aria-hidden="true">4</span>
+        <p>Se è la scelta giusta, fissiamo la prima lezione e si parte.</p>
+      </li>
+    </ol>
   </div>
-</footer>
+</section>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Mark language as chosen when on Italian page
-localStorage.setItem('langChosen', 'it');
-
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-function closeMobileMenu() { mobileMenu.classList.remove('open'); }
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-const wrapper = document.getElementById('contactFormWrapper');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Invio in corso…';
-  btn.disabled = true;
-  try {
-    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-    if (res.ok) { wrapper.style.display = 'none'; success.classList.add('show'); }
-    else { btn.textContent = 'Errore. Prova a scrivermi direttamente'; btn.disabled = false; }
-  } catch { btn.textContent = 'Errore. Prova a scrivermi direttamente'; btn.disabled = false; }
-});
-</script>
+{% include footer.html %}
 </body>
 </html>
