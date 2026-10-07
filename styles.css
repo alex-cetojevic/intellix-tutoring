@@ -1711,6 +1711,8 @@ footer {
 .article-body li { margin-bottom: 10px; }        /* colour inherits from .article-body */
 .article-body strong { color: var(--cream); font-weight: 600; }
 .article-body a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+/* the rule above outranks .btn-gold, which left the booking button gold on gold */
+.article-body a.btn-gold { color: var(--navy); text-decoration: none; }
 .article-body table { width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 0.94rem; }
 .article-body th, .article-body td {
   text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border-light);
