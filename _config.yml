@@ -1,8 +1,9 @@
 permalink: pretty
 url: "https://intellixtutoring.com"
 baseurl: ""
-# Design handoff and private client files never go on the live site
+# Design handoff, private client files and build tools never go on the live site
 exclude:
   - intellix-redesign-handoff
   - intellix-redesign-handoff.zip
   - clients
+  - tools

@@ -25,25 +25,6 @@
   });
 })();
 
-// Language choice. An Italian browser landing on an English page is sent to the Italian
-// version once; after that the EN | IT switch is respected.
-(function () {
-  try {
-    if (document.documentElement.lang === 'it') {
-      localStorage.setItem('langChosen', 'it');
-      return;
-    }
-    const itLink = document.querySelector('link[rel="alternate"][hreflang="it"]');
-    if (!itLink || localStorage.getItem('langChosen')) return;
-    if (navigator.language && navigator.language.startsWith('it')) {
-      localStorage.setItem('langChosen', 'it');
-      window.location.replace(itLink.href + window.location.search + window.location.hash);
-    } else {
-      localStorage.setItem('langChosen', 'en');
-    }
-  } catch (e) { /* storage blocked: stay on this page */ }
-})();
-
 // Contact form: posts to Formspree and swaps the form for the success panel.
 // Button states come from data attributes on the form, so EN and IT share this code.
 (function () {

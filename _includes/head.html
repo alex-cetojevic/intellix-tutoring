@@ -1,11 +1,43 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RMPQWV1JF"></script>
+<script>
+// Language choice. An Italian browser landing on an English page is sent to the Italian
+// version once; after that the EN | IT switch is respected. It runs first in <head>,
+// so the English page does not load before the jump.
+(function () {
+  try {
+    if (document.documentElement.lang === 'it') {
+      localStorage.setItem('langChosen', 'it');
+      return;
+    }
+    var itUrl = {{ page.hreflang_it | jsonify }};
+    if (!itUrl || localStorage.getItem('langChosen')) return;
+    if (navigator.language && navigator.language.startsWith('it')) {
+      localStorage.setItem('langChosen', 'it');
+      location.replace(itUrl + location.search + location.hash);
+    } else {
+      localStorage.setItem('langChosen', 'en');
+    }
+  } catch (e) { /* storage blocked: stay on this page */ }
+})();
+</script>
+<!-- Google tag (gtag.js). The script loads only after the page has loaded and painted,
+     so it never delays the first screen. Events sent before then wait in dataLayer. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-7RMPQWV1JF');
+
+  window.addEventListener('load', function () {
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7RMPQWV1JF';
+        document.head.appendChild(s);
+      });
+    });
+  });
 </script>
 <meta charset="UTF-8" />
 <title>{{ page.title }}</title>
