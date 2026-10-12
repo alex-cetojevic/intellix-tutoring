@@ -28,7 +28,7 @@
 {%- assign url_en = page.hreflang_en | default: 'https://intellixtutoring.com/' | remove: 'https://intellixtutoring.com' -%}
 {%- assign url_it = page.hreflang_it | default: 'https://intellixtutoring.com/it/' | remove: 'https://intellixtutoring.com' -%}
 {%- assign nav = 'services' -%}
-{%- if page.url == '/' or page.url == '/it/' or page.url contains '404' -%}{%- assign nav = '' -%}
+{%- if page.url == '/' or page.url == '/it/' or page.url contains '404' or page.url contains 'privacy' -%}{%- assign nav = '' -%}
 {%- elsif page.url contains '/blog' -%}{%- assign nav = 'blog' -%}
 {%- elsif page.url contains '/faq/' -%}{%- assign nav = 'faq' -%}
 {%- elsif page.url contains '/contact/' -%}{%- assign nav = 'contact' -%}

@@ -1,6 +1,7 @@
 {%- comment -%}
-  Closes <main>, then the footer band and the mobile booking bar. Shared by every page.
-  The bar is left off the contact pages, where the form is already on screen.
+  Closes <main>, then the footer band, the mobile booking bar and the analytics consent banner.
+  Shared by every page. The bar is left off the contact pages, where the form is already on screen.
+  The banner is hidden until main.js finds that no choice has been stored.
 {%- endcomment -%}
 {%- if page.locale == 'it_IT' -%}
   {%- assign root = '/it/' -%}
@@ -8,6 +9,13 @@
   {%- assign t_contact = 'Contatti' -%}
   {%- assign t_cta = 'Prenota una call' -%}
   {%- assign t_touch = 'Contatti diretti' -%}
+  {%- assign privacy = '/it/informativa-privacy/' -%}
+  {%- assign t_privacy = 'Informativa privacy' -%}
+  {%- assign t_cookies = 'Impostazioni cookie' -%}
+  {%- assign t_consent = 'Consenso alle statistiche' -%}
+  {%- assign t_consent_text = 'Questo sito usa Google Analytics per contare le visite. Si attiva solo se accetti.' -%}
+  {%- assign t_accept = 'Accetta' -%}
+  {%- assign t_decline = 'Rifiuta' -%}
   {%- assign t_legal = 'Intellix Tutoring è gestito da EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croazia &middot; OIB 02919624129 &middot; MBO 99354586' -%}
 {%- else -%}
   {%- assign root = '/' -%}
@@ -15,6 +23,13 @@
   {%- assign t_contact = 'Contact' -%}
   {%- assign t_cta = 'Book a free 20-minute call' -%}
   {%- assign t_touch = 'Get in touch' -%}
+  {%- assign privacy = '/privacy/' -%}
+  {%- assign t_privacy = 'Privacy notice' -%}
+  {%- assign t_cookies = 'Cookie settings' -%}
+  {%- assign t_consent = 'Analytics consent' -%}
+  {%- assign t_consent_text = 'This site uses Google Analytics to count visits. It runs only if you accept.' -%}
+  {%- assign t_accept = 'Accept' -%}
+  {%- assign t_decline = 'Decline' -%}
   {%- assign t_legal = 'Intellix Tutoring is operated by EIGENSHIFT, obrt za informatičke usluge i poslovno savjetovanje, vl. Alex Ćetojević &middot; Mirna ulica 4, 52470 Umag, Croatia &middot; OIB 02919624129 &middot; MBO 99354586' -%}
 {%- endif -%}
 {%- assign url_en = page.hreflang_en | default: 'https://intellixtutoring.com/' | remove: 'https://intellixtutoring.com' -%}
@@ -43,6 +58,7 @@
             <li><a href="{{ root }}services/">{{ t_services }}</a></li>
             <li><a href="{{ root }}faq/">FAQ</a></li>
             <li><a href="{{ root }}contact/">{{ t_contact }}</a></li>
+            <li><a href="{{ privacy }}">{{ t_privacy }}</a></li>
           </ul>
         </nav>
         <ul aria-label="{{ t_touch }}">
@@ -54,7 +70,7 @@
     </div>
     <div class="footer-legal">
       <p>{{ t_legal }}</p>
-      <p>&copy; Intellix Tutoring &middot; Alex Ćetojević</p>
+      <p>&copy; Intellix Tutoring &middot; Alex Ćetojević &middot; <button type="button" class="footer-button" id="consentOpen">{{ t_cookies }}</button></p>
     </div>
   </div>
 </footer>
@@ -64,3 +80,10 @@
   <a href="https://wa.me/385953521299" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
 {% endif %}
+<div class="consent" id="consent" role="region" aria-label="{{ t_consent }}" hidden>
+  <p>{{ t_consent_text }} <a href="{{ privacy }}">{{ t_privacy }}</a></p>
+  <div class="consent-actions">
+    <button type="button" class="btn btn-secondary btn-sm" data-consent="no">{{ t_decline }}</button>
+    <button type="button" class="btn btn-secondary btn-sm" data-consent="yes">{{ t_accept }}</button>
+  </div>
+</div>

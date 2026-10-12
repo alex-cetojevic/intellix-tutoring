@@ -627,6 +627,8 @@ textarea.input { height: auto; min-height: 120px; padding: 12px 14px; line-heigh
 .form-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-top: 4px; }
 .form-actions .btn { padding: 0 28px; }
 .form-note { font-size: 14px; line-height: 1.5; color: var(--muted); }
+.form-note--full { flex-basis: 100%; }
+.form-note a, .drill-mail-note a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .form-error { grid-column: 1 / -1; font-size: 15px; color: var(--error); }
 .form-success { display: none; }
 .form-success.show { display: block; }
@@ -1063,6 +1065,18 @@ body.drill-running .site-footer { padding-bottom: 104px; }
   .footer-legal { margin-top: 24px; padding-top: 20px; }
 }
 
+/* ── ANALYTICS CONSENT ── a plain bar along the bottom until the visitor chooses */
+.consent { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px; padding: 16px var(--gutter) calc(16px + env(safe-area-inset-bottom)); background: var(--paper); border-top: 1px solid var(--ink); }
+.consent[hidden] { display: none; }
+.consent p { flex: 1 1 320px; margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
+.consent a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.consent-actions { display: flex; gap: 8px; }
+.consent-actions .btn { min-width: 108px; }
+/* While the banner is open the page gets room at the end, so the banner never covers the last lines */
+html.consent-open .site-footer { padding-bottom: 140px; }
+.footer-button { padding: 0; border: 0; background: none; font: inherit; color: var(--cream); cursor: pointer; }
+.footer-button:hover { color: #FFFFFF; text-decoration: underline; text-underline-offset: 4px; }
+
 /* ── MOBILE STICKY BAR ── the only shadow on the site */
 .sticky-bar { display: none; }
 @media (max-width: 760px) {
@@ -1072,4 +1086,12 @@ body.drill-running .site-footer { padding-bottom: 104px; }
   .sticky-bar .btn-secondary { flex: none; padding: 0 16px; }
   /* Spacer: the page ends above the bar, so the bar never covers content */
   .site-footer--bar { padding-bottom: calc(32px + 76px + env(safe-area-inset-bottom)); }
+  /* The consent banner sits on top of the bar, not over it */
+  .sticky-bar ~ .consent { bottom: calc(73px + env(safe-area-inset-bottom)); padding-bottom: 16px; }
+  body.drill-running .sticky-bar ~ .consent { bottom: 0; padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+  .consent-actions { flex: 1 1 100%; }
+  .consent-actions .btn { flex: 1 1 0; min-height: 48px; }
+  html.consent-open .site-footer { padding-bottom: 200px; }
+  html.consent-open .site-footer--bar { padding-bottom: calc(273px + env(safe-area-inset-bottom)); }
+  .footer-button { min-height: 44px; }
 }

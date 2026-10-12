@@ -53,13 +53,14 @@
   });
 })();
 
-// GA4 conversion events. Everything is delegated, so no per-page markup is needed:
+// GA4 conversion events, sent only once the visitor has accepted analytics (see the consent
+// banner below). Everything is delegated, so no per-page markup is needed:
 //   contact_whatsapp / contact_email / contact_phone: click on a wa.me / mailto: / tel: link
 //   cta_click: click on a primary button (Book a call etc.), with its text and target
 //   generate_lead: the contact form's success panel appears (Formspree accepted the POST)
 (function () {
   function track(name, params) {
-    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+    if (window.analytics && window.analytics.loaded) window.gtag('event', name, params || {});
   }
   const page = () => location.pathname;
 
@@ -84,4 +85,45 @@
       }
     }).observe(success, { attributes: true, attributeFilter: ['class'] });
   }
+})();
+
+// Analytics consent. The banner shows until the visitor accepts or declines, and "Cookie
+// settings" in the footer brings it back. Accept loads Google Analytics (head.html).
+// Decline, or a later change of mind, switches it off and removes its cookies.
+(function () {
+  const banner = document.getElementById('consent');
+  if (!banner || !window.analytics) return;
+  const KEY = 'analyticsConsent';
+  // If storage is blocked there is nowhere to keep a choice, so treat it as declined.
+  const stored = () => { try { return localStorage.getItem(KEY); } catch { return 'no'; } };
+  const show = (on) => {
+    banner.hidden = !on;
+    document.documentElement.classList.toggle('consent-open', on);
+  };
+  function switchOff() {
+    window['ga-disable-G-7RMPQWV1JF'] = true;
+    const hosts = ['', '; domain=' + location.hostname, '; domain=.' + location.hostname.replace(/^www\./, '')];
+    for (const part of document.cookie.split('; ')) {
+      const name = part.split('=')[0];
+      if (!name.startsWith('_ga')) continue;
+      for (const host of hosts) document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + host;
+    }
+  }
+
+  if (!stored()) show(true);
+  banner.addEventListener('click', (e) => {
+    const choice = e.target.closest('[data-consent]');
+    if (!choice) return;
+    try { localStorage.setItem(KEY, choice.dataset.consent); } catch { /* storage blocked */ }
+    show(false);
+    if (choice.dataset.consent === 'yes') {
+      window['ga-disable-G-7RMPQWV1JF'] = false;
+      window.analytics.load();
+    } else switchOff();
+  });
+  const reopen = document.getElementById('consentOpen');
+  if (reopen) reopen.addEventListener('click', () => {
+    show(true);
+    banner.querySelector('button').focus();
+  });
 })();
