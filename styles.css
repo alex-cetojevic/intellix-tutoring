@@ -162,8 +162,8 @@ img { max-width: 100%; height: auto; display: block; }
   .site-nav { gap: 22px; }
   .nav-links { gap: 20px; }
 }
-/* between the phone breakpoint and ~940px the nav is too tight for the header button */
-@media (max-width: 940px) {
+/* between the phone breakpoint and ~980px the nav is too tight for the header button */
+@media (max-width: 980px) {
   .site-nav .btn { display: none; }
 }
 @media (max-width: 760px) {
@@ -1031,6 +1031,110 @@ body.drill-running .site-footer { padding-bottom: 104px; }
   .table--schools td { margin-top: 10px; }
   .table--schools th + td { margin-top: 0; }
   .table--schools td::before { content: attr(data-label); display: block; font-size: 13px; font-weight: 600; color: var(--muted); }
+}
+
+/* ── SERVICES AND FEES ── fixed fees (services, fees and their /it/ mirrors) */
+
+/* Hero numeral wider than a digit (€330): the label drops under it */
+.numeral-head--stack { flex-direction: column; align-items: flex-start; gap: 12px; }
+.numeral--money { letter-spacing: -0.03em; }
+
+/* How it works: the timeline beside the list of what every block includes */
+.how-more { margin-top: 64px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px 48px; }
+.how-more > .figure { flex: 1 1 560px; min-width: 0; }
+.how-more > .included { flex: 1 1 340px; max-width: 460px; min-width: 0; }
+.timeline { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); column-gap: 3px; }
+.timeline-marks { min-height: 46px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 4px 12px; font-size: 13px; font-weight: 600; line-height: 1.35; }
+.timeline-marks span { padding: 0 8px 10px; border-left: 1px solid var(--ink); }
+.timeline-marks span + span { border-left: 0; border-right: 1px solid var(--ink); text-align: right; }
+.timeline-bar { display: block; height: 12px; background: var(--ink); border-radius: 1px; }
+.timeline-part + .timeline-part .timeline-bar { background: var(--gold-band); border: 1px solid var(--border-on-gold); }
+.timeline-when { margin-top: 12px; font-size: 15px; font-weight: 600; }
+.timeline-what { margin-top: 2px; padding-right: 12px; font-size: 14px; line-height: 1.45; color: var(--ink-soft); }
+.included-list { list-style: none; margin: 10px 0 0; padding: 0; }
+.included-list li { padding: 11px 0; border-top: 1px solid var(--border); font-size: 15.5px; line-height: 1.45; color: var(--ink-soft); }
+
+/* Service cards: before and after, the facts, then the fee */
+.cards--two { grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); }
+.cards--two .card > .card-label { font-size: 14px; color: var(--accent); }
+.ba { margin: 4px 0 0; }
+.ba > div { display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-top: 1px solid var(--border); }
+.ba > div:last-child { border-bottom: 1px solid var(--border); }
+.ba dt { flex: 0 0 48px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.ba-after dt { color: var(--accent); }
+.ba dd { margin: 0; font-family: var(--font-serif); font-size: 20px; line-height: 1.35; color: var(--ink); }
+.leaders--card > div { padding: 6px 0; }
+.leaders--card dt { font-size: 15px; }
+.leaders--card dd { font-size: 18px; }
+.card .card-note { font-size: 14.5px; line-height: 1.5; color: var(--muted); }
+.card-price { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.card-price strong { font-family: var(--font-serif); font-size: 32px; font-weight: 700; line-height: 1.1; color: var(--ink); }
+.card-price span { font-size: 14.5px; color: var(--ink-soft); }
+.card-price + .card-links { margin-top: 0; padding-top: 4px; border-top: 0; flex-direction: row; flex-wrap: wrap; gap: 6px 24px; }
+
+/* Fee cards (Fees page): what each fee buys, item by item */
+.fee-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.fee-card-head h3 { margin-top: 4px; }
+.fee-card-price { flex: none; font-family: var(--font-serif); font-size: 30px; font-weight: 700; line-height: 1.1; color: var(--ink); }
+.fee-card-price small { margin-left: 4px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--muted); }
+.fee-sub { margin-top: 8px; padding-top: 18px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 10px; }
+.fee-sub .fee-card-head { padding-bottom: 0; border-bottom: 0; }
+.fee-sub .fee-card-price { font-size: 26px; }
+
+/* The fee table. On phones each row becomes a block: name and fee, then length and lessons */
+.fees-figure { margin-top: 44px; max-width: 960px; }
+.table tr.is-start { background: var(--paper-tint); }
+.table tr.is-start th { font-weight: 600; }
+.fees-table td { white-space: nowrap; }
+.fees-table td.wrap { white-space: normal; }
+
+/* The IB year: each semester's goal for DP1 and DP2 */
+.with-figure--wide { gap: 48px 56px; }
+.with-figure--wide > .rows { flex-basis: 500px; }
+.with-figure--wide > .figure { flex-basis: 560px; max-width: 620px; }
+.table--goals th, .table--goals td { vertical-align: top; line-height: 1.5; }
+.table--goals td { font-size: 15.5px; color: var(--ink-soft); }
+.term-name { display: block; font-family: var(--font-serif); font-size: 20px; line-height: 1.25; color: var(--ink); white-space: nowrap; }
+.term-dates { display: block; margin-top: 2px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+.table--goals .pen--circle-wide { margin-left: 4px; padding: 0 6px; }
+
+/* Extras: the fee under each description */
+.row-price { display: block; margin-top: 10px; font-family: var(--font-serif); font-size: 20px; font-weight: 700; color: var(--ink); }
+/* The closing line under the rules */
+.split-close { margin-top: 32px; font-family: var(--font-serif); font-size: 24px; line-height: 1.4; color: var(--ink); text-wrap: pretty; }
+
+@media (max-width: 760px) {
+  .how-more { margin-top: 40px; gap: 32px; }
+  .how-more > .figure, .how-more > .included { flex-basis: 100%; max-width: none; }
+  .timeline { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
+  .timeline-marks { min-height: 64px; flex-direction: column; justify-content: flex-start; }
+  .timeline-marks span + span { border-right: 0; border-left: 1px solid var(--ink); text-align: left; }
+  .included-list li { font-size: 15px; }
+  .ba > div { gap: 14px; }
+  .ba dd { font-size: 19px; }
+  .card-price strong { font-size: 28px; }
+  .card-price + .card-links { flex-direction: column; gap: 0; }
+  .fee-card-price { font-size: 26px; }
+  .split-close { margin-top: 24px; font-size: 21px; }
+
+  .fees-figure { margin-top: 28px; }
+  .fees-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+  .fees-table, .fees-table tbody { display: block; }
+  .fees-table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; row-gap: 2px; padding: 14px 18px 14px 16px; }
+  .table.fees-table tbody tr > * { padding: 0; }
+  .fees-table tbody th { grid-column: 1; grid-row: 1; }
+  .fees-table td.num { grid-column: 2; grid-row: 1 / span 3; }
+  .fees-table td:not(.num) { grid-column: 1; font-size: 14px; color: var(--muted); white-space: normal; }
+  .fees-table td[data-label]::before { content: attr(data-label) ": "; }
+
+  .table--goals { display: block; background: none; border: 0; }
+  .table--goals caption, .table--goals tbody, .table--goals tr, .table--goals th, .table--goals td { display: block; }
+  .table--goals thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+  .table--goals tbody { background: var(--surface); border: 1px solid var(--border); }
+  .table.table--goals tbody tr > * { padding: 0; }
+  .table--goals tbody tr { padding: 14px 16px 16px; }
+  .table--goals td { margin-top: 8px; }
+  .table--goals td::before { content: attr(data-label); display: block; font-size: 13px; font-weight: 600; color: var(--muted); }
 }
 
 /* ── FOOTER ── */

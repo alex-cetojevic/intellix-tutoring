@@ -6,6 +6,8 @@
 {%- if page.locale == 'it_IT' -%}
   {%- assign root = '/it/' -%}
   {%- assign t_services = 'Servizi' -%}
+  {%- assign t_fees = 'Tariffe' -%}
+  {%- assign fees = '/it/tariffe/' -%}
   {%- assign t_contact = 'Contatti' -%}
   {%- assign t_cta = 'Prenota una call' -%}
   {%- assign t_touch = 'Contatti diretti' -%}
@@ -20,6 +22,8 @@
 {%- else -%}
   {%- assign root = '/' -%}
   {%- assign t_services = 'Services' -%}
+  {%- assign t_fees = 'Fees' -%}
+  {%- assign fees = '/fees/' -%}
   {%- assign t_contact = 'Contact' -%}
   {%- assign t_cta = 'Book a free 20-minute call' -%}
   {%- assign t_touch = 'Get in touch' -%}
@@ -56,6 +60,7 @@
           <ul>
             <li><a href="{{ root }}">Home</a></li>
             <li><a href="{{ root }}services/">{{ t_services }}</a></li>
+            <li><a href="{{ fees }}">{{ t_fees }}</a></li>
             <li><a href="{{ root }}faq/">FAQ</a></li>
             <li><a href="{{ root }}contact/">{{ t_contact }}</a></li>
             <li><a href="{{ privacy }}">{{ t_privacy }}</a></li>

@@ -7,7 +7,8 @@ Key facts:
 - Alex finished the IB Diploma with 43/45, with a 7 in Mathematics AA HL and a 7 in Physics HL. He holds a BSc in Mathematics from the University of Trieste.
 - All lessons are online, on Zoom or Google Meet with a shared whiteboard. There are no in-person lessons.
 - Lessons run in English, Italian or Croatian.
-- Every new student starts with a free 20-minute intro call.
+- Every new student starts with a free 20-minute intro call, then a paid 2-week start (€330) that counts towards the block.
+- Fixed fees, published on the site: IB Maths or IB Physics €2,000 a semester (2 lessons every school week), SAT Math €1,350 (8 weeks, 16 lessons), Bocconi test €1,650 (10 weeks, 20 lessons), IA Coach on its own €650, Sprint €95 a lesson.
 - The site is in English and Italian. Italian pages live under /it/.
 
 ## Tutoring services
@@ -18,7 +19,8 @@ Key facts:
 - [SAT Math tutoring](https://intellixtutoring.com/sat-math-tutor/): the Digital SAT Math section, its format, content and scoring.
 - [Bocconi test prep](https://intellixtutoring.com/bocconi-test-prep/): the Bocconi online test, its maths syllabus, scoring and attempts.
 - [IB tutoring for Milan international schools](https://intellixtutoring.com/ib-tutor/milan/): how each Milan school reaches the IB Diploma, with a guide per school.
-- [All services](https://intellixtutoring.com/services/): the full list, including group sessions and summer revision courses.
+- [All services](https://intellixtutoring.com/services/): the four services, how every block works, the IB year and the extras.
+- [Fees](https://intellixtutoring.com/fees/): every fee, what each one buys, and the rules.
 
 ## IB Maths guides
 
@@ -51,6 +53,7 @@ Key facts:
 ## Italian
 
 - [Home page in Italian](https://intellixtutoring.com/it/)
+- [Tariffe](https://intellixtutoring.com/it/tariffe/)
 - [Ripetizioni di Matematica IB](https://intellixtutoring.com/it/ripetizioni-matematica-ib/)
 - [Preparazione al test Bocconi](https://intellixtutoring.com/it/preparazione-test-bocconi/)
 - [Simulazione di matematica Bocconi](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande in 75 minuti, con soluzioni svolte.

@@ -5,6 +5,8 @@
 {%- if page.locale == 'it_IT' -%}
   {%- assign root = '/it/' -%}
   {%- assign t_services = 'Servizi' -%}
+  {%- assign t_fees = 'Tariffe' -%}
+  {%- assign fees = '/it/tariffe/' -%}
   {%- assign t_about = 'Chi sono' -%}
   {%- assign t_contact = 'Contatti' -%}
   {%- assign t_cta = 'Prenota una call' -%}
@@ -16,6 +18,8 @@
 {%- else -%}
   {%- assign root = '/' -%}
   {%- assign t_services = 'Services' -%}
+  {%- assign t_fees = 'Fees' -%}
+  {%- assign fees = '/fees/' -%}
   {%- assign t_about = 'About' -%}
   {%- assign t_contact = 'Contact' -%}
   {%- assign t_cta = 'Book a free 20-minute call' -%}
@@ -29,6 +33,7 @@
 {%- assign url_it = page.hreflang_it | default: 'https://intellixtutoring.com/it/' | remove: 'https://intellixtutoring.com' -%}
 {%- assign nav = 'services' -%}
 {%- if page.url == '/' or page.url == '/it/' or page.url contains '404' or page.url contains 'privacy' -%}{%- assign nav = '' -%}
+{%- elsif page.url == '/fees/' or page.url == '/it/tariffe/' -%}{%- assign nav = 'fees' -%}
 {%- elsif page.url contains '/blog' -%}{%- assign nav = 'blog' -%}
 {%- elsif page.url contains '/faq/' -%}{%- assign nav = 'faq' -%}
 {%- elsif page.url contains '/contact/' -%}{%- assign nav = 'contact' -%}
@@ -36,6 +41,7 @@
 {%- endif -%}
 {%- capture links -%}
 <li><a href="{{ root }}services/"{% if nav == 'services' %} aria-current="{% if page.url contains '/services/' %}page{% else %}true{% endif %}"{% endif %}>{{ t_services }}</a></li>
+<li><a href="{{ fees }}"{% if nav == 'fees' %} aria-current="page"{% endif %}>{{ t_fees }}</a></li>
 <li><a href="{{ root }}about/"{% if nav == 'about' %} aria-current="{% if page.url contains '/about/' %}page{% else %}true{% endif %}"{% endif %}>{{ t_about }}</a></li>
 <li><a href="{{ root }}faq/"{% if nav == 'faq' %} aria-current="page"{% endif %}>FAQ</a></li>
 <li><a href="{{ root }}blog/"{% if nav == 'blog' %} aria-current="{% if page.url == '/blog/' or page.url == '/it/blog/' %}page{% else %}true{% endif %}"{% endif %}>Blog</a></li>
