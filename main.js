@@ -27,6 +27,7 @@
 
 // Contact form: posts to Formspree and swaps the form for the success panel.
 // Button states come from data attributes on the form, so EN and IT share this code.
+// A failed send shows the error line under the button, with the email and WhatsApp links.
 (function () {
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
@@ -36,10 +37,13 @@
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const label = btn.textContent;
+    const error = document.getElementById('formError');
     const fail = () => {
-      btn.textContent = form.dataset.error || label;
+      btn.textContent = label;
       btn.disabled = false;
+      if (error) error.hidden = false;
     };
+    if (error) error.hidden = true;
     btn.textContent = form.dataset.sending || label;
     btn.disabled = true;
     try {
