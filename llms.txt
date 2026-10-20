@@ -41,6 +41,7 @@ Key facts:
 ## Bocconi and SAT guides
 
 - [Bocconi Test 2027: Dates, Format and How It Is Scored](https://intellixtutoring.com/blog/bocconi-test-2027/): application rounds, test dates, the 50 questions and the scoring rule.
+- [Bocconi Test Score: What You Need to Get In](https://intellixtutoring.com/blog/bocconi-test-score/): how the score is calculated, the 17 floor, and the 55% test and 45% grades weighting.
 - [Free Bocconi Test Practice](https://intellixtutoring.com/blog/bocconi-maths-drill/): 50 maths questions in 75 minutes, timed and scored, with a worked solution for each.
 - [How the Digital SAT Math Section Is Scored](https://intellixtutoring.com/blog/digital-sat-math-scoring/): the adaptive modules and what they mean for strategy.
 
@@ -57,4 +58,5 @@ Key facts:
 - [Ripetizioni di Matematica IB](https://intellixtutoring.com/it/ripetizioni-matematica-ib/)
 - [Preparazione al test Bocconi](https://intellixtutoring.com/it/preparazione-test-bocconi/)
 - [Simulazione test Bocconi gratis](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande di matematica in 75 minuti, con timer, punteggio e soluzioni svolte.
+- [Punteggio test Bocconi: quanto serve per entrare](https://intellixtutoring.com/it/blog/bocconi-test-score/): come si calcola il punteggio, la soglia di 17 e il peso di test (55%) e voti (45%).
 - [Blog in Italian](https://intellixtutoring.com/it/blog/)
