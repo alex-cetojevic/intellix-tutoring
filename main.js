@@ -25,35 +25,16 @@
   });
 })();
 
-// Contact form: posts to Formspree and swaps the form for the success panel.
-// Button states come from data attributes on the form, so EN and IT share this code.
-// A failed send shows the error line under the button, with the email and WhatsApp links.
+// Contact card: the main button opens the visitor's own email app. "Copy" puts the address on the
+// clipboard for visitors with no email app set up. If the clipboard is blocked, the address is on screen.
 (function () {
-  const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
-  const wrapper = document.getElementById('contactFormWrapper');
-  if (!form || !success || !wrapper) return;
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
+  document.querySelectorAll('[data-copy]').forEach((btn) => {
     const label = btn.textContent;
-    const error = document.getElementById('formError');
-    const fail = () => {
-      btn.textContent = label;
-      btn.disabled = false;
-      if (error) error.hidden = false;
-    };
-    if (error) error.hidden = true;
-    btn.textContent = form.dataset.sending || label;
-    btn.disabled = true;
-    try {
-      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-      if (res.ok) {
-        wrapper.hidden = true;
-        success.classList.add('show');
-        success.focus();
-      } else fail();
-    } catch { fail(); }
+    btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(btn.dataset.copy); } catch { return; }
+      btn.textContent = btn.dataset.done || label;
+      setTimeout(() => { btn.textContent = label; }, 2000);
+    });
   });
 })();
 
@@ -61,7 +42,6 @@
 // banner below). Everything is delegated, so no per-page markup is needed:
 //   contact_whatsapp / contact_email / contact_phone: click on a wa.me / mailto: / tel: link
 //   cta_click: click on a primary button (Book a call etc.), with its text and target
-//   generate_lead: the contact form's success panel appears (Formspree accepted the POST)
 (function () {
   function track(name, params) {
     if (window.analytics && window.analytics.loaded) window.gtag('event', name, params || {});
@@ -79,16 +59,6 @@
       track('cta_click', { cta_text: a.textContent.trim(), cta_target: href, page_path: page() });
     }
   }, { passive: true });
-
-  const success = document.getElementById('formSuccess');
-  if (success) {
-    new MutationObserver((_, obs) => {
-      if (success.classList.contains('show')) {
-        track('generate_lead', { method: 'contact_form', page_path: page() });
-        obs.disconnect();
-      }
-    }).observe(success, { attributes: true, attributeFilter: ['class'] });
-  }
 })();
 
 // Analytics consent. The banner shows until the visitor accepts or declines, and "Cookie

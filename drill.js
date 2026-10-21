@@ -39,7 +39,7 @@
     mailNote: 'Uso la tua email solo per risponderti. Niente newsletter. <a href="/it/informativa-privacy/">Informativa privacy</a>',
     mailBusy: 'Invio in corso…',
     mailDone: 'Grazie. Ho ricevuto i tuoi risultati e ti rispondo entro 24 ore.',
-    mailError: 'I risultati non sono partiti. Scrivimi a <a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a> o <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">su WhatsApp</a>.',
+    mailError: 'I risultati non sono partiti. Scrivimi a <a href="mailto:alex@intellixtutoring.com">alex@intellixtutoring.com</a> o <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">su WhatsApp</a>.',
     mailSubject: 'Simulazione Bocconi: risultati',
     score: 'Punteggio',
   } : {
@@ -70,7 +70,7 @@
     mailNote: 'I use your email only to reply to you. No newsletter. <a href="/privacy/">Privacy notice</a>',
     mailBusy: 'Sending…',
     mailDone: 'Thank you. I have your results and will reply within 24 hours.',
-    mailError: 'Your results did not send. Email me at <a href="mailto:alexcetojevic12@gmail.com">alexcetojevic12@gmail.com</a> or <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">message me on WhatsApp</a>.',
+    mailError: 'Your results did not send. Email me at <a href="mailto:alex@intellixtutoring.com">alex@intellixtutoring.com</a> or <a href="https://wa.me/385953521299" target="_blank" rel="noopener noreferrer">message me on WhatsApp</a>.',
     mailSubject: 'Bocconi drill: results',
     score: 'Score',
   };
