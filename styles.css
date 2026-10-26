@@ -640,6 +640,8 @@ html.menu-open { overflow: hidden; }
 .byline { margin-top: 24px; font-size: 15px; color: var(--ink-soft); }
 .byline a { color: var(--ink); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .article-meta { margin-top: 4px; font-size: 14px; color: var(--muted); }
+/* Bigger tap area for the back link; the negative margin keeps the layout where it was. */
+.article-back { display: inline-block; padding: 12px 0; margin: -12px 0; }
 .article-section { padding: 0 0 var(--section-y); }
 .article-body { color: var(--ink-soft); }
 .article-body p, .article-body ul, .article-body ol { margin: 0 0 18px; }

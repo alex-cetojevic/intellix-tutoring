@@ -1,24 +1,5 @@
-<script>
-// Language choice. An Italian browser landing on an English page is sent to the Italian
-// version once; after that the EN | IT switch is respected. It runs first in <head>,
-// so the English page does not load before the jump.
-(function () {
-  try {
-    if (document.documentElement.lang === 'it') {
-      localStorage.setItem('langChosen', 'it');
-      return;
-    }
-    var itUrl = {{ page.hreflang_it | jsonify }};
-    if (!itUrl || localStorage.getItem('langChosen')) return;
-    if (navigator.language && navigator.language.startsWith('it')) {
-      localStorage.setItem('langChosen', 'it');
-      location.replace(itUrl + location.search + location.hash);
-    } else {
-      localStorage.setItem('langChosen', 'en');
-    }
-  } catch (e) { /* storage blocked: stay on this page */ }
-})();
-</script>
+<!-- No automatic language redirect: visitors stay on the page they opened and use the
+     EN | IT switch in the header (Google advises against redirecting by browser language). -->
 <!-- Google tag (gtag.js), only with consent. Nothing is loaded and no cookie is set until the
      visitor presses Accept in the banner (footer.html, main.js). The choice is kept in
      localStorage as analyticsConsent. With consent, the script still loads only after the
@@ -67,14 +48,18 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ page.twitter_title | default: page.title }}" />
 <meta name="twitter:description" content="{{ page.description }}" />
-<meta name="twitter:image" content="https://intellixtutoring.com/alex-800.jpg" />
+<meta name="twitter:image" content="https://intellixtutoring.com/share-{% if page.locale == 'it_IT' %}it{% else %}en{% endif %}.jpg" />
 {%- endunless %}
 <meta property="og:title" content="{{ page.og_title | default: page.title }}" />
 <meta property="og:description" content="{{ page.og_description | default: page.description }}" />
 <meta property="og:type" content="{{ page.og_type }}" />
 <meta property="og:url" content="{{ page.og_url | default: page.canonical }}" />
 <meta property="og:site_name" content="Intellix Tutoring" />
-<meta property="og:image" content="https://intellixtutoring.com/alex-800.jpg" />
+<!-- 1200×630 share card, one per language (made from alex-1200.jpg). -->
+<meta property="og:image" content="https://intellixtutoring.com/share-{% if page.locale == 'it_IT' %}it{% else %}en{% endif %}.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{% if page.locale == 'it_IT' %}Alex Ćetojević, tutor di Matematica e Fisica IB{% else %}Alex Ćetojević, IB Maths and Physics tutor{% endif %}" />
 <meta property="og:locale" content="{{ page.locale }}" />
 {%- if page.hreflang_en %}
 <link rel="alternate" hreflang="en" href="{{ page.hreflang_en }}" />
