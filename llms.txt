@@ -24,6 +24,7 @@ Key facts:
 ## IB Maths guides
 
 - [IB Math AA vs AI: Which Should You Choose?](https://intellixtutoring.com/blog/ib-math-aa-vs-ai/): how to choose by university course, difficulty and career path.
+- [IB Maths AA Syllabus: What SL and HL Cover](https://intellixtutoring.com/blog/ib-math-aa-syllabus/): the five topics, what HL adds to SL, the teaching hours, and the new course from 2027.
 - [IB Maths AA HL Study Tips](https://intellixtutoring.com/blog/ib-math-aa-hl-study-tips/): the hardest topics and how to approach Papers 1, 2 and 3.
 - [IB Math AA SL Common Mistakes](https://intellixtutoring.com/blog/ib-math-aa-sl-common-mistakes/): the five topics where SL students lose the most marks.
 - [Should I Drop from IB Maths AA HL to SL?](https://intellixtutoring.com/blog/drop-ib-maths-hl-to-sl/): when dropping is the right call and a four week test to run first.
@@ -57,4 +58,5 @@ Key facts:
 - [Preparazione al test Bocconi](https://intellixtutoring.com/it/preparazione-test-bocconi/)
 - [Simulazione test Bocconi gratis](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande di matematica in 75 minuti, con timer, punteggio e soluzioni svolte.
 - [Punteggio test Bocconi: quanto serve per entrare](https://intellixtutoring.com/it/blog/bocconi-test-score/): come si calcola il punteggio, la soglia di 17 e il peso di test (55%) e voti (45%).
+- [Programma IB Maths AA: cosa si studia in SL e HL](https://intellixtutoring.com/it/blog/ib-math-aa-syllabus/): i cinque argomenti, cosa aggiunge HL, le ore di lezione e il nuovo corso dal 2027.
 - [Blog in Italian](https://intellixtutoring.com/it/blog/)
