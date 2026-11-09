@@ -34,6 +34,7 @@ Key facts:
 
 ## IB Physics guides
 
+- [IB Physics Syllabus: What SL and HL Cover](https://intellixtutoring.com/blog/ib-physics-syllabus/): the five themes, what HL adds to SL, the teaching hours, and the maths each theme needs.
 - [Is IB Physics HL Hard?](https://intellixtutoring.com/blog/is-ib-physics-hl-hard/): where the difficulty sits and how the papers are structured.
 - [IB Physics Paper 1 and Paper 2 strategy](https://intellixtutoring.com/blog/ib-physics-paper-1-2-strategy/): pacing, data questions and extended responses.
 - [IB Physics IA Topics](https://intellixtutoring.com/blog/ib-physics-ia-topics/): how to choose a research question that can reach the marks.
@@ -59,4 +60,5 @@ Key facts:
 - [Simulazione test Bocconi gratis](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande di matematica in 75 minuti, con timer, punteggio e soluzioni svolte.
 - [Punteggio test Bocconi: quanto serve per entrare](https://intellixtutoring.com/it/blog/bocconi-test-score/): come si calcola il punteggio, la soglia di 17 e il peso di test (55%) e voti (45%).
 - [Programma IB Maths AA: cosa si studia in SL e HL](https://intellixtutoring.com/it/blog/ib-math-aa-syllabus/): i cinque argomenti, cosa aggiunge HL, le ore di lezione e il nuovo corso dal 2027.
+- [Programma di Fisica IB: cosa si studia in SL e HL](https://intellixtutoring.com/it/blog/ib-physics-syllabus/): i cinque temi, cosa aggiunge HL, le ore di lezione e la matematica che serve per ogni tema.
 - [Blog in Italian](https://intellixtutoring.com/it/blog/)
