@@ -23,12 +23,12 @@ Key facts:
 
 ## IB Maths guides
 
-- [IB Math AA vs AI: Which Should You Choose?](https://intellixtutoring.com/blog/ib-math-aa-vs-ai/): how to choose by university course, difficulty and career path.
+- [IB Math AA vs AI: Which Is Harder, and Which to Choose?](https://intellixtutoring.com/blog/ib-math-aa-vs-ai/): which course is harder, papers and hours side by side, and what universities ask for.
 - [IB Maths AA Syllabus: What SL and HL Cover](https://intellixtutoring.com/blog/ib-math-aa-syllabus/): the five topics, what HL adds to SL, the teaching hours, and the new course from 2027.
 - [IB Maths AA HL Study Tips](https://intellixtutoring.com/blog/ib-math-aa-hl-study-tips/): the hardest topics and how to approach Papers 1, 2 and 3.
 - [IB Math AA SL Common Mistakes](https://intellixtutoring.com/blog/ib-math-aa-sl-common-mistakes/): the five topics where SL students lose the most marks.
 - [Should I Drop from IB Maths AA HL to SL?](https://intellixtutoring.com/blog/drop-ib-maths-hl-to-sl/): when dropping is the right call and a four week test to run first.
-- [IB Math IA Criteria: How the 20 Marks Are Split](https://intellixtutoring.com/blog/ib-math-ia-criteria/): what each of the five criteria rewards.
+- [IB Math IA Criteria and Rubric: What Earns Each Mark](https://intellixtutoring.com/blog/ib-math-ia-criteria/): what each of the five criteria rewards.
 - [IB Math AA IA Topic Ideas](https://intellixtutoring.com/blog/ib-math-aa-ia-topic-ideas/): how to pick a topic that can score well.
 - [IB Math IA first draft](https://intellixtutoring.com/blog/ib-math-ia-first-draft/): what to fix before you hand the draft in.
 
@@ -60,5 +60,6 @@ Key facts:
 - [Simulazione test Bocconi gratis](https://intellixtutoring.com/it/blog/bocconi-maths-drill/): 50 domande di matematica in 75 minuti, con timer, punteggio e soluzioni svolte.
 - [Punteggio test Bocconi: quanto serve per entrare](https://intellixtutoring.com/it/blog/bocconi-test-score/): come si calcola il punteggio, la soglia di 17 e il peso di test (55%) e voti (45%).
 - [Programma IB Maths AA: cosa si studia in SL e HL](https://intellixtutoring.com/it/blog/ib-math-aa-syllabus/): i cinque argomenti, cosa aggiunge HL, le ore di lezione e il nuovo corso dal 2027.
+- [IB Math AA o AI: qual è più difficile e quale scegliere](https://intellixtutoring.com/it/blog/ib-math-aa-vs-ai/): quale corso è più difficile, prove e ore a confronto, e cosa chiedono le università.
 - [Programma di Fisica IB: cosa si studia in SL e HL](https://intellixtutoring.com/it/blog/ib-physics-syllabus/): i cinque temi, cosa aggiunge HL, le ore di lezione e la matematica che serve per ogni tema.
 - [Blog in Italian](https://intellixtutoring.com/it/blog/)
